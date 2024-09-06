@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>uuku's blog</title>
+
+<meta name="keywords" content="个人博客, ICPC, CCPC, C++, 算法竞赛, ACM"/>
+<meta name="description" content="个人博客"/>
+<meta name="author" content="uuku"/>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- <meta http-equiv="refresh" content="30"/> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link href="../../../../css/code.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="../../../../css/highlight/styles/monokai-sublime.min.css">
+<script src="../../../../css/highlight/highlight.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+<link href="../../../../css/base.css" rel="stylesheet"/>
+<script src="../../../../js/base.js"></script>
+
+<script type="text/javascript" src="../../../../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../../../../js/pdfjs/build/pdf.js"></script>
+<script type="text/javascript" src="../../../../js/pdfjs/build/makepdf.js"></script>
+
+<script type="text/javascript">
+    window.onload=function(){
+        get_height()
+}
+</script>
+
+</head>
+<body>
+    <img src="../../../../img/背景3.jpg" id="background-image"/>
+    <main onclick="get_height()" onload="get_height()" id="mainuuku">
+
+        <nav>
+            <ul id="starlist">
+                <li class="logo">
+                    <a href="../../../../index.html">
+                        <img src="../../../../img/logo_uuku.png" alt="logo" height="50"/>
+                    </a>
+                </li>
+                <li><a href="../../../../index.html">首页</a></li>
+                <li><a href="../../../../pages/person.html">个人简介</a></li>
+                <li class="menu"><a href="">文章</a>
+                <ul class="sub">
+                    <li><a href="">算法竞赛</a></li>
+                    <li><a href="">数学</a></li>
+                    <li><a href="">LaTex</a></li>
+                    <li><a href="">Web</a></li>
+                </ul>
+                
+                <span></span></li>
+                <li><a href="../pages/jiaocai.html">教材</a></li>
+                <li><a href="">生活</a></li>
+                <li><a href="">友链</a></li>
+                <li><a href="">留言板</a></li>
+            </ul>
+            <h2 id="mnavh"><span class="navicon"></span></h2>
+            <div class="is-search"> <i></i> </div>
+            <div class="search-page">
+                <div class="search_box">
+                    <div class="go-left"></div>
+                    <div class="search">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="name">
+            <h1>uuku's blog</h1>
+            <h2>学又学不会 躺又躺不平</h2>
+        </div>
+
+        <aside id="left-aside">
+            <div id="left-aside-part1" class="show aside">
+                <h3 style="color: rgb(63, 224, 224);">
+                    公告栏
+                </h3>
+                <p style="margin-top: 10px;">
+                    <b>学业繁忙，随缘打理</b>
+                </p>
+            </div>
+            <div class="aside" style="margin: 10px;"></div>
+            <div class="show aside" id="left-aside-part2" >
+                <ul>
+                    <li>
+                        <a href="../../../../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="">文章</a>
+                    </li>
+                    <li>
+                        <a href="">说说</a>
+                    </li>
+                    <li>
+                        <a href="">归档</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="aside" style="margin: 10px;"></div>
+            <div class="show aside" id="left-aside-part3">
+                <ul>
+                    <li class="aside-btn2" id="aside-btn-menu2" onclick="aside_left_menu2()">目录</li>
+                    <li class="aside-btn2" id="aside-btn-profile2" onclick="aside_left_profile2()">个人简介</li>
+                    <li class="aside-btn2" id="aside-btn-tool2" onclick="aside_left_tool2()">功能</li>
+                </ul>
+    
+    
+                <div id="aside-menu2" style="display: block;">
+
+            <div id="md-toc">
+                    <details style="padding:0;;margin-left: 1px;">
+						<summary class="md-toc-link-wrapper">
+							<a href="#ioi-2024-day1" class="md-toc-link">
+								<p style="display: inline;">IOI 2024 Day1 </p>
+							</a>
+						</summary>
+                    <details style="padding:0;;margin-left: 22px;">
+						<summary class="md-toc-link-wrapper">
+							<a href="#t1-nile" class="md-toc-link">
+								<p style="display: inline;">T1 nile </p>
+							</a>
+						</summary>
+           <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#大致题意" class="md-toc-link">
+							<p>大致题意 </p>
+
+						</a>
+					</div>
+           <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#题解" class="md-toc-link">
+							<p>题解 </p>
+
+						</a>
+					</div>
+              </details>
+                    <details style="padding:0;;margin-left: 22px;">
+						<summary class="md-toc-link-wrapper">
+							<a href="#t2-message" class="md-toc-link">
+								<p style="display: inline;">T2 message </p>
+							</a>
+						</summary>
+           <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#大致题意-1" class="md-toc-link">
+							<p>大致题意 </p>
+
+						</a>
+					</div>
+              </details>
+              </details>
+            </div>
+
+                </div>
+    
+                <div id="aside-profile2" style="display: none;">
+                    <a href="../../../../pages/profile.html">
+                        <img src="../../../../img/头像.jpg" style="width:70%; margin:auto; margin-top: 20px; border-radius: 50%;"/>
+                    </a>
+                </div>
+    
+                <div id="aside-tool2" style="display: none;">
+                    2
+                </div>
+            </div>
+            </aside>
+        
+        <div id="mainpart" class="mainpart show" >
+      
+<h1 id="ioi-2024-day1" style="text-align: center;">IOI 2024 Day1 </h1>
+<h2 id="t1-nile">T1 nile </h2>
+<h3 id="大致题意">大致题意 </h3>
+<p>有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> 个物品要过河，每个物品有三个参数 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>a</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">w_i,a_i,b_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。现在有一条船来运这些物品，规则如下：</p>
+<ol>
+<li>一次运一个物品，无任何限制，花费 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的代价。</li>
+<li>一次运两个物品 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">(</mo><mi>i</mi><mo mathvariant="normal">≠</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">i,j(i\neq j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord"><span class="mrel"></span></span></span><span class="fix"></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span></span></span>，要求满足 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">∣</mo><msub><mi>w</mi><mi>i</mi></msub><mo>−</mo><msub><mi>w</mi><mi>j</mi></msub><mo fence="true">∣</mo></mrow><mo>≤</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">\left|w_i-w_j\right|\le D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">∣</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">∣</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>，花费 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>+</mo><msub><mi>b</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">b_i+b_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> 的代价。</li>
+</ol>
+<p>现在保证 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>&lt;</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_i&lt;a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，并给出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span></span></span></span> 此询问，每次询问给出 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> 求所有物品过河的最小代价。</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo separator="true">,</mo><mi>q</mi><mo>≤</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">n,q \le 10^5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8304em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></p>
+<h3 id="题解">题解 </h3>
+<p>Day1 签到题，先考虑对于单组询问如何做。由于 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>&lt;</mo><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_i&lt;a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 恒成立，所以能配对就配对显然更优，如果我们按 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">w_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0269em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 排序，那么根据间隔与 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> 的大小可以将整个序列分为若干段表示段内相邻的两个物品能同船。</p>
+<p>如果段的长度是偶数，那么肯定能两两配对全部用 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，如果长度是奇数那么就要考虑让其中奇数个物品单独过河，讨论一下不难发现肯定是让一个物品单独过。那么我们就要求出所有可以单独过（不影响其他物品两两配对）的物品增量 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>−</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i-b_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 最小是多少。</p>
+<p>不影响其他物品那就有两种情况：</p>
+<ol>
+<li>位置与左端点奇偶性相同，那么左右的长度仍为偶数可以配对。</li>
+<li>前一个和后一个的差也满足 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> 的限制，那么除去该物品整个段仍是连通的，那么就可以配对。</li>
+</ol>
+<p>所以我们只需 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 扫一遍就可以得到单次询问的答案。</p>
+<p>下面考虑多组询问，重新探究分段的过程，当 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> 足够大之后，整个序列都将是一段，那么就研究单个/一段物品合并的过程，发现每个间隔都会连接两段，那么我们只需把询问离线排序，再把间隔长度排序，依次加入并修改即可。</p>
+<p>在合并段的同时维护上述两种可删点的信息，由于只需最小值直接取 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>min</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\min</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6679em;"></span><span class="mop">min</span></span></span></span> 即可。第一种按前后两个物品重量差排序一起修改。第二种考虑按奇偶位置处理最小值，然后区间直接合并。</p>
+<p>复杂度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>。</p>
+<div class="wrap-collabsible">
+	<input id="collapsible0"class="toggle" type="checkbox">
+	<label for="collapsible0" class="lbl-toggle">Code</label>
+	<div class="collapsible-content">
+	  <div class="content-inner">
+<pre data-role="codeBlock" data-info="cpp" class="language-cpp cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="token keyword keyword-using">using</span> <span class="token keyword keyword-namespace">namespace</span> std<span class="token punctuation">;</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">ll</span> <span class="token expression"><span class="token keyword keyword-long">long</span> <span class="token keyword keyword-long">long</span></span></span>
+<span class="token keyword keyword-const">const</span> <span class="token keyword keyword-int">int</span> N<span class="token operator">=</span><span class="token number">1e5</span><span class="token operator">+</span><span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-int">int</span> fa<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>mn<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>sz<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>n<span class="token punctuation">,</span>q<span class="token punctuation">,</span>tot<span class="token punctuation">;</span>
+<span class="token keyword keyword-struct">struct</span> <span class="token class-name">node</span><span class="token punctuation">{</span>
+	<span class="token keyword keyword-int">int</span> w<span class="token punctuation">,</span>a<span class="token punctuation">,</span>b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>ask<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>dlt<span class="token punctuation">[</span>N<span class="token operator">&lt;&lt;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-bool">bool</span> <span class="token function">cmp</span><span class="token punctuation">(</span>node a<span class="token punctuation">,</span>node b<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword keyword-return">return</span> a<span class="token punctuation">.</span>w<span class="token operator">==</span>b<span class="token punctuation">.</span>w<span class="token operator">?</span>a<span class="token punctuation">.</span>b<span class="token operator">&gt;</span>b<span class="token punctuation">.</span>b<span class="token operator">:</span>a<span class="token punctuation">.</span>w<span class="token operator">&lt;</span>b<span class="token punctuation">.</span>w<span class="token punctuation">;</span><span class="token punctuation">}</span>
+ll res<span class="token punctuation">;</span>
+<span class="token keyword keyword-int">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword keyword-return">return</span> fa<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">==</span>x<span class="token operator">?</span>x<span class="token operator">:</span>fa<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>fa<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token keyword keyword-void">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> p1<span class="token punctuation">,</span><span class="token keyword keyword-int">int</span> p2<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword keyword-if">if</span><span class="token punctuation">(</span>p2<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword keyword-int">int</span> f<span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-if">if</span><span class="token punctuation">(</span>sz<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span>res<span class="token operator">-=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token punctuation">[</span>f<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		mn<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token punctuation">,</span>p<span class="token punctuation">[</span>p1<span class="token punctuation">]</span><span class="token punctuation">.</span>a<span class="token operator">-</span>p<span class="token punctuation">[</span>p1<span class="token punctuation">]</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-if">if</span><span class="token punctuation">(</span>sz<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span>res<span class="token operator">+=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f<span class="token punctuation">]</span><span class="token punctuation">[</span>f<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword keyword-else">else</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword keyword-int">int</span> f1<span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">,</span>f2<span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>p2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-if">if</span><span class="token punctuation">(</span>sz<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span>res<span class="token operator">-=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">[</span>f1<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-if">if</span><span class="token punctuation">(</span>sz<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span>res<span class="token operator">-=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token punctuation">[</span>f2<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		fa<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token operator">=</span>f1<span class="token punctuation">;</span>
+		sz<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token operator">+=</span>sz<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token punctuation">;</span>
+		mn<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">,</span>mn<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		mn2<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">min</span><span class="token punctuation">(</span>mn2<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		mn2<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">min</span><span class="token punctuation">(</span>mn2<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f2<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword keyword-if">if</span><span class="token punctuation">(</span>sz<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span>res<span class="token operator">+=</span><span class="token function">min</span><span class="token punctuation">(</span>mn<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">,</span>mn2<span class="token punctuation">[</span>f1<span class="token punctuation">]</span><span class="token punctuation">[</span>f1<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword keyword-return">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword keyword-long">long</span> <span class="token keyword keyword-long">long</span><span class="token operator">&gt;</span> <span class="token function">calculate_costs</span><span class="token punctuation">(</span> std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token operator">&gt;</span> W<span class="token punctuation">,</span> std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token operator">&gt;</span> A<span class="token punctuation">,</span> std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token operator">&gt;</span> B<span class="token punctuation">,</span> std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span><span class="token keyword keyword-int">int</span><span class="token operator">&gt;</span> E<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	n<span class="token operator">=</span>W<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	vector<span class="token operator">&lt;</span>ll<span class="token operator">&gt;</span>ans<span class="token punctuation">;</span>
+ 	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>W<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>A<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>B<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 	<span class="token function">sort</span><span class="token punctuation">(</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>p<span class="token operator">+</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>cmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	q<span class="token operator">=</span>E<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>q<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> ask<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>E<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>i<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 	<span class="token function">sort</span><span class="token punctuation">(</span>ask<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>ask<span class="token operator">+</span>q<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>cmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	ans<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> dlt<span class="token punctuation">[</span><span class="token operator">++</span>tot<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>w<span class="token operator">-</span>p<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>w<span class="token punctuation">,</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>i<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> dlt<span class="token punctuation">[</span><span class="token operator">++</span>tot<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>p<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>w<span class="token operator">-</span>p<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>w<span class="token punctuation">,</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token function">sort</span><span class="token punctuation">(</span>dlt<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>dlt<span class="token operator">+</span>tot<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>cmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		fa<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>i<span class="token punctuation">;</span>
+		mn<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1e9</span><span class="token punctuation">;</span>
+		mn2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>a<span class="token operator">-</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>b<span class="token punctuation">;</span>
+		mn2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">(</span>i<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">^</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1e9</span><span class="token punctuation">;</span>
+		sz<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span> res<span class="token operator">+=</span>p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>a<span class="token punctuation">;</span>
+	<span class="token keyword keyword-for">for</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>p<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>q<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword keyword-while">while</span><span class="token punctuation">(</span>p<span class="token operator">&lt;</span>tot<span class="token operator">&amp;&amp;</span>dlt<span class="token punctuation">[</span>p<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>w<span class="token operator">&lt;=</span>ask<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>w<span class="token punctuation">)</span>
+			p<span class="token operator">++</span><span class="token punctuation">,</span> <span class="token function">add</span><span class="token punctuation">(</span>dlt<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">.</span>a<span class="token punctuation">,</span>dlt<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		ans<span class="token punctuation">[</span>ask<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>a<span class="token punctuation">]</span><span class="token operator">=</span>res<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+ 	<span class="token keyword keyword-return">return</span> ans<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//int main()</span>
+<span class="token comment">//{</span>
+<span class="token comment">//	int n,q;</span>
+<span class="token comment">//	vector&lt;int&gt;W,A,B,E;</span>
+<span class="token comment">//	vector&lt;ll&gt;ans;</span>
+<span class="token comment">//	read(n);</span>
+<span class="token comment">//	for(int i=0;i&lt;n;i++)</span>
+<span class="token comment">//	{</span>
+<span class="token comment">//		W.push_back(read&lt;int&gt;());</span>
+<span class="token comment">//		A.push_back(read&lt;int&gt;());</span>
+<span class="token comment">//		B.push_back(read&lt;int&gt;());</span>
+<span class="token comment">//	}</span>
+<span class="token comment">//	read(q);</span>
+<span class="token comment">//	for(int i=0;i&lt;q;i++)E.push_back(read&lt;int&gt;());</span>
+<span class="token comment">//	ans=calculate_costs(W,A,B,E);</span>
+<span class="token comment">//	for(ll i:ans)write(i);</span>
+<span class="token comment">//	flushout();</span>
+<span class="token comment">//	return 0;</span>
+<span class="token comment">//}</span>
+</code></pre></div></div></div><h2 id="t2-message">T2 message </h2>
+<h3 id="大致题意-1">大致题意 </h3>
+<p>现有一个长 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mtext>&nbsp;bits</mtext></mrow><annotation encoding="application/x-tex">S \ \text{bits}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace">&nbsp;</span><span class="mord text"><span class="mord">bits</span></span></span></span></span> 的</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </main>
+
+    <footer class="show">
+
+    </footer>
+</body>
+</html>

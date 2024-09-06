@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>uuku's blog</title>
+
+<meta name="keywords" content="个人博客, ICPC, CCPC, XCPC, uuku, XJTU, C++, 算法竞赛, ACM, 数学, 刘欣楠"/>
+<meta name="description" content="个人博客"/>
+<meta name="author" content="uuku"/>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- <meta http-equiv="refresh" content="30"/> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  
+<link rel="stylesheet" href="../highlight/styles/monokai-sublime.min.css">
+<script src="../highlight/highlight.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+<!-- <link href="./css/code.css" rel="stylesheet"/> -->
+
+<link href="../css/base.css" rel="stylesheet"/>
+<script src="../js/base.js"></script>
+
+<script type="text/javascript">
+    window.onload=function(){
+        get_height()
+}
+</script>
+
+</head>
+<body>
+    <img src="../img/背景3.jpg" id="background-image"/>
+    <main onclick="get_height()" id="mainuuku">
+        <nav>
+            <ul id="starlist">
+                <li class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo_uuku.png" alt="logo" height="50"/>
+                    </a>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../pages/person.html">个人简介</a></li>
+                <li class="menu"><a href="">文章</a>
+                <ul class="sub">
+                    <li><a href="">算法竞赛</a></li>
+                    <li><a href="">数学</a></li>
+                    <li><a href="">LaTex</a></li>
+                    <li><a href="">Web</a></li>
+                </ul>
+                
+                <span></span></li>
+                <li><a href="../pages/jiaocai.html">教材</a></li>
+                <li><a href="">生活</a></li>
+                <li><a href="">友链</a></li>
+                <li><a href="">留言板</a></li>
+            </ul>
+            <h2 id="mnavh"><span class="navicon"></span></h2>
+            <div class="is-search"> <i></i> </div>
+            <div class="search-page">
+                <div class="search_box">
+                    <div class="go-left"></div>
+                    <div class="search">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="name">
+            <h1>uuku's blog</h1>
+            <h2>学又学不会 躺又躺不平</h2>
+        </div>
+        <aside id="left-aside">
+        <div id="left-aside-part1" class="show aside">
+            <h3 style="color: rgb(63, 224, 224);">
+                公告栏
+            </h3>
+            <p style="margin-top: 10px;">
+                <b>学业繁忙，随缘打理</b>
+            </p>
+        </div>
+        <div class="aside" style="margin: 10px;"></div>
+        <div class="show aside" id="left-aside-part2" >
+            <ul>
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li>
+                    <a href="">文章</a>
+                </li>
+                <li>
+                    <a href="">说说</a>
+                </li>
+                <li>
+                    <a href="">归档</a>
+                </li>
+            </ul>
+        </div>
+        <div class="aside" style="margin: 10px;"></div>
+        <div class="show aside" id="left-aside-part3">
+            <ul>
+                <li class="aside-btn" id="aside-btn-profile" onclick="aside_left_profile()">个人简介</li>
+                <li class="aside-btn" id="aside-btn-tool" onclick="aside_left_tool()">功能</li>
+            </ul>
+            <div id="aside-profile" style="display: block;">
+                <a href="../pages/profile.html">
+                    <img src="../img/头像.jpg" style="width:70%; margin:auto; margin-top: 20px; border-radius: 50%;"/>
+                </a>
+            </div>
+
+            <div id="aside-tool" style="display: none;">
+                2
+            </div>
+        </div>
+        </aside>
+        <div id="mainpart" class="mainpart" >
+<!-- 正文开始 -->
+          <article class="show">
+                    <div class="mainpart-title">
+                    <a href="../posts/教材/常微分方程及其应用-周义仓.html">常微分方程及其应用</a>
+                    </div>
+                    <div class="mainpart-meta">
+                        <div class="mainpart-meta-tag">
+                            <img src="../icon/标签.png" class="a-line mainpart-meta-icon"/>
+                            <p style="display:inline;">周义仓</p>
+                        </div>
+                    </div>
+                </article>
+              <article class="show">
+                    <div class="mainpart-title">
+                    <a href="../posts/教材/毛泽东思想和中国特色社会主义理论体系概论-本书编写组.html">毛泽东思想和中国特色社会主义理论体系概论</a>
+                    </div>
+                    <div class="mainpart-meta">
+                        <div class="mainpart-meta-tag">
+                            <img src="../icon/标签.png" class="a-line mainpart-meta-icon"/>
+                            <p style="display:inline;">本书编写组</p>
+                        </div>
+                    </div>
+                </article>
+              <article class="show">
+                    <div class="mainpart-title">
+                    <a href="../posts/教材/离散数学-陈建明,曾明,刘国荣.html">离散数学</a>
+                    </div>
+                    <div class="mainpart-meta">
+                        <div class="mainpart-meta-tag">
+                            <img src="../icon/标签.png" class="a-line mainpart-meta-icon"/>
+                            <p style="display:inline;">陈建明</p>,<p style="display:inline;">曾明</p>,<p style="display:inline;">刘国荣</p>
+                        </div>
+                    </div>
+                </article>
+              <article class="show">
+                    <div class="mainpart-title">
+                    <a href="../posts/教材/算法设计与分析-王晓东.html">算法设计与分析</a>
+                    </div>
+                    <div class="mainpart-meta">
+                        <div class="mainpart-meta-tag">
+                            <img src="../icon/标签.png" class="a-line mainpart-meta-icon"/>
+                            <p style="display:inline;">王晓东</p>
+                        </div>
+                    </div>
+                </article>
+              <article class="show">
+                    <div class="mainpart-title">
+                    <a href="../posts/教材/近世代数-丘维声.html">近世代数</a>
+                    </div>
+                    <div class="mainpart-meta">
+                        <div class="mainpart-meta-tag">
+                            <img src="../icon/标签.png" class="a-line mainpart-meta-icon"/>
+                            <p style="display:inline;">丘维声</p>
+                        </div>
+                    </div>
+                </article>
+    <!-- 正文结束 -->
+        </div>
+    </main>
+
+    <footer class="show">
+
+    </footer>
+</body>
+</html>
