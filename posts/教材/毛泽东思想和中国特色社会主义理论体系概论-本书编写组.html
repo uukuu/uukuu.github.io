@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>uuku's blog</title>
+
+<meta name="keywords" content="个人博客, ICPC, CCPC, C++, 算法竞赛, ACM"/>
+<meta name="description" content="个人博客"/>
+<meta name="author" content="uuku"/>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- <meta http-equiv="refresh" content="30"/> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link href="../../css/code.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="../../css/highlight/styles/monokai-sublime.min.css">
+<script src="../../css/highlight/highlight.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+<link href="../../css/base.css" rel="stylesheet"/>
+<script src="../../js/base.js"></script>
+
+<script type="text/javascript" src="../../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../../js/pdfjs/build/pdf.js"></script>
+<script type="text/javascript" src="../../js/pdfjs/build/makepdf.js"></script>
+
+<script type="text/javascript">
+    window.onload=function(){
+        get_height()
+}
+</script>
+
+</head>
+<body>
+    <img src="../../img/背景3.jpg" id="background-image"/>
+    <main onclick="get_height()" onload="get_height()" id="mainuuku">
+
+        <nav>
+            <ul id="starlist">
+                <li class="logo">
+                    <a href="../../index.html">
+                        <img src="../../img/logo_uuku.png" alt="logo" height="50"/>
+                    </a>
+                </li>
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../../pages/person.html">个人简介</a></li>
+                <li class="menu"><a href="">文章</a>
+                <ul class="sub">
+                    <li><a href="">算法竞赛</a></li>
+                    <li><a href="">数学</a></li>
+                    <li><a href="">LaTex</a></li>
+                    <li><a href="">Web</a></li>
+                </ul>
+                
+                <span></span></li>
+                <li><a href="../pages/jiaocai.html">教材</a></li>
+                <li><a href="">生活</a></li>
+                <li><a href="">友链</a></li>
+                <li><a href="">留言板</a></li>
+            </ul>
+            <h2 id="mnavh"><span class="navicon"></span></h2>
+            <div class="is-search"> <i></i> </div>
+            <div class="search-page">
+                <div class="search_box">
+                    <div class="go-left"></div>
+                    <div class="search">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="name">
+            <h1>uuku's blog</h1>
+            <h2>学又学不会 躺又躺不平</h2>
+        </div>
+
+        <aside id="left-aside">
+            <div id="left-aside-part1" class="show aside">
+                <h3 style="color: rgb(63, 224, 224);">
+                    公告栏
+                </h3>
+                <p style="margin-top: 10px;">
+                    <b>学业繁忙，随缘打理</b>
+                </p>
+            </div>
+            <div class="aside" style="margin: 10px;"></div>
+            <div class="show aside" id="left-aside-part2" >
+                <ul>
+                    <li>
+                        <a href="../../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="">文章</a>
+                    </li>
+                    <li>
+                        <a href="">说说</a>
+                    </li>
+                    <li>
+                        <a href="">归档</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="aside" style="margin: 10px;"></div>
+            <div class="show aside" id="left-aside-part3">
+                <ul>
+                    <li class="aside-btn2" id="aside-btn-menu2" onclick="aside_left_menu2()">目录</li>
+                    <li class="aside-btn2" id="aside-btn-profile2" onclick="aside_left_profile2()">个人简介</li>
+                    <li class="aside-btn2" id="aside-btn-tool2" onclick="aside_left_tool2()">功能</li>
+                </ul>
+    
+    
+                <div id="aside-menu2" style="display: block;">
+
+            <div id="md-toc">
+本pdf无目录            </div>
+
+                </div>
+    
+                <div id="aside-profile2" style="display: none;">
+                    <a href="../../pages/profile.html">
+                        <img src="../../img/头像.jpg" style="width:70%; margin:auto; margin-top: 20px; border-radius: 50%;"/>
+                    </a>
+                </div>
+    
+                <div id="aside-tool2" style="display: none;">
+                    2
+                </div>
+            </div>
+            </aside>
+        
+        <div id="mainpart" class="mainpart show" >
+            <div id="canvas"></div>
+        </div>
+        <script>
+                       
+            pdfjsLib.GlobalWorkerOptions.workerSrc = "../../js/pdfjs/build/pdf.worker.js";
+                loadPDF("./毛泽东思想和中国特色社会主义理论体系概论-本书编写组.pdf");
+                get_height()
+            </script>
+        </main>
+
+    <footer class="show">
+
+    </footer>
+</body>
+</html>

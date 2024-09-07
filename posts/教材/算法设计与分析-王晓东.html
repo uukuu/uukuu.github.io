@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>uuku's blog</title>
+
+<meta name="keywords" content="个人博客, ICPC, CCPC, C++, 算法竞赛, ACM"/>
+<meta name="description" content="个人博客"/>
+<meta name="author" content="uuku"/>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- <meta http-equiv="refresh" content="30"/> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link href="../../css/code.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="../../css/highlight/styles/monokai-sublime.min.css">
+<script src="../../css/highlight/highlight.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+<link href="../../css/base.css" rel="stylesheet"/>
+<script src="../../js/base.js"></script>
+
+<script type="text/javascript" src="../../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../../js/pdfjs/build/pdf.js"></script>
+<script type="text/javascript" src="../../js/pdfjs/build/makepdf.js"></script>
+
+<script type="text/javascript">
+    window.onload=function(){
+        get_height()
+}
+</script>
+
+</head>
+<body>
+    <img src="../../img/背景3.jpg" id="background-image"/>
+    <main onclick="get_height()" onload="get_height()" id="mainuuku">
+
+        <nav>
+            <ul id="starlist">
+                <li class="logo">
+                    <a href="../../index.html">
+                        <img src="../../img/logo_uuku.png" alt="logo" height="50"/>
+                    </a>
+                </li>
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../../pages/person.html">个人简介</a></li>
+                <li class="menu"><a href="">文章</a>
+                <ul class="sub">
+                    <li><a href="">算法竞赛</a></li>
+                    <li><a href="">数学</a></li>
+                    <li><a href="">LaTex</a></li>
+                    <li><a href="">Web</a></li>
+                </ul>
+                
+                <span></span></li>
+                <li><a href="../pages/jiaocai.html">教材</a></li>
+                <li><a href="">生活</a></li>
+                <li><a href="">友链</a></li>
+                <li><a href="">留言板</a></li>
+            </ul>
+            <h2 id="mnavh"><span class="navicon"></span></h2>
+            <div class="is-search"> <i></i> </div>
+            <div class="search-page">
+                <div class="search_box">
+                    <div class="go-left"></div>
+                    <div class="search">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="name">
+            <h1>uuku's blog</h1>
+            <h2>学又学不会 躺又躺不平</h2>
+        </div>
+
+        <aside id="left-aside">
+            <div id="left-aside-part1" class="show aside">
+                <h3 style="color: rgb(63, 224, 224);">
+                    公告栏
+                </h3>
+                <p style="margin-top: 10px;">
+                    <b>学业繁忙，随缘打理</b>
+                </p>
+            </div>
+            <div class="aside" style="margin: 10px;"></div>
+            <div class="show aside" id="left-aside-part2" >
+                <ul>
+                    <li>
+                        <a href="../../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="">文章</a>
+                    </li>
+                    <li>
+                        <a href="">说说</a>
+                    </li>
+                    <li>
+                        <a href="">归档</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="aside" style="margin: 10px;"></div>
+            <div class="show aside" id="left-aside-part3">
+                <ul>
+                    <li class="aside-btn2" id="aside-btn-menu2" onclick="aside_left_menu2()">目录</li>
+                    <li class="aside-btn2" id="aside-btn-profile2" onclick="aside_left_profile2()">个人简介</li>
+                    <li class="aside-btn2" id="aside-btn-tool2" onclick="aside_left_tool2()">功能</li>
+                </ul>
+    
+    
+                <div id="aside-menu2" style="display: block;">
+
+            <div id="md-toc">
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-1" class="md-toc-link">
+							<p>封面</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-2" class="md-toc-link">
+							<p>扉页</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-3" class="md-toc-link">
+							<p>内容简介</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-3" class="md-toc-link">
+							<p>版权页</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-4" class="md-toc-link">
+							<p>21世纪大学本科计处机专业系列教材编委会</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-6" class="md-toc-link">
+							<p>前言</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-8" class="md-toc-link">
+							<p>目录</p>
+
+						</a>
+					</div>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-14" class="md-toc-link">
+								<p style="display: inline;">第1章　算法引论</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-14" class="md-toc-link">
+							<p>1.1　算法与程序</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-14" class="md-toc-link">
+							<p>1.2　表达算法的抽象机制</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-16" class="md-toc-link">
+							<p>1.3　描述算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-23" class="md-toc-link">
+							<p>1.4　算法复杂性分析</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-26" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-27" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-29" class="md-toc-link">
+								<p style="display: inline;">第2章　递归与分治策略</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-29" class="md-toc-link">
+							<p>2.1　递归的概念</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-34" class="md-toc-link">
+							<p>2.2　分治法的基本思想</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-36" class="md-toc-link">
+							<p>2.3　二分搜索技术</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-36" class="md-toc-link">
+							<p>2.4　大整数的乘法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-37" class="md-toc-link">
+							<p>2.5　Strassen矩阵乘法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-39" class="md-toc-link">
+							<p>2.6　棋盘覆盖</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-41" class="md-toc-link">
+							<p>2.7　合并排序</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-43" class="md-toc-link">
+							<p>2.8　快速排序</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-46" class="md-toc-link">
+							<p>2.9　线性时间选择</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-48" class="md-toc-link">
+							<p>2.10　最接近点对问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-56" class="md-toc-link">
+							<p>2.11　循环赛日程表</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-57" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-57" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-63" class="md-toc-link">
+								<p style="display: inline;">第3章　动态规划</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-63" class="md-toc-link">
+							<p>3.1　矩阵连乘问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-68" class="md-toc-link">
+							<p>3.2　动态规划算法的基本要素</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-71" class="md-toc-link">
+							<p>3.3　最长公共子序列</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-74" class="md-toc-link">
+							<p>3.4　凸多边形最优三角剖分</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-77" class="md-toc-link">
+							<p>3.5　多边形游戏</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-80" class="md-toc-link">
+							<p>3.6　图像压缩</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-82" class="md-toc-link">
+							<p>3.7　电路布线</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-85" class="md-toc-link">
+							<p>3.8　流水作业调度</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-88" class="md-toc-link">
+							<p>3.9　0-1背包问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-93" class="md-toc-link">
+							<p>3.10　最优二叉搜索树</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-96" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-96" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-98" class="md-toc-link">
+								<p style="display: inline;">第4章　贪心算法</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-98" class="md-toc-link">
+							<p>4.1　活动安排问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-101" class="md-toc-link">
+							<p>4.2　贪心算法的基本要素</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-104" class="md-toc-link">
+							<p>4.3　最优装载</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-105" class="md-toc-link">
+							<p>4.4　哈夫曼编码</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-109" class="md-toc-link">
+							<p>4.5　单源最短路径</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-112" class="md-toc-link">
+							<p>4.6　最小生成树</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-117" class="md-toc-link">
+							<p>4.7　多机调度问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-119" class="md-toc-link">
+							<p>4.8　贪心算法的理论基础</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-126" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-126" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-128" class="md-toc-link">
+								<p style="display: inline;">第5章　回溯法</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-128" class="md-toc-link">
+							<p>5.1　回溯法的算法框架</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-133" class="md-toc-link">
+							<p>5.2　装载问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-139" class="md-toc-link">
+							<p>5.3　批处理作业调度</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-141" class="md-toc-link">
+							<p>5.4　符号三角形问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-143" class="md-toc-link">
+							<p>5.5　n后问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-146" class="md-toc-link">
+							<p>5.6　0-1背包问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-149" class="md-toc-link">
+							<p>5.7　最大团问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-151" class="md-toc-link">
+							<p>5.8　图的m 着色问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-153" class="md-toc-link">
+							<p>5.9　旅行售货员问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-155" class="md-toc-link">
+							<p>5.10　圆排列问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-157" class="md-toc-link">
+							<p>5.11　电路板排列问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-160" class="md-toc-link">
+							<p>5.12　连续邮资问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-162" class="md-toc-link">
+							<p>5.13　回溯法的效率分析</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-165" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-165" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-166" class="md-toc-link">
+								<p style="display: inline;">第6章　分支限界法</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-166" class="md-toc-link">
+							<p>6.1　分支限界法的基本思想</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-169" class="md-toc-link">
+							<p>6.2　单源最短路径问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-171" class="md-toc-link">
+							<p>6.3　装载问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-179" class="md-toc-link">
+							<p>6.4　布线问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-183" class="md-toc-link">
+							<p>6.5　0-1背包问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-188" class="md-toc-link">
+							<p>6.6　最大团问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-191" class="md-toc-link">
+							<p>6.7　旅行售货员问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-194" class="md-toc-link">
+							<p>6.8　电路板排列问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-197" class="md-toc-link">
+							<p>6.9　批处理作业调度</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-202" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-202" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-203" class="md-toc-link">
+								<p style="display: inline;">第7章　概率算法</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-204" class="md-toc-link">
+							<p>7.1　随机数</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-206" class="md-toc-link">
+							<p>7.2　数值概率算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-210" class="md-toc-link">
+							<p>7.3　舍伍德算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-218" class="md-toc-link">
+							<p>7.4　拉斯维加斯算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-224" class="md-toc-link">
+							<p>7.5　蒙特卡罗算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-230" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-230" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-234" class="md-toc-link">
+								<p style="display: inline;">第8章　NP完全性理论与近似算法</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-234" class="md-toc-link">
+							<p>8.1　P类与 NP类问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-238" class="md-toc-link">
+							<p>8.2　NP完全问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-242" class="md-toc-link">
+							<p>8.3　一些典型的 NP完全问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-251" class="md-toc-link">
+							<p>8.4　近似算法的性能</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-253" class="md-toc-link">
+							<p>8.5　顶点覆盖问题的近似算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-254" class="md-toc-link">
+							<p>8.6　旅行售货员问题近似算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-257" class="md-toc-link">
+							<p>8.7　集合覆盖问题的近似算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-259" class="md-toc-link">
+							<p>8.8　子集和问题的近似算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-263" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-263" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-266" class="md-toc-link">
+								<p style="display: inline;">第9章　串与序列的算法</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-266" class="md-toc-link">
+							<p>9.1　子串搜索算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-279" class="md-toc-link">
+							<p>9.2　后缀数组与最长公共子串</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-290" class="md-toc-link">
+							<p>9.3　序列比较算法</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-297" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-298" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-301" class="md-toc-link">
+								<p style="display: inline;">第10章　算法优化策略</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-301" class="md-toc-link">
+							<p>10.1　算法设计策略的比较与选择</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-307" class="md-toc-link">
+							<p>10.2　动态规划加速原理</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-311" class="md-toc-link">
+							<p>10.3　问题的算法特征</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-319" class="md-toc-link">
+							<p>10.4　优化数据结构</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-331" class="md-toc-link">
+							<p>10.5　优化搜索策略</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-337" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-337" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                    <details style="padding:0;;margin-left: 1px;" >
+						<summary class="md-toc-link-wrapper">
+							<a href="#cw-pdf-338" class="md-toc-link">
+								<p style="display: inline;">第11章　在线算法设计</p>
+							</a>
+						</summary>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-338" class="md-toc-link">
+							<p>11.1　在线算法设计的基本概念</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-340" class="md-toc-link">
+							<p>11.2　页调度问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-342" class="md-toc-link">
+							<p>11.3　势函数分析</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-343" class="md-toc-link">
+							<p>11.4　k服务问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-347" class="md-toc-link">
+							<p>11.5　Steiner树问题</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-349" class="md-toc-link">
+							<p>11.6　在线任务调度</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-350" class="md-toc-link">
+							<p>11.7　负载平衡</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-351" class="md-toc-link">
+							<p>小结</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:43px">
+						<a href="#cw-pdf-351" class="md-toc-link">
+							<p>习题</p>
+
+						</a>
+					</div>
+             </details>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-352" class="md-toc-link">
+							<p>正文结束</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-353" class="md-toc-link">
+							<p>词汇索引</p>
+
+						</a>
+					</div>
+                   <div class="md-toc-link-wrapper"
+						style="padding:0;;display:list-item;list-style:disc;margin-left:22px">
+						<a href="#cw-pdf-358" class="md-toc-link">
+							<p>参考文献</p>
+
+						</a>
+					</div>
+            </div>
+
+                </div>
+    
+                <div id="aside-profile2" style="display: none;">
+                    <a href="../../pages/profile.html">
+                        <img src="../../img/头像.jpg" style="width:70%; margin:auto; margin-top: 20px; border-radius: 50%;"/>
+                    </a>
+                </div>
+    
+                <div id="aside-tool2" style="display: none;">
+                    2
+                </div>
+            </div>
+            </aside>
+        
+        <div id="mainpart" class="mainpart show" >
+            <div id="canvas"></div>
+        </div>
+        <script>
+                       
+            pdfjsLib.GlobalWorkerOptions.workerSrc = "../../js/pdfjs/build/pdf.worker.js";
+                loadPDF("./算法设计与分析-王晓东.pdf");
+                get_height()
+            </script>
+        </main>
+
+    <footer class="show">
+
+    </footer>
+</body>
+</html>

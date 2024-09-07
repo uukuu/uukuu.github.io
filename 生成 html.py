@@ -264,6 +264,8 @@ def make_jiaocai():
         file_out.write("            <div id=\"canvas\"></div>\n")
         file_out.write("        </div>\n")
         file_out.write('''        <script>
+                       
+            pdfjsLib.GlobalWorkerOptions.workerSrc = "../../js/pdfjs/build/pdf.worker.js";
                 loadPDF("{0}");
                 get_height()
             </script>
