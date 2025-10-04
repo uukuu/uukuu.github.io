@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数学分析 - 分类 - uuku 的小站</title>
+    <link>https://blog.nan2inf.com/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</link>
+    <description>西安交通大学, 数学系本科生, 计算机爱好者, 算法竞赛选手</description>
+    <generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha-20250818030548-c890f613</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.nan2inf.com/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>柯西列定义实数</title>
+      <link>https://blog.nan2inf.com/posts/%E6%9F%AF%E8%A5%BF%E5%88%97%E5%AE%9A%E4%B9%89%E5%AE%9E%E6%95%B0/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blog.nan2inf.com/posts/%E6%9F%AF%E8%A5%BF%E5%88%97%E5%AE%9A%E4%B9%89%E5%AE%9E%E6%95%B0/</guid>
+      <category domain="https://blog.nan2inf.com/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">数学分析</category>
+      <description>&lt;p&gt;&lt;strong&gt;定义&lt;/strong&gt;&#xA;设 $\lbrace x_n\rbrace $ 是由有理数组成的数列, 如果对任意的 $\varepsilon \in \mathbb{Q}_{&amp;gt;0}$, 均存在正整数 $n_\varepsilon$, 使得&lt;/p&gt;&#xA;$$\left|x_m-x_n\right|&amp;lt;\varepsilon,\quad  \forall \ m,n \ge n_\varepsilon,$$&lt;p&gt;那么称 $\lbrace x_n\rbrace $ 是一个 $\mathbb{Q}$ 上的柯西列.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

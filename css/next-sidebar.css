@@ -1,0 +1,77 @@
+/* ===== 主题变量：浅色默认 ===== */
+:root{
+  --nx-bg: #fff;
+  --nx-border: rgba(0,0,0,.08);
+  --nx-shadow: 0 10px 30px rgba(0,0,0,.08);
+  --nx-muted: rgba(0,0,0,.65);
+  --nx-accent: #2f7de1; /* 主题强调色，可按站点色改 */
+  --nx-header-grad: linear-gradient(135deg,#8bc6ec 0%,#9599e2 100%);
+}
+
+/* 深色：兼容多种主题切换写法 */
+html.dark,body.dark,[data-theme="dark"],html[theme="dark"]{
+  --nx-bg:#101318; --nx-border:rgba(255,255,255,.1);
+  --nx-shadow:0 10px 30px rgba(0,0,0,.45); --nx-muted:rgba(255,255,255,.75);
+  --nx-header-grad: linear-gradient(135deg,#3a7bd5 0%,#3a6073 100%);
+}
+
+/* ===== 卡片容器（NexT 风） ===== */
+.nx-card{
+  background: var(--nx-bg);
+  border: 1px solid var(--nx-border);
+  border-radius: 16px;
+  box-shadow: var(--nx-shadow);
+  overflow: hidden;
+  margin: 14px 0;
+}
+
+/* 顶部渐变横幅 + 头像悬浮 */
+.nx-card__header{
+  height: 84px;
+  background: var(--nx-header-grad);
+  position: relative;
+}
+.nx-card__avatar{
+  position: absolute; left: 50%; bottom: -28px; transform: translateX(-50%);
+  width: 76px; height: 76px; border-radius: 50%; object-fit: cover;
+  border: 3px solid var(--nx-bg); box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+.nx-card__avatar--placeholder{
+  position: absolute; left:50%; bottom:-28px; transform:translateX(-50%);
+  width: 76px; height: 76px; border-radius: 50%;
+  display:flex; align-items:center; justify-content:center;
+  background: var(--nx-bg); border:3px solid var(--nx-bg); box-shadow:0 6px 18px rgba(0,0,0,.25);
+  font-size: 34px;
+}
+
+/* 主体 */
+.nx-card__body{ padding: 40px 16px 12px; text-align:center; }
+.nx-card__name{ font-weight:700; font-size:1.05rem; }
+.nx-card__bio{ margin-top:.25rem; color: var(--nx-muted); }
+
+/* 社交按钮：NexT 风格的简洁 pill */
+.nx-card__links{ margin-top:.5rem; display:flex; gap:.5rem; justify-content:center; flex-wrap: wrap; }
+.nx-btn{
+  display:inline-flex; align-items:center; gap:.35rem;
+  padding:.3rem .6rem; border:1px solid var(--nx-border); border-radius:999px;
+  text-decoration:none; color:inherit; line-height:1;
+}
+.nx-btn:hover{ border-color: var(--nx-accent); color: var(--nx-accent); }
+
+/* 许可证徽章 */
+.nx-card__license{
+  margin-top:.6rem; display:inline-block; font-size:.75rem;
+  padding:.15rem .45rem; border-radius:.35rem;
+  border:1px dashed var(--nx-border); color: var(--nx-muted);
+}
+
+/* 底部进度条（↑ 97% 效果） */
+.nx-card__footer{ padding: 8px 12px 12px; display:flex; align-items:center; gap:.5rem; justify-content:center; }
+.nx-progress{
+  width: 60%; height: 8px; background: rgba(127,127,127,.15);
+  border-radius: 999px; overflow: hidden; position: relative;
+}
+.nx-progress__bar{
+  height: 100%; background: var(--nx-accent); width: 0%;
+}
+.nx-progress__label{ font-size:.8rem; color: var(--nx-muted); }

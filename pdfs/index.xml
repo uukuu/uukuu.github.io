@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>所有pdfs - uuku 的小站</title>
+    <link>http://localhost:1313/pdfs/</link>
+    <description>uuku 的小站</description>
+    <generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha-20250818030548-c890f613</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pdfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习笔记__summarize</title>
+      <link>http://localhost:1313/pdfs/pdfs/__summarize/</link>
+      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pdfs/pdfs/__summarize/</guid>
+      <category domain="http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/">数学</category>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;来源：$web&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;iframe src=&#39;http://localhost:1313/math/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0__summarize.pdf#view=FitH&#39; width=&#34;100%&#34; height=&#39;900&#39; style=&#34;border:none&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>数学_数学分析_欧拉积分</title>
+      <link>http://localhost:1313/pdfs/pdfs/__/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pdfs/pdfs/__/</guid>
+      <category domain="http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/">数学</category>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;来源：$web&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;iframe src=&#39;http://localhost:1313/math/%e6%95%b0%e5%ad%a6_%e6%95%b0%e5%ad%a6%e5%88%86%e6%9e%90_%e6%ac%a7%e6%8b%89%e7%a7%af%e5%88%86.pdf#view=FitH&#39; width=&#34;100%&#34; height=&#39;900&#39; style=&#34;border:none&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+  </channel>
+</rss>

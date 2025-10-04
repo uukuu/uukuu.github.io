@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>数分2025-09-25 - uuku 的小站</title><meta name="author" content="uuku">
+<meta name="description" content="题目 1 对满足 $|z|\neq 1$ 的复数 $z$, 证明不等式: $$\frac{||z|^2-z^2|}{2|z-1|}\leqslant \frac{|z|^2|z-1|}{||z|^2-1|}$$"><meta name="keywords" content='C&#43;&#43;, 算法竞赛, 数学, math'>
+  <meta itemprop="name" content="数分2025-09-25">
+  <meta itemprop="description" content="题目 1 对满足 $|z|\neq 1$ 的复数 $z$, 证明不等式: $$\frac{||z|^2-z^2|}{2|z-1|}\leqslant \frac{|z|^2|z-1|}{||z|^2-1|}$$">
+  <meta itemprop="datePublished" content="2025-09-25T13:33:16+08:00">
+  <meta itemprop="dateModified" content="2025-09-25T13:33:16+08:00">
+  <meta itemprop="wordCount" content="29">
+  <meta itemprop="keywords" content="数学分析"><meta property="og:url" content="https://blog.nan2inf.com/posts/%E6%95%B0%E5%88%862025-09-25/">
+  <meta property="og:site_name" content="uuku 的小站">
+  <meta property="og:title" content="数分2025-09-25">
+  <meta property="og:description" content="题目 1 对满足 $|z|\neq 1$ 的复数 $z$, 证明不等式: $$\frac{||z|^2-z^2|}{2|z-1|}\leqslant \frac{|z|^2|z-1|}{||z|^2-1|}$$">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-25T13:33:16+08:00">
+    <meta property="article:modified_time" content="2025-09-25T13:33:16+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="数分2025-09-25">
+  <meta name="twitter:description" content="题目 1 对满足 $|z|\neq 1$ 的复数 $z$, 证明不等式: $$\frac{||z|^2-z^2|}{2|z-1|}\leqslant \frac{|z|^2|z-1|}{||z|^2-1|}$$">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://blog.nan2inf.com/posts/%E6%95%B0%E5%88%862025-09-25/" title="数分2025-09-25 - uuku 的小站" /><link rel="prev" type="text/html" href="https://blog.nan2inf.com/posts/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E4%BD%9C%E4%B8%9A250922/" title="泛函分析作业250922" /><link rel="next" type="text/html" href="https://blog.nan2inf.com/posts/%E9%AB%98%E4%BB%A32025-09-25/" title="高代2025-09-25" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "数分2025-09-25",
+    "inLanguage": "zh-cn",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/blog.nan2inf.com\/posts\/%E6%95%B0%E5%88%862025-09-25\/"
+    },"genre": "posts","wordcount":  29 ,
+    "url": "https:\/\/blog.nan2inf.com\/posts\/%E6%95%B0%E5%88%862025-09-25\/","datePublished": "2025-09-25T13:33:16+08:00","dateModified": "2025-09-25T13:33:16+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "uuku"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script><link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="/css/next-sidebar.css">
+
+
+</head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="uuku 的小站"><span class="header-title-text">uuku 的小站</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">首页</a></li><li class="menu-item">
+              <a class="menu-link" href="/posts/">文章</a></li><li class="menu-item">
+              <a class="menu-link" href="/posts/math/">数学</a></li><li class="menu-item">
+              <a class="menu-link" href="/posts/algorithms/">算法</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/">分类</a></li><li class="menu-item">
+              <a class="menu-link" href="/collections/">合集</a></li><li class="menu-item">
+              <a class="menu-link" href="/awards/">获奖</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">关于</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜点啥…" id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="uuku 的小站"><span class="header-title-text">uuku 的小站</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="搜点啥…" id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/">首页</a></li><li class="menu-item"><a class="menu-link" href="/posts/">文章</a></li><li class="menu-item"><a class="menu-link" href="/posts/math/">数学</a></li><li class="menu-item"><a class="menu-link" href="/posts/algorithms/">算法</a></li><li class="menu-item"><a class="menu-link" href="/categories/">分类</a></li><li class="menu-item"><a class="menu-link" href="/collections/">合集</a></li><li class="menu-item"><a class="menu-link" href="/awards/">获奖</a></li><li class="menu-item"><a class="menu-link" href="/about/">关于</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container" data-reverse><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"><div class="details collection-details open">
+      <div class="details-summary collection-summary">
+        <i class="fa-solid fa-layer-group fa-fw" aria-hidden="true"></i>
+        <span class="collection-name" title="合集">数学分析</span>
+        <span class="collection-count">5</span><i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+      <div class="details-content collection-content">
+        <nav>
+          <ul class="collection-list"><li class="collection-item"><a href="/posts/%E6%95%B0%E5%88%862025-08-19/" title="数分2025-08-19">数分2025-08-19</a></li><li class="collection-item"><a href="/posts/%E6%95%B0%E5%88%862025-08-20/" title="数分2025-08-20">数分2025-08-20</a></li><li class="collection-item"><a href="/posts/%E6%95%B0%E5%88%862025-08-21/" title="数分2025-08-21">数分2025-08-21</a></li><li class="collection-item"><a href="/posts/%E6%95%B0%E5%88%862025-08-22/" title="数分2025-08-22">数分2025-08-22</a></li><li class="collection-item"><span class="active" title="数分2025-09-25">数分2025-09-25</span></li></ul>
+          <div class="collection-nav-simple"><a href="/posts/%E6%95%B0%E5%88%862025-08-22/" class="collection-nav-item" rel="prev" title="数分2025-08-22"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i></a><span class="text-secondary">5/5</span><i class="fa-solid fa-angle-right fa-fw collection-nav-item text-secondary" aria-hidden="true"></i></div>
+        </nav>
+      </div>
+    </div>
+    <aside class="widget post__collections">
+      <div class="widget--title"><span>合集：每日一题-数学分析</span></div>
+      <ul class="widget-list">
+          <li>
+            <a href="/posts/%E6%95%B0%E5%88%862025-08-19/">
+              数分2025-08-19
+            </a>
+          </li>
+          <li>
+            <a href="/posts/%E6%95%B0%E5%88%862025-08-20/">
+              数分2025-08-20
+            </a>
+          </li>
+          <li>
+            <a href="/posts/%E6%95%B0%E5%88%862025-08-21/">
+              数分2025-08-21
+            </a>
+          </li>
+          <li>
+            <a href="/posts/%E6%95%B0%E5%88%862025-08-22/">
+              数分2025-08-22
+            </a>
+          </li>
+          <li>
+            <a href="/posts/%E6%95%B0%E5%88%862025-09-25/" class="active">
+              数分2025-09-25
+            </a>
+          </li>
+      </ul>
+    </aside>
+
+
+
+
+
+<div class="widget c-author nx-card">
+  <div class="nx-card__header"><div class="nx-card__avatar nx-card__avatar--placeholder">👤</div></div>
+
+  <div class="nx-card__body">
+    <div class="nx-card__name">uuku</div><div class="nx-card__bio">学又学不会, 躺又躺不平!</div>
+
+    <div class="nx-card__links"><a class="nx-btn" href="https://blog.nan2inf.com" target="_blank" rel="noopener" aria-label="主页"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 12l9-9 9 9-1.5 1.5L12 5.5 4.5 13.5 3 12z"/><path d="M5 10v10h5v-6h4v6h5V10l-7-7-7 7z"/></svg><span>主页</span>
+        </a><a class="nx-btn" href="https://github.com/uukuu" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.77-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.46 11.46 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.09.82 2.2v3.26c0 .32.22.69.83.58A12 12 0 0 0 12 .5z"/></svg><span>GitHub</span>
+        </a><a class="nx-btn" href="https://www.luogu.com.cn/user/46091" target="_blank" rel="noopener" aria-label="Luogu"><?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1755596379422" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5320" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M524.95 44.17c19.173-2.304 42.723-1.935 56.18 14.242 15.763 20.094 16.5 48.16 9.587 71.85-8.618 29.818-21.661 58.254-37.607 84.846-18.435 31.201-44.152 57.102-68.716 83.418-21.385 23.366-47.101 42.078-72.219 61.112-10 7.558-19.218 16.867-24.196 28.574-2.673 12.028 3.365 23.873 10.186 33.367 22.306 16.775 51.202 23.827 70.56 44.658 17.604 17.882 29.08 41.202 36.5 64.937 8.48 23.92-13.78 44.244-32.998 54.245-24.75 9.816-52.217 4.977-77.657 0.737-13.734-2.028-25.394-10.093-35.441-19.218-29.035-26.408-57.148-53.876-84.524-82.035-23.735-26.685-50.281-58.485-43.645-96.968 8.066-35.902 27.56-69.73 55.95-93.465 22.583-18.85 44.06-39.128 63.278-61.434 39.358-48.438 72.126-101.991 113.65-148.723 16.316-18.343 36.456-35.073 61.113-40.142z" p-id="5321"></path><path d="M492.966 328.344c-0.6-16.453 14.84-27.975 30.371-27.606 44.705-2.12 89.087 9.448 133.838 6.452 14.517-0.276 30.002-1.336 43.183 5.9 30.418 15.9 53.784 42.261 71.804 71.02 12.95 18.665 30.602 39.45 23.92 63.877-12.03 37.93-45.811 62.264-71.989 90.146-48.944 45.396-93.142 95.493-139.275 143.608 11.982 0.6 23.965 1.475 35.856 3.272-23.69-0.046-49.636-3.272-71.159 8.803-14.425 6.82-10.738 24.61-10.784 37.607-35.58 36.501-69.915 74.154-104.48 111.623-20.74 25.394-45.81 47.608-61.434 76.874-7.927 12.95-14.61 28.251-28.85 35.487-19.772 10.922-43.369 8.111-65.076 8.157-25.486-1.428-56.964-2.212-72.495-26.085 1.336-24.058 16.499-43.46 29.265-62.679 27.468-39.589 58.853-76.182 90.423-112.452 27.238-28.16 58.67-51.849 86.368-79.547 25.21-25.44 51.064-50.281 75.26-76.69 42.492-45.165 87.796-87.933 126.187-136.786 6.775-7.328 3.871-17.697 3.917-26.638-34.98-15.624-66.55-37.976-97.474-60.375-17.606-11.614-30.418-32.307-27.376-53.968z" p-id="5322"></path><path d="M549.515 693.816c21.523-12.075 47.47-8.849 71.159-8.803 32.537 4.332 63.416 21.292 83.325 47.562 22.445 29.404 40.741 61.665 59.73 93.327 20.969 33.275 54.336 57.47 71.527 93.28 4.793 8.066 3.318 17.606 3.594 26.546-7.742 6.96-15.07 16.592-26.454 16.638-27.191 2.304-54.751 1.567-81.85-1.751-30.74-4.24-50.973-31.386-64.523-56.964-22.214-42.953-58.023-76.228-88.21-113.329-14.656-18.342-32.446-35.763-39.082-58.899 0.046-12.997-3.641-30.786 10.784-37.607z" p-id="5323"></path></svg><span>Luogu</span>
+        </a><a class="nx-btn" href="https://codeforces.com/profile/uuku" target="_blank" rel="noopener" aria-label="CF"><?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1755596435873" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7172" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M192 320a64 64 0 0 1 64 64v448a64 64 0 0 1-64 64H64c-35.296 0-64-28.672-64-64V384c0-35.328 28.704-64 64-64z m384-192a64 64 0 0 1 64 64v640a64 64 0 0 1-64 64h-128c-35.296 0-64-28.672-64-64V192c0-35.328 28.704-64 64-64z m384 320a64 64 0 0 1 64 64v320a64 64 0 0 1-64 64h-128a64 64 0 0 1-64-64V512a64 64 0 0 1 64-64z" fill="#1F8ACB" p-id="7173"></path></svg><span>CF</span>
+        </a><a class="nx-btn" href="https://atcoder.jp/users/uuku" target="_blank" rel="noopener" aria-label="AT"><?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1755596435873" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7172" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M192 320a64 64 0 0 1 64 64v448a64 64 0 0 1-64 64H64c-35.296 0-64-28.672-64-64V384c0-35.328 28.704-64 64-64z m384-192a64 64 0 0 1 64 64v640a64 64 0 0 1-64 64h-128c-35.296 0-64-28.672-64-64V192c0-35.328 28.704-64 64-64z m384 320a64 64 0 0 1 64 64v320a64 64 0 0 1-64 64h-128a64 64 0 0 1-64-64V512a64 64 0 0 1 64-64z" fill="#1F8ACB" p-id="7173"></path></svg><span>AT</span>
+        </a><a class="nx-btn" href="mailto:nan22inf@google.com" target="_blank" rel="noopener" aria-label="Email"><svg viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z'/></svg><span>Email</span>
+        </a>
+    </div>
+      <div class="nx-card__license">CC BY-NC-SA</div>
+  </div>
+</div>
+</aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>数分2025-09-25</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      uuku</span></span><span class="post-included-in">&nbsp;收录于 <a href="/collections/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" class="post-collection" title="合集 - 数学分析"><i class="fa-solid fa-layer-group fa-fw" aria-hidden="true"></i> 数学分析</a></span></div><div class="post-meta-line"><span title="发布于 2025-09-25 13:33:16"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2025-09-25">2025-09-25</time></span>&nbsp;<span title="29 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 100 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#题目-1">题目 1</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 class="heading-element" id="题目-1"><span>题目 1</span>
+  <a href="#%e9%a2%98%e7%9b%ae-1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>对满足 $|z|\neq 1$ 的复数 $z$, 证明不等式: </p>
+$$\frac{||z|^2-z^2|}{2|z-1|}\leqslant \frac{|z|^2|z-1|}{||z|^2-1|}$$<details class="qa-answer"  >
+  <summary><strong>答案(请点击打开)</strong><span class="qa-toggle"></span></summary>
+  <div class="qa-body">
+    
+  </div>
+</details></div><div class="collection-card">
+      <div class="collection-title text-secondary">收录于 <a href="/collections/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"><i class="fa-solid fa-layer-group fa-fw" aria-hidden="true"></i> <span>合集・数学分析</span></span></a> 5</div>
+      <div class="collection-nav">
+        <a href="/posts/%E6%95%B0%E5%88%862025-08-22/" class="collection-nav-item" rel="prev" title="数分2025-08-22"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i><span>数分2025-08-22</span>
+          </a></div>
+    </div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="更新于 2025-09-25 13:33:16">更新于 2025-09-25&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 X" data-sharer="twitter" data-url="https://blog.nan2inf.com/posts/%E6%95%B0%E5%88%862025-09-25/" data-title="数分2025-09-25"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://blog.nan2inf.com/posts/%E6%95%B0%E5%88%862025-09-25/"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://blog.nan2inf.com/posts/%E6%95%B0%E5%88%862025-09-25/" data-title="数分2025-09-25"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90%E4%BD%9C%E4%B8%9A250922/" class="post-nav-item" rel="prev" title="泛函分析作业250922"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>泛函分析作业250922</a><a href="/posts/%E9%AB%98%E4%BB%A32025-09-25/" class="post-nav-item" rel="next" title="高代2025-09-25">高代2025-09-25<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="giscus" class="comment">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="uukuu/blog-comments"
+            data-repo-id="R_kgDON1UDbQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDON1UDbc4CmtoB"
+            data-mapping="pathname"
+            data-strict="0"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="true"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><div id="toc-uuku">
+      <h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div>
+    </div></aside></main><footer class="footer">
+    <div class="footer-container">
+<script  color="100,182,193" opacity='1' zIndex="-1" count="200" src="/js/canvas-nest.js" type="text/javascript"></script>
+
+
+<script>
+(function () {
+  function typeset() {
+    if (!(window.MathJax && MathJax.typesetPromise)) return false;
+    const blocks = document.querySelectorAll('.atcoder-tex-block');
+    if (!blocks.length) return true;
+    
+    return MathJax.typesetPromise(Array.from(blocks))
+      .catch(function(){   });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      if (!typeset()) window.addEventListener('load', typeset, { once: true });
+    });
+  } else {
+    if (!typeset()) window.addEventListener('load', typeset, { once: true });
+  }
+})();
+</script>
+<script>
+document.addEventListener('click', function (e) {
+  const btn = e.target.closest('.mix-copy-btn'); if (!btn) return;
+  const box = btn.closest('.mathf-wrap'); if (!box) return;
+  const src = document.getElementById(box.getAttribute('data-raw-id')); if (!src) return;
+  const txt = src.textContent || '';
+  (async () => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(txt);
+      } else {
+        const ta=document.createElement('textarea');
+        ta.value=txt; ta.style.position='fixed'; ta.style.left='-9999px';
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta);
+      }
+      btn.textContent='copied'; setTimeout(()=>btn.textContent='copy',1200);
+    } catch { btn.textContent='copy failed'; setTimeout(()=>btn.textContent='copy',1200); }
+  })();
+});
+</script>
+<div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.148.2"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.4.0-alpha-20250818030548-c890f613"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
+              <a href="/">uuku</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="查看评论"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">该网站在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/js/lib/mathjax.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light","origin":"https://giscus.app"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/search.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"version":"v0.4.0-alpha-20250818030548-c890f613"};</script><script src="/js/theme.min.js" defer></script></body>
+</html>
