@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习 - 分类 - uuku 的小站</title>
+    <link>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</link>
+    <description>数学与算法的笔记、作业与竞赛题解。</description>
+    <generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
+    <language>zh-cn</language>
+    <managingEditor>nan22inf@google.com (uuku)</managingEditor>
+    <webMaster>nan22inf@google.com (uuku)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

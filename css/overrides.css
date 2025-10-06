@@ -1,0 +1,191 @@
+/* Overrides to ensure canvas background and dark theme render correctly */
+
+/* Ensure the canvas-root always fills viewport and stays behind content */
+#canvas-root {
+  position: fixed !important;
+  inset: 0 !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+  background: transparent !important;
+}
+
+#canvas-root canvas {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+/* Ensure dark theme background covers full viewport and remove unexpected background-images */
+html[data-theme="dark"], body[data-theme="dark"], [data-theme="dark"] {
+  background-color: #292a2e !important;
+  background-image: none !important;
+}
+
+/* Keep main wrapper transparent so canvas shows uniformly behind content */
+.wrapper {
+  background: transparent !important;
+}
+
+/* Neutralize possible pseudo-element decorations that produce side bars */
+/* Neutralize possible pseudo-element decorations that produce side bars */
+html[data-theme="dark"]::before,
+html[data-theme="dark"]::after,
+[data-theme="dark"]::before,
+[data-theme="dark"]::after,
+body[data-theme="dark"]::before,
+body[data-theme="dark"]::after {
+  background: none !important;
+  content: none !important;
+}
+
+/* Ensure mask element (if used) doesn't create visual sidebars */
+#mask, #mask * {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+/* Small safety: ensure pre.highlight background respects theme */
+.single .content .highlight pre,
+.chroma {
+  background-color: transparent !important;
+}
+
+/* =========================
+   Archive / Directory overrides
+   - Makes list/archives look more like a traditional blog index:
+     left-aligned titles, clearer spacing, hover highlight, responsive.
+   - Tweak the values below (colors, spacing) to match the remote site.
+   ========================= */
+
+/* Container tweaks */
+.archive {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem 2rem;
+}
+
+.archive .single-title {
+  text-align: left !important; /* remote uses left-aligned titles */
+  font-size: 1.8rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.archive .single-subtitle {
+  text-align: left !important;
+  color: var(--global-font-secondary-color, #6b6f76);
+  margin-bottom: 1rem !important;
+}
+
+/* Each archive row */
+.archive-item {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0.6rem 0.5rem !important;
+  margin: 0.35rem 0 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.04) !important;
+  transition: background-color 0.15s ease-in-out, transform 0.08s ease;
+}
+
+.archive-item:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+  transform: translateY(-1px);
+}
+
+.archive-item-link {
+  display: block !important;
+  flex: 1 1 auto !important;
+  /* Use normal text color for category/archive links instead of blue */
+  color: inherit !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  padding-right: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.archive-item-link:hover {
+  color: var(--global-link-hover-color, #0b5ed7) !important;
+}
+
+.archive-item-date {
+  min-width: 6.5rem !important;
+  text-align: right !important;
+  color: var(--global-font-secondary-color, #777) !important;
+  font-size: 0.95rem !important;
+  flex: 0 0 auto !important;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px) {
+  .archive-item {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .archive-item-date {
+    margin-top: 0.45rem !important;
+    text-align: left !important;
+  }
+
+  .archive .taxonomy-cards .card-item {
+    width: 100% !important;
+  }
+}
+
+/* Small accessibility improvement: increase hit area for titles */
+.archive-item-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* End archive overrides */
+
+
+#toc-uuku{
+    margin-left:auto;
+    max-width:250px;
+}
+
+/* Ensure taxonomy/category/tag/archive pages don't force links to blue.
+   Make links inherit normal text color and avoid special blue highlighting. */
+.archive a,
+.archive-item-link,
+.archive .archive-item-link a,
+.taxonomy a,
+.taxonomies a,
+.tags a,
+.categories a,
+.term a,
+.taxonomy-cards a,
+.card-item a,
+.m-link,
+.m-link a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.archive a:hover,
+.taxonomy a:hover,
+.tags a:hover,
+.categories a:hover,
+.archive-item-link:hover,
+.m-link:hover {
+  color: inherit !important;
+  text-decoration: underline !important; /* subtle hover feedback while keeping text color */
+}
+
+.aside-collection{
+    margin-top:109px;
+}

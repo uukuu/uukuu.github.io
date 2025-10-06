@@ -1,0 +1,23 @@
+要将 txt 文件中的 latex 代码转为markdown 博客文章格式, 请不要修改内容, 只适配markdown即可
+请将其中的'\problem[*]' 改为 '## *' 并换行, 确保题目描述新起一行
+先将 \{ 替换为 \lbrace,  \} 替换为 \rbrace 避免括号匹配错误, 注意在 \lbrace 和 \rbrace 后加空格
+将 '\begin{proof}' 改为 '{{< admonition note "答案" false >}}'
+将 '\end{proof}' 改为 '{{< /admonition >}}' 其中 proof 可以替换为 solution, 即 \begin{solution} 和 \end{solution} 也做相同变化
+将 \begin{lstlisting}\end{lstlisting} 包括代码改为用 ```cpp 和 ``` 包括代码
+将 \begin{itemize} 改为 markdown 中的列表格式并注意缩进影响
+忽略 \begin{figure}\end{figure} 加载图片
+忽略 \label{} 标签
+在第一个 \begin{proof} 或者 \begin{solution} 前加入一行  <!--more-->
+将 \R 替换为 \mathbb{R}
+将 \N 替换为 \mathbb{N}
+将 \C 替换为 \mathbb{C}
+将 \Q 替换为 \mathbb{Q}
+将 \td 替换为 \text{d}
+将 \ti 替换为 \text{i}
+将 \norm{*1} 替换为 \Vert *1 \Vert, 注意未使用大括号的 \norm *1 格式也变为 \Vert *1 \Vert
+将 \mint[*1]^*2 替换为 \displaystyle\int_{*1}^{*2} 注意识别大括号匹配等问题, 也不要多大括号.
+将 \begin{figure}... 添加图片改为 markdown 格式添加图片, 注意控制图片大小, 并将图片目录改为 https://blog.nan2inf.com/figures/.... 从figures开始后续路径一致.\
+将 \mst 替换为 \text{\ s.t.\ }
+整段文字删除缩进, 但保留空余换行
+
+如果遇到不是latex默认语法的语句请告诉我
