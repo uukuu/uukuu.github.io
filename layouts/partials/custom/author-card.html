@@ -35,7 +35,12 @@
       {{- end }}
 
       {{- with $author.luogu }}
-        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Luogu">{{ dict "Class" "fa-solid fa-book" | partial "plugin/icon.html" }}<span>Luogu</span></a>
+        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Luogu">
+          {{- $luoguLocal := "/images/social/luogu.png" -}}
+          <img src="{{ $luoguLocal }}" alt="Luogu" style="width:1.2em;height:1.2em;vertical-align:middle;margin-right:.25em;" onerror="this.style.display='none'">
+          <!-- {{ dict "Class" "fa-solid fa-book" | partial "plugin/icon.html" }} -->
+          <span>Luogu</span>
+        </a>
       {{- end }}
 
       {{- with $author.codeforces }}
