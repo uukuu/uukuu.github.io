@@ -1,0 +1,6 @@
+diff --git a/themes/FixIt b/themes/FixIt
+--- a/themes/FixIt
++++ b/themes/FixIt
+@@ -1 +1 @@
+-Subproject commit 42a5ebdc71dd06b7424009e996b668db9c9a3af0
++Subproject commit 42a5ebdc71dd06b7424009e996b668db9c9a3af0-dirty

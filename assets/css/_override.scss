@@ -1,0 +1,53 @@
+/* Site overrides to match blog.nan2inf.com appearance */
+
+// Content transparency
+.article, .content, .post, article {
+  background-color: rgba(255,255,255, 0.0);
+}
+
+// If theme puts a wrapping container with a class, use the store param later to tweak
+.main, .page, .site {
+  --site-content-opacity: 0.95;
+}
+
+// canvas background placeholder: actual canvas script is loaded via footer.customScripts
+body {
+  background-color: #0b1220; // fallback dark
+}
+
+// improve code block appearance (Monokai-ish adjustments)
+pre, code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Noto Mono", "Liberation Mono", monospace;
+}
+
+pre {
+  background: #2d2a2e;
+  color: #f8f8f2;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* inline code */
+code {
+  background: rgba(0,0,0,0.6);
+  padding: .12rem .3rem;
+  border-radius: 4px;
+}
+
+/* subtle watermark using CSS (in addition to theme watermark) */
+.site-watermark {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.03;
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+/* Import custom next-sidebar styles so the theme's SCSS pipeline will include them */
+@import "next-sidebar.css";

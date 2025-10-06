@@ -1,0 +1,159 @@
+baseURL: "http://localhost:1313/"
+defaultContentLanguage: "zh-CN"
+languageCode: "zh-CN"
+languageName: "简体中文"
+title: "uuku 的小站"
+theme: "FixIt"
+languages:
+  zh-CN:
+    languageName: "简体中文"
+    weight: 1
+params:
+  description: "数学与算法的笔记、作业与竞赛题解。"
+  keywords:
+    - "数学"
+    - "算法"
+    - "编程"
+  defaultTheme: "auto"
+  dateFormat: "2006-01-02"
+  withSiteTitle: true
+  titleDelimiter: "-"
+  author:
+    name: "uuku"
+    email: "nan22inf@google.com"
+    link: "https://blog.nan2inf.com/"
+    avatar: ""
+    github: "https://github.com/uukuu"
+    luogu: "https://www.luogu.com.cn/user/46091"
+    codeforces: "https://codeforces.com/profile/uuku"
+    atcoder: "https://atcoder.jp/users/uuku"
+    bio: "学又学不会, 躺又躺不平!"
+    license: "CC BY-NC-SA"
+  app:
+    title: "nan2inf"
+    noFavicon: false
+    svgFavicon: ""
+    iconColor: "#5bbad5"
+    tileColor: "#da532c"
+
+  appearance:
+    background: "canvas"
+    contentOpacity: 0.95
+    watermark:
+      enable: true
+      content: "uuku"
+      opacity: 0.03
+
+  search:
+    provider: "fuse"
+
+  # Custom head snippets (array). Place under params so theme partials read them.
+  customHead:
+    - '<meta charset="utf-8">'
+    - '<meta name="viewport" content="width=device-width, initial-scale=1">'
+    - '<meta name="theme-color" content="#5bbad5">'
+    - '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    - '<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style">'
+    - '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">'
+    - |-
+      <script>
+        window.MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],   // 行内公式
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],// 行间公式
+            packages: { '[+]': ['base','ams'] },        // 需要的包
+            macros: {                                   
+              // 这里可定义你的常用宏，例如：
+              // '\\R': '{\\mathbb{R}}'
+            }
+          },
+          options: {
+            enableMenu: false
+          },
+          svg: { fontCache: 'global' } // 性能更好一点
+        };
+      </script>
+    - '<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>'
+    - '<link rel="stylesheet" href="/css/overrides.css">'
+    - '<link rel="stylesheet" href="/css/next-sidebar.css">'
+
+  # Custom partials to inject into theme mount points (see layouts/_partials/custom.html)
+  customPartials:
+    aside:
+      - "custom/author-card.html"
+
+  # Page defaults
+  page:
+    toc:
+      enable: true
+      position: "left"
+      collapse: false
+      depth: 3
+    math:
+      enable: true
+      type: "mathjax"
+      
+    collectionList: true
+    collectionNavigation: true
+
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  collection: "collections"
+# Menu configuration - top navigation. Adjust items, order, icons and URLs to match your remote site.
+menu:
+  main:
+    - identifier: home
+      name: "首页"
+      url: "/"
+      weight: 1
+      params:
+        icon: "fa-solid fa-home"
+    - identifier: algorithms
+      name: "算法"
+      url: "/posts/algo"
+      weight: 2
+      params:
+        icon: "fa-solid fa-archive"
+    - identifier: math
+      name: "数学"
+      url: "/posts/math"
+      weight: 2
+      params:
+        icon: "fa-solid fa-archive"
+    - identifier: categories
+      name: "分类"
+      url: "/categories/"
+      weight: 3
+      params:
+        icon: "fa-solid fa-folder-tree"
+    - identifier: collections
+      name: "合集"
+      url: "/collections/"
+      weight: 4
+      params:
+        icon: "fa-solid fa-tags"
+    - identifier: about
+      name: "关于"
+      url: "/about/"
+      weight: 10
+      params:
+        icon: "fa-solid fa-user"
+    - identifier: friends
+      parent: about
+      name: "友链"
+      url: "/friends/"
+      weight: 11
+      params:
+        icon: "fa-solid fa-handshake"
+
+  # If you want to inject custom partials into the header menus, set these params under the top-level `params.customPartials`.
+
+markup:
+  highlight:
+    noClasses: false
+    style: "monokai"
+    linenos: true
+    lineNumbersInTable: false
+    codeFences: true

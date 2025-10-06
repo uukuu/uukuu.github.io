@@ -1,0 +1,15 @@
+{{- /* Render custom head scripts from site params (array of strings or maps) */ -}}
+{{- $items := .Site.Params.customHead | default (slice) -}}
+{{- range $idx, $item := $items -}}
+  {{- $t := printf "%T" $item -}}
+  {{- if eq $t "string" -}}
+    {{- printf "%s" $item | safeHTML -}}
+  {{- else if ne $t "string" -}}
+    {{- /* assume a map-like object */ -}}
+    {{- printf "<script" -}}
+    {{- range $k, $v := $item -}}
+      {{- printf " %s=\"%s\"" $k $v -}}
+    {{- end -}}
+    {{- printf "></script>\n" -}}
+  {{- end -}}
+{{- end -}}

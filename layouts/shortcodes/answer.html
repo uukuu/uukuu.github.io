@@ -1,0 +1,13 @@
+<details class="answer-block">
+  <summary>{{ .Get "title" | default "答案(点击展开)" }}</summary>
+  <div class="answer-content">
+    {{ .Inner | safeHTML }}
+  </div>
+</details>
+
+<style>
+/* Minimal styling for answer shortcode to blend with theme */
+.answer-block{margin:0.8rem 0;padding:0.6rem;border-radius:6px;border:1px solid var(--muted);background:var(--panel-bg);} 
+.answer-block summary{cursor:pointer;font-weight:600}
+.answer-content{margin-top:0.6rem}
+</style>

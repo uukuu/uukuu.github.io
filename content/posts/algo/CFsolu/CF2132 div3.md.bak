@@ -1,0 +1,467 @@
+---
+title: CF2132 div.3
+date: 2025-08-22 19:00:00
+type: 
+mathjax: true
+tag: 
+ - 算法竞赛
+ - Codeforces
+categories:
+ - 算法竞赛
+collections: [CodeForces]
+---
+
+## A
+
+### code
+
+```cpp
+int T,n,m;
+string a,b,c;
+int main()
+{
+	cin>>T;
+	while(T--)
+	{
+		cin>>n;
+		cin>>a;
+		cin>>m;
+		cin>>b;
+		cin>>c;
+		for(int i=0;i<m;i++)
+			if(c[i]=='D')
+			{
+				a+=b[i];
+			}
+			else a= b[i]+a;
+		cout<<a<<'\n';
+	}
+    return 0;
+}
+```
+
+## B
+
+### code
+
+```cpp
+int T;
+ll n,a[20],tot;
+int main()
+{
+	read(T);
+	while(T--)
+	{
+		read(n);
+      ll p=1;
+		tot=0;
+		for(int i=1;i<=18;i++)
+		{
+			p*=10;
+			if(p+1>n)break;
+			if(n%(p+1)==0)a[++tot]=n/(p+1);
+		}
+		reverse(a+1,a+tot+1);
+		write(tot);
+		for(int i=1;i<=tot;i++)write(a[i],i<tot?' ':'\n');
+	}
+    flushout();
+    return 0;
+}
+```
+
+## C1
+
+### code
+
+```cpp
+int T,n;
+int main()
+{
+	read(T);
+	while(T--)
+	{
+		read(n);
+		int cost=0,p=1,i=0;
+		while(n)cost+=n%3*(p*3+i*p/3),nn/=3,i++,p*=3;
+		printf("%lld\n",cost);
+	}
+    return 0;
+}
+```
+
+
+## C2. The Cunning Seller
+
+### 题意
+
+每次交易可以花 $3^{x+1} + x \cdot 3^{x-1}$ 元, 买 $3^x$ 个物品. 求购买次数不超过 $k$ 次, 购买总数恰好为 $n$ 的物品最少要花多少钱.
+
+### 题解
+
+首先每次买只能买 $3^x$ 个, 第一反应肯定是转三进制考虑问题. 进一步观察每次的花费考虑如果将一次购买分为三次会有如下变化:
+
+$$
+3^{x+1} + x \cdot 3^{x-1} - 3(3^x + (x - 1)3^{x-2}) = 3^{x-1}
+$$
+
+也就是将一次购买分解成三次购买更优, 并且分解越高位的购买省的钱越多. 所以只需在次数限制内贪心的从高位到低位往下分解即可.
+
+### code
+```cpp
+int T;
+int n,k,num[40],tot;
+int main()
+{
+	read(T);
+	while(T--)
+	{
+		read(n),read(k);
+		int nn=n,cnt=0;
+		tot=0;
+		while(nn)num[tot++]=nn%3,nn/=3;
+		for(int i=0;i<tot;i++)cnt+=num[i];
+		if(cnt>k)puts("-1");
+		else
+		{
+			for(int i=tot-1;i;i--)
+			{
+				if(num[i]*2+cnt<=k)
+				{
+					num[i-1]+=num[i]*3;
+					cnt+=num[i]*2;
+					num[i]=0;
+				}
+				else
+				{
+					int ct=(k-cnt)/2;
+					num[i-1]+=ct*3;
+					num[i]-=ct;
+					break;
+				}
+			}
+			ll cost=0,p=1;
+			for(int i=0;i<tot;i++)
+			{
+				cost+=num[i]*(p*3+i*p/3);
+				p*=3;
+			}
+			printf("%lld\n",cost);
+		}
+	}
+    return 0;
+}
+```
+
+## D From 1 to Infinity
+
+### 题意
+
+将自然数写成一列 (123456789101112...), 求其中前 $k$ 个数字的和.
+
+### 题解
+
+首先先算出完整的数字到那里, 将后面不完成的答案统计一下, 然后就是经典数位 dp [[ZJOI2010] 数字计数.](https://www.luogu.com.cn/problem/P2602)
+
+ps: 若干年前的紫题现在都绿了.
+
+### code
+
+```cpp
+const int N=1e5+10,lm=18;
+int T;
+const ll c[]={0,1,3,6,10,15,21,28,36,45};
+ll d[20],k;
+ll work(int n,ll cnt,int re)
+{
+	int nn=n;
+	ll p=1;
+	while(n--)p*=10;
+	p/=10;
+	p+=cnt;
+	nn-=re;
+	while(nn--)p/=10;
+	ll res=0;
+	while(p)res+=p%10,p/=10;
+	return res;
+}
+ll b[20],lb;
+ll as[20],cnt[20],pw[20],f[20];
+inline void work2(ll *a,int len,ll *ans,int tp)
+{
+	memset(cnt,0,sizeof(cnt));
+	for(int i=1;i<=len;i++)cnt[a[i]]++,ans[a[i]]=(ans[a[i]]+tp);
+	ll val=1;
+	for(int i=1;i<=len;i++)
+	{
+		cnt[a[i]]--;
+		for(int j=0;j<10;j++)ans[j]=(ans[j]+1ll*tp*cnt[j]*a[i]*pw[i-1]+1ll*tp*f[i-1]*a[i]);
+		for(int j=(i<len?0:1);j<a[i];j++)ans[j]=(ans[j]+1ll*tp*pw[i-1]);
+		if(i>1)ans[0]=(ans[0]-tp*pw[i-2]);
+	}
+	return;
+}
+int main()
+{
+	pw[0]=1;
+	for(int i=1;i<=lm;i++)pw[i]=pw[i-1]*10;
+	for(int i=1;i<=lm;i++)
+		d[i]=pw[i-1]*9*i;
+	f[1]=1;
+	for(int i=2;i<lm;i++)f[i]=(1ll*f[i-1]*10+pw[i-1]);
+	read(T);
+	while(T--)
+	{
+		read(k);
+		int n=1;
+		ll sm=0,ans=0;
+		while(sm+d[n]<=k)sm+=d[n],n++;
+		ll cnt=(k-sm)/n,p=1;
+		ans+=work(n,cnt,(k-sm)%n);
+		for(int i=1;i<n;i++)p*=10;
+		cnt+=p-1;
+		lb=0;
+		ll bb=cnt;
+		for(int i=1;i<=lm;i++)as[i]=0; 
+		while(bb)b[++lb]=bb%10,bb/=10;
+		work2(b,lb,as,1);
+		for(int i=1;i<=9;i++)ans+=as[i]*i;
+		write(ans);
+	}
+    return 0;
+}
+```
+
+## E Arithmetics Competition
+
+### 题意
+
+给你两个数组 $a_i, b_i$, 长度分别为 $n, m$. 有 $q$ 次询问, 每次询问给出 $x, y, z$, 要求从这两个数组中一共选 $z$ 个数, 其中从 $a_i$ 中选取不超过 $x$ 个, 从 $b_i$ 中选取不超过 $y$ 个. 求这 $z$ 个数的和最大是多少.
+
+### 题解
+
+首先, 肯定要排序, 最终在各个数组内部的数肯定是最大的若干个.
+
+下面就要考虑每个数组取多少个数.
+
+做一次归并排序, 求出取 $x$ 个 $a_i$ 会取出总的多少个数, $b_i$ 同理.
+
+那么对于一次询问, 我们就可以通过预处理的东西快速得到两个数组放一起按顺序取哪一个数组先取到个数限制, 然后剩下的数都从另一个数组取即可.
+
+### code
+```cpp
+const int N=2e5+10;
+int T,n,m,q,a[N],b[N],ra[N<<1];
+ll suma[N],sumb[N];
+int main()
+{
+	read(T);
+	while(T--)
+	{
+		read(n),read(m),read(q);
+		for(int i=1;i<=n;i++)read(a[i]);
+		for(int i=1;i<=m;i++)read(b[i]);
+		sort(a+1,a+n+1);
+		reverse(a+1,a+n+1);
+		sort(b+1,b+m+1);
+		reverse(b+1,b+m+1);
+		for(int i=1;i<=n;i++)suma[i]=suma[i-1]+a[i];
+		for(int i=1;i<=m;i++)sumb[i]=sumb[i-1]+b[i];
+		a[n+1]=b[m+1]=-1;
+		for(int i=1,p1=1,p2=1;i<=n+m;i++)
+		{
+			if(a[p1]>b[p2]) p1++;
+			else p2++;
+			ra[i]=p1-1;
+		}
+		for(int i=1,x,y,z;i<=q;i++)
+		{
+			read(x),read(y),read(z);
+			if(ra[z]>x)write(suma[x]+sumb[z-x]);
+			else if(z-ra[z]>y)write(suma[z-y]+sumb[y]);
+			else write(suma[ra[z]]+sumb[z-ra[z]]);
+		}
+	}
+    flushout();
+    return 0;
+}
+```
+
+## F Rada and the Chamomile Valley
+
+### 题意
+
+给出一个 $n$ 个点 $m$ 条边的无向图, 称 $1 \sim n$ 必经的边为特殊边, 求每个点最近的特殊边编号.
+
+### 题解
+
+题意得特殊边就是这个图从 $1 \sim n$ 的桥, 所以先一个 tarjan 求出边双, 然后在 dfs 出哪些桥是 $1 \sim n$ 的必经边, 最后以这些边的端点为起点做多源 bfs 扩展到每个点.
+
+### code
+```cpp
+const int N=2e5+10;
+int T,n,m;
+int low[N], dfn[N], idx;
+bool isbridge[N];
+vector<pii> G[N],e[N];
+int tot;
+
+pii a[N<<1],ed[N];
+void tarjan(int u, int fa) {
+  low[u] = dfn[u] = ++idx;
+  for (const auto &ev : G[u]) {
+  	int v=ev.fi;
+    if (!dfn[v]) {
+      tarjan(v, u);
+      low[u] = min(low[u], low[v]);
+      if (low[v] > dfn[u])
+        isbridge[ev.se] = true;
+    } else if (v != fa) {
+      low[u] = min(low[u], dfn[v]);
+    }
+  }
+}
+int dis[N],ans[N],id[N],cnt;
+void dfs(int now)
+{
+	id[now]=cnt;
+	for(auto &ev:G[now])
+		if(!id[ev.fi]&&!isbridge[ev.se])
+			dfs(ev.fi);
+}
+int stk[N],top;
+void dfs2(int now,int fa)
+{
+	if(id[n]==now)
+	{
+		for(int i=1;i<=top;i++)
+		{
+			int ii=stk[i];
+			a[++tot]={ii,ed[ii].fi};
+			a[++tot]={ii,ed[ii].se};
+		}
+		return;
+	}
+	for(auto ev:e[now])
+		if(ev.fi!=fa)
+		{
+			stk[++top]=ev.se;
+			dfs2(ev.fi,now);
+			top--;
+		}
+	return;
+}
+int main()
+{
+	read(T);
+	while(T--)
+	{
+		read(n),read(m);
+		idx=tot=0;
+		cnt=0;
+		top=0;
+		for(int i=1;i<=n;i++)
+		{
+			G[i].clear();
+			e[i].clear();
+			id[i]=0;
+			ans[i]=-1;
+			dfn[i]=low[i]=0;
+			dis[i]=-1;
+		}
+		for(int i=1;i<=m;i++)isbridge[i]=0; 
+		for(int i=1,u,v;i<=m;i++)
+		{
+			read(u),read(v);
+			ed[i]={u,v};
+			G[u].push_back({v,i});
+			G[v].push_back({u,i});
+		}
+		for(int i=1;i<=n;i++)
+			if(!dfn[i])tarjan(i,0);
+		for(int i=1;i<=n;i++)
+			if(!id[i])++cnt,dfs(i);
+		for(int i=1;i<=m;i++)
+			if(isbridge[i])
+			{
+				e[id[ed[i].fi]].push_back({id[ed[i].se],i});
+				e[id[ed[i].se]].push_back({id[ed[i].fi],i});
+			}	
+		dfs2(1,0);
+		sort(a+1,a+tot+1);
+		queue<pii>q;
+		for(int i=1;i<=tot;i++)
+			if(dis[a[i].se]==-1)
+			   dis[a[i].se]=0,ans[a[i].se]=a[i].fi,q.push(a[i]);
+		while(!q.empty())
+		{
+			pii now=q.front();
+			q.pop();
+			for(auto ev:G[now.se])
+			{
+				int to=ev.fi;
+				if(dis[to]==-1)
+					dis[to]=dis[now.se]+1,ans[to]=now.fi,q.push({now.fi,to});
+			}
+		}
+		int Q;
+		read(Q);
+		while(Q--) write(ans[read<int>()],' ');
+		Putc('\n');
+	}
+    flushout();
+    return 0;
+}
+```
+
+## G Famous Choreographer
+
+### 题意
+
+给出一个 $n \cdot m$ 的字符矩阵, 求最少需要添加的字符, 是的添加后仍构成矩阵, 且新矩阵中心对称.
+
+### 题解
+
+二维哈希, 枚举每一个可能的中心点并检验是否合法. 注意中心点不一定是某个字符, 可能是两个字符中间.
+
+### code
+
+```cpp
+mt19937_64 rng(std::chrono::steady_clock::now().time_since_epoch().count());
+const int N=2e6+10,mod=998244353;
+mint<mod>base=rng(),ibase=base.inv(),pw[N],ipw[N];
+int T,n,m;
+int main()
+{
+	pw[0]=ipw[0]=1;
+	for(int i=1;i<N;i++)pw[i]=pw[i-1]*base,ipw[i]=ipw[i-1]*ibase;
+	cin>>T;
+	while(T--)
+	{
+		cin>>n>>m;
+		vector<string>s(n);
+		for(int i=0;i<n;i++)cin>>s[i];
+		vector h1(n+1,vector<mint<mod>>(m+1)),h2(h1);
+		
+		for(int i=1;i<=n;i++)
+			for(int j=1;j<=m;j++)
+			{
+				h1[i][j]=h1[i][j-1]+h1[i-1][j]-h1[i-1][j-1]+pw[(i-1)*m+j]*s[i-1][j-1];
+				h2[i][j]=h2[i][j-1]+h2[i-1][j]-h2[i-1][j-1]+ipw[(i-1)*m+j]*s[i-1][j-1];
+			}
+		int ans=4*n*m;
+		for(int i=1;i<2*n;i++)
+			for(int j=1;j<2*m;j++)
+			{
+				int l1=max(0,i-n),r1=min(n,i);
+				int l2=max(0,j-m),r2=min(m,j);
+				mint<mod>v1=h1[r1][r2]-h1[r1][l2]-h1[l1][r2]+h1[l1][l2];
+				mint<mod>v2=h2[r1][r2]-h2[r1][l2]-h2[l1][r2]+h2[l1][l2];
+				if(v1 == v2 * pw[(i-1)*m+j+1])
+					ans=min(ans,(2*n-r1+l1)*(2*m-r2+l2)-n*m);
+			}
+		cout<<ans<<'\n';
+	}
+    return 0;
+}
+```

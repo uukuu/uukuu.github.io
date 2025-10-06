@@ -1,0 +1,60 @@
+{{- /*
+  Author card partial for FixIt theme widgets area.
+  Matches structure/classes of the provided snippet and supports multiple social links
+  configured under `params.author` in site config.
+  Supported keys: name, avatar, bio, license, link, email, github, luogu, codeforces, atcoder
+*/ -}}
+
+{{- $author := partial "function/get-author-map.html" .Site.Params.author -}}
+<div class="widget c-author nx-card">
+  <div class="nx-card__header">
+    {{- if $author.avatar }}
+      <img class="nx-card__avatar" src="{{ $author.avatar }}" alt="{{ $author.name }}">
+    {{- else }}
+      <div class="nx-card__avatar nx-card__avatar--placeholder">👤</div>
+    {{- end }}
+  </div>
+
+  <div class="nx-card__body">
+    <div class="nx-card__name">{{ $author.name }}</div>
+    {{- with $author.bio }}
+      <div class="nx-card__bio">{{ . }}</div>
+    {{- else }}
+      {{- with .Site.Params.description }}
+        <div class="nx-card__bio">{{ . }}</div>
+      {{- end -}}
+    {{- end }}
+
+    <div class="nx-card__links">
+      {{- with $author.link }}
+        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="主页">{{ dict "Class" "fa-solid fa-house" | partial "plugin/icon.html" }}<span>主页</span></a>
+      {{- end }}
+
+      {{- with $author.github }}
+        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">{{ dict "Class" "fa-brands fa-github" | partial "plugin/icon.html" }}<span>GitHub</span></a>
+      {{- end }}
+
+      {{- with $author.luogu }}
+        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Luogu">{{ dict "Class" "fa-solid fa-book" | partial "plugin/icon.html" }}<span>Luogu</span></a>
+      {{- end }}
+
+      {{- with $author.codeforces }}
+        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="CF">{{ dict "Class" "fa-solid fa-trophy" | partial "plugin/icon.html" }}<span>CF</span></a>
+      {{- end }}
+
+      {{- with $author.atcoder }}
+        <a class="nx-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="AT">{{ dict "Class" "fa-solid fa-atom" | partial "plugin/icon.html" }}<span>AT</span></a>
+      {{- end }}
+
+      {{- with $author.email }}
+        <a class="nx-btn" href="mailto:{{ . }}" aria-label="Email">{{ dict "Class" "fa-solid fa-envelope" | partial "plugin/icon.html" }}<span>Email</span></a>
+      {{- end }}
+    </div>
+
+    {{- with $author.license }}
+      <div class="nx-card__license">{{ . }}</div>
+    {{- end }}
+
+  </div>
+  <div class="nx-card__footer"></div>
+</div>
