@@ -238,7 +238,463 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
 &lt;p>从而根据 AA 定理, $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
 &lt;/div>
  &lt;/div>
-&lt;/div></description></item><item><title>泛函分析作业250922</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="121">&lt;span>1.2.1&lt;/span>
+&lt;/div></description></item><item><title>Assignment 1</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;p>好的，以下是将你提供的 &lt;code>1.txt&lt;/code> 文件中的 LaTeX 内容转换为 Markdown 博客格式的结果。已按照你的要求进行替换和格式调整，未修改原始内容逻辑，仅适配 Markdown 语法：&lt;/p>
+&lt;hr>
+&lt;h2 class="heading-element" id="homework-1">&lt;span>Homework 1&lt;/span>
+ &lt;a href="#homework-1" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h2 class="heading-element" id="question-1">&lt;span>Question 1&lt;/span>
+ &lt;a href="#question-1" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>使用单纯形法来求解如下优化问题：&lt;br>
+&lt;strong>要求：&lt;/strong> 将其转化为标准形式，列出单纯形表手算作答。&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>$$
+\begin{aligned}
+\min \quad &amp;amp; -10x_{1} - 12x_{2} - 12x_{3} \\
+\text{s.t.} \quad
+&amp;amp; x_{1} + 2x_{2} + 2x_{3} \leq 20, \\
+&amp;amp; 2x_{1} + x_{2} + 2x_{3} \leq 20, \\
+&amp;amp; 2x_{1} + 2x_{2} + x_{3} \leq 20, \\
+&amp;amp; x_{1}, x_{2}, x_{3} \geq 0.
+\end{aligned}
+\overset{\text{标准形式}}{\Longrightarrow}
+\begin{aligned}
+\min\ f &amp;amp;= -10x_1 - 12x_2 - 12x_3 \\
+\text{s.t.}\quad
+&amp;amp; x_1 + 2x_2 + 2x_3 + x_4 = 20,\\
+&amp;amp; 2x_1 + x_2 + 2x_3 + x_5 = 20,\\
+&amp;amp; 2x_1 + 2x_2 + x_3 + x_6 = 20,\\
+&amp;amp; x_1,x_2,x_3,x_4,x_5,x_6 \ge 0.
+\end{aligned}
+$$&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>基变量&lt;/th>
+ &lt;th>$x_1$&lt;/th>
+ &lt;th>$x_2$&lt;/th>
+ &lt;th>$x_3$&lt;/th>
+ &lt;th>$x_4$&lt;/th>
+ &lt;th>$x_5$&lt;/th>
+ &lt;th>$x_6$&lt;/th>
+ &lt;th>右端项&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>$-f$&lt;/td>
+ &lt;td>$-10$&lt;/td>
+ &lt;td>$-12$&lt;/td>
+ &lt;td>$-12$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_4$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$20$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_5$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$20$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_6$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$20$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;em>初始表&lt;/em>&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>基变量&lt;/th>
+ &lt;th>$x_1$&lt;/th>
+ &lt;th>$x_2$&lt;/th>
+ &lt;th>$x_3$&lt;/th>
+ &lt;th>$x_4$&lt;/th>
+ &lt;th>$x_5$&lt;/th>
+ &lt;th>$x_6$&lt;/th>
+ &lt;th>右端项&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>$-f$&lt;/td>
+ &lt;td>$-4$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$6$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$120$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_2$&lt;/td>
+ &lt;td>$\frac12$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$\frac12$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$10$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_5$&lt;/td>
+ &lt;td>$\frac32$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$-\frac12$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$10$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_6$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$-1$&lt;/td>
+ &lt;td>$-1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;em>第一次迭代 (入 $x_2$, 出 $x_4$)&lt;/em>&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>基变量&lt;/th>
+ &lt;th>$x_1$&lt;/th>
+ &lt;th>$x_2$&lt;/th>
+ &lt;th>$x_3$&lt;/th>
+ &lt;th>$x_4$&lt;/th>
+ &lt;th>$x_5$&lt;/th>
+ &lt;th>$x_6$&lt;/th>
+ &lt;th>右端项&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>$-f$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$-4$&lt;/td>
+ &lt;td>$2$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$4$&lt;/td>
+ &lt;td>$120$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_2$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$\frac32$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$-\frac12$&lt;/td>
+ &lt;td>$10$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_5$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$\frac52$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$-\frac32$&lt;/td>
+ &lt;td>$10$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_1$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$-1$&lt;/td>
+ &lt;td>$-1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;em>第二次迭代 (入 $x_1$, 出 $x_4$)&lt;/em>&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>基变量&lt;/th>
+ &lt;th>$x_1$&lt;/th>
+ &lt;th>$x_2$&lt;/th>
+ &lt;th>$x_3$&lt;/th>
+ &lt;th>$x_4$&lt;/th>
+ &lt;th>$x_5$&lt;/th>
+ &lt;th>$x_6$&lt;/th>
+ &lt;th>右端项&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>$-f$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$\frac{18}{5}$&lt;/td>
+ &lt;td>$\frac{8}{5}$&lt;/td>
+ &lt;td>$\frac{8}{5}$&lt;/td>
+ &lt;td>$136$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_2$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$\frac{2}{5}$&lt;/td>
+ &lt;td>$-\frac{3}{5}$&lt;/td>
+ &lt;td>$\frac{2}{5}$&lt;/td>
+ &lt;td>$4$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_3$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$\frac{2}{5}$&lt;/td>
+ &lt;td>$\frac{2}{5}$&lt;/td>
+ &lt;td>$-\frac{3}{5}$&lt;/td>
+ &lt;td>$4$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>$x_1$&lt;/td>
+ &lt;td>$1$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$0$&lt;/td>
+ &lt;td>$-\frac{3}{5}$&lt;/td>
+ &lt;td>$\frac{2}{5}$&lt;/td>
+ &lt;td>$\frac{2}{5}$&lt;/td>
+ &lt;td>$4$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;em>第三次迭代 (入 $x_3$, 出 $x_5$)&lt;/em>&lt;/p>
+&lt;p>综上, 在三次迭代后, 已得到最优解, 无法再优化. 此时的解为 $\vec x^T=(4,4,4)$, $f=136$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="question-2-人才培养">&lt;span>Question 2 人才培养&lt;/span>
+ &lt;a href="#question-2-%e4%ba%ba%e6%89%8d%e5%9f%b9%e5%85%bb" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>北方印染公司需要的技术工人分为初级工、中级工和高级工三个层次。统计资料显示：培养出来的每个初级工每年可为公司增加产值 1 万元，每个中级工每年可为公司增加产值 4 万元，每个高级工每年可为公司增加产值 5.5 万元。公司计划在今后三年中对招聘的高中生和本公司的技工进行培训，预计拨出 150 万元作为职工培训费，其中，第一年投资 55 万元，第二年投资 45 万元，第三年投资 50 万元。每个等级的技术工人培训费用和时间如下表所示。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>培训方式&lt;/th>
+ &lt;th>第一年&lt;/th>
+ &lt;th>第二年&lt;/th>
+ &lt;th>第三年&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>1&lt;/td>
+ &lt;td>高中生升初级工&lt;/td>
+ &lt;td>1000&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>2&lt;/td>
+ &lt;td>高中生升中级工&lt;/td>
+ &lt;td>3000&lt;/td>
+ &lt;td>3000&lt;/td>
+ &lt;td>1000&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>3&lt;/td>
+ &lt;td>高中生升高级工&lt;/td>
+ &lt;td>3000&lt;/td>
+ &lt;td>2000&lt;/td>
+ &lt;td>4000&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>4&lt;/td>
+ &lt;td>初级工升中级工&lt;/td>
+ &lt;td>2800&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>5&lt;/td>
+ &lt;td>初级工升高级工&lt;/td>
+ &lt;td>2000&lt;/td>
+ &lt;td>3200&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>6&lt;/td>
+ &lt;td>中级工升高级工&lt;/td>
+ &lt;td>3600&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>目前公司共有初级工 226 人，中级工 560 人，高级工 496 人。由于公司目前师资力量不足，教学环境有限，每年在培养的职工人数受到一定限制。根据目前的情况，每年在培的初级工不超过 90 人，在培的中级工不超过 80 人，在培的高级工不超过 80 人。制定培训方案，使企业增加的产值最大。&lt;br>
+&lt;strong>要求：&lt;/strong> 请确定决策变量，写出完成的优化模型并附简要说明。
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>设&lt;br>
+$$
+\left\lbrace
+\begin{array}{ll}
+x_{1t} = \text{第 $t$ 年招收高中生升为初级工的人数} &amp;amp; t=1,2,3 \\
+x_{2t} = \text{第 $t$ 年招收高中生升为中级工的人数} &amp;amp; t=1 \\
+x_{3t} = \text{第 $t$ 年招收高中生升为高级工的人数} &amp;amp; t=1 \\
+x_{4t} = \text{第 $t$ 年由初级工升为中级工的人数} &amp;amp; t=1,2,3 \\
+x_{5t} = \text{第 $t$ 年由初级工升为高级工的人数} &amp;amp; t=1,2 \\
+x_{6t} = \text{第 $t$ 年由中级工升为高级工的人数} &amp;amp; t=1,2,3
+\end{array}
+\right.
+$$&lt;/p>
+&lt;p>有三种限制: 资金限制, 学员限制, 师资限制.&lt;br>
+对于资金限制&lt;br>
+$$
+\left\lbrace
+\begin{array}{l}
+1000x_{11}+3000x_{21}+3000x_{31}+2800x_{41}+2000x_{51}+3600x_{61}\leqslant550000\\
+1000x_{12}+3000x_{21}+2000x_{31}+2800x_{42}+3200x_{51}+2000x_{52}+3600x_{62}\leqslant 450000\\
+1000x_{13}+1000x_{21}+4000x_{31}+2800x_{43}+3200x_{52}+3600x_{63}\leqslant 500000
+\end{array}
+\right.
+$$&lt;/p>
+&lt;p>对于师资限制&lt;br>
+$$
+\text{第一年}:\left\lbrace
+\begin{array}{l}
+x_{11}\leqslant 90\\
+x_{21}+x_{41}\leqslant 80\\
+x_{31}+x_{51}+x_{61}\leqslant 80
+\end{array}
+\right.
+\quad
+\text{第二年}:\left\lbrace
+\begin{array}{l}
+x_{12}\leqslant90\\
+x_{21}+x_{42}\leqslant 80\\
+x_{31}+x_{51}+x_{52}+x_{62}\leqslant 80
+\end{array}
+\right.
+\quad
+\text{第三年}:\left\lbrace
+\begin{array}{l}
+x_{13}\leqslant 90\\
+x_{21}+x_{43}\leqslant 80\\
+x_{31}+x_{52}+x_{63}\leqslant 80
+\end{array}
+\right.
+$$&lt;/p>
+&lt;p>对于学员限制&lt;br>
+$$
+\text{第一年}:\left\lbrace
+\begin{array}{l}
+x_{41}+x_{51}\leqslant 226\\
+x_{61}\leqslant 560
+\end{array}
+\right.
+\quad
+\text{第二年}:\left\lbrace
+\begin{array}{l}
+x_{41}+x_{51}+x_{42}+x_{52}\leqslant 226+x_{11}\\
+x_{61}+x_{62}\leqslant 560+x_{41}
+\end{array}
+\right.
+$$&lt;br>
+$$
+\text{第三年}:\left\lbrace
+\begin{array}{l}
+x_{41}+x_{51}+x_{42}+x_{52}+x_{43}\leqslant 226+x_{11}+x_{12}\\
+x_{61}+x_{62}+x_{63}\leqslant 560+x_{41}+x_{42}
+\end{array}
+\right.
+$$&lt;br>
+但实际上结合每年各级别培训人数限制, 学员限制中有效的只有 $x_{41}+x_{42}+x_{43}+x_{51}+x_{52}\leqslant 226+x_{11}+x_{12}$.&lt;br>
+除了上述三种限制外, 还要求各阶段各级别培训人数非负.&lt;/p>
+&lt;p>下面考虑总收益函数 $f$ 的表示:&lt;br>
+感觉题目有不同理解.&lt;br>
+如果考虑三年之后每年的产值最高, 那么应该是 (本人理解题目应该是这种情况, 不然高中生培训三年的方案没有意义):&lt;br>
+三年后 (即最晚第四年起可以进行工作) 各级别工人人数依次为&lt;br>
+$$
+\begin{array}{l}
+226-x_{41}-x_{42}-x_{43}-x_{51}-x_{52}+x_{11}+x_{12}+x_{13}\\
+560-x_{61}-x_{62}-x_{63}+x_{21}+x_{41}+x_{42}+x_{43}\\
+496+x_{31}+x_{51}+x_{52}+x_{61}+x_{62}+x_{63}
+\end{array}
+$$&lt;br>
+整理后年产值增加 (单位: 万)&lt;br>
+$$
+f=x_{11}+x_{12}+x_{13}+4x_{21}+5.5x_{31}+3x_{41}+3x_{42}+3x_{43}+4.5x_{51}+4.5x_{52}+1.5x_{61}+1.5x_{62}+1.5x_{63}.
+$$&lt;/p>
+&lt;p>若理解为只考虑这三年的总收益增加最多, 且培训期间不产生产值, 那么函数如下:&lt;br>
+分年份考虑当年参与工作的各级别工人数量, 依次为初级工, 中级工和高级工.&lt;br>
+$$
+\text{第一年}:\left\lbrace
+\begin{array}{ll}
+226-x_{41}-x_{51}\\
+560-x_{61}\\
+496
+\end{array}
+\right.
+\quad
+\text{第二年}:\left\lbrace
+\begin{array}{ll}
+226-x_{41}-x_{51}-x_{42}-x_{52}+x_{11}\\
+560-x_{61}-x_{62}+x_{41}\\
+496+x_{61}
+\end{array}
+\right.
+$$&lt;br>
+$$
+\text{第三年}:\left\lbrace
+\begin{array}{ll}
+226-x_{41}-x_{51}-x_{42}-x_{52}+x_{11}-x_{43}+x_{12}\\
+560-x_{61}-x_{62}-x_{63}+x_{41}+x_{42}\\
+496+x_{61}+x_{62}+x_{51}
+\end{array}
+\right.
+$$&lt;br>
+整理后总的增加收益 (单位: 万) 为&lt;br>
+$$
+f=x_{11}+x_{12}+5x_{41}+2x_{42}-x_{43}+2.5x_{51}-x_{52}-x_{61}-2.5x_{62}-4x_{63}.
+$$&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;/p></description></item><item><title>泛函分析作业250922</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="121">&lt;span>1.2.1&lt;/span>
  &lt;a href="#121" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -2266,384 +2722,4 @@ ans_{N-1}&lt;/code>&lt;/pre>&lt;p>$\mathrm{ans}_i$ is the number of simple paths
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">106&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">107&lt;/span>&lt;span class="cl"> &lt;span class="n">flushout&lt;/span>&lt;span class="p">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">108&lt;/span>&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">109&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>TODO</title><link>http://localhost:1313/posts/todo/todo/</link><pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/posts/todo/todo/</guid><description>&lt;h2 class="heading-element" id="part-1">&lt;span>part 1&lt;/span>
- &lt;a href="#part-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="一学术发展路径">&lt;span>一、学术发展路径&lt;/span>
- &lt;a href="#%e4%b8%80%e5%ad%a6%e6%9c%af%e5%8f%91%e5%b1%95%e8%b7%af%e5%be%84" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>&lt;strong>优势支撑：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>数学专业背景（概率统计/线性代数/优化理论是AI核心基础）&lt;/li>
-&lt;li>算法竞赛经历（ICPC金奖证明极强的工程问题抽象与解决能力）&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>建议方向：&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>科研聚焦：&lt;/strong>
-&lt;ul>
-&lt;li>优先选择AI与数学强相关的领域：图神经网络理论、优化算法设计、概率图模型、AI可解释性等&lt;/li>
-&lt;li>提前联系导师参与课题组，关注NeurIPS/ICML顶会最新论文，尝试复现经典算法（如Transformer数学形式化分析）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>课程规划：&lt;/strong>
-&lt;ul>
-&lt;li>选修高阶课程：凸优化、随机过程、信息论、微分方程数值解&lt;/li>
-&lt;li>补充计算机系统知识：操作系统、分布式系统（为边缘计算项目打基础）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h3 class="heading-element" id="二技能升级路线">&lt;span>二、技能升级路线&lt;/span>
- &lt;a href="#%e4%ba%8c%e6%8a%80%e8%83%bd%e5%8d%87%e7%ba%a7%e8%b7%af%e7%ba%bf" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>&lt;strong>当前技能树：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>强项&lt;/strong>：算法思维（竞赛级C++）、基础编程（Python）、前端开发&lt;/li>
-&lt;li>&lt;strong>待强化&lt;/strong>：AI工程化能力、系统级开发经验&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>建议优先级：&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>AI核心技术栈：&lt;/strong>
-&lt;ul>
-&lt;li>框架：PyTorch（科研首选）+ TensorFlow（工业部署）&lt;/li>
-&lt;li>扩展领域：OpenCV（计算机视觉）、ROS（机器人开发）、ONNX（模型跨平台部署）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>边缘计算专项：&lt;/strong>
-&lt;ul>
-&lt;li>学习ARM架构开发：交叉编译、Linux驱动开发（香橙派基于Allwinner芯片）&lt;/li>
-&lt;li>掌握边缘AI工具链：TensorRT模型加速、TVM编译器优化、OpenVINO部署&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>全栈能力延伸：&lt;/strong>
-&lt;ul>
-&lt;li>开发后端接口（Flask/Django）连接香橙派与前端&lt;/li>
-&lt;li>尝试WebAssembly将C++算法移植到浏览器（结合你的竞赛代码优势）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h3 class="heading-element" id="三香橙派项目建议">&lt;span>三、香橙派项目建议&lt;/span>
- &lt;a href="#%e4%b8%89%e9%a6%99%e6%a9%99%e6%b4%be%e9%a1%b9%e7%9b%ae%e5%bb%ba%e8%ae%ae" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>&lt;strong>从易到难的实践路线：&lt;/strong>&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>阶段&lt;/th>
- &lt;th>项目类型&lt;/th>
- &lt;th>示例项目&lt;/th>
- &lt;th>技能收获&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>1.基础&lt;/td>
- &lt;td>嵌入式开发&lt;/td>
- &lt;td>搭建家庭NAS/智能路由器&lt;/td>
- &lt;td>Linux系统管理、GPIO控制&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2.AI集成&lt;/td>
- &lt;td>边缘推理&lt;/td>
- &lt;td>部署YOLO实现实时物体检测&lt;/td>
- &lt;td>模型量化、NPU加速&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>3.系统级&lt;/td>
- &lt;td>物联网平台&lt;/td>
- &lt;td>开发农业监测系统（传感器+LoRa通信+云端大模型）&lt;/td>
- &lt;td>全栈开发、多协议交互&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>4.创新&lt;/td>
- &lt;td>竞赛/论文&lt;/td>
- &lt;td>基于强化学习的机器人控制（结合Gazebo仿真）&lt;/td>
- &lt;td>算法创新、学术写作&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>推荐技术组合：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>硬件层：香橙派+传感器模组（温湿度/摄像头）&lt;/li>
-&lt;li>通信层：MQTT协议+WebSocket实时传输&lt;/li>
-&lt;li>算法层：PyTorch模型→ONNX→TensorRT优化&lt;/li>
-&lt;li>展示层：Vue.js/ECharts数据可视化&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 class="heading-element" id="四职业发展衔接">&lt;span>四、职业发展衔接&lt;/span>
- &lt;a href="#%e5%9b%9b%e8%81%8c%e4%b8%9a%e5%8f%91%e5%b1%95%e8%a1%94%e6%8e%a5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>&lt;strong>短期目标（本科剩余时间）：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>完成1-2个完整开源项目（建议GitHub+技术博客双输出）&lt;/li>
-&lt;li>参与Kaggle竞赛（强化机器学习实战能力）&lt;/li>
-&lt;li>争取大厂研究型实习（如MSRA、阿里达摩院）&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>长期定位（研究生阶段）：&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>工业界路径&lt;/strong>：AI算法工程师（自动驾驶/机器人方向更看重边缘计算能力）&lt;/li>
-&lt;li>&lt;strong>学术界路径&lt;/strong>：攻读海外PhD（数学+AI交叉领域易获顶尖实验室青睐）&lt;/li>
-&lt;li>&lt;strong>新兴领域&lt;/strong>：量化金融（数学+算法优势可直接转化）&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>&lt;strong>下一步行动建议：&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>明确上述四个关键问题的答案&lt;/li>
-&lt;li>选择1个香橙派启动项目（可从「智能家居中控」入门）&lt;/li>
-&lt;li>每周投入10小时构建技术博客（用数学视角解读AI算法）&lt;/li>
-&lt;/ol>
-&lt;p>需要进一步讨论可随时提出，我可以针对具体方向提供资源清单（如边缘计算必读论文、嵌入式开发学习路线图等）。&lt;/p>
-&lt;h2 class="heading-element" id="part-2">&lt;span>part 2&lt;/span>
- &lt;a href="#part-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="嵌入式开发学习路线图ai边缘计算方向">&lt;span>&lt;strong>嵌入式开发学习路线图（AI+边缘计算方向）&lt;/strong>&lt;/span>
- &lt;a href="#%e5%b5%8c%e5%85%a5%e5%bc%8f%e5%bc%80%e5%8f%91%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%beai%e8%be%b9%e7%bc%98%e8%ae%a1%e7%ae%97%e6%96%b9%e5%90%91" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;h4 class="heading-element" id="阶段一嵌入式系统基础1-2个月">&lt;span>&lt;strong>阶段一：嵌入式系统基础（1-2个月）&lt;/strong>&lt;/span>
- &lt;a href="#%e9%98%b6%e6%ae%b5%e4%b8%80%e5%b5%8c%e5%85%a5%e5%bc%8f%e7%b3%bb%e7%bb%9f%e5%9f%ba%e7%a1%801-2%e4%b8%aa%e6%9c%88" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;p>&lt;strong>学习目标&lt;/strong>：掌握Linux嵌入式开发核心技能，完成硬件交互基础项目&lt;br>
-&lt;strong>重点内容&lt;/strong>：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Linux系统层&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>刷写香橙派系统（Ubuntu Core/OpenWRT）&lt;/li>
-&lt;li>掌握Linux Shell编程（重点：进程管理、文件权限、管道操作）&lt;/li>
-&lt;li>编译定制内核（通过&lt;code>buildroot&lt;/code>或&lt;code>Yocto&lt;/code>）&lt;br>
-&lt;em>推荐资源&lt;/em>：《嵌入式Linux基础教程》（Christopher Hallinan）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>硬件交互开发&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>GPIO控制：通过Python/RPC操作LED/蜂鸣器（libgpiod库）&lt;/li>
-&lt;li>传感器驱动：I2C/SPI协议读取温湿度传感器（如AHT20）&lt;/li>
-&lt;li>外设扩展：USB摄像头采集+OpenCV实时处理&lt;br>
-&lt;em>实践项目&lt;/em>：智能环境监测仪（温湿度+光线感知+报警联动）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>交叉编译环境&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>搭建ARM工具链（gcc-arm-linux-gnueabihf）&lt;/li>
-&lt;li>编写Makefile实现跨平台编译&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h4 class="heading-element" id="阶段二通信与中间件1个月">&lt;span>&lt;strong>阶段二：通信与中间件（1个月）&lt;/strong>&lt;/span>
- &lt;a href="#%e9%98%b6%e6%ae%b5%e4%ba%8c%e9%80%9a%e4%bf%a1%e4%b8%8e%e4%b8%ad%e9%97%b4%e4%bb%b61%e4%b8%aa%e6%9c%88" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;p>&lt;strong>学习目标&lt;/strong>：构建设备-云端通信能力，掌握工业级协议&lt;br>
-&lt;strong>核心技能&lt;/strong>：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>网络协议栈&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>TCP/UDP Socket编程（C++实现）&lt;/li>
-&lt;li>MQTT协议接入华为云IoTDA（参考华为云官方Demo）&lt;/li>
-&lt;li>WebSocket实现浏览器实时控制&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>边缘计算框架&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>部署EdgeX Foundry实现设备管理&lt;/li>
-&lt;li>学习KubeEdge基础架构（容器化AI服务部署）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>华为昇腾生态对接&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>安装CANN工具链（AscendCL接口开发）&lt;/li>
-&lt;li>将PyTorch模型转换为OM格式并在昇腾芯片推理&lt;br>
-&lt;em>项目结合&lt;/em>：在香橙派连接昇腾Atlas 200 DK进行模型加速&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h4 class="heading-element" id="阶段三ai模型边缘部署2-3个月">&lt;span>&lt;strong>阶段三：AI模型边缘部署（2-3个月）&lt;/strong>&lt;/span>
- &lt;a href="#%e9%98%b6%e6%ae%b5%e4%b8%89ai%e6%a8%a1%e5%9e%8b%e8%be%b9%e7%bc%98%e9%83%a8%e7%bd%b22-3%e4%b8%aa%e6%9c%88" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;p>&lt;strong>学习目标&lt;/strong>：实现端到端AI产品化闭环&lt;br>
-&lt;strong>关键技术栈&lt;/strong>：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>模型优化技术&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>量化训练：使用PyTorch的QAT工具压缩多视图聚类模型&lt;/li>
-&lt;li>知识蒸馏：将大型模型迁移到轻量化网络&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>推理引擎实战&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>TensorRT部署YOLOv5（FP16/INT8精度对比测试）&lt;/li>
-&lt;li>TVM自动调优：为香橙派CPU/NPU生成定制化模型&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>端侧AI框架&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>华为MindSpore Lite：模型转换与端云协同推理&lt;/li>
-&lt;li>TensorFlow Lite Micro：实现语音唤醒词检测&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>高阶项目&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>多模态边缘分析系统&lt;/strong>&lt;br>
-香橙派采集摄像头数据 → 昇腾NPU运行多视图聚类模型 → MQTT传输结构化结果 → Web端3D可视化&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h4 class="heading-element" id="阶段四系统级工程能力持续提升">&lt;span>&lt;strong>阶段四：系统级工程能力（持续提升）&lt;/strong>&lt;/span>
- &lt;a href="#%e9%98%b6%e6%ae%b5%e5%9b%9b%e7%b3%bb%e7%bb%9f%e7%ba%a7%e5%b7%a5%e7%a8%8b%e8%83%bd%e5%8a%9b%e6%8c%81%e7%bb%ad%e6%8f%90%e5%8d%87" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h4>&lt;p>&lt;strong>工业级技能扩展&lt;/strong>：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>实时操作系统&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>FreeRTOS任务调度机制研究&lt;/li>
-&lt;li>移植LVGL实现嵌入式GUI（如智能家居控制面板）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>安全加固&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>硬件加密：使用香橙派SE芯片实现数据签名&lt;/li>
-&lt;li>OTA升级：实现差分固件更新（参考swupdate框架）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>性能调优&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>使用perf工具分析CPU瓶颈&lt;/li>
-&lt;li>内存泄漏检测（Valgrind + AddressSanitizer）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h3 class="heading-element" id="推荐学习资源清单">&lt;span>&lt;strong>推荐学习资源清单&lt;/strong>&lt;/span>
- &lt;a href="#%e6%8e%a8%e8%8d%90%e5%ad%a6%e4%b9%a0%e8%b5%84%e6%ba%90%e6%b8%85%e5%8d%95" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>类别&lt;/th>
- &lt;th>具体资源&lt;/th>
- &lt;th>特点&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;strong>书籍&lt;/strong>&lt;/td>
- &lt;td>《ARM System Developer&amp;rsquo;s Guide》&lt;/td>
- &lt;td>深入ARM指令集与体系结构&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;strong>在线课程&lt;/strong>&lt;/td>
- &lt;td>华为昇腾开发者学院（免费认证课程）&lt;/td>
- &lt;td>结合大赛需求的官方指导&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;strong>工具链&lt;/strong>&lt;/td>
- &lt;td>VSCode Remote SSH + PlatformIO插件&lt;/td>
- &lt;td>远程嵌入式开发高效环境&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;strong>开源项目&lt;/strong>&lt;/td>
- &lt;td>NVIDIA Jetson Nano项目库&lt;/td>
- &lt;td>可迁移到香橙派的参考案例&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h3 class="heading-element" id="华为昇腾大赛项目结合建议">&lt;span>&lt;strong>华为昇腾大赛项目结合建议&lt;/strong>&lt;/span>
- &lt;a href="#%e5%8d%8e%e4%b8%ba%e6%98%87%e8%85%be%e5%a4%a7%e8%b5%9b%e9%a1%b9%e7%9b%ae%e7%bb%93%e5%90%88%e5%bb%ba%e8%ae%ae" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>&lt;strong>技术亮点设计&lt;/strong>：&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>异构计算架构&lt;/strong>
-&lt;ul>
-&lt;li>香橙派（CPU任务调度） + 昇腾NPU（模型推理）协同工作&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>多视图数据流&lt;/strong>
-&lt;ul>
-&lt;li>使用摄像头+毫米波雷达（模拟）实现多模态输入 → 你的多视图聚类算法处理&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>创新展示方式&lt;/strong>
-&lt;ul>
-&lt;li>开发微信小程序远程查看边缘设备分析结果&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>参赛策略&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>在GitHub开源项目代码（含详细文档），提升评审印象&lt;/li>
-&lt;li>使用华为云ModelArts进行数据预处理（展现生态整合能力）&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 class="heading-element" id="实习准备策略">&lt;span>&lt;strong>实习准备策略&lt;/strong>&lt;/span>
- &lt;a href="#%e5%ae%9e%e4%b9%a0%e5%87%86%e5%a4%87%e7%ad%96%e7%95%a5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>本科阶段&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>争取2024年暑期实习：主攻&lt;strong>大模型边缘部署&lt;/strong>（字节/商汤等团队急需该方向）&lt;/li>
-&lt;li>针对性提升：
-&lt;ul>
-&lt;li>学习Docker容器化部署（工业界标配）&lt;/li>
-&lt;li>掌握Prometheus+Grafana监控系统搭建&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>研究生阶段&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>瞄准&lt;strong>机器人公司&lt;/strong>（如大疆、宇树科技）：需要同时懂AI算法和嵌入式开发&lt;/li>
-&lt;li>关键能力储备：
-&lt;ul>
-&lt;li>ROS2机器人操作系统开发&lt;/li>
-&lt;li>实时控制系统（PID/MPC算法实践）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h3 class="heading-element" id="行动清单">&lt;span>&lt;strong>行动清单&lt;/strong>&lt;/span>
- &lt;a href="#%e8%a1%8c%e5%8a%a8%e6%b8%85%e5%8d%95" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ol>
-&lt;li>&lt;strong>立即启动&lt;/strong>：在香橙派部署华为MindSpore Lite并运行demo模型（48小时内验证环境）&lt;/li>
-&lt;li>&lt;strong>每周投入&lt;/strong>：
-&lt;ul>
-&lt;li>3小时嵌入式底层开发（GPIO/驱动方向）&lt;/li>
-&lt;li>5小时AI模型优化研究（结合多视图聚类）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>成果输出&lt;/strong>：每月在GitHub提交一个可运行的项目版本（含技术文档）&lt;/li>
-&lt;/ol>
-&lt;p>需要任何具体方向的扩展（如华为昇腾开发环境配置细节、多视图聚类与嵌入式结合案例），可以随时告知，我会提供分步骤指南。&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">109&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
