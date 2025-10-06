@@ -1,4 +1,140 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251008</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="141">&lt;span>1.4.1&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Assignment 2</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/2/</link><pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/2/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;h2 class="heading-element" id="question-1">&lt;span>Question 1:&lt;/span>
+ &lt;a href="#question-1" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>有一推销员, 从城市 $v_0$ 出发, 要依次访问城市 $v_1, v_2, \dots, v_n$ 各一次, 最后返回到 $v_0$. 已知从 $v_i$ 到 $v_j$ 的旅费为 $c_{ij}$, 对于任意的 $v_i$ 和 $v_j$, 问他应按怎样的次序访问这些城市, 使得总旅费最小?&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">定义变量 $x_{ij}=\left\lbrace\begin{array}{ll}
+1, &amp;amp; \text{路径中包含从} v_i\text{到} v_j \text{的边}\\
+0, &amp;amp; \text{不包含}
+\end{array}\right.$&lt;br>
+那么我们的目标函数就是 $\min \sum\limits_{i,j=0}^n c_{ij}x_{ij}$.&lt;br>
+接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits_{i=0}^n x_{ij}=1$. 也只会有一条出边 $\sum\limits_{j=0}x_{ij}=0$.&lt;br>
+但仍要保证路径是一条, 考虑加入辅助变量 $u_i, i=1,2,\ldots, n$, 只需满足 $u_i-u_j+x_{ij}(n)\leqslant n-1, i,j=1,2,\ldots,n$.&lt;br>
+因为当 $1\sim n$ 中存在子连通图, 那么一定存在一个子环, 设大小, 而将这个环上的边 $(i,j)$ 对应的式子取出, 那么相加后所有的 $u_i,u_j$ 抵消, 左侧为 $kn$, 右侧为 $k(n-1)$ 显然不成立.&lt;br>
+所以该限制确保了不存在子环. 而当只有一条路径时, 只需取 $u_i$ 表示第 i 个点的顺序即可保证所有等式成立, 因为此时 $1\leqslant u_i\leqslant n$, $u_i-u_j\leqslant n-1$ 成立.&lt;br>
+故满足上述限制的解一定构成一条符合要求的路径. 汇总后可将模型写成.&lt;br>
+$$\left\lbrace\begin{array}{lll}
+\min &amp;amp; z=\sum\limits_{i,j=0}^n c_{ij}x_{ij} &amp;amp;\\
+\text{\ s.t.\ } &amp;amp; \sum\limits_{i=0}^{n}x_{ij}=1, &amp;amp; j=0,\ldots,n\\
+&amp;amp; \sum\limits_{j=0}^n x_{ij}=1, &amp;amp; i=0,\ldots,n\\
+&amp;amp; u_i-u_j+nx_{ij}\leqslant n-1, &amp;amp; 1\leqslant i,j \leqslant n. \\
+&amp;amp; x_{ij}\in {0,1}, &amp;amp; i,j=0,\ldots,n\\
+&amp;amp; u_i\in \mathbb{R} &amp;amp; i=1,\ldots,n
+\end{array}\right.$$&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="question-2">&lt;span>Question 2:&lt;/span>
+ &lt;a href="#question-2" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>需要将 11 件加工任务 (A-K) 分配到两个工作站, 任务需要依次经过工作站 1, 2 以完成加工. 任务间的依赖关系如下图 (后续节点任务的启动需要前序任务完成), 每件任务在工作站所花费的时间如下表:&lt;/p>
+&lt;p>&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/运筹/作业/2.1.png' alt="依赖关系图">&lt;/p>
+&lt;p>每件任务在两个工作站上所需时间如下表 (单位: 小时):&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>任务&lt;/th>
+ &lt;th>A&lt;/th>
+ &lt;th>B&lt;/th>
+ &lt;th>C&lt;/th>
+ &lt;th>D&lt;/th>
+ &lt;th>E&lt;/th>
+ &lt;th>F&lt;/th>
+ &lt;th>G&lt;/th>
+ &lt;th>H&lt;/th>
+ &lt;th>I&lt;/th>
+ &lt;th>J&lt;/th>
+ &lt;th>K&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>在工作站 1 上花费时间 (小时)&lt;/td>
+ &lt;td>25&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;td>35&lt;/td>
+ &lt;td>10&lt;/td>
+ &lt;td>7&lt;/td>
+ &lt;td>8&lt;/td>
+ &lt;td>7&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;td>4&lt;/td>
+ &lt;td>7&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>在工作站 2 上花费时间 (小时)&lt;/td>
+ &lt;td>20&lt;/td>
+ &lt;td>6&lt;/td>
+ &lt;td>4&lt;/td>
+ &lt;td>15&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;td>4&lt;/td>
+ &lt;td>5&lt;/td>
+ &lt;td>10&lt;/td>
+ &lt;td>4&lt;/td>
+ &lt;td>2&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>设计装配任务分配方案, 目标是为工作站分配加工任务, 尽可能使总装配时间最短.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">将 $A-K$ 对应到 $1-11$.&lt;br>
+题目中的符号表示 $t_{ij}$ 表示第 $i$ 个任务在 $j$ 工作站上的耗时, 具体值见上表.&lt;br>
+$P_i$ 表示任务 $i$ 的直接前序依赖任务集合, 例如 $P_{3}={2}$.&lt;br>
+$M$ 为充分大的常数.&lt;br>
+&lt;strong>决策变量&lt;/strong>:&lt;br>
+$x_i\in{0,1}$: 表示任务 $i$ 是否分配给工作站 $1$, $1$ 表示是, $0$ 表示否 ($i=1,\ldots,11$).&lt;br>
+$S_i$ 表示任务 $i$ 的开工时间 ($i=1,\ldots,11$).&lt;br>
+$y_{ij}\in{0,1}$ 表示任务 $i$ 是否在任务 $j$ 之前完成 ($i\neq j$).&lt;br>
+为了方便, 先推导每个任务的结束时间记作 $C_i=S_i+x_it_{i1}+(1-x_i)t_{i2}$ 用 $x_i$ 控制在哪个工作站上.&lt;br>
+&lt;strong>目标函数&lt;/strong>:&lt;br>
+$f=\min C_{11}$.&lt;br>
+&lt;strong>约束条件&lt;/strong>:&lt;br>
+第一类是依赖关系, 即对于每个任务 $i$, 要求 $C_j\leqslant S_i,\forall j\in P_i$.&lt;br>
+第二类是单个工作站上任务不重叠, 那么考虑先限定 $y_{ij}+y_{ji}=1$.&lt;br>
+然后当 $x_i=x_j$ 时要求根据 $y_{ij}$ 的取值判断 $i,j$ 的先后顺序.&lt;br>
+可以构建下面的条件&lt;br>
+$$\left\lbrace\begin{array}{l}
+C_i\leqslant S_j+M(y_{ji}+2-x_i-x_j)\\
+C_i\leqslant S_j+M(y_{ji}+x_i+x_j)
+\end{array}\right.$$&lt;br>
+不难验证, 当 $x_i\neq x_j$ 时, 上述两个限制肯定成立. 而当 $x_i=x_j$ 时, 上述限制具有约束力, 仅当 $y_{ji}=0$, 即 $y_{ij}=1$. 此时要求 $i$ 在 $j$ 之前完成, 即 $C_i\leqslant S_j$. 满足定义.&lt;br>
+所以只需对 $i\neq j$ 上述两条约束成立即可满足在单个工作站上不重叠.&lt;br>
+综上, 汇总可得总的运筹模型可建立为&lt;br>
+$$\left\lbrace\begin{array}{lll}
+\min &amp;amp; C_{11} &amp;amp; \\
+\text{s.t.} &amp;amp; C_j\leqslant S_i &amp;amp; \forall j\in P_i, i=1,2,\ldots,11\\
+&amp;amp; y_{ij}+y_{ji}=1 &amp;amp; 1\leqslant i\neq j\leqslant 11\\
+&amp;amp; C_i\leqslant S_j+M(y_{ji}+2-x_i-x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11 \\
+&amp;amp; C_i\leqslant S_j+M(y_{ji}+x_i+x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11\\
+&amp;amp; x_{ij}\in {0,1} &amp;amp; 1\leqslant i\neq j\leqslant 11\\
+&amp;amp; y_{ij}\in {0,1} &amp;amp; 1\leqslant i\neq j\leqslant 11\\
+&amp;amp; C_i=S_i+x_i t_{i1}+(1-x_i)t_{i2} &amp;amp; i=1,\ldots,11\\
+&amp;amp; S_i\geqslant 0 &amp;amp; i=1,\ldots,11
+\end{array}\right.$$&lt;br>
+下面是一组我得到的最优解, 并且分类讨论 A 一开始在 1,还是 2 可以证明该方案已经达到下界.&lt;br>
+先简要证明.&lt;br>
+如果 A 在工作站 1, 那么只考虑 A,B,C,F,G,J,K 这些任务, A 25h, B 最早 30h, C 最早 34h, F,G 最早 41h (F1G2), 再 J,K 依次完成最早要 47h.&lt;br>
+如果 A 在工作站 2, 那么 D 最早在 35h 完成, E 最早 40h, H,I 最早 45h, 再 J,K 依次完成最早要 51h.&lt;br>
+注意上述两种假设都忽略了部分任务以考虑最优, 所以实际必定不低于上述考虑, 所以总时间至少为 47h.&lt;br>
+下面给出恰好为 47h 的方案.&lt;br>
+在工作站 1 上依次完成 A,B,I,F.&lt;br>
+在工作站 2 上依次完成 D,E,H,C,G,J,K.&lt;br>
+几个重要的时间点,&lt;br>
+$0\sim25h$ 工作站 1 完成 A, 工作站 2 完成 D,E,H.&lt;br>
+$25\sim30h$ 工作站 1 完成 B, 工作站 2 等待.&lt;br>
+$30\sim34h$ 工作站 1 完成 I, 工作站 2 完成 C.&lt;br>
+$34\sim41h$ 工作站 1 完成 F, 工作站 2 完成 G.&lt;br>
+接下来 6h 依次完成 J,K. 在 47h 时完成所有任务. 达到理论下界. 所以已经是最优解.&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251008</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="141">&lt;span>1.4.1&lt;/span>
  &lt;a href="#141" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -238,9 +374,7 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
 &lt;p>从而根据 AA 定理, $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
 &lt;/div>
  &lt;/div>
-&lt;/div></description></item><item><title>Assignment 1</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;p>好的，以下是将你提供的 &lt;code>1.txt&lt;/code> 文件中的 LaTeX 内容转换为 Markdown 博客格式的结果。已按照你的要求进行替换和格式调整，未修改原始内容逻辑，仅适配 Markdown 语法：&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="homework-1">&lt;span>Homework 1&lt;/span>
+&lt;/div></description></item><item><title>Assignment 1</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;h2 class="heading-element" id="homework-1">&lt;span>Homework 1&lt;/span>
  &lt;a href="#homework-1" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -789,142 +923,6 @@ $$&lt;/p>
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">（证明按原文保留）&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>Assignment 2</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/2/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/2/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;h2 class="heading-element" id="question-1">&lt;span>Question 1:&lt;/span>
- &lt;a href="#question-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>有一推销员, 从城市 $v_0$ 出发, 要依次访问城市 $v_1, v_2, \dots, v_n$ 各一次, 最后返回到 $v_0$. 已知从 $v_i$ 到 $v_j$ 的旅费为 $c_{ij}$, 对于任意的 $v_i$ 和 $v_j$, 问他应按怎样的次序访问这些城市, 使得总旅费最小?&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">定义变量 $x_{ij}=\left\lbrace\begin{array}{ll}
-1, &amp;amp; \text{路径中包含从} v_i\text{到} v_j \text{的边}\\
-0, &amp;amp; \text{不包含}
-\end{array}\right.$&lt;br>
-那么我们的目标函数就是 $\min \sum\limits_{i,j=0}^n c_{ij}x_{ij}$.&lt;br>
-接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits_{i=0}^n x_{ij}=1$. 也只会有一条出边 $\sum\limits_{j=0}x_{ij}=0$.&lt;br>
-但仍要保证路径是一条, 考虑加入辅助变量 $u_i, i=1,2,\ldots, n$, 只需满足 $u_i-u_j+x_{ij}(n)\leqslant n-1, i,j=1,2,\ldots,n$.&lt;br>
-因为当 $1\sim n$ 中存在子连通图, 那么一定存在一个子环, 设大小, 而将这个环上的边 $(i,j)$ 对应的式子取出, 那么相加后所有的 $u_i,u_j$ 抵消, 左侧为 $kn$, 右侧为 $k(n-1)$ 显然不成立.&lt;br>
-所以该限制确保了不存在子环. 而当只有一条路径时, 只需取 $u_i$ 表示第 i 个点的顺序即可保证所有等式成立, 因为此时 $1\leqslant u_i\leqslant n$, $u_i-u_j\leqslant n-1$ 成立.&lt;br>
-故满足上述限制的解一定构成一条符合要求的路径. 汇总后可将模型写成.&lt;br>
-$$\left\lbrace\begin{array}{lll}
-\min &amp;amp; z=\sum\limits_{i,j=0}^n c_{ij}x_{ij} &amp;amp;\\
-\text{\ s.t.\ } &amp;amp; \sum\limits_{i=0}^{n}x_{ij}=1, &amp;amp; j=0,\ldots,n\\
-&amp;amp; \sum\limits_{j=0}^n x_{ij}=1, &amp;amp; i=0,\ldots,n\\
-&amp;amp; u_i-u_j+nx_{ij}\leqslant n-1, &amp;amp; 1\leqslant i,j \leqslant n. \\
-&amp;amp; x_{ij}\in {0,1}, &amp;amp; i,j=0,\ldots,n\\
-&amp;amp; u_i\in \mathbb{R} &amp;amp; i=1,\ldots,n
-\end{array}\right.$$&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="question-2">&lt;span>Question 2:&lt;/span>
- &lt;a href="#question-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>需要将 11 件加工任务 (A-K) 分配到两个工作站, 任务需要依次经过工作站 1, 2 以完成加工. 任务间的依赖关系如下图 (后续节点任务的启动需要前序任务完成), 每件任务在工作站所花费的时间如下表:&lt;/p>
-&lt;p>&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/运筹/作业/2.1.png' alt="依赖关系图">&lt;/p>
-&lt;p>每件任务在两个工作站上所需时间如下表 (单位: 小时):&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>任务&lt;/th>
- &lt;th>A&lt;/th>
- &lt;th>B&lt;/th>
- &lt;th>C&lt;/th>
- &lt;th>D&lt;/th>
- &lt;th>E&lt;/th>
- &lt;th>F&lt;/th>
- &lt;th>G&lt;/th>
- &lt;th>H&lt;/th>
- &lt;th>I&lt;/th>
- &lt;th>J&lt;/th>
- &lt;th>K&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>在工作站 1 上花费时间 (小时)&lt;/td>
- &lt;td>25&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>35&lt;/td>
- &lt;td>10&lt;/td>
- &lt;td>7&lt;/td>
- &lt;td>8&lt;/td>
- &lt;td>7&lt;/td>
- &lt;td>2&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>7&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>在工作站 2 上花费时间 (小时)&lt;/td>
- &lt;td>20&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>15&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>10&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>2&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>设计装配任务分配方案, 目标是为工作站分配加工任务, 尽可能使总装配时间最短.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">将 $A-K$ 对应到 $1-11$.&lt;br>
-题目中的符号表示 $t_{ij}$ 表示第 $i$ 个任务在 $j$ 工作站上的耗时, 具体值见上表.&lt;br>
-$P_i$ 表示任务 $i$ 的直接前序依赖任务集合, 例如 $P_{3}={2}$.&lt;br>
-$M$ 为充分大的常数.&lt;br>
-&lt;strong>决策变量&lt;/strong>:&lt;br>
-$x_i\in{0,1}$: 表示任务 $i$ 是否分配给工作站 $1$, $1$ 表示是, $0$ 表示否 ($i=1,\ldots,11$).&lt;br>
-$S_i$ 表示任务 $i$ 的开工时间 ($i=1,\ldots,11$).&lt;br>
-$y_{ij}\in{0,1}$ 表示任务 $i$ 是否在任务 $j$ 之前完成 ($i\neq j$).&lt;br>
-为了方便, 先推导每个任务的结束时间记作 $C_i=S_i+x_it_{i1}+(1-x_i)t_{i2}$ 用 $x_i$ 控制在哪个工作站上.&lt;br>
-&lt;strong>目标函数&lt;/strong>:&lt;br>
-$f=\min C_{11}$.&lt;br>
-&lt;strong>约束条件&lt;/strong>:&lt;br>
-第一类是依赖关系, 即对于每个任务 $i$, 要求 $C_j\leqslant S_i,\forall j\in P_i$.&lt;br>
-第二类是单个工作站上任务不重叠, 那么考虑先限定 $y_{ij}+y_{ji}=1$.&lt;br>
-然后当 $x_i=x_j$ 时要求根据 $y_{ij}$ 的取值判断 $i,j$ 的先后顺序.&lt;br>
-可以构建下面的条件&lt;br>
-$$\left\lbrace\begin{array}{l}
-C_i\leqslant S_j+M(y_{ji}+2-x_i-x_j)\\
-C_i\leqslant S_j+M(y_{ji}+x_i+x_j)
-\end{array}\right.$$&lt;br>
-不难验证, 当 $x_i\neq x_j$ 时, 上述两个限制肯定成立. 而当 $x_i=x_j$ 时, 上述限制具有约束力, 仅当 $y_{ji}=0$, 即 $y_{ij}=1$. 此时要求 $i$ 在 $j$ 之前完成, 即 $C_i\leqslant S_j$. 满足定义.&lt;br>
-所以只需对 $i\neq j$ 上述两条约束成立即可满足在单个工作站上不重叠.&lt;br>
-综上, 汇总可得总的运筹模型可建立为&lt;br>
-$$\left\lbrace\begin{array}{lll}
-\min &amp;amp; C_{11} &amp;amp; \\
-\text{s.t.} &amp;amp; C_j\leqslant S_i &amp;amp; \forall j\in P_i, i=1,2,\ldots,11\\
-&amp;amp; y_{ij}+y_{ji}=1 &amp;amp; 1\leqslant i\neq j\leqslant 11\\
-&amp;amp; C_i\leqslant S_j+M(y_{ji}+2-x_i-x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11 \\
-&amp;amp; C_i\leqslant S_j+M(y_{ji}+x_i+x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11\\
-&amp;amp; x_{ij}\in {0,1} &amp;amp; 1\leqslant i\neq j\leqslant 11\\
-&amp;amp; y_{ij}\in {0,1} &amp;amp; 1\leqslant i\neq j\leqslant 11\\
-&amp;amp; C_i=S_i+x_i t_{i1}+(1-x_i)t_{i2} &amp;amp; i=1,\ldots,11\\
-&amp;amp; S_i\geqslant 0 &amp;amp; i=1,\ldots,11
-\end{array}\right.$$&lt;br>
-下面是一组我得到的最优解, 并且分类讨论 A 一开始在 1,还是 2 可以证明该方案已经达到下界.&lt;br>
-先简要证明.&lt;br>
-如果 A 在工作站 1, 那么只考虑 A,B,C,F,G,J,K 这些任务, A 25h, B 最早 30h, C 最早 34h, F,G 最早 41h (F1G2), 再 J,K 依次完成最早要 47h.&lt;br>
-如果 A 在工作站 2, 那么 D 最早在 35h 完成, E 最早 40h, H,I 最早 45h, 再 J,K 依次完成最早要 51h.&lt;br>
-注意上述两种假设都忽略了部分任务以考虑最优, 所以实际必定不低于上述考虑, 所以总时间至少为 47h.&lt;br>
-下面给出恰好为 47h 的方案.&lt;br>
-在工作站 1 上依次完成 A,B,I,F.&lt;br>
-在工作站 2 上依次完成 D,E,H,C,G,J,K.&lt;br>
-几个重要的时间点,&lt;br>
-$0\sim25h$ 工作站 1 完成 A, 工作站 2 完成 D,E,H.&lt;br>
-$25\sim30h$ 工作站 1 完成 B, 工作站 2 等待.&lt;br>
-$30\sim34h$ 工作站 1 完成 I, 工作站 2 完成 C.&lt;br>
-$34\sim41h$ 工作站 1 完成 F, 工作站 2 完成 G.&lt;br>
-接下来 6h 依次完成 J,K. 在 47h 时完成所有任务. 达到理论下界. 所以已经是最优解.&lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业250915</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="112">&lt;span>1.1.2&lt;/span>
  &lt;a href="#112" class="heading-mark">
