@@ -17,6 +17,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('file', help='markdown file to process')
 parser.add_argument('--dry-run', action='store_true', help='do not write changes; only report')
+parser.add_argument('--backup', action='store_true', help='create .bak backup for the file')
 args = parser.parse_args()
 
 p = Path(args.file)
@@ -76,10 +77,12 @@ if changed:
     if args.dry_run:
         print('Would update', p)
         sys.exit(0)
-    bak = p.with_suffix(p.suffix + '.bak')
-    bak.write_text(text, encoding='utf-8')
+    if args.backup:
+        bak = p.with_suffix(p.suffix + '.bak')
+        bak.write_text(text, encoding='utf-8')
+        print('Updated', p, 'backup at', bak)
     p.write_text(new_text, encoding='utf-8')
-    print('Updated', p, 'backup at', bak)
+    print('Updated', p)
 else:
     print('No changes needed (no exact double-backslashes in math spans).')
 

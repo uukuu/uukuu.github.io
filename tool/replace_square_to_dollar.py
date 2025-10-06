@@ -69,8 +69,7 @@ def process_file(path: Path, dry_run=False):
     if changed:
         if dry_run:
             return True, text, new_text
-        bak = path.with_suffix(path.suffix + '.bak')
-        bak.write_text(text, encoding='utf-8')
+        # do not create .bak by default; caller can opt-in
         path.write_text(new_text, encoding='utf-8')
         return True, text, new_text
     return False, text, text
@@ -84,6 +83,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--root', default='.', help='root dir')
     p.add_argument('--dry-run', action='store_true')
+    p.add_argument('--backup', action='store_true', help='create .bak backups for modified files')
     args = p.parse_args()
     root = Path(args.root)
     files = find_md(root)

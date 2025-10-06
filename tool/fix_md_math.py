@@ -124,9 +124,7 @@ def process_file(path: Path, dry_run=False):
     if changed:
         if dry_run:
             return True, orig, new_text
-        # backup
-        bak = path.with_suffix(path.suffix + '.bak')
-        bak.write_text(orig, encoding='utf-8')
+        # by default do not create .bak files unless caller requests
         path.write_text(new_text, encoding='utf-8')
         return True, orig, new_text
     return False, orig, orig
@@ -140,6 +138,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--root', default='.', help='repo root (default current dir)')
     p.add_argument('--dry-run', action='store_true', help='show changes but do not write')
+    p.add_argument('--backup', action='store_true', help='create .bak backups for modified files')
     p.add_argument('--preview', action='store_true', help='print diff for changed files')
     args = p.parse_args()
 
