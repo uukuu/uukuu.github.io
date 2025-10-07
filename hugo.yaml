@@ -100,15 +100,15 @@ params:
       # giscus configuration - replace placeholder values with your GitHub repo/category ids
       giscus:
         enable: true
-        repo: "youruser/yourrepo"         # e.g. "uukuu/uukuu.github.io"
-        repoId: ""                        # optional: GitHub repo node_id
+        repo: "uukuu/blog-comments"         # e.g. "uukuu/uukuu.github.io"
+        repoId: "R_kgDON1UDbQ"                        # optional: GitHub repo node_id
         category: "Announcements"         # replace with your discussion category name
-        categoryId: ""                    # optional: category id
+        categoryId: "DIC_kwDON1UDbc4CmtoB"                    # optional: category id
         mapping: "pathname"               # how to map pages to discussions: pathname/url/title
         origin: "https://giscus.app"      # change if you self-host giscus
         reactionsEnabled: "1"
-        emitMetadata: "0"
-        inputPosition: "bottom"
+        emitMetadata: "1"
+        inputPosition: "top"
         lang: "zh-CN"
         lightTheme: "light"
         darkTheme: "dark"
