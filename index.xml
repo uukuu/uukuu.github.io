@@ -11,7 +11,7 @@
 0, &amp;amp; \text{不包含}
 \end{array}\right.$&lt;br>
 那么我们的目标函数就是 $\min \sum\limits_{i,j=0}^n c_{ij}x_{ij}$.&lt;br>
-接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits_{i=0}^n x_{ij}=1$. 也只会有一条出边 $\sum\limits_{j=0}x_{ij}=0$.&lt;br>
+接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits_{i=0}^n x_{ij}=1$. 也只会有一条出边 $\sum\limits_{j=0}^n x_{ij}=1$.&lt;br>
 但仍要保证路径是一条, 考虑加入辅助变量 $u_i, i=1,2,\ldots, n$, 只需满足 $u_i-u_j+x_{ij}(n)\leqslant n-1, i,j=1,2,\ldots,n$.&lt;br>
 因为当 $1\sim n$ 中存在子连通图, 那么一定存在一个子环, 设大小, 而将这个环上的边 $(i,j)$ 对应的式子取出, 那么相加后所有的 $u_i,u_j$ 抵消, 左侧为 $kn$, 右侧为 $k(n-1)$ 显然不成立.&lt;br>
 所以该限制确保了不存在子环. 而当只有一条路径时, 只需取 $u_i$ 表示第 i 个点的顺序即可保证所有等式成立, 因为此时 $1\leqslant u_i\leqslant n$, $u_i-u_j\leqslant n-1$ 成立.&lt;br>
