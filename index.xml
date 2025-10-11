@@ -160,7 +160,7 @@ $\Vert z_1+z_2\Vert_2=\sqrt{(x_1+x_2)^2+(y_1+y_2)^2}\leqslant \sqrt{x_1^2+y_1^2}
 $\Vert z_1+z_2\Vert_3=\max(|x_1+x_2|,|y_1+y_2|)\leqslant \max(|x_1|,|y_1|)+\max(|x_2|,|y_2|)=\Vert z_1\Vert_3+\Vert z_2\Vert_3$,&lt;br>
 $\Vert z_1+z_2\Vert_4=((x_1+x_2)^4+(y_1+y_2)^4)^{1/4}\leqslant (x_1^4+y_1^4)^{1/4}+(x_2^4+y_2^4)^{1/4}=\Vert z_1\Vert_4+\Vert z_2\Vert_4$.&lt;/p>
 &lt;p>(2)&lt;br>
-&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.4.1' alt="1.4.1 单位球面">{width=60%}&lt;/p>
+&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.4.1.png' alt="1.4.1 单位球面">{:width=60%}&lt;/p>
 &lt;p>(3)&lt;br>
 $\Vert\cdot\Vert_1: 4$, $\Vert\cdot\Vert_2: 2+\sqrt{2}$, $\Vert\cdot\Vert_3: 3$, $\Vert\cdot\Vert_4: 2+\sqrt[4]{2}$.&lt;/p>
 &lt;/div>
