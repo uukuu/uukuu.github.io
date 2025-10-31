@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251120</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="214">&lt;span>2.1.4&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251103</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="214">&lt;span>2.1.4&lt;/span>
  &lt;a href="#214" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -26,14 +26,14 @@ $$\left|\int_0^1 g(t)y(t)\text{d} t-M\right|&amp;lt;\left|\int_0^1|g(t)-x_0(t)|y
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $f$ 是 $\mathscr X$ 上的非零有界线性泛函, 令
-$$d=\inf{\Vert x\Vert|f(x)=1,x\in\mathscr X},$$
+$$d=\inf\lbrace \Vert x\Vert|f(x)=1,x\in\mathscr X \rbrace,$$
 求证 $\Vert f\Vert=1/d$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>$\forall x\in\mathscr X-{0}$, 取 $\alpha=\dfrac{1}{f(x)}$, 那么 $\alpha x$ 就满足 $f(\alpha x)=\alpha f(x)=1$, 从而 $\Vert \alpha x\Vert\geqslant d$, 即 $\dfrac{\Vert x\Vert}{\Vert f(x)\Vert}\geqslant d$.&lt;/p>
-&lt;p>所以 $d=\inf\left\lbrace\dfrac{\Vert x\Vert}{\Vert f(x)\Vert}|x\in \mathscr X\right\rbrace$, 故
-$\dfrac{1}{d}=\sup\left\lbrace\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}|x\in\mathscr X\right\rbrace$,
+ &lt;div class="admonition-content">&lt;p>$\forall x\in\mathscr X-\lbrace 0 \rbrace$, 取 $\alpha=\dfrac{1}{f(x)}$, 那么 $\alpha x$ 就满足 $f(\alpha x)=\alpha f(x)=1$, 从而 $\Vert \alpha x\Vert\geqslant d$, 即 $\dfrac{\Vert x\Vert}{\Vert f(x)\Vert}\geqslant d$.&lt;/p>
+&lt;p>所以 $d=\inf\left\lbrace \dfrac{\Vert x\Vert}{\Vert f(x)\Vert}|x\in \mathscr X\right\rbrace$, 故
+$\dfrac{1}{d}=\sup\left\lbrace \dfrac{\Vert f(x)\Vert}{\Vert x\Vert}|x\in\mathscr X\right\rbrace$,
 即 $\Vert f\Vert=\dfrac{1}{d}$.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -57,14 +57,14 @@ $$f\in\mathscr X^*\Leftrightarrow N(f)\ \text{是闭线性子空间}.$$&lt;/li>
 &lt;li>
 &lt;p>(1) &lt;strong>线性性:&lt;/strong> $\forall x,y\in N(T),\alpha,\beta\in \mathbb{K}$, 有
 $T(\alpha x+\beta y)=\alpha T(x)+\beta T(y)=0$, 从而 $\alpha x+\beta y\in N(T)$.
-&lt;strong>闭性:&lt;/strong> 由 $T$ 有界, 从而连续, 又 ${0}$ 是 $\mathscr Y$ 中的闭集,
+&lt;strong>闭性:&lt;/strong> 由 $T$ 有界, 从而连续, 又 $\lbrace 0 \rbrace$ 是 $\mathscr Y$ 中的闭集,
 所以 $T^{-1}({0})$ 是闭集. 故 $N(T)$ 是闭线性子空间.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>(2) 任取一个无界的线性泛函 $T_0:\mathscr X\to\mathscr Y$,
 设 $T:\mathscr X\to\mathscr X\times \mathscr Y, T(x)=(x,T_0(x))$.
 取范数 $\Vert T(x)\Vert=\Vert x\Vert+\Vert T_0(x)\Vert$ 不难验证满足范数定义.
-而 $N(T)={0}$, 因为第一维 $x$ 的限制. 又 $T_0$ 无界, 设 $D\subset\mathscr X$
+而 $N(T)=\lbrace 0 \rbrace$, 因为第一维 $x$ 的限制. 又 $T_0$ 无界, 设 $D\subset\mathscr X$
 使得 $T_0(D)$ 无界, 那么 $T(D)$ 也是无界的, 因为 $\Vert T(x)\Vert\geqslant \Vert T_0(x)\Vert$.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -87,7 +87,7 @@ $$\Vert x_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x_n)=1.$$
 $$H_f^\lambda\overset{\Delta}{=}{x\in\mathscr X|f(x)=\lambda}\quad (\forall \lambda\in \mathbb K).$$
 如果 $f\in\mathscr X^*$, 并且 $\Vert f\Vert=1$, 求证:&lt;/p>
 &lt;ul>
-&lt;li>(1) $|f(x)|=\inf{\Vert x-z\Vert|\forall z\in H_f^0}\quad(\forall x\in\mathscr X)$;&lt;/li>
+&lt;li>(1) $|f(x)|=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace\quad(\forall x\in\mathscr X)$;&lt;/li>
 &lt;li>(2) $\forall\lambda\in\mathbb K$, $H_f^\lambda$ 上的任一点 $x$ 到 $H_f^0$ 的距离都等于 $|\lambda|$.
 并对 $\mathscr X=\mathbb{R}^2,\mathbb K=\mathbb{R}$ 情形解释 (1) 和 (2) 的几何意义.&lt;/li>
 &lt;/ul>
@@ -96,26 +96,26 @@ $$H_f^\lambda\overset{\Delta}{=}{x\in\mathscr X|f(x)=\lambda}\quad (\forall \lam
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ul>
 &lt;li>
-&lt;p>(1) 我们考虑 $A={x-z: z\in H_f^0}$ 究竟是什么集合.
+&lt;p>(1) 我们考虑 $A=\lbrace x-z: z\in H_f^0 \rbrace$ 究竟是什么集合.
 我们记 $M=|f(x)|$, 首先 $|f(x-z)|=|f(x)-0|=M$, 所以 $A\subset H_f^M$.
 此外 $\forall y\in H_f^M$, 有 $x-y\in H_f^0$, 所以 $x-(x-y)=y\in A$, 即 $A=H_f^M$.&lt;/p>
-&lt;p>因此我们只需证 $|f(x)|=\inf{\Vert x\Vert: x\in H_f^{|f(x)|}}$.&lt;/p>
+&lt;p>因此我们只需证 $|f(x)|=\inf\lbrace \Vert x\Vert: x\in H_f^{|f(x)|} \rbrace$.&lt;/p>
 &lt;p>一方面由 $\Vert f\Vert=1$, $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\leqslant 1$,
 $\forall x\in\mathscr X$. 所以 $\Vert f(x)\Vert$ 是下界.&lt;/p>
-&lt;p>另一方面, 根据上确界定义, 存在一列 ${x_n}$ 满足
+&lt;p>另一方面, 根据上确界定义, 存在一列 $\lbrace x_n \rbrace$ 满足
 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to 1$,
 那么取 $y_n=\dfrac{\Vert f(x)\Vert}{\Vert f(x_n)\Vert}x_n$,
 那么 $\dfrac{\Vert f(y_n)\Vert}{\Vert y_n\Vert}=\dfrac{\Vert f(x_n)\Vert}{\Vert x_n\Vert}\to 1$,
 且 $\Vert f(y_n)\Vert=\Vert f(x)\Vert$.
 于是 $y_n\in H_f^M$ 且 $\Vert f(y_n)\Vert\to \Vert f(x)\Vert$,
 即 $\Vert f(x)\Vert$ 就是下确界.&lt;/p>
-&lt;p>综上 $\Vert f(x)\Vert=\inf{\Vert x-z\Vert|\forall z\in H_f^0}$.&lt;/p>
+&lt;p>综上 $\Vert f(x)\Vert=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace$.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>(2) $\rho(x,H_f^0)=\inf{\Vert x-z\Vert|\forall z\in H_f^0}=|f(x)|=|\lambda|$.&lt;/p>
+&lt;p>(2) $\rho(x,H_f^0)=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace=|f(x)|=|\lambda|$.&lt;/p>
 &lt;p>对 $x=(\alpha,\beta)\in\mathbb{R}^2$, 设 $f((1,0))=e_1,f((0,1))=e_2$,
 则 $f(x)=\alpha e_1+\beta e_2$,
-所以 $H_f^\lambda={(\alpha,\beta)|\alpha e_1+\beta e_2=\lambda}$ 是一条直线.
+所以 $H_f^\lambda=\lbrace (\alpha,\beta)|\alpha e_1+\beta e_2=\lambda \rbrace$ 是一条直线.
 所以 (1) 和 (2) 指的就是点到直线和两条平行线的距离关系.&lt;/p>
 &lt;/li>
 &lt;/ul>
