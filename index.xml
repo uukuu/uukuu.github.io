@@ -43,7 +43,7 @@ $\dfrac{1}{d}=\sup\left\lbrace \dfrac{\Vert f(x)\Vert}{\Vert x\Vert}|x\in\mathsc
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $T:\mathscr X\to\mathscr Y$ 是线性的, 令
-$$N(T)\overset{\Delta}{=}{x\in\mathscr X|Tx=0}.$$&lt;/p>
+$$N(T)\overset{\Delta}{=}\lbrace x\in\mathscr X|Tx=0\rbrace.$$&lt;/p>
 &lt;ul>
 &lt;li>(1) 若 $T\in \mathscr L(\mathscr X,\mathscr Y)$, 求证: $N(T)$ 是 $\mathscr X$ 的闭线性子空间.&lt;/li>
 &lt;li>(2) 问 $N(T)$ 是 $\mathscr X$ 的闭线性子空间能否推出 $T\in\mathscr L(\mathscr X,\mathscr Y)$?&lt;/li>
@@ -84,7 +84,7 @@ $$\Vert x_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x_n)=1.$$
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $f$ 是 $\mathscr X$ 上的线性泛函, 记
-$$H_f^\lambda\overset{\Delta}{=}{x\in\mathscr X|f(x)=\lambda}\quad (\forall \lambda\in \mathbb K).$$
+$$H_f^\lambda\overset{\Delta}{=}\lbrace x\in\mathscr X|f(x)=\lambda\rbrace\quad (\forall \lambda\in \mathbb K).$$
 如果 $f\in\mathscr X^*$, 并且 $\Vert f\Vert=1$, 求证:&lt;/p>
 &lt;ul>
 &lt;li>(1) $|f(x)|=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace\quad(\forall x\in\mathscr X)$;&lt;/li>
