@@ -110,11 +110,11 @@ $\exists\alpha&amp;gt;0$, 使得 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert\qu
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ol>
 &lt;li>线性性由 $T$ 是线性算子显然得到. 对任意 $\lbrace x_n\rbrace \subset N(T), x_n\to x$. 那么 $(x_n,Tx_n)\to (x,0)$ 由 $T$ 的闭性 $x\in D(T), Tx=0$ 从而 $x\in N(T)$. 即 $N(T)$ 是闭的.&lt;/li>
-&lt;li>$N(T)=\lbrace 0\rbrace $ 即 $T$ 是单射.&lt;/li>
+&lt;li>$N(T)=\lbrace 0\rbrace $ 即 $T$ 是单射.&lt;br>
+$\Rightarrow$: 由 $T$ 是闭的且是单射, 可知 $T^{-1}$ 也是闭的. 再由 $R(T)$ 是闭集根据闭图像定理知 $T^{-1}$ 连续, 即有界. 所以存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha \Vert y \Vert, y\in R(T)$. 再由单射可取 $x\in D(T)$, 由 $x=T^{-1}y$. 从而得到 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert$$&lt;br>
+$\Leftarrow$: 由 $T$ 是单射, 所以在 $D(T)\to R(T)$ 上 $T$ 是双射. 又 $T^{-1}$ 也是闭的. 考虑 $T^{-1}:R(T)\to D(T)$ 是双射. 由题设条件可知 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\forall y\in R(T)$. 从而 $T^{-1}$ 有界. 即 $T^{-1}$ 连续. 从而考虑 $T^{-1}$ 的图像. 任取 $y_n\to y$. $T^{-1}y_n$ 也收敛. 从而根据闭算子定义可知 $y\in R(T)$. 即 $R(T)$ 是闭的.&lt;/li>
+&lt;li>考虑商空间 $\mathscr X/N(T)$. 那么 $d(x,N(T))=\Vert [x] \Vert$. 由于等价类的元素可以有核空间的元素和代表元线性表出, 所以等价类中元素的像均相等, 故自然引出新线性映射 $\widetilde{T}([x])=Tx+Tz=Tx$. 并且有 $\widetilde{T}$ 是单射和 $R(T)=R(\widetilde{T})$. 题目要证的条件就等价为 $\Vert [x] \Vert=d(x,N(T))\leqslant\alpha\Vert Tx \Vert=\alpha\Vert \widetilde{T}([x]) \Vert$.&lt;/li>
 &lt;/ol>
-&lt;p>$\Rightarrow$: 由 $T$ 是闭的且是单射, 可知 $T^{-1}$ 也是闭的. 再由 $R(T)$ 是闭集根据闭图像定理知 $T^{-1}$ 连续, 即有界. 所以存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha \Vert y \Vert, y\in R(T)$. 再由单射可取 $x\in D(T)$, 由 $x=T^{-1}y$. 从而得到 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert$$&lt;/p>
-&lt;p>$\Leftarrow$: 由 $T$ 是单射, 所以在 $D(T)\to R(T)$ 上 $T$ 是双射. 又 $T^{-1}$ 也是闭的. 考虑 $T^{-1}:R(T)\to D(T)$ 是双射. 由题设条件可知 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\forall y\in R(T)$. 从而 $T^{-1}$ 有界. 即 $T^{-1}$ 连续. 从而考虑 $T^{-1}$ 的图像. 任取 $y_n\to y$. $T^{-1}y_n$ 也收敛. 从而根据闭算子定义可知 $y\in R(T)$. 即 $R(T)$ 是闭的.
-3. 考虑商空间 $\mathscr X/N(T)$. 那么 $d(x,N(T))=\Vert [x] \Vert$. 由于等价类的元素可以有核空间的元素和代表元线性表出, 所以等价类中元素的像均相等, 故自然引出新线性映射 $\widetilde{T}([x])=Tx+Tz=Tx$. 并且有 $\widetilde{T}$ 是单射和 $R(T)=R(\widetilde{T})$. 题目要证的条件就等价为 $\Vert [x] \Vert=d(x,N(T))\leqslant\alpha\Vert Tx \Vert=\alpha\Vert \widetilde{T}([x]) \Vert$.&lt;/p>
 &lt;p>并且根据商空间的完备性定理, $\mathscr X$ 是 $B$ 空间, $N(T)$ 是闭线性子空间, 从而 $\mathscr X/N(T)$ 也是 $B$ 空间.&lt;/p>
 &lt;p>那么根据 (2) 结论 $R(\widetilde{T})$ 是闭的与 $\exists\alpha&amp;gt;0$ 使得 $\Vert x \Vert\leqslant\alpha\Vert \widetilde{T}x \Vert (\forall x\in D(\widetilde{T}))$ 充要.&lt;/p>
 &lt;p>所以原命题得证.&lt;/p>
