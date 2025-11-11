@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251103</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="214">&lt;span>2.1.4&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251110</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251110./</link><pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251110./</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="221">&lt;span>2.2.1&lt;/span>
+ &lt;a href="#221" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $f_1,f_2,\cdots,f_n$ 是 $H$ 上的一组有界线性泛函,&lt;/p>
+&lt;p>$$M\overset{\Delta}{=}\bigcap\limits_{k=1}^n N(f_k),\quad N(f_k)\overset{\Delta}{=}\lbrace x\in H|f_k(x)=0\rbrace $$
+$$(k=1,2,\cdots,n).$$ $\forall x_0\in H$, 记 $y_0$ 为 $x_0$ 在 $M$ 上的正交投影, 求证: $\exists y_k\in N(f_k)^{\perp}$ 及 $\alpha_1,\alpha_2,\cdots,\alpha_n\in\mathbb K$, 使得 $$y_0=x_0-\sum\limits_{k=1}^n \alpha_ky_k.$$&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>对于空间 $Y=\sum\limits_{k=1}^n N(f_k)^\perp$, $\forall x\in Y^\perp$, 有 $(x,Y)=0$. 又 $N(f_k)^\perp\subset Y$, 所以 $(x,N(f_k)^\perp)=0$ 从而 $x\in N(f_k)$. 故 $x\in M$. 即 $Y^\perp\subset M$.&lt;/p>
+&lt;p>另一方面, $M\subset N(f_k)$, 从而 $M^\perp\supset N(f_k)^\perp$, 进而 $M\subset Y^\perp$.&lt;/p>
+&lt;p>从而 $Y^\perp=M$. 即 $Y=M^\perp$. 故根据正交投影定理, $\exists x_1\in M^\perp$ 满足 $y_0=x_0-y_1$, 又 $x_1\in Y$, 故存在 $y_k\in N(f_k)^\perp, \alpha_k\in \mathbb K$ 使得 $x_1=\sum\limits_{k=1}^n \alpha_ky_k$. 即 $y_0=x_0-\sum\limits_{k=1}^n \alpha_ky_k$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="225">&lt;span>2.2.5&lt;/span>
+ &lt;a href="#225" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $L,M$ 是 $H$ 上的闭线性子空间, 求证:&lt;/p>
+&lt;ol>
+&lt;li>$L\perp M\Leftrightarrow P_LP_M=0$;&lt;/li>
+&lt;li>$L=M^\perp \Leftrightarrow P_L+P_M=I$ (恒同算子);&lt;/li>
+&lt;li>$P_LP_M=P_{L\cap M}\Leftrightarrow P_LP_M=P_MP_L$.&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>$\Rightarrow$: $L\perp M\Rightarrow P_M(x)\perp L\Rightarrow P_L(P_M(x))=0\Rightarrow P_LP_M=0$.&lt;/li>
+&lt;/ol>
+&lt;p>$\Leftarrow$: $\forall x\in M$, 有 $P_M(x)=x$, 由 $P_LP_M=0\Rightarrow P_L(x)=0$ 即 $x\perp L$, 从而 $L\perp M$.
+2. $\Rightarrow$: $\forall x\in H$, 根据正交分解定理, 存在唯一的 $x_0\in M, x_1\in M^\perp$ 使得 $x=x_0+x_1$, 且有 $P_M(x)=x_0$. 另一方面, 有唯一的 $x_0&amp;rsquo;\in M^\perp,x_1&amp;rsquo;\in (M^\perp)^\perp=M$ 使得 $x=x_0&amp;rsquo;+x_1&amp;rsquo;$, 且 $P_L(x)=x_0&amp;rsquo;$. 由于分解的唯一性, 我们有 $x_0=x_1&amp;rsquo;, x_0&amp;rsquo;=x_1$. 进而 $(P_L+P_M)(x)=x_0+x_1=x$ 即 $P_L+P_M=I$.&lt;/p>
+&lt;p>$\Leftarrow$: 仍考虑正交分解 $\forall x\in H, x=x_0+x_1$. 此时 $P_L(x)=(I-P_M)(x)=x-x_0=x_1=P_{M^\perp}(x)$. 即 $P_L=P_{M^\perp}$. 从而 $L=M^\perp$.
+3. $\Rightarrow$: $\forall x\in H$, 在 $M$ 上正交分解 $x=x_0+x_1$, 在 $L\cap M$ 上分解 $x=z_0+z_1$, 再在 L 上分解 $x_0=y_0+y_1, x_1=y_0&amp;rsquo;+y_1&amp;rsquo;$, 由 $P_LP_M=P_{L\cap M}$, 从而 $P_L(P_M(x))=P_L(y_0+y_1)=y_0=P_{L\cap M}(x)=z_0$. 那么 $P_M(P_L(x))=P_MP_L(z_0+z_1)=P_M(z_0)+P_MP_L(y_1+y_0&amp;rsquo;+y_1&amp;rsquo;)=z_0+P_M(y_0&amp;rsquo;)$.&lt;/p>
+&lt;p>下证 $P_M(y_0&amp;rsquo;)=0$.&lt;/p>
+&lt;p>而我们有 $z_1=y_0&amp;rsquo;+y_1+y_1&amp;rsquo;\in (L\cap M)^\perp, y_1,y_1&amp;rsquo;\in L^\perp$. 由 $L\cap M\subset L$, 故 $(L\cap M)^\perp\supset L^\perp$ 进而 $y_1,y_1&amp;rsquo;\in (L\cap M)^\perp$, 从而 $y_0&amp;rsquo;\in (L\cap M)^\perp$.&lt;/p>
+&lt;p>又 $y_0&amp;rsquo;\in L$ 所以 $(y_0&amp;rsquo;,L^\perp)=0\Rightarrow (y_0&amp;rsquo;,L^\perp\cap M)=0$. 考虑 $L\cap M$ 作为 $M$ 上的闭线性子空间, $\forall x\in M$ 可以唯一正交分解为 $x=x_0+x_1,\ x_0\in L\cap M, x_1\in L^\perp \cap M$. 而此时 $y_0&amp;rsquo;\perp L^\perp \cap M$, 之前证了 $y_0&amp;rsquo;\perp L\cap M$. 从而 $y_0&amp;rsquo;\perp M$. 即有 $P_M(y_0&amp;rsquo;)=0$.&lt;/p>
+&lt;p>综上 $P_MP_L(x)=z_0+P_M(y_0&amp;rsquo;)=z_0=P_{L\cap M}(x)=P_LP_M(x)$. 即 $P_LP_M=P_MP_L$.&lt;/p>
+&lt;p>$\Leftarrow$: $\forall x\in H$, 在 $M$ 上正交分解 $x=x_0+x_1$, 再在 $L$ 上正交分解 $x_0=y_0+y_1$.&lt;/p>
+&lt;p>根据条件有 $P_LP_M(x)=y_0=P_M(P_L(x))$. 因为右边最后一个算子是 $P_M$ 所以结果肯定在 $M$ 上, 即 $y_0\in M$.&lt;/p>
+&lt;p>又 $y_0\in L$, 即 $y_0\in L\cap M$. 下面考虑 $P_{L\cap M}(x)=P_{L\cap M}(y_0+y_1+x_1)=y_0+P_{L\cap M}(y_1)+P_{L\cap M}(x_1)$.&lt;/p>
+&lt;p>由 $y_1\in L^\perp,x_1\in M^\perp$ 且 $L\cap M\subset L,L\cap M\subset M$. 从而 $L^\perp,M^\perp\subset (M\cap L)^\perp$. 故 $P_{L\cap M}(y_1)=P_{L\cap M}(x_1)=0$. 因此有 $P_LP_M(x)=y_0=P_{L\cap M}(x)$. 即 $P_LP_M=P_{L\cap M}$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;div class="details admonition info open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>注&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>证明: $(L\cap M)^\perp=L^\perp+M^\perp$.
+$\forall x\in L^\perp+M^\perp$, $x=y+z, y\in L^\perp, z\in M^\perp$.&lt;/p>
+&lt;p>从而 $(y,L)=(z,M)=0$, 即 $(y,L\cap M)=(z,L\cap M)=0$, 从而 $(x,L\cap M)=0$, $x\in L\cap M\Rightarrow L\cap M\supset L^\perp+M^\perp$.&lt;/p>
+&lt;p>再证 $(L\cap M)^\perp\subset L^\perp+M^\perp$.&lt;/p>
+&lt;p>等价于证明 $(L\cap M)\supset (L^\perp+M^\perp)^\perp$.&lt;/p>
+&lt;p>由此, 我们说明 $y_0&amp;rsquo;\in (L\cap M)^\perp=L^\perp+M^\perp$ 故 $y_0&amp;rsquo;=a+b, a\in L^\perp,b\in M^\perp$.&lt;/p>
+&lt;p>但我们还有 $y_0&amp;rsquo;\in L$&lt;/p>
+&lt;p>$\forall x\in (L^\perp+M^\perp)^\perp$, $(x,L^\perp+M^\perp)=0\Rightarrow(x,L^\perp)=(x,M^\perp)=0$ 从而 $x\in L,x\in M$, 即 $x\in M\cap L$.&lt;/p>
+&lt;p>综上 $(L\cap M)^\perp=L^\perp+M^\perp$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="234">&lt;span>2.3.4&lt;/span>
+ &lt;a href="#234" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B^*$ 空间, $D$ 是 $\mathscr X$ 的线性子空间, 并且 $A:D\to\mathscr Y$ 是线性映射. 求证:&lt;/p>
+&lt;ol>
+&lt;li>如果 $A$ 连续且 $D$ 是闭的, 那么 $A$ 是闭算子;&lt;/li>
+&lt;li>如果 $A$ 连续且是闭算子, 那么 $\mathscr Y$ 完备蕴含 $D$ 闭;&lt;/li>
+&lt;li>如果 $A$ 是单射的闭算子, 那么 $A^{-1}$ 也是闭算子;&lt;/li>
+&lt;li>如果 $\mathscr X$ 完备, $A$ 是单射的闭算子, $R(A)$ 在 $\mathscr Y$ 中稠密, 并且 $A^{-1}$ 连续, 那么 $R(A)=\mathscr Y$.&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>由于 $D(A)$ 闭且 $A$ 有界则 $A$ 是闭算子, 另外线性算子的连续性与有界性等价, 从而 $A$ 是闭算子.&lt;/li>
+&lt;li>由 $A$ 的连续性, 当 $x_n\to x$ 是 $\mathscr X$ 中的收敛列, $\lbrace Ax_n\rbrace $ 也是柯西列. 再由 $\mathscr Y$ 的完备性, $\lbrace Ax_n\rbrace $ 收敛. 所以 $(x_n,Ax_n)\to (x,y)$. 再由 $A$ 是闭算子知 $x\in D(A)$. 故 $D$ 也是闭的.&lt;/li>
+&lt;li>$A^{-1}:R(A)\to D$. 设 $y_n\to y, y_n\in R(A)$. 存在 $x_n\to x$ 满足 $y_n=Ax_n$. 并且由 $A$ 的闭性 $(A^{-1}y_n,y_n)=(x_n,Ax_n)$ 构成的集合是闭的. 从而 $A^{-1}$ 也是闭算子.&lt;/li>
+&lt;li>由 (3) 可知 $A^{-1}$ 也是闭算子. 再由 (2) 可知, $R(A)$ 是闭的. 又 $R(A)$ 在 $\mathscr Y$ 中稠密, 从而 $R(A)=\mathscr Y$.&lt;/li>
+&lt;/ol>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2311">&lt;span>2.3.11&lt;/span>
+ &lt;a href="#2311" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B$ 空间, $A\in\mathscr L(\mathscr X,\mathscr Y)$ 是满射的. 求证: 如果在 $\mathscr Y$ 中 $y_n\to y_0$, 则 $\exists C&amp;gt;0$ 与 $x_n\to x_0$, 使得 $Ax_n=y_n$, 且 $\Vert x_n \Vert\leqslant C \Vert y_n \Vert$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">设 $\widetilde{A}=\mathscr X/\ker A\to\mathscr Y$. 那么根据题设条件容易推出商空间引出的映射是双射. 那么根据 Banach 逆映射定理可知 $\widetilde{A}^{-1}$ 也是有界线性算子. 进而根据有界算子定义知存在 $C$, 使得 $\Vert [x_n] \Vert\leqslant C\Vert y_n \Vert$. 接着只要取商空间等价类中的代表元 $x_n$ 满足 $\Vert x_n \Vert\leqslant2\Vert [x_n] \Vert\leqslant 2C\Vert y_n \Vert$. 即可.&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2312">&lt;span>2.3.12&lt;/span>
+ &lt;a href="#2312" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B$ 空间, $T$ 是闭线性算子, $D(T)\subset \mathscr X$, $R(T)\subset\mathscr Y$, $N(T)\overset{\Delta}{=}\lbrace x\in\mathscr X| Tx=0\rbrace $.&lt;/p>
+&lt;ol>
+&lt;li>求证: $N(T)$ 是 $\mathscr X$ 的闭线性子空间.&lt;/li>
+&lt;li>求证: $N(T)=\lbrace 0\rbrace $, $R(T)$ 在 $\mathscr Y$ 中闭的充要条件是,
+$\exists\alpha&amp;gt;0$, 使得 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert\quad(\forall x\in D(T))$$&lt;/li>
+&lt;li>如果用 $d(x,N(T))$ 表示点 $x\in \mathscr X$ 到集合 $N(T)$ 的距离 $\left(\inf\limits_{z\in N(T)}\Vert z-x \Vert\right)$. 求证: $R(T)$ 在 $\mathscr Y$ 中闭的充要条件是, $\exists\alpha&amp;gt;0$, 使得 $$d(x,N(T))\leqslant \alpha \Vert Tx \Vert\quad (\forall x\in D(T)).$$&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>线性性由 $T$ 是线性算子显然得到. 对任意 $\lbrace x_n\rbrace \subset N(T), x_n\to x$. 那么 $(x_n,Tx_n)\to (x,0)$ 由 $T$ 的闭性 $x\in D(T), Tx=0$ 从而 $x\in N(T)$. 即 $N(T)$ 是闭的.&lt;/li>
+&lt;li>$N(T)=\lbrace 0\rbrace $ 即 $T$ 是单射.&lt;/li>
+&lt;/ol>
+&lt;p>$\Rightarrow$: 由 $T$ 是闭的且是单射, 可知 $T^{-1}$ 也是闭的. 再由 $R(T)$ 是闭集根据闭图像定理知 $T^{-1}$ 连续, 即有界. 所以存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha \Vert y \Vert, y\in R(T)$. 再由单射可取 $x\in D(T)$, 由 $x=T^{-1}y$. 从而得到 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert$$&lt;/p>
+&lt;p>$\Leftarrow$: 由 $T$ 是单射, 所以在 $D(T)\to R(T)$ 上 $T$ 是双射. 又 $T^{-1}$ 也是闭的. 考虑 $T^{-1}:R(T)\to D(T)$ 是双射. 由题设条件可知 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\forall y\in R(T)$. 从而 $T^{-1}$ 有界. 即 $T^{-1}$ 连续. 从而考虑 $T^{-1}$ 的图像. 任取 $y_n\to y$. $T^{-1}y_n$ 也收敛. 从而根据闭算子定义可知 $y\in R(T)$. 即 $R(T)$ 是闭的.
+3. 考虑商空间 $\mathscr X/N(T)$. 那么 $d(x,N(T))=\Vert [x] \Vert$. 由于等价类的元素可以有核空间的元素和代表元线性表出, 所以等价类中元素的像均相等, 故自然引出新线性映射 $\widetilde{T}([x])=Tx+Tz=Tx$. 并且有 $\widetilde{T}$ 是单射和 $R(T)=R(\widetilde{T})$. 题目要证的条件就等价为 $\Vert [x] \Vert=d(x,N(T))\leqslant\alpha\Vert Tx \Vert=\alpha\Vert \widetilde{T}([x]) \Vert$.&lt;/p>
+&lt;p>并且根据商空间的完备性定理, $\mathscr X$ 是 $B$ 空间, $N(T)$ 是闭线性子空间, 从而 $\mathscr X/N(T)$ 也是 $B$ 空间.&lt;/p>
+&lt;p>那么根据 (2) 结论 $R(\widetilde{T})$ 是闭的与 $\exists\alpha&amp;gt;0$ 使得 $\Vert x \Vert\leqslant\alpha\Vert \widetilde{T}x \Vert (\forall x\in D(\widetilde{T}))$ 充要.&lt;/p>
+&lt;p>所以原命题得证.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251103</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251103/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="214">&lt;span>2.1.4&lt;/span>
  &lt;a href="#214" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -1829,577 +1951,4 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">34&lt;/span>&lt;span class="cl">		&lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">ans&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="sc">&amp;#39;\n&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">35&lt;/span>&lt;span class="cl">	&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">36&lt;/span>&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>ABC 419</title><link>http://localhost:1313/posts/algo/atsolu/abc419/</link><pubDate>Mon, 18 Aug 2025 19:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/algo/atsolu/abc419/</guid><category domain="http://localhost:1313/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">算法竞赛</category><description>&lt;h1 class="heading-element" id="abc419">&lt;span>ABC419&lt;/span>
- &lt;a href="#abc419" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h1>&lt;h2 class="heading-element" id="a-atcoder-language">&lt;span>A AtCoder Language&lt;/span>
- &lt;a href="#a-atcoder-language" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Takahashi is learning AtCoderish Language.&lt;br>
-He memorizes AtCoderish words corresponding to English words.&lt;br>
-He knows that &lt;code>red&lt;/code>, &lt;code>blue&lt;/code>, and &lt;code>green&lt;/code> in English respectively correspond to &lt;code>SSS&lt;/code>, &lt;code>FFF&lt;/code>, and &lt;code>MMM&lt;/code> in AtCoderish, and he knows no other words.&lt;/p>
-&lt;p>You are given a string $S$ consisting of lowercase English letters. If $S$ equals an English word that Takahashi knows corresponds to an AtCoderish word, output the AtCoderish word corresponding to $S$; otherwise, output the string &lt;code>Unknown&lt;/code>.&lt;/p>
-&lt;h3 class="heading-element" id="constraints">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$S$ is a string of length between $1$ and $10$, inclusive, consisting of English letters.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input">&lt;span>Input&lt;/span>
- &lt;a href="#input" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>S&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output">&lt;span>Output&lt;/span>
- &lt;a href="#output" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Output a string according to the instructions in the problem statement.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>red&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>SSS&lt;/code>&lt;/pre>&lt;p>&lt;code>red&lt;/code> in English corresponds to &lt;code>SSS&lt;/code> in AtCoderish.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-2">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>orange&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>Unknown&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="题意">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>读入一个单词, 将 &lt;code>red&lt;/code>, &lt;code>blue&lt;/code>, &lt;code>green&lt;/code> 改为 &lt;code>SSS&lt;/code>, &lt;code>FFF&lt;/code>, &lt;code>MMM&lt;/code> 输出, 其余单词输出 &lt;code>Unknown&lt;/code>.&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="b-get-min">&lt;span>B Get Min&lt;/span>
- &lt;a href="#b-get-min" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement-1">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>There is an empty bag.&lt;br>
-You are given $Q$ queries. Process these queries in order and output the answer to each type-$2$ query.&lt;/p>
-&lt;p>Each query is of one of the following types.&lt;/p>
-&lt;ul>
-&lt;li>Type $1$: Given as input in the format &lt;code>1 x&lt;/code>. Put a ball with the integer $x$ written on it into the bag.&lt;/li>
-&lt;li>Type $2$: Given as input in the format &lt;code>2&lt;/code>. Pick out one ball with the minimum integer written on it from the balls in the bag, and report that integer as the answer. This query is not given when the bag contains no balls.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="constraints-1">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$2 \leq Q \leq 100$&lt;/li>
-&lt;li>In a type-$1$ query, $1 \leq x \leq 100$.&lt;/li>
-&lt;li>When a type-$2$ query is given, the bag is not empty.&lt;/li>
-&lt;li>At least one type-$2$ query is given.&lt;/li>
-&lt;li>All input values are integers.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input-1">&lt;span>Input&lt;/span>
- &lt;a href="#input-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>Q
-query_1
-query_2
-...
-query_Q&lt;/code>&lt;/pre>&lt;p>Here, $\text{query}_i$ is the $i$-th query and is given in one of the following formats:&lt;/p>
-&lt;pre tabindex="0">&lt;code>1 x
-2&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output-1">&lt;span>Output&lt;/span>
- &lt;a href="#output-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Let $q$ be the number of type-$2$ queries, and output $q$ lines.&lt;br>
-The $i$-th line should contain the answer to the $i$-th type-$2$ query.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1-1">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>5
-1 6
-1 7
-2
-1 1
-2&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1-1">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>6
-1&lt;/code>&lt;/pre>&lt;p>Initially, the bag contains no balls.&lt;br>
-The 1st query puts a ball with $6$ written on it into the bag.&lt;br>
-The 2nd query puts a ball with $7$ written on it into the bag.&lt;br>
-In the 3rd query, the bag contains a ball with $6$ written on it and a ball with $7$ written on it, so you pick out the ball with $6$ written on it. The answer to this query is $6$.&lt;br>
-The 4th query puts a ball with $1$ written on it into the bag.&lt;br>
-In the 5th query, the bag contains a ball with $1$ written on it and a ball with $7$ written on it, so you pick out the ball with $1$ written on it. The answer to this query is $1$.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-2-1">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>3
-1 1
-1 1
-2&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2-1">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1&lt;/code>&lt;/pre>&lt;p>The bag may contain multiple balls with the same integer.&lt;/p>
-&lt;h3 class="heading-element" id="题意-1">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>维护一个数组, 支持 &lt;code>1 x&lt;/code> 放入 x. &lt;code>2&lt;/code> 删除当前数组中最小的元素并输出.&lt;/p>
-&lt;h3 class="heading-element" id="题解">&lt;span>题解&lt;/span>
- &lt;a href="#%e9%a2%98%e8%a7%a3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>数据范围很小, 直接模拟.&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="c-kings-summit">&lt;span>C King’s Summit&lt;/span>
- &lt;a href="#c-kings-summit" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement-2">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>There is a grid with $10^9$ rows and $10^9$ columns. Let $(i, j)$ denote the square at the $i$-th row from the top and $j$-th column from the left.&lt;/p>
-&lt;p>There are $N$ people on the grid. Initially, the $i$-th person is at square $(R_i, C_i)$.&lt;/p>
-&lt;p>The time starts at $0$. Each person can do the following move at times $1, 2, 3, 4, \ldots$.&lt;/p>
-&lt;ul>
-&lt;li>Stay at the current position, or move to an $8$-adjacent square. It is forbidden to leave the grid. Formally, let square $(i, j)$ be the current square, and move to one of the squares $(i - 1, j - 1), (i - 1, j), (i - 1, j + 1), (i, j - 1), (i, j), (i, j + 1), (i + 1, j - 1), (i + 1, j), (i + 1, j + 1)$ that exists. Assume that the move takes no time.&lt;/li>
-&lt;/ul>
-&lt;p>Find the minimum possible time when the $N$ people are at the same square.&lt;/p>
-&lt;h3 class="heading-element" id="constraints-2">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$1 \leq N \leq 2 \times 10^5$&lt;/li>
-&lt;li>$1 \leq R_i, C_i \leq 10^9$&lt;/li>
-&lt;li>All input values are integers.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input-2">&lt;span>Input&lt;/span>
- &lt;a href="#input-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>N
-R_1 C_1
-R_2 C_2
-...
-R_N C_N&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output-2">&lt;span>Output&lt;/span>
- &lt;a href="#output-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Output the answer.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1-2">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>3
-1 2
-8 1
-7 5&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1-2">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>3&lt;/code>&lt;/pre>&lt;p>All people will be at square $(5, 4)$ at time $3$ if each person moves as follows.&lt;/p>
-&lt;ul>
-&lt;li>At time $1$, the 1st person moves to square $(3, 4)$, the 2nd person moves to square $(6, 2)$, and the 3rd person moves to square $(7, 2)$.&lt;/li>
-&lt;li>At time $2$, the 1st person moves to square $(4, 4)$, the 2nd person moves to square $(5, 3)$, and the 3rd person moves to square $(6, 3)$.&lt;/li>
-&lt;li>At time $3$, the 1st person moves to square $(5, 4)$, the 2nd person moves to square $(5, 4)$, and the 3rd person moves to square $(5, 4)$.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="sample-input-2-2">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>2
-5 5
-5 5&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2-2">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>0&lt;/code>&lt;/pre>&lt;p>All people start at the same square.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-3">&lt;span>Sample Input 3&lt;/span>
- &lt;a href="#sample-input-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>4
-1 1
-1 10^9
-10^9 1
-10^9 10^9&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-3">&lt;span>Sample Output 3&lt;/span>
- &lt;a href="#sample-output-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>999999999&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="题意-2">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>平面坐标系中有 $n$ 个人, 每一时刻每个人都可以往八个方向移动一格, 问最少要多少时间所有人能到同一个坐标.&lt;/p>
-&lt;h3 class="heading-element" id="题解-1">&lt;span>题解&lt;/span>
- &lt;a href="#%e9%a2%98%e8%a7%a3-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>由于是八连通, 所以分别考虑横轴和纵轴, 取最大即可. 而单一方向显然是到中点汇合.&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="d-substr-swap">&lt;span>D Substr Swap&lt;/span>
- &lt;a href="#d-substr-swap" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement-3">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>You are given length-$N$ lowercase English strings $S$ and $T$, and $M$ pairs of integers $(L_1,R_1),(L_2,R_2),\ldots,(L_M,R_M)$.&lt;/p>
-&lt;p>Perform the following operation for $i=1,2,\ldots,M$ in order:&lt;/p>
-&lt;ul>
-&lt;li>Swap the $L_i$-th through $R_i$-th characters of $S$ and the $L_i$-th through $R_i$-th characters of $T$.&lt;/li>
-&lt;/ul>
-&lt;p>For example, if $S$ is &lt;code>abcdef&lt;/code>, $T$ is &lt;code>ghijkl&lt;/code>, and $(L_i,R_i)=(3,5)$, then $S$ and $T$ become &lt;code>abijkf&lt;/code> and &lt;code>ghcdel&lt;/code>, respectively.&lt;/p>
-&lt;p>Find the string $S$ after performing the $M$ operations.&lt;/p>
-&lt;h3 class="heading-element" id="constraints-3">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$1\leq N\leq 5\times 10^5$&lt;/li>
-&lt;li>$1\leq M\leq 2\times 10^5$&lt;/li>
-&lt;li>Each of $S$ and $T$ is a length-$N$ lowercase English strings.&lt;/li>
-&lt;li>$1\leq L_i\leq R_i\leq N$&lt;/li>
-&lt;li>$N$, $M$, $L_i$, and $R_i$ are integers.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input-3">&lt;span>Input&lt;/span>
- &lt;a href="#input-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>N M
-S
-T
-L_1 R_1
-L_2 R_2
-...
-L_M R_M&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output-3">&lt;span>Output&lt;/span>
- &lt;a href="#output-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Output the $S$ after performing the $M$ operations.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1-3">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>5 3
-apple
-lemon
-2 4
-1 5
-3 5&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1-3">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>lpple&lt;/code>&lt;/pre>&lt;p>Initially, $S$ and $T$ are &lt;code>apple&lt;/code> and &lt;code>lemon&lt;/code>, respectively.&lt;/p>
-&lt;ul>
-&lt;li>After the operation for $i=1$, $S$ and $T$ are &lt;code>aemoe&lt;/code> and &lt;code>lppln&lt;/code>, respectively.&lt;/li>
-&lt;li>After the operation for $i=2$, $S$ and $T$ are &lt;code>lppln&lt;/code> and &lt;code>aemoe&lt;/code>, respectively.&lt;/li>
-&lt;li>After the operation for $i=3$, $S$ and $T$ are &lt;code>lpple&lt;/code> and &lt;code>aemon&lt;/code>, respectively.&lt;/li>
-&lt;/ul>
-&lt;p>Thus, the string $S$ after the three operations is &lt;code>lpple&lt;/code>.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-2-3">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1 1
-a
-z
-1 1&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2-3">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>z&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="题意-3">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>给出两个长度相同的字符串, 有 $m$ 个操作, 每个操作给出一个区间 $L_i,R_i$, 将这两个字符串对应位置交换.&lt;/p>
-&lt;h3 class="heading-element" id="题解-2">&lt;span>题解&lt;/span>
- &lt;a href="#%e9%a2%98%e8%a7%a3-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>由于每次都是对应位置交换, 交换两次后变回原样, 所以只要记录每个位置最终是否交换即可. 利用差分统计每个位置的交换次数.&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="e-subarray-sum-divisibility">&lt;span>E Subarray Sum Divisibility&lt;/span>
- &lt;a href="#e-subarray-sum-divisibility" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement-4">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>You are given a length-$N$ integer sequence $A = (A_1, A_2, \ldots, A_N)$.&lt;/p>
-&lt;p>Your goal is to perform the following operation repeatedly so that for every length-$L$ contiguous subarray of $A$, the sum is a multiple of $M$.&lt;/p>
-&lt;ul>
-&lt;li>Choose an integer $i$ such that $1 \leq i \leq N$, and increase the value of $A_i$ by $1$.&lt;/li>
-&lt;/ul>
-&lt;p>Find the minimum possible number of operations before achieving the goal.&lt;/p>
-&lt;h3 class="heading-element" id="constraints-4">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$1 \leq N, M \leq 500$&lt;/li>
-&lt;li>$1 \leq L \leq N$&lt;/li>
-&lt;li>$0 \leq A_i &amp;lt; M$&lt;/li>
-&lt;li>All input values are integers.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input-4">&lt;span>Input&lt;/span>
- &lt;a href="#input-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>N L M
-A_1 A_2 ... A_N&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output-4">&lt;span>Output&lt;/span>
- &lt;a href="#output-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Output the answer.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1-4">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>4 3 5
-4 2 1 3&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1-4">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>4&lt;/code>&lt;/pre>&lt;p>By performing the operation once choosing $i = 2$, twice choosing $i = 3$, and once choosing $i = 4$, you get $A = (4, 3, 3, 4)$ with a total of four operations, where every length-$3$ contiguous subarray sums to a multiple of $5$.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-2-4">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1 1 1
-0&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2-4">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>0&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="题意-4">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>给出一个长为 $N$ 的数组, 和两个参数 $M,L$, 每次操作可以选择一个元素使其值加一, 求最少的操作次数, 使得该数组的 $N-L+1$ 个长度为 $L$ 的子数组(连续)的和均是 $M$ 的倍数.&lt;/p>
-&lt;h3 class="heading-element" id="题解-3">&lt;span>题解&lt;/span>
- &lt;a href="#%e9%a2%98%e8%a7%a3-3" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>先来研究满足条件的数组的性质. 由于只要求整除, 所以我们不妨在模 $M$ 的意义下考虑. 设下标从 $0$ 开始.&lt;/p>
-&lt;p>对于第一组 $\sum\limits_{i=0}^{L-1} a_i \equiv 0 \pmod{M}$.&lt;br>
-For the second group: $\sum\limits_{i=1}^{L} a_i \equiv 0 \pmod{M}$.&lt;/p>
-&lt;p>To satisfy both, we must have $a_0 \equiv a_L \pmod{M}$. Similarly, the array $a$ is periodic modulo $M$ with period $L$.&lt;/p>
-&lt;p>Thus, we only need to determine the first $L$ elements.&lt;/p>
-&lt;p>We use dynamic programming: let $f_{i,j}$ be the minimum number of operations to assign values to the first $i$ positions such that their sum modulo $M$ is $j$.&lt;/p>
-&lt;p>The answer is $f_{L,0}$. Transitions enumerate the current value modulo $M$ and previous sum modulo $M$. The cost to adjust the current element to a target modulo value can be precomputed.&lt;/p>
-&lt;p>Time complexity: $O(NM + LM^2)$. This is sufficient. There also exists an $O(NM)$ solution.&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="f-all-included">&lt;span>F All Included&lt;/span>
- &lt;a href="#f-all-included" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement-5">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>You are given $N$ lowercase English strings $S_1,S_2,\ldots,S_N$, and an integer $L$.&lt;/p>
-&lt;p>Find the number, modulo $998244353$, of length-$L$ lowercase English strings that contain all of $S_1,S_2,\ldots,S_N$ as substrings.&lt;/p>
-&lt;p>&lt;strong>What is a substring?&lt;/strong> A &lt;strong>substring&lt;/strong> of $S$ is a string obtained by deleting zero or more characters from the beginning and zero or more characters from the end of $S$.&lt;/p>
-&lt;p>For example, &lt;code>ab&lt;/code>, &lt;code>bc&lt;/code>, and &lt;code>bcd&lt;/code> are substrings of &lt;code>abcd&lt;/code>, while &lt;code>ac&lt;/code>, &lt;code>dc&lt;/code>, and &lt;code>e&lt;/code> are not substrings of &lt;code>abcd&lt;/code>.&lt;/p>
-&lt;h3 class="heading-element" id="constraints-5">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$1\leq N\leq 8$&lt;/li>
-&lt;li>$1\leq L\leq 100$&lt;/li>
-&lt;li>$N$ and $L$ are integers.&lt;/li>
-&lt;li>Each $S_i$ is a string of length between $1$ and $10$, inclusive, consisting of lowercase English letters.&lt;/li>
-&lt;li>$S_i \ne S_j\ (i \ne j)$&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input-5">&lt;span>Input&lt;/span>
- &lt;a href="#input-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>N L
-S_1
-S_2
-...
-S_N&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output-5">&lt;span>Output&lt;/span>
- &lt;a href="#output-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Output the answer.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1-5">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>2 4
-ab
-bc&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1-5">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>51&lt;/code>&lt;/pre>&lt;p>Some of the strings that satisfy the condition are &lt;code>abcz&lt;/code> and &lt;code>cabc&lt;/code>. &lt;code>acbd&lt;/code> does not contain &lt;code>ab&lt;/code> as a substring, so it does not satisfy the condition.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-2-5">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1 1
-a&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2-5">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-input-3-1">&lt;span>Sample Input 3&lt;/span>
- &lt;a href="#sample-input-3-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>3 10
-abc
-def
-ghi&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-3-1">&lt;span>Sample Output 3&lt;/span>
- &lt;a href="#sample-output-3-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1258290&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="题意-5">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>给出 $N$ 个小写字母字符串, 求长度为 $L$ 的字符串的个数, 满足这 $N$ 个串均作为大字符串的子串(连续)出现过.&lt;/p>
-&lt;h3 class="heading-element" id="题解-4">&lt;span>题解&lt;/span>
- &lt;a href="#%e9%a2%98%e8%a7%a3-4" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Consider DP on an Aho–Corasick automaton. Constructing a string of length $L$ corresponds to walking $L$ steps on the automaton.&lt;/p>
-&lt;p>To enforce that all $N$ patterns appear, use bitmask DP.&lt;/p>
-&lt;p>Let $f_{i,j,\text{mask}}$ be the number of ways to build a string of length $i$, ending at automaton node $j$, having matched the set of patterns indicated by &lt;code>mask&lt;/code>.&lt;/p>
-&lt;p>Transition by trying all 26 next characters and updating node and mask accordingly.&lt;/p>
-&lt;p>Time complexity: $O(2^N \cdot L \cdot C \cdot |\Sigma|)$, where $C$ is the number of automaton states (at most sum of pattern lengths), and $|\Sigma| = 26$.&lt;/p>
-&lt;hr>
-&lt;h2 class="heading-element" id="g-count-simple-paths-2">&lt;span>G Count Simple Paths 2&lt;/span>
- &lt;a href="#g-count-simple-paths-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h3 class="heading-element" id="problem-statement-6">&lt;span>Problem Statement&lt;/span>
- &lt;a href="#problem-statement-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>You are given a simple connected undirected graph with $N$ vertices numbered $1$ to $N$ and $M$ edges. The $i$-th edge connects vertices $u_i$ and $v_i$.&lt;/p>
-&lt;p>For each $k=1,2,\ldots,N-1$, find the number of simple paths from vertex $1$ to vertex $N$ that contain exactly $k$ edges.&lt;/p>
-&lt;h3 class="heading-element" id="constraints-6">&lt;span>Constraints&lt;/span>
- &lt;a href="#constraints-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;ul>
-&lt;li>$2\leq N\leq 2\times 10^5$&lt;/li>
-&lt;li>$N-1\leq M\leq N+20$&lt;/li>
-&lt;li>$1\leq u_i\lt v_i\leq N$&lt;/li>
-&lt;li>The given graph is a simple connected undirected graph.&lt;/li>
-&lt;li>All input values are integers.&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="input-6">&lt;span>Input&lt;/span>
- &lt;a href="#input-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>The input is given from Standard Input in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>N M
-u_1 v_1
-u_2 v_2
-...
-u_M v_M&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="output-6">&lt;span>Output&lt;/span>
- &lt;a href="#output-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Output the answers in the following format:&lt;/p>
-&lt;pre tabindex="0">&lt;code>ans_1
-ans_2
-...
-ans_{N-1}&lt;/code>&lt;/pre>&lt;p>$\mathrm{ans}_i$ is the number of simple paths from vertex $1$ to vertex $N$ that contain exactly $i$ edges.&lt;/p>
-&lt;h3 class="heading-element" id="sample-input-1-6">&lt;span>Sample Input 1&lt;/span>
- &lt;a href="#sample-input-1-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>5 6
-1 2
-1 3
-2 4
-3 4
-3 5
-4 5&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-1-6">&lt;span>Sample Output 1&lt;/span>
- &lt;a href="#sample-output-1-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>0
-1
-2
-1&lt;/code>&lt;/pre>&lt;p>For each $k=1,2,3,4$, the simple paths from vertex $1$ to vertex $5$ that contain exactly $k$ edges are as follows.&lt;/p>
-&lt;ul>
-&lt;li>$k=1$: None&lt;/li>
-&lt;li>$k=2$: $1\to 3\to 5$&lt;/li>
-&lt;li>$k=3$: $1\to 2\to 4\to 5$ and $1\to 3\to 4\to 5$&lt;/li>
-&lt;li>$k=4$: $1\to 2\to 4\to 3\to 5$&lt;/li>
-&lt;/ul>
-&lt;h3 class="heading-element" id="sample-input-2-6">&lt;span>Sample Input 2&lt;/span>
- &lt;a href="#sample-input-2-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>2 1
-1 2&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-2-6">&lt;span>Sample Output 2&lt;/span>
- &lt;a href="#sample-output-2-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>1&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-input-3-2">&lt;span>Sample Input 3&lt;/span>
- &lt;a href="#sample-input-3-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;pre tabindex="0">&lt;code>10 15
-...&lt;/code>&lt;/pre>&lt;h3 class="heading-element" id="sample-output-3-2">&lt;span>Sample Output 3&lt;/span>
- &lt;a href="#sample-output-3-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>&amp;hellip;&lt;/p>
-&lt;h3 class="heading-element" id="题意-6">&lt;span>题意&lt;/span>
- &lt;a href="#%e9%a2%98%e6%84%8f-6" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>给出一个有特殊限制的图 ($M \leq N + 20$), 对任意整数 $k$ ($1 \leq k \leq N - 1$) 输出从 $1$ 号点到 $N$ 号点恰好经过 $k$ 条边的简单路径个数.&lt;/p>
-&lt;h3 class="heading-element" id="题解-5">&lt;span>题解&lt;/span>
- &lt;a href="#%e9%a2%98%e8%a7%a3-5" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h3>&lt;p>Note that the graph has at most $21$ extra edges beyond a spanning tree. Thus, the graph is &amp;ldquo;almost a tree&amp;rdquo;.&lt;/p>
-&lt;p>In a tree, there is exactly one simple path from $1$ to $N$. Adding extra edges creates alternative routes, but the total number of simple paths is bounded by $2^{M - N + 1} \leq 2^{21}$.&lt;/p>
-&lt;p>&lt;strong>Proof sketch&lt;/strong>: Over $\mathbb{F}_2$, the incidence matrix has rank $N - 1$, so the solution space to $Bx = b$ (where $b$ has 1s at vertices 1 and $N$) has dimension $M - (N - 1)$. Hence, at most $2^{M - N + 1}$ edge subsets form a path from 1 to $N$. Each simple path is one such solution.&lt;/p>
-&lt;p>Thus, we can enumerate all simple paths via DFS, but naively visiting all $N$ nodes per path is too slow.&lt;/p>
-&lt;p>Instead, build a &lt;strong>virtual tree&lt;/strong> containing:&lt;/p>
-&lt;ul>
-&lt;li>vertices $1$ and $N$,&lt;/li>
-&lt;li>all endpoints of the $M - (N - 1)$ non-tree edges.&lt;/li>
-&lt;/ul>
-&lt;p>This virtual tree has at most $2 + 2 \cdot 21 = 44$ nodes. Contract all degree-2 chains between these key nodes.&lt;/p>
-&lt;p>Then, run DFS only on this reduced graph to enumerate all simple paths from $1$ to $N$, recording their lengths.&lt;/p>
-&lt;p>Finally, aggregate counts by path length.&lt;/p>
-&lt;p>Time complexity: $O(2^{M - N + 1} \cdot \text{poly}(M))$, which is acceptable.&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">37&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
