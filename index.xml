@@ -595,11 +595,11 @@ $\Vert\cdot\Vert_1: 4$, $\Vert\cdot\Vert_2: 2+\sqrt{2}$, $\Vert\cdot\Vert_3: 3$,
 &lt;p>齐次性 $\Vert\alpha x(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|\alpha x(t)|=\alpha\sup_{0&amp;lt;t\leqslant 1}|x(t)|=\alpha\Vert x(t)\Vert$.&lt;/p>
 &lt;p>三角不等式:&lt;br>
 $\Vert x_1(t)+x_2(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|x_1(t)+x_2(t)|\leqslant \sup|x_1(t)|+\sup|x_2(t)|=\Vert x_1(t)\Vert+\Vert x_2(t)\Vert$.&lt;/p>
-&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall {a_n}\in l^\infty$,&lt;br>
-$T({a_n})$ 表示 $x(\frac1n)=a_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n+1})$ 两点的连续函数.&lt;/p>
+&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall \lbrace a_n\rbrace \in l^\infty$,&lt;br>
+$T(\lbrace a_n\rbrace )$ 表示 $x(\frac1n)=a_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n+1})$ 两点的连续函数.&lt;/p>
 &lt;p>显然这是个单射且像集是 $C(0,1]$ 的子集. 并且该映射是线性映射.&lt;/p>
 &lt;p>下面证其还保范数: 对折线段, 其最大值取在端点处, 故&lt;br>
-$\Vert T({a_n})\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert{a_n}\Vert$.&lt;/p>
+$\Vert T(\lbrace a_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert\lbrace a_n\rbrace \Vert$.&lt;/p>
 &lt;p>所以 $l^\infty$ 与 $C(0,1]$ 的一个子空间 $T(l^\infty)$ 等距同构.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -610,7 +610,7 @@ $\Vert T({a_n})\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert{a_n}\Vert$.&lt;/p>
  &lt;/a>
 &lt;/h2>&lt;p>在 $C^1[a,b]$ 中, 令&lt;br>
 $$
-|f|_1 = \left( \int_a^b (|f|^2 + |f&amp;rsquo;|^2) , \text{d}x \right)^{\frac{1}{2}} \quad (\forall f \in C^1[a,b]),
+|f|_1 = \left( \int_a^b (|f|^2 + |f&amp;rsquo;|^2) \text{d}x \right)^{\frac{1}{2}} \quad (\forall f \in C^1[a,b]),
 $$&lt;/p>
 &lt;p>(1) 求证 $|\cdot|_1$ 是 $C^1[a,b]$ 上的范数.&lt;br>
 (2) 问 $(C^1[a,b], |\cdot|_1)$ 是否完备?&lt;/p>
@@ -630,7 +630,7 @@ $\int_a^b |fg|+|f&amp;rsquo;g&amp;rsquo;|\text{d}x\leqslant \Vert f\Vert_1\Vert 
 \end{array}\right.$&lt;/p>
 &lt;p>有 $|f_n&amp;rsquo;(x)-sgn_c(x)|=|(x-c)|(\frac{1}{|x-c|}-\frac{1}{\sqrt{(x-c)^2+\frac 1 n}})$.&lt;/p>
 &lt;p>从而 $\Vert f_n-f\Vert=O(\frac{1}{\sqrt n})\to 0$,&lt;br>
-即 ${f_n}$ 收敛至 $f$, 但 $f\notin C^1[a,b]$, 故不完备.&lt;/p>
+即 $\lbrace f_n\rbrace $ 收敛至 $f$, 但 $f\notin C^1[a,b]$, 故不完备.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -640,8 +640,8 @@ $\int_a^b |fg|+|f&amp;rsquo;g&amp;rsquo;|\text{d}x\leqslant \Vert f\Vert_1\Vert 
  &lt;/a>
 &lt;/h2>&lt;p>在 $C[0,1]$ 中, 对每一个 $f \in C[0,1]$, 令&lt;br>
 $$
-|f|_1 = \left( \int_0^1 |f(x)|^2 , \text{d}x \right)^{\frac{1}{2}}, \quad
-|f|_2 = \left( \int_0^1 (1+x) |f(x)|^2 , \text{d}x \right)^{\frac{1}{2}}.
+|f|_1 = \left( \int_0^1 |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}, \quad
+|f|_2 = \left( \int_0^1 (1+x) |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
 $$&lt;/p>
 &lt;p>求证: $\Vert\cdot\Vert_1$ 和 $\Vert\cdot\Vert_2$ 是 $C[0,1]$ 中的两个等价范数.&lt;/p>
 &lt;div class="details admonition note">
@@ -657,7 +657,7 @@ $\Vert f\Vert_1\leqslant\Vert f\Vert_2\leqslant\sqrt{2}\Vert f\Vert_1$.&lt;/div>
  &lt;/a>
 &lt;/h2>&lt;p>设 $BC[0,\infty)$ 表示 $[0,\infty)$ 上连续且有界的函数 $f(x)$ 全体, 对每个 $f \in BC[0,\infty)$ 及 $a &amp;gt; 0$, 定义
 $$
-|f|_a = \left( \int_0^\infty e^{-ax} |f(x)|^2 , \text{d}x \right)^{\frac{1}{2}}.
+|f|_a = \left( \int_0^\infty e^{-ax} |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
 $$&lt;/p>
 &lt;p>(1) 求证 $|\cdot|_a$ 是 $BC[0,\infty)$ 上的范数.&lt;br>
 (2) 若 $a, b &amp;gt; 0$, $a \neq b$, 求证 $|\cdot|_a$ 与 $|\cdot|_b$ 不等价.&lt;/p>
@@ -707,14 +707,14 @@ $\Vert P_0-f\Vert=\rho(f,\mathbb P_n)$.&lt;/div>
  &lt;a href="#135" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $M$ 是 $C[a,b]$ 中的有界集, 求证: 集合 $${F(x)=\int_a^x f(t),\mathrm{d} t,|,f\in M}$$ 是列紧集.&lt;/p>
+&lt;/h2>&lt;p>设 $M$ 是 $C[a,b]$ 中的有界集, 求证: 集合 $$\lbrace F(x)=\int_a^x f(t) \mathrm{d} t f\in M\rbrace $$ 是列紧集.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>根据微积分基本定理 $F(x)$ 也是 $[a,b]$ 上的连续函数。&lt;/p>
 &lt;p>所以考虑使用 Arzela-Ascoli 定理. 即需要证明 $F$ 一致有界且等度连续。&lt;/p>
 &lt;p>&amp;ldquo;一致有界&amp;rdquo;: 根据 $M$ 的有界性, 存在 $C&amp;gt;0$ 使得 $|f(x)|\leqslant C,\forall f\in M, x\in[a,b]$. 所以有
-$$|F(x)|=|\int_a^x f(t),\mathrm{d} t|\leqslant\int_a^x|f(t)|,\mathrm{d} t\leqslant (b-a)C$$
+$$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqslant (b-a)C$$
 所以 $F(x)$ 一致有界。&lt;/p>
 &lt;p>&amp;ldquo;等度连续&amp;rdquo;: 对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x_1-x_2|&amp;lt;\delta$ 就有 $|F(x_1)-F(x_2)|&amp;lt;C|x_1-x_2|&amp;lt;\varepsilon,\forall F$. 从而也是等度连续。&lt;/p>
 &lt;p>综上由 AA 定理可知该集合是列紧集。&lt;/p>
@@ -725,7 +725,7 @@ $$|F(x)|=|\int_a^x f(t),\mathrm{d} t|\leqslant\int_a^x|f(t)|,\mathrm{d} t\leqsla
  &lt;a href="#136" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $E={\sin nt}_{n=1}^\infty$, 求证: $E$ 在 $C[0,\pi]$ 中不是列紧的.&lt;/p>
+&lt;/h2>&lt;p>设 $E=\lbrace \sin nt\rbrace _{n=1}^\infty$, 求证: $E$ 在 $C[0,\pi]$ 中不是列紧的.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
@@ -742,13 +742,13 @@ $$|F(x)|=|\int_a^x f(t),\mathrm{d} t|\leqslant\int_a^x|f(t)|,\mathrm{d} t\leqsla
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>&amp;ldquo;$\Rightarrow$&amp;rdquo;: 反设条件不成立, 即 $\exists n\in\mathbb{N}$, 不存在 $C_n&amp;gt;0$ 使得 $\xi_n$ 有界. 也就是说第 $n$ 个分量无界. 那么就可以取一列 ${x^{(m)}}$ 满足 $\xi_n^{(m)}&amp;gt;\xi_n^{(m-1)}+1$, 从而就有
+ &lt;div class="admonition-content">&lt;p>&amp;ldquo;$\Rightarrow$&amp;rdquo;: 反设条件不成立, 即 $\exists n\in\mathbb{N}$, 不存在 $C_n&amp;gt;0$ 使得 $\xi_n$ 有界. 也就是说第 $n$ 个分量无界. 那么就可以取一列 $\lbrace x^{(m)}\rbrace $ 满足 $\xi_n^{(m)}&amp;gt;\xi_n^{(m-1)}+1$, 从而就有
 $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(m_2)}|}{1+|\xi_n^{(m)}-\xi_n^{(m_2)}|}\geqslant\frac{1}{2^{n+1}}.$$
 所以不存在收敛子列, 与 $A$ 列紧矛盾. 故该条件成立。&lt;/p>
 &lt;p>&amp;ldquo;$\Leftarrow$&amp;rdquo;: 由于 $S$ 空间完备, 故考虑证明在该条件下 $A$ 是完全有界集. 即证明存在有穷 $\varepsilon$-网。&lt;/p>
 &lt;p>$\forall \varepsilon&amp;gt;0$, 取 $N=\lceil -\log_2 \varepsilon \rceil + 1$, 那么对于度量中 $\sum\limits_{k=N+1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}&amp;lt;\sum\limits_{k=N+1}^\infty\frac{1}{2^k}&amp;lt;\frac{\varepsilon}{2}$。&lt;/p>
-&lt;p>而对于前 $N$ 项, 定义集合 $D={(\xi_1,\xi_2,\ldots,\xi_N),|,\exists x\in A, s.t. x_i=\xi_i\ i=1,2,\ldots,N}$。&lt;/p>
-&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;rsquo;={(\xi_1,\xi_2,\ldots,\xi_N,\ldots)}\subset A$ 满足 $\forall x\in A, \exists y\in D&amp;rsquo;$, 使得 $(\sum\limits_{i=1}^N |\xi_i-\eta_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi_i-\eta_i|&amp;lt;\varepsilon/2$。&lt;/p>
+&lt;p>而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi_1,\xi_2,\ldots,\xi_N) | \exists x\in A, s.t. x_i=\xi_i\ i=1,2,\ldots,N\rbrace $。&lt;/p>
+&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;rsquo;=\lbrace (\xi_1,\xi_2,\ldots,\xi_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D&amp;rsquo;$, 使得 $(\sum\limits_{i=1}^N |\xi_i-\eta_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi_i-\eta_i|&amp;lt;\varepsilon/2$。&lt;/p>
 &lt;p>所以 $\rho(x,y)=\sum\limits_{k=1}^N+\sum\limits_{k=N+1}^\infty&amp;lt;\frac\varepsilon 2+\frac\varepsilon 2=\varepsilon$。&lt;/p>
 &lt;p>故 $D&amp;rsquo;$ 就是 $A$ 的有穷 $\varepsilon$-网. 从而 $A$ 是完全有界集, 进而是列紧集.&lt;/p>
 &lt;/div>
@@ -762,9 +762,9 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">记 $d=\inf{\rho(x,f(x))|x\in M}$.
+ &lt;div class="admonition-content">记 $d=\inf\lbrace \rho(x,f(x))|x\in M\rbrace $.
 &lt;br>
-由下确界的定义, 存在点列 ${x_n}$ 满足 $\rho(x_n,f(x_n))&amp;lt;d+\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 ${x_{n_k}}$ 且滿足 $\rho(x_{n_k},f(x_{n_k}))&amp;lt;d+\frac 1{n_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
+由下确界的定义, 存在点列 $\lbrace x_n\rbrace $ 满足 $\rho(x_n,f(x_n))&amp;lt;d+\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x_{n_k}\rbrace $ 且滿足 $\rho(x_{n_k},f(x_{n_k}))&amp;lt;d+\frac 1{n_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
 &lt;br>
 如果 $d\neq 0$, 即 $x\neq f(x)$, 则 $\rho(f(x),f(f(x)))&amp;lt;\rho(x,f(x))=d$, 则与下确界矛盾. 所以 $d=0$.
 &lt;br>
@@ -1302,19 +1302,13 @@ $$&lt;/p>
  &lt;a href="#124" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>求证: [0,1] 上的多项式全体按距离 $$\rho(p,q)=\int_0^1 |p(x)-q(x)|,\mathrm{d} x$$ 是不完备的, 并指出它的完备化空间.&lt;/p>
+&lt;/h2>&lt;p>求证: [0,1] 上的多项式全体按距离 $$\rho(p,q)=\int_0^1 |p(x)-q(x)| \mathrm{d} x$$ 是不完备的, 并指出它的完备化空间.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>首先证明 $\rho(x,y)$ 是度量.&lt;/p>
-&lt;p>非负性和对称性显然, 下证三角不等式.&lt;/p>
-&lt;p>由 $f(t)=\frac {t}{1+t}=1-\frac{1}{1+t}$ 递增, 于是用复数域 $|x-y|$ 度量的三角不等式得到 $$\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|+|\zeta_k-\eta_k|}{1+|\xi_k-\zeta_k|+|\zeta_k-\eta_k|}$$ 又 $f&amp;rsquo;(t)=\frac{1}{(1+t)^2}&amp;lt;1$, 所以有 $f(|a|+|b|)\leqslant f(|a|)+f(|b|)$. 故 $$\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|}{1+|\xi_k-\zeta_k|}+\frac{|\zeta_k-\eta_k|}{1+|\zeta_k-\eta_k|}$$ 再对 $k$ 求和就可以得到三角不等式成立.&lt;/p>
-&lt;p>然后证明 $S$ 是完备的.&lt;/p>
-&lt;p>任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}_+$) 即 $\forall \varepsilon&amp;gt;0,\exists M&amp;gt;0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m+p)},x^{(m)})&amp;lt;\varepsilon$.&lt;/p>
-&lt;p>现关注数列的第 $k$ 项, 当 $\varepsilon&amp;lt;\frac{1}{2^{k+1}}$ 时, 有 $$\frac{|x_k^{(m+p)}-x_k^{(m)}|}{1+|x_k^{(m+p)}-x_k^{(m)}|}&amp;lt; 2^k\varepsilon$$ 移向变换可得 $$|x_k^{(m+p)}-x_k^{(m)}|&amp;lt;\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon&amp;lt;\frac 1 2}{&amp;lt;}2^{k+1}\varepsilon$$ 由于现在关注的是第 $k$ 项构成的序列 $\lbrace x_k^{(m)}\rbrace _{m=1}^\infty$ 所以我们得到 $\lbrace x_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x_k$.&lt;/p>
-&lt;p>如此, 我们就得到了一个新的数列 $\lbrace x_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$.&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 由于 $\frac{|x_k^{(m)}-x_k|}{1+|x_k^{(m)}-x_k|}&amp;lt;1$, 所以 $$\sum\limits_{k=n_0+1}^\infty \frac{1}{2^k}\cdot \frac{|x_k^{(m)}-x_k|}{1+|x_k^{(m)}|}&amp;lt;\frac{1}{2^{n_0}}$$ 取 $n_0\geqslant\lceil-\log_2 \varepsilon\rceil+1$ 那么對於前 $n_0$ 項, 由于每一项都收敛至 $x_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x_k^{(m)}-x_k|&amp;lt;\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)&amp;lt;2\varepsilon,\ \forall m\geqslant M$。&lt;/p>
-&lt;p>即 $\lbrace x^{(m)}\rbrace $ 收敛. 综上 $S$ 是完备的度量空间.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>对于 $[0,1]$ 上的连续函数 $\sin x$, 根据魏尔斯特拉斯逼近定理存在一列多项式一致收敛于 $\sin x$, 但 $\sin x$ 显然不是多项式, 故多项式空间不完备.&lt;/p>
+&lt;p>其完备化空间应该为 $L^1([0,1])$ 即在 $[0,1]$ 上 Lebesgue 可积的函数全体.&lt;/p>
+&lt;p>稠密性: 由实变函数对任意可积函数存在具有紧支集的连续函数逼近, 再由数学分析中魏尔斯特拉斯定理存在多项式逼近有界闭区间上的连续函数. 从而可以用多项式逼近任意可积函数.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -1343,7 +1337,7 @@ $$&lt;/p>
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>记 $d=\rho(F_1,F_2)$.&lt;/p>
-&lt;p>根据下确界的定义, 对任意 $n$ 存在 $x_n\in F_1,y_n\in F_2$, 使得 $$d\leqslant \rho(x_n,y_n)&amp;lt;d+\frac 1 n.$$ 由 $F_1$ 的紧性, 存在子列 $\lbrace x_{n_k}\rbrace $ 收敛, 记收敛至 $x_1\in F_1$. 考虑对应的自列 $\lbrace y_{n_k}\rbrace $, 由 $F_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y_{n_{k_j}}\rbrace $, 记收敛至 $x_2\in F_2$. 从而有 $$d\leqslant\rho(x_{n_{k_j}},y_{n_{k_j}})&amp;lt;d+\frac 1 {n_{k_j}}$$ 令 $j\to\infty$ 可得 $d=\rho(x_1,x_2)$.&lt;/p>
+&lt;p>根据下确界的定义, 对任意 $n$ 存在 $x_n\in F_1,y_n\in F_2$, 使得 $$d\leqslant \rho(x_n,y_n)&amp;lt;d+\frac 1 n.$$ 由 $F_1$ 的紧性, 存在子列 $\lbrace x_{n_k}\rbrace $ 收敛, 记收敛至 $x_1\in F_1$. 考虑对应的子列 $\lbrace y_{n_k}\rbrace $, 由 $F_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y_{n_{k_j}}\rbrace $, 记收敛至 $x_2\in F_2$. 从而有 $$d\leqslant\rho(x_{n_{k_j}},y_{n_{k_j}})&amp;lt;d+\frac 1 {n_{k_j}}$$ 令 $j\to\infty$ 可得 $d=\rho(x_1,x_2)$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业250915</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="112">&lt;span>1.1.2&lt;/span>
