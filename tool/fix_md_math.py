@@ -95,7 +95,8 @@ def process_file(path: Path, dry_run=False):
         # process unprotected region [last, s)
         if last < s:
             chunk = text[last:s]
-            new_chunk = RE_UNDERSCORE.sub(r"\\_", chunk)
+            # new_chunk = RE_UNDERSCORE.sub(r"\\_", chunk)
+            new_chunk = chunk
             if new_chunk != chunk:
                 changed = True
             out_parts.append(new_chunk)
