@@ -121,15 +121,15 @@ $$&lt;/p>
 &lt;p>设 $\lbrace f_n \rbrace $ 是 $C^{0,\alpha}[0,1]$ 中的柯西列.&lt;/p>
 &lt;p>首先, 在范数 $\Vert \cdot \Vert =\max\limits_{x\in[0,1]}|f(x)|$ 意义下 $(C[0,1],\Vert \cdot \Vert )$ 是完备的, 并且根据 $\Vert f \Vert _{0,\alpha}$ 的定义 $\lbrace f_n \rbrace $ 在 $C[0,1]$ 中也是柯西列, 故收敛, 记收敛到 $f$.&lt;/p>
 &lt;p>先证 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
-&lt;p>由于 $\lbrace f_n \rbrace $ 在 $\Vert \cdot \Vert _{0,\alpha}$ 下是柯西列, 所以存在 $N$, 满足 $|f_n-f_N|&lt;em>\alpha\leqslant \Vert f_n-f_N \Vert _{0,\alpha}&amp;lt;1,\forall n&amp;gt;N$. 从而由三角不等式有 $$|f_n|_{\alpha}\leqslant |f_n-f_N|&lt;/em>\alpha+|f_N|&lt;em>\alpha&amp;lt;|f_N|&lt;/em>\alpha+1\quad\forall n&amp;gt;N$$ 故存在 $M&amp;gt;0$ 满足 $|f_n|_\alpha&amp;lt;M,\forall n\geqslant 1$.&lt;/p>
+&lt;p>由于 $\lbrace f_n \rbrace $ 在 $\Vert \cdot \Vert &lt;em>{0,\alpha}$ 下是柯西列, 所以存在 $N$, 满足 $|f_n-f_N|&lt;/em>\alpha\leqslant \Vert f_n-f_N \Vert &lt;em>{0,\alpha}&amp;lt;1,\forall n&amp;gt;N$. 从而由三角不等式有 $$|f_n|&lt;/em>{\alpha}\leqslant |f_n-f_N|&lt;em>\alpha+|f_N|&lt;/em>\alpha&amp;lt;|f_N|&lt;em>\alpha+1\quad\forall n&amp;gt;N$$ 故存在 $M&amp;gt;0$ 满足 $|f_n|&lt;/em>\alpha&amp;lt;M,\forall n\geqslant 1$.&lt;/p>
 &lt;p>那么就有 $$|f_n(x)-f_n(y)|&amp;lt;M|x-y|^\alpha,\quad \forall x,y,n$$令 $n\to\infty$ 则有$$|f(x)-f(y)|&amp;lt;M|x-y|^\alpha$$ 移项并取上确界就得到 $|f|_\alpha\leqslant M$, 即 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
-&lt;p>再证 $\Vert f-f_n \Vert _{0,\alpha}\to 0$. 只要证 $|f-f_n|_{\alpha}\to 0$.&lt;/p>
-&lt;p>由 $\lbrace f_n \rbrace $ 是柯西列, 从而 $\forall\varepsilon&amp;gt;0$, $\exists N$, 满足 $\forall n,m&amp;gt;N$ 有 $|f_n-f_m|&lt;em>\alpha\leqslant\Vert f_n-f_m \Vert _{0,\alpha}&amp;lt;\varepsilon$. 从而对任意 $x\neq y$ 有 $$\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits_{m\to\infty}\frac{|(f_n-f_m)(x)-(f_n-f_m)(y)|}{|x-y|^\alpha}\leqslant\varlimsup\limits_{m\to\infty}|f_n-f_m|&lt;/em>\alpha\leqslant \varepsilon.$$&lt;/p>
+&lt;p>再证 $\Vert f-f_n \Vert &lt;em>{0,\alpha}\to 0$. 只要证 $|f-f_n|&lt;/em>{\alpha}\to 0$.&lt;/p>
+&lt;p>由 $\lbrace f_n \rbrace $ 是柯西列, 从而 $\forall\varepsilon&amp;gt;0$, $\exists N$, 满足 $\forall n,m&amp;gt;N$ 有 $|f_n-f_m|&lt;em>\alpha\leqslant\Vert f_n-f_m \Vert &lt;em>{0,\alpha}&amp;lt;\varepsilon$. 从而对任意 $x\neq y$ 有 $$\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits&lt;/em>{m\to\infty}\frac{|(f_n-f_m)(x)-(f_n-f_m)(y)|}{|x-y|^\alpha}\leqslant\varlimsup\limits&lt;/em>{m\to\infty}|f_n-f_m|_\alpha\leqslant \varepsilon.$$&lt;/p>
 &lt;p>再对 $x\neq y$ 取上确界即可得到 $|f_n-f|&lt;em>\alpha\leqslant\varepsilon$ 所以 $|f_n-f|&lt;/em>\alpha\to 0$.&lt;/p>
 &lt;p>综上 $(C^{0,\alpha}[0,1],\Vert \cdot \Vert _{0,\alpha})$ 是完备的.&lt;/p>
 &lt;p>(2) 由于 $C[0,1]$ 是紧度量空间上的连续函数空间, 考虑 AA 定理, 故只需证明 $C^{0,\alpha}[0,1]$ 中的有界集 $X$ 一致有界且等度连续就能说明 $X$ 是列紧集.&lt;/p>
 &lt;p>一致有界: $X$ 为 $C^{0,\alpha}[0,1]$ 中的有界集, 即存在 $M&amp;gt;0$ 使得 $\Vert f \Vert _{0,\alpha}&amp;lt;M,\forall f\in X$. 从而 $|f(x)|\leqslant\Vert f \Vert _{0,\alpha}&amp;lt;M\forall f\in X,x\in[0,1]$, 即 $X$ 中的函数一致有界.&lt;/p>
-&lt;p>等度连续: $\Vert f \Vert _{0,\alpha}&amp;lt;M\Rightarrow |f|_\alpha&amp;lt;M\Rightarrow |f(x)-f(y)|\leqslant M|x-y|^\alpha\quad\forall x,y,f$.&lt;/p>
+&lt;p>等度连续: $\Vert f \Vert &lt;em>{0,\alpha}&amp;lt;M\Rightarrow |f|&lt;/em>\alpha&amp;lt;M\Rightarrow |f(x)-f(y)|\leqslant M|x-y|^\alpha\quad\forall x,y,f$.&lt;/p>
 &lt;p>故 $\forall \varepsilon&amp;gt;0$, 取 $\delta=(\frac{\varepsilon}{M})^{1/\alpha}$ 则 $|f(x)-f(y)|\leqslant \varepsilon\quad\forall x,y,f$ 即等度连续.&lt;/p>
 &lt;p>所以 $C^{0,\alpha}[0,1]$ 中的有界集是 $C[0,1]$ 中的列紧集.&lt;/p>
 &lt;/div>
