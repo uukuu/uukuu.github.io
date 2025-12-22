@@ -7,14 +7,14 @@
   - 在非受保护区域将未转义的下划线 `_` 转为 `\_`；
   - 支持 `--dry-run` 与 `--preview` 来先查看会被修改的内容。
 
-- `replace_square_to_dollar.py`：将 `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[ ... \\\\]` 替换成 `$$ ... $$`（跳过 frontmatter、代码块、script/style）。
+- `replace_square_to_dollar.py`：将 `\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[ ... \\\\]` 替换成 `$$ ... $$`（跳过 frontmatter、代码块、script/style）。
 
 - `fix_backslashes_in_math.py`：用于对单个 md 文件在数学区块内执行精确的 `\\` -> `\\\\` 替换（会创建 `.bak` 备份）。
 
 - `manage_site.py`（新）：集成调用以上脚本并可启动 `hugo server`，示例：
   - 只做检测：
-    python manage\_site.py --root . --fix-math --dry-run
+    python manage_site.py --root . --fix-math --dry-run
   - 做全部修复并启动 hugo：
-    python manage\_site.py --root . --fix-all --start-hugo
+    python manage_site.py --root . --fix-all --start-hugo
 
 注意：`manage_site.py` 会用当前 Python 解释器来运行这些脚本，以保证环境一致。启动 Hugo 前请确保 `hugo` 可在 PATH 中找到。

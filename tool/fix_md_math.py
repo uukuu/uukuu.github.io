@@ -4,7 +4,7 @@ fix_md_math.py
 
 批量修复 Markdown 文件中的数学换行与下划线转义问题：
 - 在数学环境（$$...$$, \[...\], $...$）中，把 LaTeX 换行 `\\`（两个反斜杠）升级为 `\\\\`（四个反斜杠），以防止 Markdown 渲染链把 `\\` 变为 `\\` 后丢失；
-- 在非数学、非代码、非 frontmatter 区域，把未转义的下划线 `_` 替换为 `\_`，以避免被 Markdown 解释为斜体。
+- 在非数学、非代码、非 frontmatter 区域，把已被转义的下划线 `\_` 还原为 `_`（Revert escaping）。
 
 安全：脚本默认会为每个被修改的文件保存一个 `.bak` 备份文件。
 用法:
@@ -12,8 +12,6 @@ fix_md_math.py
 
 示例:
   python fix_md_math.py --root "e:/University/Blog" --dry-run
-
-注意：对非常复杂的 Markdown（例如混合很多 HTML、embed、或不规范的 math delimiter），脚本可能不是 100% 无副作用，运行前请先使用 --dry-run 并检查差异。
 """
 
 import re
@@ -36,7 +34,7 @@ PATTERNS = [
     re.compile(r"\[[^\]]*\]\([^\)]*\)"),
 ]
 
-# Math patterns (we'll treat math spans specially)
+# Math patterns (treated as protected spans to avoid messing up internal underscores)
 MATH_PATTERNS = [
     re.compile(r"(?s)\$\$.*?\$\$"),        # $$...$$ display
     re.compile(r"(?s)\\\[.*?\\\]"),      # \[ ... \]
@@ -49,9 +47,6 @@ MATH_PATTERNS = [
 RE_TWO_BACKSLASHES = re.compile(r"(?<!\\)(\\\\)(?!\\)")
 REPL_FOUR = r"\\\\\\\\"
 
-# Regex to escape underscores that are not already escaped (only inside math spans per user's request)
-RE_UNDERSCORE = re.compile(r"(?<!\\)_(?!\\)")
-
 
 def protect_spans(text):
     """Return list of (start,end) spans that should NOT be modified (protected regions).
@@ -63,10 +58,15 @@ def protect_spans(text):
         m = re.search(r"^---\s*\n.*?\n---\s*\n", text, flags=re.S)
         if m:
             spans.append((m.start(), m.end()))
-    # Other patterns
-    for pat in PATTERNS:
+    
+    # Check all patterns (Code, HTML, Links AND Math)
+    # We include MATH_PATTERNS here so that math blocks are 'protected' 
+    # from the underscore un-escaping logic, but we will apply the 
+    # backslash fixing logic to them specifically in process_file.
+    for pat in PATTERNS + MATH_PATTERNS:
         for mo in pat.finditer(text):
             spans.append((mo.start(), mo.end()))
+            
     # merge spans
     spans.sort()
     merged = []
@@ -82,7 +82,12 @@ def protect_spans(text):
 
 
 def process_file(path: Path, dry_run=False):
-    text = path.read_text(encoding='utf-8')
+    try:
+        text = path.read_text(encoding='utf-8')
+    except UnicodeDecodeError:
+        print(f"Skipping binary or non-utf8 file: {path}")
+        return False, None, None
+
     orig = text
     spans = protect_spans(text)
 
@@ -92,31 +97,47 @@ def process_file(path: Path, dry_run=False):
     changed = False
 
     for (s,e) in spans:
-        # process unprotected region [last, s)
+        # 1. Process unprotected region [last, s) (Normal Text)
         if last < s:
             chunk = text[last:s]
-            # new_chunk = RE_UNDERSCORE.sub(r"\\_", chunk)
-            new_chunk = chunk
+            # Logic: Convert escaped underscores `\_` back to `_`
+            new_chunk = chunk.replace(r"\_", "_")
+            
             if new_chunk != chunk:
                 changed = True
             out_parts.append(new_chunk)
-        # protected region appended unchanged for now, except for math-specific replacements
+            
+        # 2. Process protected region [s, e) (Code, Math, Links, etc.)
         prot = text[s:e]
-        # If this protected region is a math region (contains $ or \\[ or $$), apply backslash doubling
-        if ('$$' in prot) or ('\\[' in prot) or (prot.startswith('$') and prot.endswith('$')) or ('\begin' in prot) or (prot.strip().startswith('<script type="math/tex')):
-            # replace exact two backslashes with four, but avoid touching existing quadruples
+        
+        # Check if this protected region is a Math region
+        is_math = (
+            ('$$' in prot) or 
+            ('\\[' in prot) or 
+            (prot.startswith('$') and prot.endswith('$')) or 
+            (prot.startswith('\\(') and prot.endswith('\\)')) or 
+            ('\\begin' in prot) or 
+            (prot.strip().startswith('<script type="math/tex'))
+        )
+
+        if is_math:
+            # Apply backslash doubling for Math
             new_prot = RE_TWO_BACKSLASHES.sub(REPL_FOUR, prot)
             if new_prot != prot:
                 changed = True
             out_parts.append(new_prot)
         else:
+            # Other protected regions (code blocks, links) are left alone
             out_parts.append(prot)
+            
         last = e
+
     # tail
     if last < len(text):
         tail = text[last:]
-        # new_tail = RE_UNDERSCORE.sub(r"\\_", tail)
-        new_tail = tail
+        # Logic: Convert escaped underscores `\_` back to `_`
+        new_tail = tail.replace(r"\_", "_")
+        
         if new_tail != tail:
             changed = True
         out_parts.append(new_tail)
@@ -145,22 +166,33 @@ def main():
     args = p.parse_args()
 
     root = Path(args.root).resolve()
-    tool_dir = Path(__file__).parent
-    # print(f"Scanning for .md files under: {root}")
+    
+    print(f"Scanning for .md files under: {root}")
     files = find_md_files(root)
-    # print(f"Found {len(files)} .md files")
+    print(f"Found {len(files)} .md files")
+    
     modified = []
     for f in files:
+        if args.backup and not args.dry_run:
+            # Create simple backup before reading/writing
+            bak_path = f.with_suffix('.md.bak')
+            if not bak_path.exists():
+                try:
+                    bak_path.write_bytes(f.read_bytes())
+                except Exception as e:
+                    print(f"Failed to backup {f}: {e}")
+
         ok, before, after = process_file(f, dry_run=args.dry_run)
         if ok:
             modified.append(str(f))
-            # print("MODIFIED:", f)
-            # if args.preview:
-            #     # show small preview
-            #     print('--- before ---')
-            #     print(before[:1000])
-            #     print('--- after ---')
-            #     print(after[:1000])
+            print(f"MODIFIED: {f}")
+            if args.preview:
+                print('--- before ---')
+                print(before[-500:] if len(before)>500 else before)
+                print('--- after ---')
+                print(after[-500:] if len(after)>500 else after)
+                print('-'*20)
+                
     print(f"Total modified: {len(modified)}")
 
 if __name__ == '__main__':
