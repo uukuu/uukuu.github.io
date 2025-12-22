@@ -7,10 +7,10 @@ categories: ["泛函分析"]
 ---
 ## 1.1.2
 
-(Newton 法) 设 $f$ 是定义在 $[a,b]$ 上的二次连续可微的实值函数, $\hat{x}\in(a,b)$ 使得 $f(\hat x)=0, f'(\hat x)\neq 0$. 求证: 存在 $\hat x$ 的邻域 $U(\hat x)$, 使得 $\forall x_0\in U(\hat x)$, 迭代序列
-$$x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}\quad (n=0,1,2,\ldots)$$
+(Newton 法) 设 $f$ 是定义在 $[a,b]$ 上的二次连续可微的实值函数, $\hat{x}\in(a,b)$ 使得 $f(\hat x)=0, f'(\hat x)\neq 0$. 求证: 存在 $\hat x$ 的邻域 $U(\hat x)$, 使得 $\forall x\_0\in U(\hat x)$, 迭代序列
+$$x\_{n+1}=x\_n-\frac{f(x\_n)}{f'(x\_n)}\quad (n=0,1,2,\ldots)$$
 是收敛的, 并且
-$$\lim\limits_{n\to\infty}x_n=\hat x.$$ 
+$$\lim\limits\_{n\to\infty}x\_n=\hat x.$$ 
 
 <!--more-->
 
@@ -18,9 +18,9 @@ $$\lim\limits_{n\to\infty}x_n=\hat x.$$
 
 设映射 $T(x)=x-\dfrac{f(x)}{f'(x)}$
 
-由 $f\in C^2, f'(\hat x)\neq 0$, 故存在 $\delta_0, (x-\delta_0,x+\delta_0)\subset[a,b],m,M,L\in\mathbb{R},\ s.t.\ |x-\hat x|\leqslant \delta_0$ 时, 有 $m\overset{\text{保号性}}{\leqslant}|f'(x)|\overset{\text{有界性}}{\leqslant} M, |f''(x)|\leqslant L$.
+由 $f\in C^2, f'(\hat x)\neq 0$, 故存在 $\delta\_0, (x-\delta\_0,x+\delta\_0)\subset[a,b],m,M,L\in\mathbb{R},\ s.t.\ |x-\hat x|\leqslant \delta\_0$ 时, 有 $m\overset{\text{保号性}}{\leqslant}|f'(x)|\overset{\text{有界性}}{\leqslant} M, |f''(x)|\leqslant L$.
 
-那么考虑导数 $T'(x)=\dfrac{f(x)f''(x)}{(f'(x))^2}\overset{\text{柯西中值}}{=}\dfrac{(f'(\xi)|x-\hat x|+f(\hat x))f''(x)}{(f'(x))^2}\leqslant \dfrac{M|x-\hat{x}|L}{m^2}$, 于是可以取 $\delta=\min(\frac {m^2}{ML+1},\delta_0)$, 则有 $|T'(x)|\leqslant \frac{ML}{ML+1}<1,\forall x\in (\hat x-\delta,\hat x+\delta)$.
+那么考虑导数 $T'(x)=\dfrac{f(x)f''(x)}{(f'(x))^2}\overset{\text{柯西中值}}{=}\dfrac{(f'(\xi)|x-\hat x|+f(\hat x))f''(x)}{(f'(x))^2}\leqslant \dfrac{M|x-\hat{x}|L}{m^2}$, 于是可以取 $\delta=\min(\frac {m^2}{ML+1},\delta\_0)$, 则有 $|T'(x)|\leqslant \frac{ML}{ML+1}<1,\forall x\in (\hat x-\delta,\hat x+\delta)$.
 
 所以在该邻域中有 $|T(x)-T(y)|\leqslant \frac{ML}{ML+1}|x-y|,\ \forall x,y\in (\hat x-\delta,\hat x+\delta)$, 再结合 $T(\hat{x})=\hat x$ 可以得到 $T x\in(\hat x-\delta,\hat x+\delta)$, 即 $T$ 在该邻域内是压缩映射.
 
@@ -71,13 +71,13 @@ abs.(x.-log(2))] #零点为log(2)
 
 记度量空间为 $(\mathscr X,\rho)$.
 
-设 $\lbrace x_n\rbrace _{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x_0$. 那么对于 $\rho(Tx_n,Tx_0)$, 由于 $T$ 是压缩映射, 故存在 $0<\alpha<1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx\_n,Tx\_0)\leqslant\alpha\rho(x\_n,x\_0)$, 根据夹逼准则可知 $\rho(Tx\_n,Tx\_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.
+设 $\lbrace x\_n\rbrace \_{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x\_0$. 那么对于 $\rho(Tx\_n,Tx\_0)$, 由于 $T$ 是压缩映射, 故存在 $0<\alpha<1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx\_n,Tx\_0)\leqslant\alpha\rho(x\_n,x\_0)$, 根据夹逼准则可知 $\rho(Tx\_n,Tx\_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.
 
 {{< /admonition >}}
 
 ## 1.1.5
 
-设 $T$ 是压缩映射, 求证: $T^n(n\in\mathbb{N}_+)$ 也是压缩映射, 并说明逆命题不一定成立.
+设 $T$ 是压缩映射, 求证: $T^n(n\in\mathbb{N}\_+)$ 也是压缩映射, 并说明逆命题不一定成立.
 
 {{< admonition note "答案" false >}}
 
@@ -115,7 +115,7 @@ $$|\rho(x,Tx)-\rho(y,Ty)|\leqslant \rho(x,y)+\rho(Tx,Ty)<2\rho(x,y),$$
 
 由于 $M$ 是 $\mathbb{R}^n$ 中的有界闭集, 因此存在使 $\rho(x,Tx)$ 取得最小值的点 $x\_0\in M$. 若 $\rho(x\_0,Tx\_0)=0$ 则 $x\_0$ 为不动点。
 
-若 $\rho(x\_0,Tx\_0)>0$, 则由假设有 $\rho(Tx_0,T^2x_0)<\rho(x\_0,Tx\_0)$, 即 $Tx\_0$ 的值更小，这与 $x\_0$ 为最小值点矛盾。因此必须有 $\rho(x\_0,Tx\_0)=0$，即存在不动点。
+若 $\rho(x\_0,Tx\_0)>0$, 则由假设有 $\rho(Tx\_0,T^2x\_0)<\rho(x\_0,Tx\_0)$, 即 $Tx\_0$ 的值更小，这与 $x\_0$ 为最小值点矛盾。因此必须有 $\rho(x\_0,Tx\_0)=0$，即存在不动点。
 
 唯一性则与压缩映像原理一致：若存在两个不动点 $x\_0,x\_1$，则
 $$\rho(x\_0,x\_1)=\rho(Tx\_0,Tx\_1)<\rho(x\_0,x\_1),$$
@@ -127,24 +127,24 @@ $$\rho(x\_0,x\_1)=\rho(Tx\_0,Tx\_1)<\rho(x\_0,x\_1),$$
 
 ## 1.1.7
 
-对于积分方程 $$x(t)-\lambda\int_0^1 e^{t-s}x(s)\text{d} s=y(t),$$ 其中 $y(t)\in C[0,1]$ 为给定函数, $\lambda$ 为常数, $|\lambda|<1$, 求证: 存在唯一解 $x(t)\in C[0,1]$.
+对于积分方程 $$x(t)-\lambda\int\_0^1 e^{t-s}x(s)\text{d} s=y(t),$$ 其中 $y(t)\in C[0,1]$ 为给定函数, $\lambda$ 为常数, $|\lambda|<1$, 求证: 存在唯一解 $x(t)\in C[0,1]$.
 
 {{< admonition note "答案" false >}}
 
-考虑度量 $\rho(f,g)=\max\limits_{t\in[0,1]}|f(t)-g(t)|$.
+考虑度量 $\rho(f,g)=\max\limits\_{t\in[0,1]}|f(t)-g(t)|$.
 
-对积分方程做变换得到 $e^{-t}x(t)-\lambda\int_0^1 e^{-s}x(s)\text{d} s=e^{-t}y(t)$.
+对积分方程做变换得到 $e^{-t}x(t)-\lambda\int\_0^1 e^{-s}x(s)\text{d} s=e^{-t}y(t)$.
 
 不妨设 $\varphi(t)=e^{-t}x(t),\ \psi(t)=e^{-t}y(t)$, 新的函数显然仍属于 $C[0,1]$, 那么方程变为
-$$\varphi(t)=\lambda\int_0^1 \varphi(s)\text{d} s+\psi(t).$$
+$$\varphi(t)=\lambda\int\_0^1 \varphi(s)\text{d} s+\psi(t).$$
 
-考虑映射 $T(\varphi)=\psi+\lambda\int_0^1 \varphi\text{d} s$。
+考虑映射 $T(\varphi)=\psi+\lambda\int\_0^1 \varphi\text{d} s$。
 
 首先, 由 $\psi\in C[0,1]$, 所以 $T(\varphi)\in C[0,1]$, 映射到自身。
 
 其次, 对于任意两个属于 $C[0,1]$ 的函数 $f,g$ 有
 
-$$\rho(Tf,Tg)=|\lambda\int_0^1 f(t)-g(t)\text{d} t|\leqslant|\lambda|\max\limits_{t\in[0,1]}|f(t)-g(t)|=\lambda\rho(f,g).$$
+$$\rho(Tf,Tg)=|\lambda\int\_0^1 f(t)-g(t)\text{d} t|\leqslant|\lambda|\max\limits\_{t\in[0,1]}|f(t)-g(t)|=\lambda\rho(f,g).$$
 
 由于 $|\lambda|<1$, 可知 $T$ 是压缩映射, 因此由压缩映像原理可得方程有唯一解. 乘以 $e^{t}$ 的变换是双射, 故原方程在 $C[0,1]$ 上也有唯一解。
 

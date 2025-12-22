@@ -173,7 +173,7 @@ The bag may contain multiple balls with the same integer.
 
 There is a grid with $10^9$ rows and $10^9$ columns. Let $(i, j)$ denote the square at the $i$-th row from the top and $j$-th column from the left.
 
-There are $N$ people on the grid. Initially, the $i$-th person is at square $(R_i, C_i)$.
+There are $N$ people on the grid. Initially, the $i$-th person is at square $(R\_i, C\_i)$.
 
 The time starts at $0$. Each person can do the following move at times $1, 2, 3, 4, \ldots$.
 
@@ -184,7 +184,7 @@ Find the minimum possible time when the $N$ people are at the same square.
 ### Constraints
 
 - $1 \leq N \leq 2 \times 10^5$
-- $1 \leq R_i, C_i \leq 10^9$
+- $1 \leq R\_i, C\_i \leq 10^9$
 - All input values are integers.
 
 ### Input
@@ -360,11 +360,11 @@ z
 
 ### Problem Statement
 
-You are given a length-$N$ integer sequence $A = (A_1, A_2, \ldots, A_N)$.
+You are given a length-$N$ integer sequence $A = (A\_1, A\_2, \ldots, A\_N)$.
 
 Your goal is to perform the following operation repeatedly so that for every length-$L$ contiguous subarray of $A$, the sum is a multiple of $M$.
 
-- Choose an integer $i$ such that $1 \leq i \leq N$, and increase the value of $A_i$ by $1$.
+- Choose an integer $i$ such that $1 \leq i \leq N$, and increase the value of $A\_i$ by $1$.
 
 Find the minimum possible number of operations before achieving the goal.
 
@@ -372,7 +372,7 @@ Find the minimum possible number of operations before achieving the goal.
 
 - $1 \leq N, M \leq 500$
 - $1 \leq L \leq N$
-- $0 \leq A_i < M$
+- $0 \leq A\_i < M$
 - All input values are integers.
 
 ### Input
@@ -424,16 +424,16 @@ By performing the operation once choosing $i = 2$, twice choosing $i = 3$, and o
 
 先来研究满足条件的数组的性质. 由于只要求整除, 所以我们不妨在模 $M$ 的意义下考虑. 设下标从 $0$ 开始.
 
-对于第一组 $\sum\limits_{i=0}^{L-1} a_i \equiv 0 \pmod{M}$.  
-For the second group: $\sum\limits_{i=1}^{L} a_i \equiv 0 \pmod{M}$.
+对于第一组 $\sum\limits\_{i=0}^{L-1} a\_i \equiv 0 \pmod{M}$.  
+For the second group: $\sum\limits\_{i=1}^{L} a\_i \equiv 0 \pmod{M}$.
 
-To satisfy both, we must have $a_0 \equiv a_L \pmod{M}$. Similarly, the array $a$ is periodic modulo $M$ with period $L$.
+To satisfy both, we must have $a\_0 \equiv a\_L \pmod{M}$. Similarly, the array $a$ is periodic modulo $M$ with period $L$.
 
 Thus, we only need to determine the first $L$ elements.
 
-We use dynamic programming: let $f_{i,j}$ be the minimum number of operations to assign values to the first $i$ positions such that their sum modulo $M$ is $j$.
+We use dynamic programming: let $f\_{i,j}$ be the minimum number of operations to assign values to the first $i$ positions such that their sum modulo $M$ is $j$.
 
-The answer is $f_{L,0}$. Transitions enumerate the current value modulo $M$ and previous sum modulo $M$. The cost to adjust the current element to a target modulo value can be precomputed.
+The answer is $f\_{L,0}$. Transitions enumerate the current value modulo $M$ and previous sum modulo $M$. The cost to adjust the current element to a target modulo value can be precomputed.
 
 Time complexity: $O(NM + LM^2)$. This is sufficient. There also exists an $O(NM)$ solution.
 
@@ -541,7 +541,7 @@ Time complexity: $O(2^N \cdot L \cdot C \cdot |\Sigma|)$, where $C$ is the numbe
 
 ### Problem Statement
 
-You are given a simple connected undirected graph with $N$ vertices numbered $1$ to $N$ and $M$ edges. The $i$-th edge connects vertices $u_i$ and $v_i$.
+You are given a simple connected undirected graph with $N$ vertices numbered $1$ to $N$ and $M$ edges. The $i$-th edge connects vertices $u\_i$ and $v\_i$.
 
 For each $k=1,2,\ldots,N-1$, find the number of simple paths from vertex $1$ to vertex $N$ that contain exactly $k$ edges.
 
@@ -549,7 +549,7 @@ For each $k=1,2,\ldots,N-1$, find the number of simple paths from vertex $1$ to 
 
 - $2\leq N\leq 2\times 10^5$
 - $N-1\leq M\leq N+20$
-- $1\leq u_i\lt v_i\leq N$
+- $1\leq u\_i\lt v\_i\leq N$
 - The given graph is a simple connected undirected graph.
 - All input values are integers.
 
@@ -576,7 +576,7 @@ ans_2
 ans_{N-1}
 ```
 
-$\mathrm{ans}_i$ is the number of simple paths from vertex $1$ to vertex $N$ that contain exactly $i$ edges.
+$\mathrm{ans}\_i$ is the number of simple paths from vertex $1$ to vertex $N$ that contain exactly $i$ edges.
 
 ### Sample Input 1
 
@@ -640,7 +640,7 @@ Note that the graph has at most $21$ extra edges beyond a spanning tree. Thus, t
 
 In a tree, there is exactly one simple path from $1$ to $N$. Adding extra edges creates alternative routes, but the total number of simple paths is bounded by $2^{M - N + 1} \leq 2^{21}$.
 
-**Proof sketch**: Over $\mathbb{F}_2$, the incidence matrix has rank $N - 1$, so the solution space to $Bx = b$ (where $b$ has 1s at vertices 1 and $N$) has dimension $M - (N - 1)$. Hence, at most $2^{M - N + 1}$ edge subsets form a path from 1 to $N$. Each simple path is one such solution.
+**Proof sketch**: Over $\mathbb{F}\_2$, the incidence matrix has rank $N - 1$, so the solution space to $Bx = b$ (where $b$ has 1s at vertices 1 and $N$) has dimension $M - (N - 1)$. Hence, at most $2^{M - N + 1}$ edge subsets form a path from 1 to $N$. Each simple path is one such solution.
 
 Thus, we can enumerate all simple paths via DFS, but naively visiting all $N$ nodes per path is too slow.
 
