@@ -1,0 +1,139 @@
+---
+title: "泛函分析作业251103"
+date: 2025-10-31
+collections: "泛函分析作业"
+tags: ["泛函分析"]
+categories: ["泛函分析"]
+---
+
+
+
+## 2.1.4
+
+设 $y(t)\in C[0,1]$, 定义 $C[0,1]$ 上的泛函
+$$f(x)=\int\_0^1 x(t)y(t)\text{d} t\quad (\forall x\in C[0,1]),$$
+求 $\Vert f \Vert$.
+
+<!--more-->
+
+{{< admonition note "答案" false >}}
+$\Vert f \Vert=\sup\limits\_{x}\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}$.
+
+对于
+$$\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}=\left|\int\_0^1 \dfrac{x(t)}{\max\limits\_k x(k)}y(t)\text{d} t\right|\leqslant \int\_0^1|y(t)|\text{d} t\overset{\Delta}{=}M$$
+
+如果不要求 $x(t)\in C[0,1]$, 我们只要取 $x\_0(t)=\frac{y(t)}{|y(t)|}$ 即可得到上界 $M$.
+根据实变函数中的结论, 对任意 $\varepsilon>0$, 存在连续函数 $g$ 使得
+$\displaystyle\int\_{0}^{1} |g(t)-x\_0(t)|\text{d} t<\varepsilon/\Vert y\Vert$,
+从而
+$$\left|\int\_0^1 g(t)y(t)\text{d} t-M\right|<\left|\int\_0^1|g(t)-x\_0(t)|y(t)\text{d} t\right|\leqslant\Vert y\Vert\int\_0^1 |g(t)-x\_0(t)|\text{d} t<\varepsilon.$$
+
+从而说明存在一列 $x\_n(t)$ 使得 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to M$,
+从而 $M=\displaystyle\int\_{0}^{1} |y(t)|\text{d} t$ 就是上确界 $\Vert f\Vert$.
+{{< /admonition >}}
+
+
+## 2.1.5
+
+设 $f$ 是 $\mathscr X$ 上的非零有界线性泛函, 令
+$$d=\inf\lbrace \Vert x\Vert|f(x)=1,x\in\mathscr X \rbrace,$$
+求证 $\Vert f\Vert=1/d$.
+
+{{< admonition note "答案" false >}}
+$\forall x\in\mathscr X-\lbrace 0 \rbrace$, 取 $\alpha=\dfrac{1}{f(x)}$, 那么 $\alpha x$ 就满足 $f(\alpha x)=\alpha f(x)=1$, 从而 $\Vert \alpha x\Vert\geqslant d$, 即 $\dfrac{\Vert x\Vert}{\Vert f(x)\Vert}\geqslant d$.
+
+所以 $d=\inf\left\lbrace \dfrac{\Vert x\Vert}{\Vert f(x)\Vert}|x\in \mathscr X\right\rbrace$, 故
+$\dfrac{1}{d}=\sup\left\lbrace \dfrac{\Vert f(x)\Vert}{\Vert x\Vert}|x\in\mathscr X\right\rbrace$,
+即 $\Vert f\Vert=\dfrac{1}{d}$.
+{{< /admonition >}}
+
+
+## 2.1.7
+
+设 $T:\mathscr X\to\mathscr Y$ 是线性的, 令
+$$N(T)\overset{\Delta}{=}\lbrace x\in\mathscr X|Tx=0\rbrace.$$
+
+* (1) 若 $T\in \mathscr L(\mathscr X,\mathscr Y)$, 求证: $N(T)$ 是 $\mathscr X$ 的闭线性子空间.
+* (2) 问 $N(T)$ 是 $\mathscr X$ 的闭线性子空间能否推出 $T\in\mathscr L(\mathscr X,\mathscr Y)$?
+* (3) 若 $f$ 是线性泛函, 求证
+  $$f\in\mathscr X^*\Leftrightarrow N(f)\ \text{是闭线性子空间}.$$
+
+{{< admonition note "答案" false >}}
+
+* (1) **线性性:** $\forall x,y\in N(T),\alpha,\beta\in \mathbb{K}$, 有
+  $T(\alpha x+\beta y)=\alpha T(x)+\beta T(y)=0$, 从而 $\alpha x+\beta y\in N(T)$.
+  **闭性:** 由 $T$ 有界, 从而连续, 又 $\lbrace 0 \rbrace$ 是 $\mathscr Y$ 中的闭集,
+  所以 $T^{-1}({0})$ 是闭集. 故 $N(T)$ 是闭线性子空间.
+
+* (2) 任取一个无界的线性泛函 $T\_0:\mathscr X\to\mathscr Y$,
+  设 $T:\mathscr X\to\mathscr X\times \mathscr Y, T(x)=(x,T\_0(x))$.
+  取范数 $\Vert T(x)\Vert=\Vert x\Vert+\Vert T\_0(x)\Vert$ 不难验证满足范数定义.
+  而 $N(T)=\lbrace 0 \rbrace$, 因为第一维 $x$ 的限制. 又 $T\_0$ 无界, 设 $D\subset\mathscr X$
+  使得 $T\_0(D)$ 无界, 那么 $T(D)$ 也是无界的, 因为 $\Vert T(x)\Vert\geqslant \Vert T\_0(x)\Vert$.
+
+* (3)
+  $\Rightarrow$: 由 (1) 可知.
+  $\Leftarrow$: 反设 $f$ 无界, 则 $\forall n\in \mathbb N$ 存在 $x\_n\in\mathscr X$, 使得
+  $$\Vert x\_n\Vert<\frac 1n,\ \text{且} f(x\_n)=1.$$
+  于是 ${x\_n-x\_1}\subset N(f)$ 且 $\Vert(x\_n-x\_1)-(-x\_1)\Vert\to 0$.
+  但 $f(-x\_1)=-1$, 即 $-x\_1\notin N(f)$, 与 $N(f)$ 闭性矛盾.
+  {{< /admonition >}}
+
+
+## 2.1.8
+
+设 $f$ 是 $\mathscr X$ 上的线性泛函, 记
+$$H\_f^\lambda\overset{\Delta}{=}\lbrace x\in\mathscr X|f(x)=\lambda\rbrace\quad (\forall \lambda\in \mathbb K).$$
+如果 $f\in\mathscr X^*$, 并且 $\Vert f\Vert=1$, 求证:
+
+* (1) $|f(x)|=\inf\lbrace \Vert x-z\Vert|\forall z\in H\_f^0 \rbrace\quad(\forall x\in\mathscr X)$;
+* (2) $\forall\lambda\in\mathbb K$, $H\_f^\lambda$ 上的任一点 $x$ 到 $H\_f^0$ 的距离都等于 $|\lambda|$.
+  并对 $\mathscr X=\mathbb{R}^2,\mathbb K=\mathbb{R}$ 情形解释 (1) 和 (2) 的几何意义.
+
+{{< admonition note "答案" false >}}
+
+* (1) 我们考虑 $A=\lbrace x-z: z\in H\_f^0 \rbrace$ 究竟是什么集合.
+  我们记 $M=|f(x)|$, 首先 $|f(x-z)|=|f(x)-0|=M$, 所以 $A\subset H\_f^M$.
+  此外 $\forall y\in H\_f^M$, 有 $x-y\in H\_f^0$, 所以 $x-(x-y)=y\in A$, 即 $A=H\_f^M$.
+
+  因此我们只需证 $|f(x)|=\inf\lbrace \Vert x\Vert: x\in H\_f^{|f(x)|} \rbrace$.
+
+  一方面由 $\Vert f\Vert=1$, $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\leqslant 1$,
+  $\forall x\in\mathscr X$. 所以 $\Vert f(x)\Vert$ 是下界.
+
+  另一方面, 根据上确界定义, 存在一列 $\lbrace x\_n \rbrace$ 满足
+  $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to 1$,
+  那么取 $y\_n=\dfrac{\Vert f(x)\Vert}{\Vert f(x\_n)\Vert}x\_n$,
+  那么 $\dfrac{\Vert f(y\_n)\Vert}{\Vert y\_n\Vert}=\dfrac{\Vert f(x\_n)\Vert}{\Vert x\_n\Vert}\to 1$,
+  且 $\Vert f(y\_n)\Vert=\Vert f(x)\Vert$.
+  于是 $y\_n\in H\_f^M$ 且 $\Vert f(y\_n)\Vert\to \Vert f(x)\Vert$,
+  即 $\Vert f(x)\Vert$ 就是下确界.
+
+  综上 $\Vert f(x)\Vert=\inf\lbrace \Vert x-z\Vert|\forall z\in H\_f^0 \rbrace$.
+
+* (2) $\rho(x,H\_f^0)=\inf\lbrace \Vert x-z\Vert|\forall z\in H\_f^0 \rbrace=|f(x)|=|\lambda|$.
+
+  对 $x=(\alpha,\beta)\in\mathbb{R}^2$, 设 $f((1,0))=e\_1,f((0,1))=e\_2$,
+  则 $f(x)=\alpha e\_1+\beta e\_2$,
+  所以 $H\_f^\lambda=\lbrace (\alpha,\beta)|\alpha e\_1+\beta e\_2=\lambda \rbrace$ 是一条直线.
+  所以 (1) 和 (2) 指的就是点到直线和两条平行线的距离关系.
+  {{< /admonition >}}
+
+
+## 2.1.9
+
+设 $\mathscr X$ 是实 $B^*$ 空间, $f$ 是 $\mathscr X$ 上的非零实值线性泛函.
+求证: 不存在开球 $B(x\_0,\delta)$, 使得 $f(x\_0)$ 是 $f(x)$ 在 $B(x\_0,\delta)$ 中的极大值或极小值.
+
+{{< admonition note "答案" false >}}
+反设存在 $B(x\_0,\delta)$, 使得 $f(x\_0)$ 是极大值.
+
+那么 $f(x)\leqslant f(x\_0)$ 即 $f(x-x\_0)\leqslant 0$.
+所以 $f(x)\leqslant 0,\forall x\in B(0,\delta)$.
+根据线性性, 可以依次推出在整个定义域上都有 $f(x)\leqslant 0$,
+因为可以反复取 $f(x)=2f(x/2)$ 直到 $\Vert x/2^k\Vert<\delta$.
+
+从而必须有 $f(x)=0$, 否则若 $f(x)<0$, 则 $f(-x)>0$ 矛盾.
+
+故假设矛盾. 极小值同理, 可推出在整个定义域上非负从而恒为 0.
+{{< /admonition >}}

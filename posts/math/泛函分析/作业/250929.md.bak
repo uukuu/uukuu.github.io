@@ -1,0 +1,104 @@
+---
+title: "泛函分析作业250929"
+date: 2025-09-29
+collections: "泛函分析作业"
+tags: ["泛函分析"]
+categories: ["泛函分析"]
+---
+
+## 1.3.5
+
+设 $M$ 是 $C[a,b]$ 中的有界集, 求证: 集合 $$\lbrace F(x)=\int\_a^x f(t) \mathrm{d} t | f\in M\rbrace $$ 是列紧集.
+
+<!--more-->
+
+{{< admonition note "答案" false >}}
+
+根据微积分基本定理 $F(x)$ 也是 $[a,b]$ 上的连续函数。
+
+所以考虑使用 Arzela-Ascoli 定理. 即需要证明 $F$ 一致有界且等度连续。
+
+"一致有界": 根据 $M$ 的有界性, 存在 $C>0$ 使得 $|f(x)|\leqslant C,\forall f\in M, x\in[a,b]$. 所以有
+$$|F(x)|=|\int\_a^x f(t) \mathrm{d} t|\leqslant\int\_a^x|f(t)| \mathrm{d} t\leqslant (b-a)C$$
+所以 $F(x)$ 一致有界。
+
+"等度连续": 对任意 $\varepsilon>0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x\_1-x\_2|<\delta$ 就有 $|F(x\_1)-F(x\_2)|<C|x\_1-x\_2|<\varepsilon,\forall F$. 从而也是等度连续。
+
+综上由 AA 定理可知该集合是列紧集。
+
+{{< /admonition >}}
+
+## 1.3.6
+
+设 $E=\lbrace \sin nt\rbrace \_{n=1}^\infty$, 求证: $E$ 在 $C[0,\pi]$ 中不是列紧的.
+
+{{< admonition note "答案" false >}}
+
+根据 AA 定理, 只需证 $E$ 不满足等度连续即可。
+
+$\forall \delta>0$, 存在 $k\in\mathbb{N}$ 使得 $\frac \pi{2^k}<\delta$, 从而对于 $x\_1=0,x\_2=\frac \pi {2^k}, f(t)=\sin 2^{k-1}t$, 有 $|x\_1-x\_2|<\delta$ 但 $|f(x\_2)-f(x\_1)|=\sin\frac\pi{2}=1$ 所以不可能等度连续. 即 $E$ 不是列紧的.
+
+{{< /admonition >}}
+
+## 1.3.7
+
+求证: $S$ 空间的子集 $A$ 列紧的充要条件是: $\forall n\in \mathbb{N},\exists C\_n>0$, 使得对 $\forall x=(\xi\_1,\xi\_2,\cdots,\xi\_n,\cdots)\in A$, 有 $|\xi\_n|\leqslant C\_n(n=1,2,\cdot)$.
+
+$S$ 空间: 在数列上定义距离 $\rho(x,y)=\sum\limits\_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi\_k-\eta\_k|}{1+|\xi\_k-\eta\_k|}$.
+
+
+{{< admonition note "答案" false >}}
+
+"$\Rightarrow$": 反设条件不成立, 即 $\exists n\in\mathbb{N}$, 不存在 $C\_n>0$ 使得 $\xi\_n$ 有界. 也就是说第 $n$ 个分量无界. 那么就可以取一列 $\lbrace x^{(m)}\rbrace $ 满足 $\xi\_n^{(m)}>\xi\_n^{(m-1)}+1$, 从而就有
+$$\rho(x^{(m)},x^{(m\_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi\_n^{(m)}-\xi\_n^{(m\_2)}|}{1+|\xi\_n^{(m)}-\xi\_n^{(m\_2)}|}\geqslant\frac{1}{2^{n+1}}.$$ 
+所以不存在收敛子列, 与 $A$ 列紧矛盾. 故该条件成立。
+
+"$\Leftarrow$": 由于 $S$ 空间完备, 故考虑证明在该条件下 $A$ 是完全有界集. 即证明存在有穷 $\varepsilon$-网。
+
+$\forall \varepsilon>0$, 取 $N=\lceil -\log\_2 \varepsilon \rceil + 1$, 那么对于度量中 $\sum\limits\_{k=N+1}^\infty \frac{1}{2^k}\cdot\frac{|\xi\_k-\eta\_k|}{1+|\xi\_k-\eta\_k|}<\sum\limits\_{k=N+1}^\infty\frac{1}{2^k}<\frac{\varepsilon}{2}$。
+
+而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi\_1,\xi\_2,\ldots,\xi\_N) | \exists x\in A, s.t. x\_i=\xi\_i\ i=1,2,\ldots,N\rbrace $。
+
+根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D'=\lbrace (\xi\_1,\xi\_2,\ldots,\xi\_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D'$, 使得 $(\sum\limits\_{i=1}^N |\xi\_i-\eta\_i|^2)^{1/2}<\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi\_i-\eta\_i|<\varepsilon/2$。
+
+所以 $\rho(x,y)=\sum\limits\_{k=1}^N+\sum\limits\_{k=N+1}^\infty<\frac\varepsilon 2+\frac\varepsilon 2=\varepsilon$。
+
+故 $D'$ 就是 $A$ 的有穷 $\varepsilon$-网. 从而 $A$ 是完全有界集, 进而是列紧集.
+
+{{< /admonition >}}
+
+## 1.3.8
+
+设 $(\mathscr X,\rho)$ 是度量空间, $M$ 是 $\mathscr X$ 中的列紧集, 映射 $f:\mathscr X\to M$ 满足 $$\rho(f(x\_1),f(x\_2))<\rho(x\_1,x\_2),\quad (\forall x\_1,x\_2\in \mathscr X,x\_1\neq x\_2)$$ 求证: $f$ 在 $\mathscr X$ 中存在唯一不动点.
+
+{{< admonition note "答案" false >}}
+
+记 $d=\inf\lbrace \rho(x,f(x))|x\in M\rbrace $.
+\
+由下确界的定义, 存在点列 $\lbrace x\_n\rbrace $ 满足 $\rho(x\_n,f(x\_n))<d+\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x\_{n\_k}\rbrace $ 且滿足 $\rho(x\_{n\_k},f(x\_{n\_k}))<d+\frac 1{n\_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$. 
+\
+如果 $d\neq 0$, 即 $x\neq f(x)$, 则 $\rho(f(x),f(f(x)))<\rho(x,f(x))=d$, 则与下确界矛盾. 所以 $d=0$.
+\
+于是 $x=f(x)$, 是 $\mathscr X$ 中的不动点.
+\
+如果不动点不唯一, 那么 $\rho(x\_1,x\_2)=\rho(f(x\_1),f(x\_2))<\rho(x\_1,x\_2)$ 矛盾.
+\
+所以 $f$ 在 $\mathscr X$ 上存在唯一不动点.
+
+{{< /admonition >}}
+
+## 1.3.9
+
+设 $(M,\rho)$ 是一个紧度量空间, 又 $E\subset C(M)$, $E$ 中的函数一致有界并满足下列 Holder 条件: $$|x(t\_1)-x(t\_2)|\leqslant C\rho(t\_1,t\_2)^\alpha\quad (\forall x\in E, \forall t\_1,t\_2\in M),$$ 其中 $0<\alpha\leqslant 1, C>0$. 求证: $E$ 在 $C(M)$ 中是列紧集.
+
+{{< admonition note "答案" false >}}
+
+根据 AA 定理, 只需证 $E$ 中函数等度连续。
+
+$\forall \varepsilon>0$, 取 $\delta=\left(\frac{\varepsilon}{C}\right)^{1/\alpha}$.  
+
+那么有 $\forall \rho(t\_1,t\_2)<\delta, x\in E$ 有 $|x(t\_1)-x(t\_2)|\leqslant C\rho(t\_1,t\_2)^\alpha<\varepsilon$. 从而 $E$ 中函数等度连续.
+
+从而根据 AA 定理, $E$ 在 $C(M)$ 中是列紧集.
+
+{{< /admonition >}}

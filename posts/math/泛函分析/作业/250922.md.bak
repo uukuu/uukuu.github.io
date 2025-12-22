@@ -1,0 +1,123 @@
+---
+title: "泛函分析作业250922"
+date: 2025-09-22
+collections: "泛函分析作业"
+tags: ["泛函分析"]
+categories: ["泛函分析"]
+---
+
+## 1.2.1
+
+(空间 S) 令 $S$ 为一切实 (或复) 数列 $$x=(\xi\_1,\xi\_2,\cdots,\xi\_n,\cdots)$$ 组成的集合, 在 $S$ 中定义距离为
+$$\rho(x,y)=\sum\limits\_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi\_k-\eta\_k|}{1+|\xi\_k-\eta\_k|},$$
+其中 $x=(\xi\_1,\xi\_2,\cdots,\xi\_k,\cdots),y=(\eta\_1,\eta\_2,\cdots,\eta\_k,\cdots)$. 求证 $S$ 为一个完备的度量空间.
+
+<!--more-->
+
+{{< admonition note "答案" false >}}
+
+首先证明 $\rho(x,y)$ 是度量。
+
+非负性和对称性显然, 下证三角不等式。
+
+由 $f(t)=\frac {t}{1+t}=1-\frac{1}{1+t}$ 递增, 于是用复数域 $|x-y|$ 度量的三角不等式得到
+$$\frac{|\xi\_k-\eta\_k|}{1+|\xi\_k-\eta\_k|}\leqslant \frac{|\xi\_k-\zeta\_k|+|\zeta\_k-\eta\_k|}{1+|\xi\_k-\zeta\_k|+|\zeta\_k-\eta\_k|}.$$ 
+又 $f'(t)=\frac{1}{(1+t)^2}<1$, 所以有 $f(|a|+|b|)\leqslant f(|a|)+f(|b|)$. 故
+$$\frac{|\xi\_k-\eta\_k|}{1+|\xi\_k-\eta\_k|}\leqslant \frac{|\xi\_k-\zeta\_k|}{1+|\xi\_k-\zeta\_k|}+\frac{|\zeta\_k-\eta\_k|}{1+|\zeta\_k-\eta\_k|}$$
+再对 $k$ 求和就可以得到三角不等式成立。
+
+然后证明 $S$ 是完备的。
+
+任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}\_+$) 即 $\forall \varepsilon>0,\exists M>0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m+p)},x^{(m)})<\varepsilon$。
+
+现关注数列的第 $k$ 项, 当 $\varepsilon<\frac{1}{2^{k+1}}$ 时, 有
+$$\frac{|x\_k^{(m+p)}-x\_k^{(m)}|}{1+|x\_k^{(m+p)}-x\_k^{(m)}|}< 2^k\varepsilon.$$ 移向变换可得
+$$|x\_k^{(m+p)}-x\_k^{(m)}|<\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon<\frac 1 2}{<}2^{k+1}\varepsilon.$$
+由于现在关注的是第 $k$ 项构成的序列 $\lbrace x\_k^{(m)}\rbrace \_{m=1}^\infty$ 所以我们得到 $\lbrace x\_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x\_k$。
+
+如此, 我们就得到了一个新的数列 $\lbrace x\_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$。
+
+$\forall \varepsilon>0$, 由于 $\frac{|x\_k^{(m)}-x\_k|}{1+|x\_k^{(m)}-x\_k|}<1$, 所以
+$$\sum\limits\_{k=n\_0+1}^\infty \frac{1}{2^k}\cdot \frac{|x\_k^{(m)}-x\_k|}{1+|x\_k^{(m)}|}<\frac{1}{2^{n\_0}}.$$ 取 $n\_0\geqslant\lceil-\log\_2 \varepsilon\rceil+1$ 那么對於前 $n\_0$ 項, 由于每一项都收敛至 $x\_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x\_k^{(m)}-x\_k|<\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)<2\varepsilon,\ \forall m\geqslant M$。
+
+即 $\lbrace x^{(m)}\rbrace $ 收敛. 综上 $S$ 是完备的度量空间。
+
+{{< /admonition >}}
+
+## 1.2.3
+
+设 $F$ 是只有有限项不为 $0$ 的实数列全体, 在 $F$ 上引进距离 $$\rho(x,y)=\sup\limits\_{k\geqslant 1}|\xi\_k-\eta\_k|,$$ 其中 $x=\lbrace \xi\_k\rbrace \in F,y=\lbrace \eta\_k\rbrace \in F$, 求证 $(F,\rho)$ 不完备, 并指出它的完备化空间.
+
+{{< admonition note "答案" false >}}
+
+考虑数列 $x\_n=(1,\frac 1 2,\ldots,\frac 1 {n-1},\frac 1 n,0,0,\ldots)\in F$. 有 $\forall n,m\geqslant N$, $\rho(x\_n,x\_m)<\frac 1 N$, 从而 $\lbrace x\_n\rbrace $ 是柯西列, 但显然 $\lbrace x\_n\rbrace $ 收敛至 $(1,\frac 1 2,\ldots,\frac 1 n,\ldots)\notin F$. 从而 $F$ 不完备.
+
+ $F$ 的完备化空间应该是所有极限为 0 的实数列的全体, 记为 $\widetilde{F}$。
+
+先说明 $F$ 在 $\widetilde{F}$ 中稠密。
+
+即证明 $\forall x\in\widetilde{F}, \varepsilon>0,\ \exists y\in F,\ s.t. \rho(x,y)<\varepsilon$。
+
+设 $x=(\xi\_1,\xi\_2,\ldots,\xi\_n,\ldots)$, 由于 $\lim\limits\_{n\to\infty}\xi\_n=0$, 所以存在 $N\_0$ 使得 $n\geqslant N\_0$ 时 $\xi\_n<\varepsilon$. 故只需取 $y=(\xi\_1,\xi\_2,\ldots,\xi\_{N\_0},0,0,\ldots)$, 那么 $\rho(x,y)=\sup\limits\_{n\geqslant N\_0}\xi\_n<\varepsilon$。
+
+所以 $F$ 在 $\widetilde{F}$ 中稠密。
+
+再说明 $\widetilde{F}$ 是完备的。
+
+任取 $\lbrace x^{(n)}\rbrace $ 是柯西列。
+
+$$\forall \varepsilon>0,\exists N,\ s.t. \forall n,m\geqslant N,\sup\limits\_{k\geqslant 1}|\xi\_k^{(n)}-\xi\_k^{(m)}|<\varepsilon$$ 进而对每一维 $k$ 有 $$|\xi\_k^{(n)}-\xi\_k^{(m)}|\leqslant\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|<\varepsilon$$ 即 $\lbrace \xi\_k^{(n)}\rbrace \_{n=1}^\infty$ 也是柯西列, 由 $\mathbb{R}$ 的完备性知其收敛, 记为 $\xi\_k$. 故取 $x=(\xi\_1,\xi\_2,\ldots,\xi\_n,\ldots)$, 下证 $x^{(n)}\to x$ 且 $x\in \widetilde{F}$。
+
+由 $\lbrace x^{(n)}\rbrace $ 是柯西列, 可得 $\forall \varepsilon>0,\exists N,\ s.t.\forall n,m\geqslant N$ 有 $$\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|<\varepsilon$$ 再固定 $n$ 对一切 $m\geqslant N$ 和 $k$ 有 $$|\xi\_k^{(n)}-\xi\_k^{(m)}|\leqslant\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|<\varepsilon$$ 再令 $m\to\infty$ 得到 $$|\xi\_k^{(n)}-\xi\_k|\leqslant \varepsilon,\quad \forall k$$ 从而 $$
+\rho(x^{(n)},x)=\sup\limits\_{k\geqslant 1}|\xi\_k^{(n)}-\xi\_k|\leqslant\varepsilon,\forall n\geqslant N\label{hw1.2.3}
+$$
+
+即 $x^{(n)}\to x$. 并且由 $\lbrace \xi\_k^{(n)}\rbrace \_{k=1}$ 收敛至 $0$, 我们有 $\exists K,\ s.t.\forall k\geqslant K, \ |\xi\_k^{(N)}-\xi\_k|<\varepsilon,\ |\xi\_k^{(N)}|<\varepsilon$ 从而 $|\xi\_k|<2\varepsilon$ 即 $\xi\_k\overset{k}{\to}0$, $x\in \widetilde{F}$。
+
+综上我们说明了 $\widetilde{F}$ 是 $F$ 的完备化空间.
+
+{{< /admonition >}}
+
+## 1.2.4
+
+求证: [0,1] 上的多项式全体按距离 $$\rho(p,q)=\int\_0^1 |p(x)-q(x)| \mathrm{d} x$$ 是不完备的, 并指出它的完备化空间.
+
+{{< admonition note "答案" false >}}
+
+对于 $[0,1]$ 上的连续函数 $\sin x$, 根据魏尔斯特拉斯逼近定理存在一列多项式一致收敛于 $\sin x$, 但 $\sin x$ 显然不是多项式, 故多项式空间不完备.
+
+其完备化空间应该为 $L^1([0,1])$ 即在 $[0,1]$ 上 Lebesgue 可积的函数全体.
+
+稠密性: 由实变函数对任意可积函数存在具有紧支集的连续函数逼近, 再由数学分析中魏尔斯特拉斯定理存在多项式逼近有界闭区间上的连续函数. 从而可以用多项式逼近任意可积函数.
+
+{{< /admonition >}}
+
+## 1.2.5
+
+在完备的度量空间 $(\mathscr X,\rho)$ 中给定点列 $\lbrace x\_n\rbrace $, 如果 $\forall \varepsilon>0$, 存在基本列 $\lbrace y\_n\rbrace $, 使得 $$\rho(x\_n,y\_n)<\varepsilon,\quad (n\in\mathbb{N})$$ 求证 $\lbrace x\_n\rbrace $ 收敛.
+
+{{< admonition note "答案" false >}}
+
+考虑 $\lbrace y\_n^{(\varepsilon)}\rbrace $ 表示 $\varepsilon$ 对应得基本列, 由于空间完备, 故极限存在记作 $y^{(\varepsilon)}$, 有 $$\rho(y\_n^{(\varepsilon\_1)},y\_n^{(\varepsilon\_2)})\leqslant\rho(y\_n^{(\varepsilon\_1)},x\_n)+\rho(y\_n^{(\varepsilon\_2)},x\_n)<\varepsilon\_1+\varepsilon\_2$$ 再令 $n\to\infty$ 得 $$\rho(y^{(\varepsilon\_1)},y^{(\varepsilon\_2)})\leqslant\varepsilon\_1+\varepsilon\_2$$
+
+考虑数列 $\lbrace y^{(1/m)}\rbrace $, $\forall \varepsilon>0,$ 取 $N=\lceil \frac 2 \varepsilon\rceil$, 则 $n,m\geqslant N$ 时 $\rho(y^{(1/m)},y^{(1/n)})\leqslant\frac 1 n+\frac 1 m< \varepsilon$ 从而 $\lbrace y^{(1/m)}\rbrace $ 是柯西列, 又空间完备故收敛记作 $y$.
+
+下证 $x\_n\to y$.
+
+$\forall \varepsilon>0, \exists m, \rho(y^{(1/m)},y)<\frac \varepsilon 3\wedge \frac 1 m<\frac \varepsilon 3$, 又 $y\_n^{(1/m)}\to y^{(1/m)}$ 故存在 $N$ 使得 $n\geqslant N$ 时有 $$\rho(y\_n^{(1/m)},y^{(1/m)})<\frac \varepsilon 3$$ 再根据 $\lbrace y\_n^{(1/m)}\rbrace $ 定义有 $$\rho(x\_n,y\_n^{(1/m)})<\frac 1 m<\varepsilon,\quad \forall n\geqslant N$$ 所以有 $$\rho(x\_n,y)\leqslant\rho(x\_n,y\_n^{(1/m)})+\rho(y\_n^{(1/m)},y^{(1/m)})+\rho(y^{(1/m)},y)<\varepsilon$$ 即 $x\_n\to y$.
+
+所以 $\lbrace x\_n\rbrace $ 收敛.
+
+{{< /admonition >}}
+
+## 1.3.4
+
+设 $(\mathscr X,\rho)$ 是度量空间, $F\_1,F\_2$ 是它的两个紧子集, 求证: $\exists x\_i\in F\_i(i=1,2)$, 使得 $\rho(F\_1,F\_2)=\rho(x\_1,x\_2)$.
+
+{{< admonition note "答案" false >}}
+
+记 $d=\rho(F\_1,F\_2)$.
+
+根据下确界的定义, 对任意 $n$ 存在 $x\_n\in F\_1,y\_n\in F\_2$, 使得 $$d\leqslant \rho(x\_n,y\_n)<d+\frac 1 n.$$ 由 $F\_1$ 的紧性, 存在子列 $\lbrace x\_{n\_k}\rbrace $ 收敛, 记收敛至 $x\_1\in F\_1$. 考虑对应的子列 $\lbrace y\_{n\_k}\rbrace $, 由 $F\_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y\_{n\_{k\_j}}\rbrace $, 记收敛至 $x\_2\in F\_2$. 从而有 $$d\leqslant\rho(x\_{n\_{k\_j}},y\_{n\_{k\_j}})<d+\frac 1 {n\_{k\_j}}$$ 令 $j\to\infty$ 可得 $d=\rho(x\_1,x\_2)$.
+
+{{< /admonition >}}
