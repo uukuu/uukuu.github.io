@@ -18,23 +18,23 @@ $\Vert A \Vert \leqslant \varliminf\limits_{n\to\infty} \Vert A_n \Vert$.&lt;/p>
 $A:X\to Y$, $Ax=y$. $y$ 为 $\lbrace A_n x \rbrace$ 的收敛点.&lt;/p>
 &lt;p>下证这样构造的 $A$ 是有界线性泛函.&lt;/p>
 &lt;p>&lt;strong>线性性&lt;/strong>:
-$A(\alpha x+\beta y)=\lim\limits_{n\to\infty}A_n(\alpha x+\beta y)
-=\alpha\lim\limits_{n\to\infty}A_nx+\beta\lim\limits_{n\to\infty} A_ny
-=\alpha Ax+\beta Ay$.&lt;/p>
+$A(\alpha x&amp;#43;\beta y)=\lim\limits_{n\to\infty}A_n(\alpha x&amp;#43;\beta y)
+=\alpha\lim\limits_{n\to\infty}A_nx&amp;#43;\beta\lim\limits_{n\to\infty} A_ny
+=\alpha Ax&amp;#43;\beta Ay$.&lt;/p>
 &lt;p>&lt;strong>有界性&lt;/strong>:
 对于 $W=\lbrace A_n \rbrace$ 由于 $\forall x\in X$, $\lbrace A_n x \rbrace$ 在 $Y$ 中收敛,
 所以 $\lbrace A_n x \rbrace$ 在 $Y$ 中是有界集.
 从而根据一致有界定理知, 存在 $M&amp;gt;0$ 使得 $\Vert A_n \Vert \leqslant M$.&lt;/p>
 &lt;p>而根据 $A$ 的定义, $\forall x\in X$ 有 $|\Vert A_nx \Vert-\Vert Ax \Vert|\leqslant\Vert A_nx-Ax \Vert\to 0$.&lt;/p>
 &lt;p>从而
+&lt;/p>
 $$
 \Vert Ax \Vert
 =\lim\limits_{n\to\infty}\Vert A_nx \Vert
 =\varliminf\limits_{n\to\infty}\Vert A_nx \Vert
 \leqslant
 \varliminf\limits_{n\to\infty}\Vert A_n \Vert \Vert x \Vert .
-$$&lt;/p>
-&lt;p>由一致有界定理及单调有界收敛保证$\varliminf\limits_{n\to\infty}\Vert A_n \Vert$ 存在.&lt;/p>
+$$&lt;p>由一致有界定理及单调有界收敛保证$\varliminf\limits_{n\to\infty}\Vert A_n \Vert$ 存在.&lt;/p>
 &lt;p>此即$\Vert A \Vert \leqslant\varliminf\limits_{n\to\infty}\Vert A_n \Vert &amp;lt;\infty$, 且有 $A_n\overset{s}{\rightarrow}A$.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -45,22 +45,24 @@ $$&lt;/p>
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $y\in L^2[0,1]$. 证明: 有且仅有一个解 $x\in L^2[0,1]$ 满足方程
+&lt;/p>
 $$
-x(t)+\displaystyle\int_{0}^{t} e^{ts}x(s)\text{d} s=y(t),
+x(t)&amp;#43;\displaystyle\int_{0}^{t} e^{ts}x(s)\text{d} s=y(t),
 \quad 0\leqslant t\leqslant 1.
-$$&lt;/p>
-&lt;div class="details admonition note">
+$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>定义映射 $T:L^2([0,1])\to L^2([0,1])$ 为 $$(Tx)(t)\triangleq y(t)-\int_0^t e^{ts}x(s)\text{d} s.$$&lt;/p>
-&lt;p>先验证 $Tx\in L^2[0,1]$, 利用 Cauchy-Schwarz 不等式 $$|Tx(t)|\leqslant\left(\int_0^t e^{2ts}\text{d} s\right)^{1/2}\left(\int_0^t|x(s)|^2\text{d} s\right)^{1/2}=e\sqrt{t}\Vert x \Vert $$&lt;/p>
-&lt;p>从而 $\left(\displaystyle\int_{0}^{1} |Tx(t)|^2\text{d} t\right)^{1/2}\leqslant \frac{e^2}{2}\Vert x \Vert ^2$ 即 $Tx\in L^2[0,1]$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>定义映射 $T:L^2([0,1])\to L^2([0,1])$ 为 &lt;/p>
+$$(Tx)(t)\triangleq y(t)-\int_0^t e^{ts}x(s)\text{d} s.$$&lt;p>先验证 $Tx\in L^2[0,1]$, 利用 Cauchy-Schwarz 不等式 &lt;/p>
+$$|Tx(t)|\leqslant\left(\int_0^t e^{2ts}\text{d} s\right)^{1/2}\left(\int_0^t|x(s)|^2\text{d} s\right)^{1/2}=e\sqrt{t}\Vert x \Vert $$&lt;p>从而 $\left(\displaystyle\int_{0}^{1} |Tx(t)|^2\text{d} t\right)^{1/2}\leqslant \frac{e^2}{2}\Vert x \Vert ^2$ 即 $Tx\in L^2[0,1]$.&lt;/p>
 &lt;p>那么方程的解就等价于 $Tx=x$. 下证存在唯一的不动点.&lt;/p>
 &lt;p>取度量为 $\rho(x,y)=\left(\displaystyle\int_{0}^{1} |x(t)-y(t)|^2\text{d} t\right)^{1/2}$.&lt;/p>
-&lt;p>$\forall x,y\in L^2[0,1]$, 考虑 $$|T^nx(t)-T^n y(t)|=|\displaystyle\int_{0}^{t} e^{ts}(T^{n-1}x(s)-T^{n-1}y(s))\text{d} s|\leqslant e^n\underset{n\text{个}}{\int_0^{t}\cdots\int_0^{s_{n-1}}} |x(s_n)-y(s_n)|\text{d} s.$$而由 $x,y\in L^2[0,1]$ 根据 Cauchy-Schwarz 不等式有$$\int_0^1 |x(t)-y(t)|\text{d} t\leqslant \left(\int_0^1|x(t)-y(t)|^2\text{d} t\right)^{1/2}\left(\int_0^1 1^2\text{d} t\right)^{1/2}=\rho(x,y)\triangleq M$$ 即&lt;/p>
-&lt;p>$$|T^nx(t)-T^ny(t)|\leqslant \underset{n-1\text{个}}{\int_0^t\cdots\int_0^{s_{n-2}}}M\text{d} s=\frac{e^n M}{(n-1)!}$$&lt;/p>
-&lt;p>据此我们有,
-$$\rho(T^nx,T^ny)=\left(\int_0^1|T^n x(t)-T^ny(t)|^2\text{d} t\right)^{1/2}\leqslant \frac{e^nM}{(n-1)!}$$ 即当 $n$ 充分大时, 存在 $n$ 使得 $\frac{e^n}{(n-1)!}&amp;lt;1$ 从而 $\rho(T^nx,T^n y)\leqslant \frac{e^n}{(n-1)!}\rho(x,y)$, 即 $T^n$ 是压缩映射, 又 $L^2[0,1]$ 是完备的度量空间, 故根据 Banach 不动点定理存在唯一的不动点 $x(t)$ 满足 $T^n x=x$. 同时也满足 $Tx=x$ 因为 $\rho(Tx,x)=\rho(T^{n+1}x,T^nx)\leqslant \frac{e^n}{(n-1)!}\rho(Tx,x)$ 只能 $\rho(Tx,x)=0$.&lt;/p>
+&lt;p>$\forall x,y\in L^2[0,1]$, 考虑 &lt;/p>
+$$|T^nx(t)-T^n y(t)|=|\displaystyle\int_{0}^{t} e^{ts}(T^{n-1}x(s)-T^{n-1}y(s))\text{d} s|\leqslant e^n\underset{n\text{个}}{\int_0^{t}\cdots\int_0^{s_{n-1}}} |x(s_n)-y(s_n)|\text{d} s.$$&lt;p>而由 $x,y\in L^2[0,1]$ 根据 Cauchy-Schwarz 不等式有&lt;/p>
+$$\int_0^1 |x(t)-y(t)|\text{d} t\leqslant \left(\int_0^1|x(t)-y(t)|^2\text{d} t\right)^{1/2}\left(\int_0^1 1^2\text{d} t\right)^{1/2}=\rho(x,y)\triangleq M$$&lt;p> 即&lt;/p>
+$$|T^nx(t)-T^ny(t)|\leqslant \underset{n-1\text{个}}{\int_0^t\cdots\int_0^{s_{n-2}}}M\text{d} s=\frac{e^n M}{(n-1)!}$$&lt;p>据此我们有,
+&lt;/p>
+$$\rho(T^nx,T^ny)=\left(\int_0^1|T^n x(t)-T^ny(t)|^2\text{d} t\right)^{1/2}\leqslant \frac{e^nM}{(n-1)!}$$&lt;p> 即当 $n$ 充分大时, 存在 $n$ 使得 $\frac{e^n}{(n-1)!}&amp;lt;1$ 从而 $\rho(T^nx,T^n y)\leqslant \frac{e^n}{(n-1)!}\rho(x,y)$, 即 $T^n$ 是压缩映射, 又 $L^2[0,1]$ 是完备的度量空间, 故根据 Banach 不动点定理存在唯一的不动点 $x(t)$ 满足 $T^n x=x$. 同时也满足 $Tx=x$ 因为 $\rho(Tx,x)=\rho(T^{n&amp;#43;1}x,T^nx)\leqslant \frac{e^n}{(n-1)!}\rho(Tx,x)$ 只能 $\rho(Tx,x)=0$.&lt;/p>
 &lt;p>综上所述, 存在唯一的解 $x$ 满足原方程.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -71,28 +73,29 @@ $$\rho(T^nx,T^ny)=\left(\int_0^1|T^n x(t)-T^ny(t)|^2\text{d} t\right)^{1/2}\leqs
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>令
+&lt;/p>
 $$
-A=\lbrace f\in C^2[a,b]:f(a)=1,f(b)=f&amp;rsquo;(a)=f&amp;rsquo;(b)=0 \rbrace .
-$$&lt;/p>
-&lt;p>请确定使下式成立的最大常数 $C&amp;gt;0$ 并证明
+A=\lbrace f\in C^2[a,b]:f(a)=1,f(b)=f&amp;#39;(a)=f&amp;#39;(b)=0 \rbrace .
+$$&lt;p>请确定使下式成立的最大常数 $C&amp;gt;0$ 并证明
+&lt;/p>
 $$
-\int_a^b |f&amp;rsquo;&amp;rsquo;(x)|^2\text{d} x
+\int_a^b |f&amp;#39;&amp;#39;(x)|^2\text{d} x
 \geqslant
 \frac{C}{(b-a)^3}.
-$$&lt;/p>
-&lt;div class="details admonition note">
+$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>取三次多项式 $g(x)=Ax^3+Bx^2+Cx+D\in A$, 由边界条件解得 $g(x)=(x-b)^2\left(\dfrac{2}{(b-a)^3}x+\dfrac{b-3a}{(b-a)^3}\right)$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>取三次多项式 $g(x)=Ax^3&amp;#43;Bx^2&amp;#43;Cx&amp;#43;D\in A$, 由边界条件解得 $g(x)=(x-b)^2\left(\dfrac{2}{(b-a)^3}x&amp;#43;\dfrac{b-3a}{(b-a)^3}\right)$.&lt;/p>
 &lt;p>定义内积 $(f,g)=\displaystyle\int_{a}^{b} f(x)g(x)\text{d} x$, 及其诱导的范数 $\Vert f \Vert =\left(\displaystyle\int_{a}^{b} |f(x)|^2\text{d} x\right)^{1/2}$.&lt;/p>
-&lt;p>由 Cauchy-Schwarz 不等式 $$\Vert f&amp;rsquo;&amp;rsquo; \Vert \cdot\Vert g&amp;rsquo;&amp;rsquo; \Vert \geqslant |(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)|$$下面计算 $(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)$. 首先有 $g&amp;rsquo;&amp;rsquo;(x)=\frac{6}{(b-a)^3}(2x-a-b)$. 那么$$\begin{aligned}
-(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)&amp;amp;= \int_a^b f&amp;rsquo;&amp;rsquo;(x)g&amp;rsquo;&amp;rsquo;(x)\text{d} x\\
-&amp;amp;=g&amp;rsquo;&amp;rsquo;(x)f&amp;rsquo;(x)|_a^b-\int_a^b f&amp;rsquo;(x)\text{d} g&amp;rsquo;&amp;rsquo;(x)\\
-&amp;amp;=-\int_a^b f&amp;rsquo;(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)\text{d} x\\
-&amp;amp;=-f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)|_a^b + \int_a^b f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)\text{d} x\\
-&amp;amp;=-f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)|_a^b=\frac{12}{(b-a)^3}
-\end{aligned}$$&lt;/p>
-&lt;p>又 $\Vert g&amp;rsquo;&amp;rsquo; \Vert =\sqrt{\dfrac{12}{(b-a)^3}}$ 从而 $\Vert f&amp;rsquo;&amp;rsquo; \Vert ^2\geqslant\frac{(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)}{\Vert g&amp;rsquo;&amp;rsquo; \Vert ^2}=\frac{12}{(b-a)^3}$ 并且由于 $g\in A$ 所以等号可以取到, 故最大的常数 $C=12$.&lt;/p>
+&lt;p>由 Cauchy-Schwarz 不等式 &lt;/p>
+$$\Vert f&amp;#39;&amp;#39; \Vert \cdot\Vert g&amp;#39;&amp;#39; \Vert \geqslant |(f&amp;#39;&amp;#39;,g&amp;#39;&amp;#39;)|$$&lt;p>下面计算 $(f&amp;#39;&amp;#39;,g&amp;#39;&amp;#39;)$. 首先有 $g&amp;#39;&amp;#39;(x)=\frac{6}{(b-a)^3}(2x-a-b)$. 那么&lt;/p>
+$$\begin{aligned}
+	 (f&amp;#39;&amp;#39;,g&amp;#39;&amp;#39;)&amp;amp;= \int_a^b f&amp;#39;&amp;#39;(x)g&amp;#39;&amp;#39;(x)\text{d} x\\\\
+	 &amp;amp;=g&amp;#39;&amp;#39;(x)f&amp;#39;(x)|_a^b-\int_a^b f&amp;#39;(x)\text{d} g&amp;#39;&amp;#39;(x)\\\\
+	 &amp;amp;=-\int_a^b f&amp;#39;(x)g&amp;#39;&amp;#39;&amp;#39;(x)\text{d} x\\\\
+	 &amp;amp;=-f(x)g&amp;#39;&amp;#39;&amp;#39;(x)|_a^b &amp;#43; \int_a^b f(x)g&amp;#39;&amp;#39;&amp;#39;&amp;#39;(x)\text{d} x\\\\
+	 &amp;amp;=-f(x)g&amp;#39;&amp;#39;&amp;#39;(x)|_a^b=\frac{12}{(b-a)^3}
+	\end{aligned}$$&lt;p>又 $\Vert g&amp;#39;&amp;#39; \Vert =\sqrt{\dfrac{12}{(b-a)^3}}$ 从而 $\Vert f&amp;#39;&amp;#39; \Vert ^2\geqslant\frac{(f&amp;#39;&amp;#39;,g&amp;#39;&amp;#39;)}{\Vert g&amp;#39;&amp;#39; \Vert ^2}=\frac{12}{(b-a)^3}$ 并且由于 $g\in A$ 所以等号可以取到, 故最大的常数 $C=12$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -101,35 +104,38 @@ $$&lt;/p>
  &lt;a href="#4-20-%e5%88%86" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $0&amp;lt;\alpha\leqslant 1$. 令 $C^{0,\alpha}[0,1]:=\lbrace f\in C[0,1]:|f|&lt;em>\alpha&amp;lt;\infty \rbrace$ 并定义
+&lt;/h2>&lt;p>设 $0&amp;lt;\alpha\leqslant 1$. 令 $C^{0,\alpha}[0,1]:=\lbrace f\in C[0,1]:|f|*\alpha&amp;lt;\infty \rbrace$ 并定义
+&lt;/p>
 $$
-\Vert f \Vert &lt;em>{0,\alpha}=\max\limits&lt;/em>{x\in[0,1]}|f(x)|+|f|&lt;/em>\alpha,\quad |f|&lt;em>\alpha=\sup\limits&lt;/em>{x,y\in[0,1],x\neq y}\frac{|f(x)-f(y)|}{|x-y|^\alpha}.
-$$&lt;/p>
-&lt;p>(1) (10 分) 证明: $\Vert f \Vert _{0,\alpha}$ 是 $C^{0,\alpha}[0,1]$ 上的范数且 $(C^{0,\alpha}[0,1],\Vert \cdot \Vert _{0,\alpha})$ 完备.&lt;/p>
+\Vert f \Vert *{0,\alpha}=\max\limits*{x\in[0,1]}|f(x)|&amp;#43;|f|*\alpha,\quad |f|*\alpha=\sup\limits*{x,y\in[0,1],x\neq y}\frac{|f(x)-f(y)|}{|x-y|^\alpha}.
+$$&lt;p>(1) (10 分) 证明: $\Vert f \Vert _{0,\alpha}$ 是 $C^{0,\alpha}[0,1]$ 上的范数且 $(C^{0,\alpha}[0,1],\Vert \cdot \Vert _{0,\alpha})$ 完备.&lt;/p>
 &lt;p>(2) (10 分) 证明 $C^{0,\alpha}[0,1]$ 中的有界集是 $C[0,1]$ 中的列紧集.
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>(1) 先验证范数&lt;/p>
 &lt;p>正定性: 显然 $\Vert f \Vert _{0,\alpha}\geqslant 0$, 当 $\Vert f \Vert _{0,\alpha}=0$ 时, 有 $\max|f(x)|=0$, 从而 $f=0$.&lt;/p>
-&lt;p>齐次性: $\Vert af \Vert _{0,\alpha}=\max|af(x)|+\sup\frac{|af(x)-af(y)|}{|x-y|^\alpha}=a\Vert f \Vert _{0,\alpha}.$&lt;/p>
+&lt;p>齐次性: $\Vert af \Vert _{0,\alpha}=\max|af(x)|&amp;#43;\sup\frac{|af(x)-af(y)|}{|x-y|^\alpha}=a\Vert f \Vert _{0,\alpha}.$&lt;/p>
 &lt;p>三角不等式:&lt;/p>
-&lt;p>第一部分: $\max|f(x)+g(x)|\leqslant \max|f(x)|+|g(x)|\leqslant\max |f(x)|+\max|g(x)|$.&lt;/p>
-&lt;p>第二部分: $|f+g|&lt;em>\alpha=\sup\frac{|(f+g)x-(f+g)y|}{|x-y|^\alpha}\leqslant\sup\frac{|fx-fy|+|gx-gy|}{|x-y|^\alpha}\leqslant|f|&lt;/em>\alpha+|g|_\alpha$.&lt;/p>
-&lt;p>从而 $\Vert f+g \Vert _{0,\alpha}\leqslant\Vert f \Vert _{0,\alpha}+\Vert g \Vert _{0,\alpha}$.&lt;/p>
+&lt;p>第一部分: $\max|f(x)&amp;#43;g(x)|\leqslant \max|f(x)|&amp;#43;|g(x)|\leqslant\max |f(x)|&amp;#43;\max|g(x)|$.&lt;/p>
+&lt;p>第二部分: $|f&amp;#43;g|_\alpha=\sup\frac{|(f&amp;#43;g)x-(f&amp;#43;g)y|}{|x-y|^\alpha}\leqslant\sup\frac{|fx-fy|&amp;#43;|gx-gy|}{|x-y|^\alpha}\leqslant|f|_\alpha&amp;#43;|g|_\alpha$.&lt;/p>
+&lt;p>从而 $\Vert f&amp;#43;g \Vert _{0,\alpha}\leqslant\Vert f \Vert _{0,\alpha}&amp;#43;\Vert g \Vert _{0,\alpha}$.&lt;/p>
 &lt;p>下面证明完备性&lt;/p>
 &lt;p>设 $\lbrace f_n \rbrace $ 是 $C^{0,\alpha}[0,1]$ 中的柯西列.&lt;/p>
 &lt;p>首先, 在范数 $\Vert \cdot \Vert =\max\limits_{x\in[0,1]}|f(x)|$ 意义下 $(C[0,1],\Vert \cdot \Vert )$ 是完备的, 并且根据 $\Vert f \Vert _{0,\alpha}$ 的定义 $\lbrace f_n \rbrace $ 在 $C[0,1]$ 中也是柯西列, 故收敛, 记收敛到 $f$.&lt;/p>
 &lt;p>先证 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
-&lt;p>由于 $\lbrace f_n \rbrace $ 在 $\Vert \cdot \Vert &lt;em>{0,\alpha}$ 下是柯西列, 所以存在 $N$, 满足 $|f_n-f_N|&lt;/em>\alpha\leqslant \Vert f_n-f_N \Vert &lt;em>{0,\alpha}&amp;lt;1,\forall n&amp;gt;N$. 从而由三角不等式有 $$|f_n|&lt;/em>{\alpha}\leqslant |f_n-f_N|&lt;em>\alpha+|f_N|&lt;/em>\alpha&amp;lt;|f_N|&lt;em>\alpha+1\quad\forall n&amp;gt;N$$ 故存在 $M&amp;gt;0$ 满足 $|f_n|&lt;/em>\alpha&amp;lt;M,\forall n\geqslant 1$.&lt;/p>
-&lt;p>那么就有 $$|f_n(x)-f_n(y)|&amp;lt;M|x-y|^\alpha,\quad \forall x,y,n$$令 $n\to\infty$ 则有$$|f(x)-f(y)|&amp;lt;M|x-y|^\alpha$$ 移项并取上确界就得到 $|f|_\alpha\leqslant M$, 即 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
-&lt;p>再证 $\Vert f-f_n \Vert &lt;em>{0,\alpha}\to 0$. 只要证 $|f-f_n|&lt;/em>{\alpha}\to 0$.&lt;/p>
-&lt;p>由 $\lbrace f_n \rbrace $ 是柯西列, 从而 $\forall\varepsilon&amp;gt;0$, $\exists N$, 满足 $\forall n,m&amp;gt;N$ 有 $|f_n-f_m|&lt;em>\alpha\leqslant\Vert f_n-f_m \Vert &lt;em>{0,\alpha}&amp;lt;\varepsilon$. 从而对任意 $x\neq y$ 有 $$\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits&lt;/em>{m\to\infty}\frac{|(f_n-f_m)(x)-(f_n-f_m)(y)|}{|x-y|^\alpha}\leqslant\varlimsup\limits&lt;/em>{m\to\infty}|f_n-f_m|_\alpha\leqslant \varepsilon.$$&lt;/p>
-&lt;p>再对 $x\neq y$ 取上确界即可得到 $|f_n-f|&lt;em>\alpha\leqslant\varepsilon$ 所以 $|f_n-f|&lt;/em>\alpha\to 0$.&lt;/p>
+&lt;p>由于 $\lbrace f_n \rbrace $ 在 $\Vert \cdot \Vert _{0,\alpha}$ 下是柯西列, 所以存在 $N$, 满足 $|f_n-f_N|_\alpha\leqslant \Vert f_n-f_N \Vert _{0,\alpha}&amp;lt;1,\forall n&amp;gt;N$. 从而由三角不等式有 &lt;/p>
+$$|f_n|_{\alpha}\leqslant |f_n-f_N|_\alpha&amp;#43;|f_N|_\alpha&amp;lt;|f_N|_\alpha&amp;#43;1\quad\forall n&amp;gt;N$$&lt;p> 故存在 $M&amp;gt;0$ 满足 $|f_n|_\alpha&amp;lt;M,\forall n\geqslant 1$.&lt;/p>
+&lt;p>那么就有 &lt;/p>
+$$|f_n(x)-f_n(y)|&amp;lt;M|x-y|^\alpha,\quad \forall x,y,n$$&lt;p>令 $n\to\infty$ 则有&lt;/p>
+$$|f(x)-f(y)|&amp;lt;M|x-y|^\alpha$$&lt;p> 移项并取上确界就得到 $|f|_\alpha\leqslant M$, 即 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
+&lt;p>再证 $\Vert f-f_n \Vert _{0,\alpha}\to 0$. 只要证 $|f-f_n|_{\alpha}\to 0$.&lt;/p>
+&lt;p>由 $\lbrace f_n \rbrace $ 是柯西列, 从而 $\forall\varepsilon&amp;gt;0$, $\exists N$, 满足 $\forall n,m&amp;gt;N$ 有 $|f_n-f_m|_\alpha\leqslant\Vert f_n-f_m \Vert _{0,\alpha}&amp;lt;\varepsilon$. 从而对任意 $x\neq y$ 有 &lt;/p>
+$$\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits_{m\to\infty}\frac{|(f_n-f_m)(x)-(f_n-f_m)(y)|}{|x-y|^\alpha}\leqslant\varlimsup\limits_{m\to\infty}|f_n-f_m|_\alpha\leqslant \varepsilon.$$&lt;p>再对 $x\neq y$ 取上确界即可得到 $|f_n-f|_\alpha\leqslant\varepsilon$ 所以 $|f_n-f|_\alpha\to 0$.&lt;/p>
 &lt;p>综上 $(C^{0,\alpha}[0,1],\Vert \cdot \Vert _{0,\alpha})$ 是完备的.&lt;/p>
 &lt;p>(2) 由于 $C[0,1]$ 是紧度量空间上的连续函数空间, 考虑 AA 定理, 故只需证明 $C^{0,\alpha}[0,1]$ 中的有界集 $X$ 一致有界且等度连续就能说明 $X$ 是列紧集.&lt;/p>
 &lt;p>一致有界: $X$ 为 $C^{0,\alpha}[0,1]$ 中的有界集, 即存在 $M&amp;gt;0$ 使得 $\Vert f \Vert _{0,\alpha}&amp;lt;M,\forall f\in X$. 从而 $|f(x)|\leqslant\Vert f \Vert _{0,\alpha}&amp;lt;M\forall f\in X,x\in[0,1]$, 即 $X$ 中的函数一致有界.&lt;/p>
-&lt;p>等度连续: $\Vert f \Vert &lt;em>{0,\alpha}&amp;lt;M\Rightarrow |f|&lt;/em>\alpha&amp;lt;M\Rightarrow |f(x)-f(y)|\leqslant M|x-y|^\alpha\quad\forall x,y,f$.&lt;/p>
+&lt;p>等度连续: $\Vert f \Vert _{0,\alpha}&amp;lt;M\Rightarrow |f|_\alpha&amp;lt;M\Rightarrow |f(x)-f(y)|\leqslant M|x-y|^\alpha\quad\forall x,y,f$.&lt;/p>
 &lt;p>故 $\forall \varepsilon&amp;gt;0$, 取 $\delta=(\frac{\varepsilon}{M})^{1/\alpha}$ 则 $|f(x)-f(y)|\leqslant \varepsilon\quad\forall x,y,f$ 即等度连续.&lt;/p>
 &lt;p>所以 $C^{0,\alpha}[0,1]$ 中的有界集是 $C[0,1]$ 中的列紧集.&lt;/p>
 &lt;/div>
@@ -147,11 +153,11 @@ $$&lt;/p>
  &lt;div class="admonition-content">&lt;p>$\Leftarrow$: 反设 $f$ 有界, 我们有 $f\in X^*\Leftrightarrow\ker f$ 是 $X$ 的闭子空间.&lt;/p>
 &lt;p>从而 $\ker f=\overline{\ker f}$, 又 $\ker f$ 在 $X$ 中稠密, 从而 $\overline{\ker f}=X$ 也就是说 $f\equiv 0$ 与题设矛盾.&lt;/p>
 &lt;p>故 $f$ 无界.&lt;/p>
-&lt;p>$\Rightarrow$: $f$ 无界, 即 $\forall n\in\mathbb Z_+$ 存在 $x_n\in X$ 使得
+&lt;p>$\Rightarrow$: $f$ 无界, 即 $\forall n\in\mathbb Z_&amp;#43;$ 存在 $x_n\in X$ 使得
+&lt;/p>
 $$
 \Vert x_n \Vert&amp;lt;\frac 1 n \wedge f(x_n)=1
-$$&lt;/p>
-&lt;p>那么对任意的 $x\in X$, 有 $f(x-f(x)x_n)=f(x)-f(x)f(x_n)=0$ 即 $x-f(x)x_n\in\ker f$. 而 $\Vert x-(x-f(x)x_n) \Vert=|f(x)|\Vert x_n \Vert&amp;lt;\frac{|f(x)|}{n}\to 0$ 从而 $\ker f$ 在 $X$ 中稠密.&lt;/p>
+$$&lt;p>那么对任意的 $x\in X$, 有 $f(x-f(x)x_n)=f(x)-f(x)f(x_n)=0$ 即 $x-f(x)x_n\in\ker f$. 而 $\Vert x-(x-f(x)x_n) \Vert=|f(x)|\Vert x_n \Vert&amp;lt;\frac{|f(x)|}{n}\to 0$ 从而 $\ker f$ 在 $X$ 中稠密.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -172,28 +178,28 @@ $$&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>再证当 $N(T)=\lbrace 0 \rbrace$ 时, $R(T)$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得
+&lt;/p>
 $$
-\Vert x \Vert\leqslant \alpha\Vert Tx \Vert\quad(\forall x\in D(T))
-$$&lt;/p>
-&lt;p>$\Rightarrow$: 由 $T$ 是单射的闭算子, 所以存在 $T^{-1}:R(T)\to X$ 且也是闭算子. 那么由 $R(T)$ 是闭的, 根据闭图像定理知 $T^{-1}$ 有界, 从而存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\quad \forall y\in R(T)$. 即
+ \Vert x \Vert\leqslant \alpha\Vert Tx \Vert\quad(\forall x\in D(T))
+ $$&lt;p>$\Rightarrow$: 由 $T$ 是单射的闭算子, 所以存在 $T^{-1}:R(T)\to X$ 且也是闭算子. 那么由 $R(T)$ 是闭的, 根据闭图像定理知 $T^{-1}$ 有界, 从而存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\quad \forall y\in R(T)$. 即
+&lt;/p>
 $$
-\Vert x \Vert\leqslant\alpha\Vert Tx \Vert,\forall x\in D(T).
-$$&lt;/p>
-&lt;p>$\Leftarrow$: 由 $T$ 是单射, 任取收敛列 $y_n=Tx_n\in R(T)$ 且 $y_n\to y$. 由条件存在 $\alpha&amp;gt;0$ 满足 $\Vert x_n-x_m \Vert\leqslant\alpha\Vert T(x_n-x_m) \Vert=\alpha\Vert y_n-y_m \Vert$. 所以 $\lbrace x_n \rbrace$ 在 $X$ 中是 Cauchy 列, 又 $X$ 完备, 从而 $x_n\to x\in X$.&lt;/p>
+ \Vert x \Vert\leqslant\alpha\Vert Tx \Vert,\forall x\in D(T).
+ $$&lt;p>$\Leftarrow$: 由 $T$ 是单射, 任取收敛列 $y_n=Tx_n\in R(T)$ 且 $y_n\to y$. 由条件存在 $\alpha&amp;gt;0$ 满足 $\Vert x_n-x_m \Vert\leqslant\alpha\Vert T(x_n-x_m) \Vert=\alpha\Vert y_n-y_m \Vert$. 所以 $\lbrace x_n \rbrace$ 在 $X$ 中是 Cauchy 列, 又 $X$ 完备, 从而 $x_n\to x\in X$.&lt;/p>
 &lt;p>那么根据 $T$ 是闭算子 $x_n\to x, Tx_n\to y$ 从而 $x\in D(T), y=Tx\in R(T)$.&lt;/p>
 &lt;p>综上 $R(T)$ 是闭的.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>最后证原命题.&lt;/p>
 &lt;p>由 $X$ 是 Banach 空间, $N(T)$ 是 $X$ 的闭子空间, 则 $X/N(T)$ 也是 Banach 空间.&lt;/p>
-&lt;p>考虑商空间上的映射 $\widetilde{T}:X/N(T)\to Y$, $\widetilde{T}([x])=T(x+z)=Tx, z\in N(T)$.&lt;/p>
+&lt;p>考虑商空间上的映射 $\widetilde{T}:X/N(T)\to Y$, $\widetilde{T}([x])=T(x&amp;#43;z)=Tx, z\in N(T)$.&lt;/p>
 &lt;p>而此时我们有 $d(x,N(T))=\inf\limits_{z\in N(T)}\Vert z-x \Vert=\Vert [x] \Vert$. $R(T)=R(\widetilde{T})$.&lt;/p>
 &lt;p>那么根据 (2) 的结论可以得到 $R(\widetilde{T})$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得 $\Vert [x] \Vert\leqslant\alpha\Vert \widetilde{T}[x] \Vert\quad \forall [x]\in D(\widetilde{T})$.&lt;/p>
 &lt;p>又 $\forall x\in D(T)$ 有 $d(x,N(T))=\Vert [x] \Vert, Tx=\widetilde{T}[x]$. 所以
+&lt;/p>
 $$
-\Vert [x] \Vert\leqslant\alpha\Vert \widetilde{T}[x] \Vert\quad \forall [x]\in D(\widetilde{T})\Leftrightarrow d(x,N(T))\leqslant\alpha\Vert Tx \Vert\quad (\forall x\in D(T)).
-$$&lt;/p>
-&lt;/li>
+ \Vert [x] \Vert\leqslant\alpha\Vert \widetilde{T}[x] \Vert\quad \forall [x]\in D(\widetilde{T})\Leftrightarrow d(x,N(T))\leqslant\alpha\Vert Tx \Vert\quad (\forall x\in D(T)).
+ $$&lt;/li>
 &lt;/ol>
 &lt;p>证毕.&lt;/p>
 &lt;/div>
@@ -202,15 +208,16 @@ $$&lt;/p>
  &lt;a href="#221" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $f_1,f_2,\cdots,f_n$ 是 $H$ 上的一组有界线性泛函,&lt;/p>
-&lt;p>$$M\overset{\Delta}{=}\bigcap\limits_{k=1}^n N(f_k),\quad N(f_k)\overset{\Delta}{=}\lbrace x\in H|f_k(x)=0\rbrace $$
-$$(k=1,2,\cdots,n).$$ $\forall x_0\in H$, 记 $y_0$ 为 $x_0$ 在 $M$ 上的正交投影, 求证: $\exists y_k\in N(f_k)^{\perp}$ 及 $\alpha_1,\alpha_2,\cdots,\alpha_n\in\mathbb K$, 使得 $$y_0=x_0-\sum\limits_{k=1}^n \alpha_ky_k.$$&lt;/p>
-&lt;div class="details admonition note">
+&lt;/h2>&lt;p>设 $f\_1,f\_2,\cdots,f\_n$ 是 $H$ 上的一组有界线性泛函,&lt;/p>
+$$M\overset{\Delta}{=}\bigcap\limits\_{k=1}^n N(f\_k),\quad N(f\_k)\overset{\Delta}{=}\lbrace x\in H|f\_k(x)=0\rbrace $$&lt;p>
+&lt;/p>
+$$(k=1,2,\cdots,n).$$&lt;p> $\forall x\_0\in H$, 记 $y\_0$ 为 $x\_0$ 在 $M$ 上的正交投影, 求证: $\exists y\_k\in N(f\_k)^{\perp}$ 及 $\alpha\_1,\alpha\_2,\cdots,\alpha\_n\in\mathbb K$, 使得 &lt;/p>
+$$y\_0=x\_0-\sum\limits\_{k=1}^n \alpha\_ky\_k.$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>对于空间 $Y=\sum\limits_{k=1}^n N(f_k)^\perp$, $\forall x\in Y^\perp$, 有 $(x,Y)=0$. 又 $N(f_k)^\perp\subset Y$, 所以 $(x,N(f_k)^\perp)=0$ 从而 $x\in N(f_k)$. 故 $x\in M$. 即 $Y^\perp\subset M$.&lt;/p>
-&lt;p>另一方面, $M\subset N(f_k)$, 从而 $M^\perp\supset N(f_k)^\perp$, 进而 $M\subset Y^\perp$.&lt;/p>
-&lt;p>从而 $Y^\perp=M$. 即 $Y=M^\perp$. 故根据正交投影定理, $\exists x_1\in M^\perp$ 满足 $y_0=x_0-y_1$, 又 $x_1\in Y$, 故存在 $y_k\in N(f_k)^\perp, \alpha_k\in \mathbb K$ 使得 $x_1=\sum\limits_{k=1}^n \alpha_ky_k$. 即 $y_0=x_0-\sum\limits_{k=1}^n \alpha_ky_k$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>对于空间 $Y=\sum\limits\_{k=1}^n N(f\_k)^\perp$, $\forall x\in Y^\perp$, 有 $(x,Y)=0$. 又 $N(f\_k)^\perp\subset Y$, 所以 $(x,N(f\_k)^\perp)=0$ 从而 $x\in N(f\_k)$. 故 $x\in M$. 即 $Y^\perp\subset M$.&lt;/p>
+&lt;p>另一方面, $M\subset N(f\_k)$, 从而 $M^\perp\supset N(f\_k)^\perp$, 进而 $M\subset Y^\perp$.&lt;/p>
+&lt;p>从而 $Y^\perp=M$. 即 $Y=M^\perp$. 故根据正交投影定理, $\exists x\_1\in M^\perp$ 满足 $y\_0=x\_0-y\_1$, 又 $x\_1\in Y$, 故存在 $y\_k\in N(f\_k)^\perp, \alpha\_k\in \mathbb K$ 使得 $x\_1=\sum\limits\_{k=1}^n \alpha\_ky\_k$. 即 $y\_0=x\_0-\sum\limits\_{k=1}^n \alpha\_ky\_k$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -220,43 +227,43 @@ $$(k=1,2,\cdots,n).$$ $\forall x_0\in H$, 记 $y_0$ 为 $x_0$ 在 $M$ 上的正�
  &lt;/a>
 &lt;/h2>&lt;p>设 $L,M$ 是 $H$ 上的闭线性子空间, 求证:&lt;/p>
 &lt;ol>
-&lt;li>$L\perp M\Leftrightarrow P_LP_M=0$;&lt;/li>
-&lt;li>$L=M^\perp \Leftrightarrow P_L+P_M=I$ (恒同算子);&lt;/li>
-&lt;li>$P_LP_M=P_{L\cap M}\Leftrightarrow P_LP_M=P_MP_L$.&lt;/li>
+&lt;li>$L\perp M\Leftrightarrow P\_LP\_M=0$;&lt;/li>
+&lt;li>$L=M^\perp \Leftrightarrow P\_L&amp;#43;P\_M=I$ (恒同算子);&lt;/li>
+&lt;li>$P\_LP\_M=P\_{L\cap M}\Leftrightarrow P\_LP\_M=P\_MP\_L$.&lt;/li>
 &lt;/ol>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ol>
-&lt;li>$\Rightarrow$: $L\perp M\Rightarrow P_M(x)\perp L\Rightarrow P_L(P_M(x))=0\Rightarrow P_LP_M=0$.&lt;/li>
+&lt;li>$\Rightarrow$: $L\perp M\Rightarrow P\_M(x)\perp L\Rightarrow P\_L(P\_M(x))=0\Rightarrow P\_LP\_M=0$.&lt;/li>
 &lt;/ol>
-&lt;p>$\Leftarrow$: $\forall x\in M$, 有 $P_M(x)=x$, 由 $P_LP_M=0\Rightarrow P_L(x)=0$ 即 $x\perp L$, 从而 $L\perp M$.
-2. $\Rightarrow$: $\forall x\in H$, 根据正交分解定理, 存在唯一的 $x_0\in M, x_1\in M^\perp$ 使得 $x=x_0+x_1$, 且有 $P_M(x)=x_0$. 另一方面, 有唯一的 $x_0&amp;rsquo;\in M^\perp,x_1&amp;rsquo;\in (M^\perp)^\perp=M$ 使得 $x=x_0&amp;rsquo;+x_1&amp;rsquo;$, 且 $P_L(x)=x_0&amp;rsquo;$. 由于分解的唯一性, 我们有 $x_0=x_1&amp;rsquo;, x_0&amp;rsquo;=x_1$. 进而 $(P_L+P_M)(x)=x_0+x_1=x$ 即 $P_L+P_M=I$.&lt;/p>
-&lt;p>$\Leftarrow$: 仍考虑正交分解 $\forall x\in H, x=x_0+x_1$. 此时 $P_L(x)=(I-P_M)(x)=x-x_0=x_1=P_{M^\perp}(x)$. 即 $P_L=P_{M^\perp}$. 从而 $L=M^\perp$.
-3. $\Rightarrow$: $\forall x\in H$, 在 $M$ 上正交分解 $x=x_0+x_1$, 在 $L\cap M$ 上分解 $x=z_0+z_1$, 再在 L 上分解 $x_0=y_0+y_1, x_1=y_0&amp;rsquo;+y_1&amp;rsquo;$, 由 $P_LP_M=P_{L\cap M}$, 从而 $P_L(P_M(x))=P_L(y_0+y_1)=y_0=P_{L\cap M}(x)=z_0$. 那么 $P_M(P_L(x))=P_MP_L(z_0+z_1)=P_M(z_0)+P_MP_L(y_1+y_0&amp;rsquo;+y_1&amp;rsquo;)=z_0+P_M(y_0&amp;rsquo;)$.&lt;/p>
-&lt;p>下证 $P_M(y_0&amp;rsquo;)=0$.&lt;/p>
-&lt;p>而我们有 $z_1=y_0&amp;rsquo;+y_1+y_1&amp;rsquo;\in (L\cap M)^\perp, y_1,y_1&amp;rsquo;\in L^\perp$. 由 $L\cap M\subset L$, 故 $(L\cap M)^\perp\supset L^\perp$ 进而 $y_1,y_1&amp;rsquo;\in (L\cap M)^\perp$, 从而 $y_0&amp;rsquo;\in (L\cap M)^\perp$.&lt;/p>
-&lt;p>又 $y_0&amp;rsquo;\in L$ 所以 $(y_0&amp;rsquo;,L^\perp)=0\Rightarrow (y_0&amp;rsquo;,L^\perp\cap M)=0$. 考虑 $L\cap M$ 作为 $M$ 上的闭线性子空间, $\forall x\in M$ 可以唯一正交分解为 $x=x_0+x_1,\ x_0\in L\cap M, x_1\in L^\perp \cap M$. 而此时 $y_0&amp;rsquo;\perp L^\perp \cap M$, 之前证了 $y_0&amp;rsquo;\perp L\cap M$. 从而 $y_0&amp;rsquo;\perp M$. 即有 $P_M(y_0&amp;rsquo;)=0$.&lt;/p>
-&lt;p>综上 $P_MP_L(x)=z_0+P_M(y_0&amp;rsquo;)=z_0=P_{L\cap M}(x)=P_LP_M(x)$. 即 $P_LP_M=P_MP_L$.&lt;/p>
-&lt;p>$\Leftarrow$: $\forall x\in H$, 在 $M$ 上正交分解 $x=x_0+x_1$, 再在 $L$ 上正交分解 $x_0=y_0+y_1$.&lt;/p>
-&lt;p>根据条件有 $P_LP_M(x)=y_0=P_M(P_L(x))$. 因为右边最后一个算子是 $P_M$ 所以结果肯定在 $M$ 上, 即 $y_0\in M$.&lt;/p>
-&lt;p>又 $y_0\in L$, 即 $y_0\in L\cap M$. 下面考虑 $P_{L\cap M}(x)=P_{L\cap M}(y_0+y_1+x_1)=y_0+P_{L\cap M}(y_1)+P_{L\cap M}(x_1)$.&lt;/p>
-&lt;p>由 $y_1\in L^\perp,x_1\in M^\perp$ 且 $L\cap M\subset L,L\cap M\subset M$. 从而 $L^\perp,M^\perp\subset (M\cap L)^\perp$. 故 $P_{L\cap M}(y_1)=P_{L\cap M}(x_1)=0$. 因此有 $P_LP_M(x)=y_0=P_{L\cap M}(x)$. 即 $P_LP_M=P_{L\cap M}$.&lt;/p>
+&lt;p>$\Leftarrow$: $\forall x\in M$, 有 $P\_M(x)=x$, 由 $P\_LP\_M=0\Rightarrow P\_L(x)=0$ 即 $x\perp L$, 从而 $L\perp M$.
+2. $\Rightarrow$: $\forall x\in H$, 根据正交分解定理, 存在唯一的 $x\_0\in M, x\_1\in M^\perp$ 使得 $x=x\_0&amp;#43;x\_1$, 且有 $P\_M(x)=x\_0$. 另一方面, 有唯一的 $x\_0&amp;#39;\in M^\perp,x\_1&amp;#39;\in (M^\perp)^\perp=M$ 使得 $x=x\_0&amp;#39;&amp;#43;x\_1&amp;#39;$, 且 $P\_L(x)=x\_0&amp;#39;$. 由于分解的唯一性, 我们有 $x\_0=x\_1&amp;#39;, x\_0&amp;#39;=x\_1$. 进而 $(P\_L&amp;#43;P\_M)(x)=x\_0&amp;#43;x\_1=x$ 即 $P\_L&amp;#43;P\_M=I$.&lt;/p>
+&lt;p>$\Leftarrow$: 仍考虑正交分解 $\forall x\in H, x=x\_0&amp;#43;x\_1$. 此时 $P\_L(x)=(I-P\_M)(x)=x-x\_0=x\_1=P\_{M^\perp}(x)$. 即 $P\_L=P\_{M^\perp}$. 从而 $L=M^\perp$.
+3. $\Rightarrow$: $\forall x\in H$, 在 $M$ 上正交分解 $x=x\_0&amp;#43;x\_1$, 在 $L\cap M$ 上分解 $x=z\_0&amp;#43;z\_1$, 再在 L 上分解 $x\_0=y\_0&amp;#43;y\_1, x\_1=y\_0&amp;#39;&amp;#43;y\_1&amp;#39;$, 由 $P\_LP\_M=P\_{L\cap M}$, 从而 $P\_L(P\_M(x))=P\_L(y\_0&amp;#43;y\_1)=y\_0=P\_{L\cap M}(x)=z\_0$. 那么 $P\_M(P\_L(x))=P\_MP\_L(z\_0&amp;#43;z\_1)=P\_M(z\_0)&amp;#43;P\_MP\_L(y\_1&amp;#43;y\_0&amp;#39;&amp;#43;y\_1&amp;#39;)=z\_0&amp;#43;P\_M(y\_0&amp;#39;)$.&lt;/p>
+&lt;p>下证 $P\_M(y\_0&amp;#39;)=0$.&lt;/p>
+&lt;p>而我们有 $z\_1=y\_0&amp;#39;&amp;#43;y\_1&amp;#43;y\_1&amp;#39;\in (L\cap M)^\perp, y\_1,y\_1&amp;#39;\in L^\perp$. 由 $L\cap M\subset L$, 故 $(L\cap M)^\perp\supset L^\perp$ 进而 $y\_1,y\_1&amp;#39;\in (L\cap M)^\perp$, 从而 $y\_0&amp;#39;\in (L\cap M)^\perp$.&lt;/p>
+&lt;p>又 $y\_0&amp;#39;\in L$ 所以 $(y\_0&amp;#39;,L^\perp)=0\Rightarrow (y\_0&amp;#39;,L^\perp\cap M)=0$. 考虑 $L\cap M$ 作为 $M$ 上的闭线性子空间, $\forall x\in M$ 可以唯一正交分解为 $x=x\_0&amp;#43;x\_1,\ x\_0\in L\cap M, x\_1\in L^\perp \cap M$. 而此时 $y\_0&amp;#39;\perp L^\perp \cap M$, 之前证了 $y\_0&amp;#39;\perp L\cap M$. 从而 $y\_0&amp;#39;\perp M$. 即有 $P\_M(y\_0&amp;#39;)=0$.&lt;/p>
+&lt;p>综上 $P\_MP\_L(x)=z\_0&amp;#43;P\_M(y\_0&amp;#39;)=z\_0=P\_{L\cap M}(x)=P\_LP\_M(x)$. 即 $P\_LP\_M=P\_MP\_L$.&lt;/p>
+&lt;p>$\Leftarrow$: $\forall x\in H$, 在 $M$ 上正交分解 $x=x\_0&amp;#43;x\_1$, 再在 $L$ 上正交分解 $x\_0=y\_0&amp;#43;y\_1$.&lt;/p>
+&lt;p>根据条件有 $P\_LP\_M(x)=y\_0=P\_M(P\_L(x))$. 因为右边最后一个算子是 $P\_M$ 所以结果肯定在 $M$ 上, 即 $y\_0\in M$.&lt;/p>
+&lt;p>又 $y\_0\in L$, 即 $y\_0\in L\cap M$. 下面考虑 $P\_{L\cap M}(x)=P\_{L\cap M}(y\_0&amp;#43;y\_1&amp;#43;x\_1)=y\_0&amp;#43;P\_{L\cap M}(y\_1)&amp;#43;P\_{L\cap M}(x\_1)$.&lt;/p>
+&lt;p>由 $y\_1\in L^\perp,x\_1\in M^\perp$ 且 $L\cap M\subset L,L\cap M\subset M$. 从而 $L^\perp,M^\perp\subset (M\cap L)^\perp$. 故 $P\_{L\cap M}(y\_1)=P\_{L\cap M}(x\_1)=0$. 因此有 $P\_LP\_M(x)=y\_0=P\_{L\cap M}(x)$. 即 $P\_LP\_M=P\_{L\cap M}$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;div class="details admonition info open">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>注&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>证明: $(L\cap M)^\perp=L^\perp+M^\perp$.
-$\forall x\in L^\perp+M^\perp$, $x=y+z, y\in L^\perp, z\in M^\perp$.&lt;/p>
-&lt;p>从而 $(y,L)=(z,M)=0$, 即 $(y,L\cap M)=(z,L\cap M)=0$, 从而 $(x,L\cap M)=0$, $x\in L\cap M\Rightarrow L\cap M\supset L^\perp+M^\perp$.&lt;/p>
-&lt;p>再证 $(L\cap M)^\perp\subset L^\perp+M^\perp$.&lt;/p>
-&lt;p>等价于证明 $(L\cap M)\supset (L^\perp+M^\perp)^\perp$.&lt;/p>
-&lt;p>由此, 我们说明 $y_0&amp;rsquo;\in (L\cap M)^\perp=L^\perp+M^\perp$ 故 $y_0&amp;rsquo;=a+b, a\in L^\perp,b\in M^\perp$.&lt;/p>
-&lt;p>但我们还有 $y_0&amp;rsquo;\in L$&lt;/p>
-&lt;p>$\forall x\in (L^\perp+M^\perp)^\perp$, $(x,L^\perp+M^\perp)=0\Rightarrow(x,L^\perp)=(x,M^\perp)=0$ 从而 $x\in L,x\in M$, 即 $x\in M\cap L$.&lt;/p>
-&lt;p>综上 $(L\cap M)^\perp=L^\perp+M^\perp$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>证明: $(L\cap M)^\perp=L^\perp&amp;#43;M^\perp$.
+$\forall x\in L^\perp&amp;#43;M^\perp$, $x=y&amp;#43;z, y\in L^\perp, z\in M^\perp$.&lt;/p>
+&lt;p>从而 $(y,L)=(z,M)=0$, 即 $(y,L\cap M)=(z,L\cap M)=0$, 从而 $(x,L\cap M)=0$, $x\in L\cap M\Rightarrow L\cap M\supset L^\perp&amp;#43;M^\perp$.&lt;/p>
+&lt;p>再证 $(L\cap M)^\perp\subset L^\perp&amp;#43;M^\perp$.&lt;/p>
+&lt;p>等价于证明 $(L\cap M)\supset (L^\perp&amp;#43;M^\perp)^\perp$.&lt;/p>
+&lt;p>由此, 我们说明 $y\_0&amp;#39;\in (L\cap M)^\perp=L^\perp&amp;#43;M^\perp$ 故 $y\_0&amp;#39;=a&amp;#43;b, a\in L^\perp,b\in M^\perp$.&lt;/p>
+&lt;p>但我们还有 $y\_0&amp;#39;\in L$&lt;/p>
+&lt;p>$\forall x\in (L^\perp&amp;#43;M^\perp)^\perp$, $(x,L^\perp&amp;#43;M^\perp)=0\Rightarrow(x,L^\perp)=(x,M^\perp)=0$ 从而 $x\in L,x\in M$, 即 $x\in M\cap L$.&lt;/p>
+&lt;p>综上 $(L\cap M)^\perp=L^\perp&amp;#43;M^\perp$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -276,8 +283,8 @@ $\forall x\in L^\perp+M^\perp$, $x=y+z, y\in L^\perp, z\in M^\perp$.&lt;/p>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ol>
 &lt;li>由于 $D(A)$ 闭且 $A$ 有界则 $A$ 是闭算子, 另外线性算子的连续性与有界性等价, 从而 $A$ 是闭算子.&lt;/li>
-&lt;li>由 $A$ 的连续性, 当 $x_n\to x$ 是 $\mathscr X$ 中的收敛列, $\lbrace Ax_n\rbrace $ 也是柯西列. 再由 $\mathscr Y$ 的完备性, $\lbrace Ax_n\rbrace $ 收敛. 所以 $(x_n,Ax_n)\to (x,y)$. 再由 $A$ 是闭算子知 $x\in D(A)$. 故 $D$ 也是闭的.&lt;/li>
-&lt;li>$A^{-1}:R(A)\to D$. 设 $y_n\to y, y_n\in R(A)$. 存在 $x_n\to x$ 满足 $y_n=Ax_n$. 并且由 $A$ 的闭性 $(A^{-1}y_n,y_n)=(x_n,Ax_n)$ 构成的集合是闭的. 从而 $A^{-1}$ 也是闭算子.&lt;/li>
+&lt;li>由 $A$ 的连续性, 当 $x\_n\to x$ 是 $\mathscr X$ 中的收敛列, $\lbrace Ax\_n\rbrace $ 也是柯西列. 再由 $\mathscr Y$ 的完备性, $\lbrace Ax\_n\rbrace $ 收敛. 所以 $(x\_n,Ax\_n)\to (x,y)$. 再由 $A$ 是闭算子知 $x\in D(A)$. 故 $D$ 也是闭的.&lt;/li>
+&lt;li>$A^{-1}:R(A)\to D$. 设 $y\_n\to y, y\_n\in R(A)$. 存在 $x\_n\to x$ 满足 $y\_n=Ax\_n$. 并且由 $A$ 的闭性 $(A^{-1}y\_n,y\_n)=(x\_n,Ax\_n)$ 构成的集合是闭的. 从而 $A^{-1}$ 也是闭算子.&lt;/li>
 &lt;li>由 (3) 可知 $A^{-1}$ 也是闭算子. 再由 (2) 可知, $R(A)$ 是闭的. 又 $R(A)$ 在 $\mathscr Y$ 中稠密, 从而 $R(A)=\mathscr Y$.&lt;/li>
 &lt;/ol>
 &lt;/div>
@@ -287,11 +294,11 @@ $\forall x\in L^\perp+M^\perp$, $x=y+z, y\in L^\perp, z\in M^\perp$.&lt;/p>
  &lt;a href="#2311" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B$ 空间, $A\in\mathscr L(\mathscr X,\mathscr Y)$ 是满射的. 求证: 如果在 $\mathscr Y$ 中 $y_n\to y_0$, 则 $\exists C&amp;gt;0$ 与 $x_n\to x_0$, 使得 $Ax_n=y_n$, 且 $\Vert x_n \Vert\leqslant C \Vert y_n \Vert$.&lt;/p>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B$ 空间, $A\in\mathscr L(\mathscr X,\mathscr Y)$ 是满射的. 求证: 如果在 $\mathscr Y$ 中 $y\_n\to y\_0$, 则 $\exists C&amp;gt;0$ 与 $x\_n\to x\_0$, 使得 $Ax\_n=y\_n$, 且 $\Vert x\_n \Vert\leqslant C \Vert y\_n \Vert$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">设 $\widetilde{A}=\mathscr X/\ker A\to\mathscr Y$. 那么根据题设条件容易推出商空间引出的映射是双射. 那么根据 Banach 逆映射定理可知 $\widetilde{A}^{-1}$ 也是有界线性算子. 进而根据有界算子定义知存在 $C$, 使得 $\Vert [x_n] \Vert\leqslant C\Vert y_n \Vert$. 接着只要取商空间等价类中的代表元 $x_n$ 满足 $\Vert x_n \Vert\leqslant2\Vert [x_n] \Vert\leqslant 2C\Vert y_n \Vert$. 即可.&lt;/div>
+ &lt;div class="admonition-content">设 $\widetilde{A}=\mathscr X/\ker A\to\mathscr Y$. 那么根据题设条件容易推出商空间引出的映射是双射. 那么根据 Banach 逆映射定理可知 $\widetilde{A}^{-1}$ 也是有界线性算子. 进而根据有界算子定义知存在 $C$, 使得 $\Vert [x\_n] \Vert\leqslant C\Vert y\_n \Vert$. 接着只要取商空间等价类中的代表元 $x\_n$ 满足 $\Vert x\_n \Vert\leqslant2\Vert [x\_n] \Vert\leqslant 2C\Vert y\_n \Vert$. 即可.&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="2312">&lt;span>2.3.12&lt;/span>
@@ -302,18 +309,18 @@ $\forall x\in L^\perp+M^\perp$, $x=y+z, y\in L^\perp, z\in M^\perp$.&lt;/p>
 &lt;ol>
 &lt;li>求证: $N(T)$ 是 $\mathscr X$ 的闭线性子空间.&lt;/li>
 &lt;li>求证: $N(T)=\lbrace 0\rbrace $, $R(T)$ 在 $\mathscr Y$ 中闭的充要条件是,
-$\exists\alpha&amp;gt;0$, 使得 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert\quad(\forall x\in D(T))$$&lt;/li>
-&lt;li>如果用 $d(x,N(T))$ 表示点 $x\in \mathscr X$ 到集合 $N(T)$ 的距离 $\left(\inf\limits_{z\in N(T)}\Vert z-x \Vert\right)$. 求证: $R(T)$ 在 $\mathscr Y$ 中闭的充要条件是, $\exists\alpha&amp;gt;0$, 使得 $$d(x,N(T))\leqslant \alpha \Vert Tx \Vert\quad (\forall x\in D(T)).$$&lt;/li>
+$\exists\alpha&amp;gt;0$, 使得 $\Vert x \Vert\leqslant\alpha\Vert Tx \Vert\quad(\forall x\in D(T))$&lt;/li>
+&lt;li>如果用 $d(x,N(T))$ 表示点 $x\in \mathscr X$ 到集合 $N(T)$ 的距离 $\left(\inf\limits\_{z\in N(T)}\Vert z-x \Vert\right)$. 求证: $R(T)$ 在 $\mathscr Y$ 中闭的充要条件是, $\exists\alpha&amp;gt;0$, 使得 $d(x,N(T))\leqslant \alpha \Vert Tx \Vert\quad (\forall x\in D(T)).$&lt;/li>
 &lt;/ol>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ol>
-&lt;li>线性性由 $T$ 是线性算子显然得到. 对任意 $\lbrace x_n\rbrace \subset N(T), x_n\to x$. 那么 $(x_n,Tx_n)\to (x,0)$ 由 $T$ 的闭性 $x\in D(T), Tx=0$ 从而 $x\in N(T)$. 即 $N(T)$ 是闭的.&lt;/li>
+&lt;li>线性性由 $T$ 是线性算子显然得到. 对任意 $\lbrace x\_n\rbrace \subset N(T), x\_n\to x$. 那么 $(x\_n,Tx\_n)\to (x,0)$ 由 $T$ 的闭性 $x\in D(T), Tx=0$ 从而 $x\in N(T)$. 即 $N(T)$ 是闭的.&lt;/li>
 &lt;li>$N(T)=\lbrace 0\rbrace $ 即 $T$ 是单射.&lt;br>
-$\Rightarrow$: 由 $T$ 是闭的且是单射, 可知 $T^{-1}$ 也是闭的. 再由 $R(T)$ 是闭集根据闭图像定理知 $T^{-1}$ 连续, 即有界. 所以存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha \Vert y \Vert, y\in R(T)$. 再由单射可取 $x\in D(T)$, 由 $x=T^{-1}y$. 从而得到 $$\Vert x \Vert\leqslant\alpha\Vert Tx \Vert$$&lt;br>
-$\Leftarrow$: 由 $T$ 是单射, 所以在 $D(T)\to R(T)$ 上 $T$ 是双射. 又 $T^{-1}$ 也是闭的. 考虑 $T^{-1}:R(T)\to D(T)$ 是双射. 由题设条件可知 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\forall y\in R(T)$. 从而 $T^{-1}$ 有界. 即 $T^{-1}$ 连续. 从而考虑 $T^{-1}$ 的图像. 任取 $y_n\to y$. $T^{-1}y_n$ 也收敛. 从而根据闭算子定义可知 $y\in R(T)$. 即 $R(T)$ 是闭的.&lt;/li>
-&lt;li>考虑商空间 $\mathscr X/N(T)$. 那么 $d(x,N(T))=\Vert [x] \Vert$. 由于等价类的元素可以有核空间的元素和代表元线性表出, 所以等价类中元素的像均相等, 故自然引出新线性映射 $\widetilde{T}([x])=Tx+Tz=Tx$. 并且有 $\widetilde{T}$ 是单射和 $R(T)=R(\widetilde{T})$. 题目要证的条件就等价为 $\Vert [x] \Vert=d(x,N(T))\leqslant\alpha\Vert Tx \Vert=\alpha\Vert \widetilde{T}([x]) \Vert$.&lt;/li>
+$\Rightarrow$: 由 $T$ 是闭的且是单射, 可知 $T^{-1}$ 也是闭的. 再由 $R(T)$ 是闭集根据闭图像定理知 $T^{-1}$ 连续, 即有界. 所以存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha \Vert y \Vert, y\in R(T)$. 再由单射可取 $x\in D(T)$, 由 $x=T^{-1}y$. 从而得到 $\Vert x \Vert\leqslant\alpha\Vert Tx \Vert$&lt;br>
+$\Leftarrow$: 由 $T$ 是单射, 所以在 $D(T)\to R(T)$ 上 $T$ 是双射. 又 $T^{-1}$ 也是闭的. 考虑 $T^{-1}:R(T)\to D(T)$ 是双射. 由题设条件可知 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\forall y\in R(T)$. 从而 $T^{-1}$ 有界. 即 $T^{-1}$ 连续. 从而考虑 $T^{-1}$ 的图像. 任取 $y\_n\to y$. $T^{-1}y\_n$ 也收敛. 从而根据闭算子定义可知 $y\in R(T)$. 即 $R(T)$ 是闭的.&lt;/li>
+&lt;li>考虑商空间 $\mathscr X/N(T)$. 那么 $d(x,N(T))=\Vert [x] \Vert$. 由于等价类的元素可以有核空间的元素和代表元线性表出, 所以等价类中元素的像均相等, 故自然引出新线性映射 $\widetilde{T}([x])=Tx&amp;#43;Tz=Tx$. 并且有 $\widetilde{T}$ 是单射和 $R(T)=R(\widetilde{T})$. 题目要证的条件就等价为 $\Vert [x] \Vert=d(x,N(T))\leqslant\alpha\Vert Tx \Vert=\alpha\Vert \widetilde{T}([x]) \Vert$.&lt;/li>
 &lt;/ol>
 &lt;p>并且根据商空间的完备性定理, $\mathscr X$ 是 $B$ 空间, $N(T)$ 是闭线性子空间, 从而 $\mathscr X/N(T)$ 也是 $B$ 空间.&lt;/p>
 &lt;p>那么根据 (2) 结论 $R(\widetilde{T})$ 是闭的与 $\exists\alpha&amp;gt;0$ 使得 $\Vert x \Vert\leqslant\alpha\Vert \widetilde{T}x \Vert (\forall x\in D(\widetilde{T}))$ 充要.&lt;/p>
@@ -325,21 +332,22 @@ $\Leftarrow$: 由 $T$ 是单射, 所以在 $D(T)\to R(T)$ 上 $T$ 是双射. 又
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $y(t)\in C[0,1]$, 定义 $C[0,1]$ 上的泛函
-$$f(x)=\int_0^1 x(t)y(t)\text{d} t\quad (\forall x\in C[0,1]),$$
+&lt;/p>
+$$f(x)=\int\_0^1 x(t)y(t)\text{d} t\quad (\forall x\in C[0,1]),$$&lt;p>
 求 $\Vert f \Vert$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>$\Vert f \Vert=\sup\limits_{x}\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>$\Vert f \Vert=\sup\limits\_{x}\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}$.&lt;/p>
 &lt;p>对于
-$$\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}=\left|\int_0^1 \dfrac{x(t)}{\max\limits_k x(k)}y(t)\text{d} t\right|\leqslant \int_0^1|y(t)|\text{d} t\overset{\Delta}{=}M$$&lt;/p>
-&lt;p>如果不要求 $x(t)\in C[0,1]$, 我们只要取 $x_0(t)=\frac{y(t)}{|y(t)|}$ 即可得到上界 $M$.
+&lt;/p>
+$$\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}=\left|\int\_0^1 \dfrac{x(t)}{\max\limits\_k x(k)}y(t)\text{d} t\right|\leqslant \int\_0^1|y(t)|\text{d} t\overset{\Delta}{=}M$$&lt;p>如果不要求 $x(t)\in C[0,1]$, 我们只要取 $x\_0(t)=\frac{y(t)}{|y(t)|}$ 即可得到上界 $M$.
 根据实变函数中的结论, 对任意 $\varepsilon&amp;gt;0$, 存在连续函数 $g$ 使得
-$\displaystyle\int_{0}^{1} |g(t)-x_0(t)|\text{d} t&amp;lt;\varepsilon/\Vert y\Vert$,
+$\displaystyle\int\_{0}^{1} |g(t)-x\_0(t)|\text{d} t&amp;lt;\varepsilon/\Vert y\Vert$,
 从而
-$$\left|\int_0^1 g(t)y(t)\text{d} t-M\right|&amp;lt;\left|\int_0^1|g(t)-x_0(t)|y(t)\text{d} t\right|\leqslant\Vert y\Vert\int_0^1 |g(t)-x_0(t)|\text{d} t&amp;lt;\varepsilon.$$&lt;/p>
-&lt;p>从而说明存在一列 $x_n(t)$ 使得 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to M$,
-从而 $M=\displaystyle\int_{0}^{1} |y(t)|\text{d} t$ 就是上确界 $\Vert f\Vert$.&lt;/p>
+&lt;/p>
+$$\left|\int\_0^1 g(t)y(t)\text{d} t-M\right|&amp;lt;\left|\int\_0^1|g(t)-x\_0(t)|y(t)\text{d} t\right|\leqslant\Vert y\Vert\int\_0^1 |g(t)-x\_0(t)|\text{d} t&amp;lt;\varepsilon.$$&lt;p>从而说明存在一列 $x\_n(t)$ 使得 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to M$,
+从而 $M=\displaystyle\int\_{0}^{1} |y(t)|\text{d} t$ 就是上确界 $\Vert f\Vert$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -348,7 +356,8 @@ $$\left|\int_0^1 g(t)y(t)\text{d} t-M\right|&amp;lt;\left|\int_0^1|g(t)-x_0(t)|y
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $f$ 是 $\mathscr X$ 上的非零有界线性泛函, 令
-$$d=\inf\lbrace \Vert x\Vert|f(x)=1,x\in\mathscr X \rbrace,$$
+&lt;/p>
+$$d=\inf\lbrace \Vert x\Vert|f(x)=1,x\in\mathscr X \rbrace,$$&lt;p>
 求证 $\Vert f\Vert=1/d$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
@@ -365,12 +374,12 @@ $\dfrac{1}{d}=\sup\left\lbrace \dfrac{\Vert f(x)\Vert}{\Vert x\Vert}|x\in\mathsc
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $T:\mathscr X\to\mathscr Y$ 是线性的, 令
-$$N(T)\overset{\Delta}{=}\lbrace x\in\mathscr X|Tx=0\rbrace.$$&lt;/p>
-&lt;ul>
+&lt;/p>
+$$N(T)\overset{\Delta}{=}\lbrace x\in\mathscr X|Tx=0\rbrace.$$&lt;ul>
 &lt;li>(1) 若 $T\in \mathscr L(\mathscr X,\mathscr Y)$, 求证: $N(T)$ 是 $\mathscr X$ 的闭线性子空间.&lt;/li>
 &lt;li>(2) 问 $N(T)$ 是 $\mathscr X$ 的闭线性子空间能否推出 $T\in\mathscr L(\mathscr X,\mathscr Y)$?&lt;/li>
 &lt;li>(3) 若 $f$ 是线性泛函, 求证
-$$f\in\mathscr X^*\Leftrightarrow N(f)\ \text{是闭线性子空间}.$$&lt;/li>
+$f\in\mathscr X^*\Leftrightarrow N(f)\ \text{是闭线性子空间}.$&lt;/li>
 &lt;/ul>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
@@ -378,24 +387,25 @@ $$f\in\mathscr X^*\Leftrightarrow N(f)\ \text{是闭线性子空间}.$$&lt;/li>
  &lt;div class="admonition-content">&lt;ul>
 &lt;li>
 &lt;p>(1) &lt;strong>线性性:&lt;/strong> $\forall x,y\in N(T),\alpha,\beta\in \mathbb{K}$, 有
-$T(\alpha x+\beta y)=\alpha T(x)+\beta T(y)=0$, 从而 $\alpha x+\beta y\in N(T)$.
+$T(\alpha x&amp;#43;\beta y)=\alpha T(x)&amp;#43;\beta T(y)=0$, 从而 $\alpha x&amp;#43;\beta y\in N(T)$.
 &lt;strong>闭性:&lt;/strong> 由 $T$ 有界, 从而连续, 又 $\lbrace 0 \rbrace$ 是 $\mathscr Y$ 中的闭集,
 所以 $T^{-1}({0})$ 是闭集. 故 $N(T)$ 是闭线性子空间.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>(2) 任取一个无界的线性泛函 $T_0:\mathscr X\to\mathscr Y$,
-设 $T:\mathscr X\to\mathscr X\times \mathscr Y, T(x)=(x,T_0(x))$.
-取范数 $\Vert T(x)\Vert=\Vert x\Vert+\Vert T_0(x)\Vert$ 不难验证满足范数定义.
-而 $N(T)=\lbrace 0 \rbrace$, 因为第一维 $x$ 的限制. 又 $T_0$ 无界, 设 $D\subset\mathscr X$
-使得 $T_0(D)$ 无界, 那么 $T(D)$ 也是无界的, 因为 $\Vert T(x)\Vert\geqslant \Vert T_0(x)\Vert$.&lt;/p>
+&lt;p>(2) 任取一个无界的线性泛函 $T\_0:\mathscr X\to\mathscr Y$,
+设 $T:\mathscr X\to\mathscr X\times \mathscr Y, T(x)=(x,T\_0(x))$.
+取范数 $\Vert T(x)\Vert=\Vert x\Vert&amp;#43;\Vert T\_0(x)\Vert$ 不难验证满足范数定义.
+而 $N(T)=\lbrace 0 \rbrace$, 因为第一维 $x$ 的限制. 又 $T\_0$ 无界, 设 $D\subset\mathscr X$
+使得 $T\_0(D)$ 无界, 那么 $T(D)$ 也是无界的, 因为 $\Vert T(x)\Vert\geqslant \Vert T\_0(x)\Vert$.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>(3)
 $\Rightarrow$: 由 (1) 可知.
-$\Leftarrow$: 反设 $f$ 无界, 则 $\forall n\in \mathbb N$ 存在 $x_n\in\mathscr X$, 使得
-$$\Vert x_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x_n)=1.$$
-于是 ${x_n-x_1}\subset N(f)$ 且 $\Vert(x_n-x_1)-(-x_1)\Vert\to 0$.
-但 $f(-x_1)=-1$, 即 $-x_1\notin N(f)$, 与 $N(f)$ 闭性矛盾.&lt;/p>
+$\Leftarrow$: 反设 $f$ 无界, 则 $\forall n\in \mathbb N$ 存在 $x\_n\in\mathscr X$, 使得
+&lt;/p>
+$$\Vert x\_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x\_n)=1.$$&lt;p>
+于是 ${x\_n-x\_1}\subset N(f)$ 且 $\Vert(x\_n-x\_1)-(-x\_1)\Vert\to 0$.
+但 $f(-x\_1)=-1$, 即 $-x\_1\notin N(f)$, 与 $N(f)$ 闭性矛盾.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/div>
@@ -406,11 +416,12 @@ $$\Vert x_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x_n)=1.$$
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $f$ 是 $\mathscr X$ 上的线性泛函, 记
-$$H_f^\lambda\overset{\Delta}{=}\lbrace x\in\mathscr X|f(x)=\lambda\rbrace\quad (\forall \lambda\in \mathbb K).$$
+&lt;/p>
+$$H\_f^\lambda\overset{\Delta}{=}\lbrace x\in\mathscr X|f(x)=\lambda\rbrace\quad (\forall \lambda\in \mathbb K).$$&lt;p>
 如果 $f\in\mathscr X^*$, 并且 $\Vert f\Vert=1$, 求证:&lt;/p>
 &lt;ul>
-&lt;li>(1) $|f(x)|=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace\quad(\forall x\in\mathscr X)$;&lt;/li>
-&lt;li>(2) $\forall\lambda\in\mathbb K$, $H_f^\lambda$ 上的任一点 $x$ 到 $H_f^0$ 的距离都等于 $|\lambda|$.
+&lt;li>(1) $|f(x)|=\inf\lbrace \Vert x-z\Vert|\forall z\in H\_f^0 \rbrace\quad(\forall x\in\mathscr X)$;&lt;/li>
+&lt;li>(2) $\forall\lambda\in\mathbb K$, $H\_f^\lambda$ 上的任一点 $x$ 到 $H\_f^0$ 的距离都等于 $|\lambda|$.
 并对 $\mathscr X=\mathbb{R}^2,\mathbb K=\mathbb{R}$ 情形解释 (1) 和 (2) 的几何意义.&lt;/li>
 &lt;/ul>
 &lt;div class="details admonition note">
@@ -418,26 +429,26 @@ $$H_f^\lambda\overset{\Delta}{=}\lbrace x\in\mathscr X|f(x)=\lambda\rbrace\quad 
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ul>
 &lt;li>
-&lt;p>(1) 我们考虑 $A=\lbrace x-z: z\in H_f^0 \rbrace$ 究竟是什么集合.
-我们记 $M=|f(x)|$, 首先 $|f(x-z)|=|f(x)-0|=M$, 所以 $A\subset H_f^M$.
-此外 $\forall y\in H_f^M$, 有 $x-y\in H_f^0$, 所以 $x-(x-y)=y\in A$, 即 $A=H_f^M$.&lt;/p>
-&lt;p>因此我们只需证 $|f(x)|=\inf\lbrace \Vert x\Vert: x\in H_f^{|f(x)|} \rbrace$.&lt;/p>
+&lt;p>(1) 我们考虑 $A=\lbrace x-z: z\in H\_f^0 \rbrace$ 究竟是什么集合.
+我们记 $M=|f(x)|$, 首先 $|f(x-z)|=|f(x)-0|=M$, 所以 $A\subset H\_f^M$.
+此外 $\forall y\in H\_f^M$, 有 $x-y\in H\_f^0$, 所以 $x-(x-y)=y\in A$, 即 $A=H\_f^M$.&lt;/p>
+&lt;p>因此我们只需证 $|f(x)|=\inf\lbrace \Vert x\Vert: x\in H\_f^{|f(x)|} \rbrace$.&lt;/p>
 &lt;p>一方面由 $\Vert f\Vert=1$, $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\leqslant 1$,
 $\forall x\in\mathscr X$. 所以 $\Vert f(x)\Vert$ 是下界.&lt;/p>
-&lt;p>另一方面, 根据上确界定义, 存在一列 $\lbrace x_n \rbrace$ 满足
+&lt;p>另一方面, 根据上确界定义, 存在一列 $\lbrace x\_n \rbrace$ 满足
 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to 1$,
-那么取 $y_n=\dfrac{\Vert f(x)\Vert}{\Vert f(x_n)\Vert}x_n$,
-那么 $\dfrac{\Vert f(y_n)\Vert}{\Vert y_n\Vert}=\dfrac{\Vert f(x_n)\Vert}{\Vert x_n\Vert}\to 1$,
-且 $\Vert f(y_n)\Vert=\Vert f(x)\Vert$.
-于是 $y_n\in H_f^M$ 且 $\Vert f(y_n)\Vert\to \Vert f(x)\Vert$,
+那么取 $y\_n=\dfrac{\Vert f(x)\Vert}{\Vert f(x\_n)\Vert}x\_n$,
+那么 $\dfrac{\Vert f(y\_n)\Vert}{\Vert y\_n\Vert}=\dfrac{\Vert f(x\_n)\Vert}{\Vert x\_n\Vert}\to 1$,
+且 $\Vert f(y\_n)\Vert=\Vert f(x)\Vert$.
+于是 $y\_n\in H\_f^M$ 且 $\Vert f(y\_n)\Vert\to \Vert f(x)\Vert$,
 即 $\Vert f(x)\Vert$ 就是下确界.&lt;/p>
-&lt;p>综上 $\Vert f(x)\Vert=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace$.&lt;/p>
+&lt;p>综上 $\Vert f(x)\Vert=\inf\lbrace \Vert x-z\Vert|\forall z\in H\_f^0 \rbrace$.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>(2) $\rho(x,H_f^0)=\inf\lbrace \Vert x-z\Vert|\forall z\in H_f^0 \rbrace=|f(x)|=|\lambda|$.&lt;/p>
-&lt;p>对 $x=(\alpha,\beta)\in\mathbb{R}^2$, 设 $f((1,0))=e_1,f((0,1))=e_2$,
-则 $f(x)=\alpha e_1+\beta e_2$,
-所以 $H_f^\lambda=\lbrace (\alpha,\beta)|\alpha e_1+\beta e_2=\lambda \rbrace$ 是一条直线.
+&lt;p>(2) $\rho(x,H\_f^0)=\inf\lbrace \Vert x-z\Vert|\forall z\in H\_f^0 \rbrace=|f(x)|=|\lambda|$.&lt;/p>
+&lt;p>对 $x=(\alpha,\beta)\in\mathbb{R}^2$, 设 $f((1,0))=e\_1,f((0,1))=e\_2$,
+则 $f(x)=\alpha e\_1&amp;#43;\beta e\_2$,
+所以 $H\_f^\lambda=\lbrace (\alpha,\beta)|\alpha e\_1&amp;#43;\beta e\_2=\lambda \rbrace$ 是一条直线.
 所以 (1) 和 (2) 指的就是点到直线和两条平行线的距离关系.&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -449,12 +460,12 @@ $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to 1$,
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $\mathscr X$ 是实 $B^*$ 空间, $f$ 是 $\mathscr X$ 上的非零实值线性泛函.
-求证: 不存在开球 $B(x_0,\delta)$, 使得 $f(x_0)$ 是 $f(x)$ 在 $B(x_0,\delta)$ 中的极大值或极小值.&lt;/p>
+求证: 不存在开球 $B(x\_0,\delta)$, 使得 $f(x\_0)$ 是 $f(x)$ 在 $B(x\_0,\delta)$ 中的极大值或极小值.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>反设存在 $B(x_0,\delta)$, 使得 $f(x_0)$ 是极大值.&lt;/p>
-&lt;p>那么 $f(x)\leqslant f(x_0)$ 即 $f(x-x_0)\leqslant 0$.
+ &lt;div class="admonition-content">&lt;p>反设存在 $B(x\_0,\delta)$, 使得 $f(x\_0)$ 是极大值.&lt;/p>
+&lt;p>那么 $f(x)\leqslant f(x\_0)$ 即 $f(x-x\_0)\leqslant 0$.
 所以 $f(x)\leqslant 0,\forall x\in B(0,\delta)$.
 根据线性性, 可以依次推出在整个定义域上都有 $f(x)\leqslant 0$,
 因为可以反复取 $f(x)=2f(x/2)$ 直到 $\Vert x/2^k\Vert&amp;lt;\delta$.&lt;/p>
@@ -466,21 +477,23 @@ $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to 1$,
  &lt;a href="#149" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>在 $\mathbb{R}^2$ 中, 对 $\forall x = (x_1, x_2) \in \mathbb{R}^2$, 定义范数&lt;br>
-$$&lt;br>
-\Vert x \Vert = \max(|x_1|, |x_2|),&lt;br>
-$$&lt;br>
-并设 $e_1 = (1, 0)$, $x_0 = (0, 1)$. 求 $a \in \mathbb{R}$ 适合&lt;br>
-$$&lt;br>
-\Vert x_0 - a e_1 \Vert = \min_{\lambda \in \mathbb{R}} \Vert x_0 - \lambda e_1 \Vert,&lt;br>
-$$&lt;br>
+&lt;/h2>&lt;p>在 $\mathbb{R}^2$ 中, 对 $\forall x = (x\_1, x\_2) \in \mathbb{R}^2$, 定义范数&lt;br>
+&lt;/p>
+$$ 
+\Vert x \Vert = \max(|x\_1|, |x\_2|), 
+$$&lt;p>&lt;br>
+并设 $e\_1 = (1, 0)$, $x\_0 = (0, 1)$. 求 $a \in \mathbb{R}$ 适合&lt;br>
+&lt;/p>
+$$ 
+\Vert x\_0 - a e\_1 \Vert = \min\_{\lambda \in \mathbb{R}} \Vert x\_0 - \lambda e\_1 \Vert, 
+$$&lt;p>&lt;br>
 并问这样的 $a$ 是否唯一? 请对结果做出几何解释.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">不唯一, $x_0-\lambda e_1$ 对应 $xOy$ 坐标系中 $y=1$ 的直线, 而在该范数定义下, $\Vert (a,1) \Vert =\begin{cases}&lt;br>
-1,\quad a\in[-1,1] \\&lt;br>
-|a|,\quad |a|&amp;gt;1&lt;br>
+ &lt;div class="admonition-content">不唯一, $x\_0-\lambda e\_1$ 对应 $xOy$ 坐标系中 $y=1$ 的直线, 而在该范数定义下, $\Vert (a,1) \Vert =\begin{cases} 
+1,\quad a\in[-1,1] \\\\ 
+|a|,\quad |a|&amp;gt;1 
 \end{cases}$ 于是当 $a\in[-1,1]$ 时均满足条件, 不唯一.&lt;br>
 &lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.4.9.png' alt="泛函/1.4.9.png">&lt;/div>
  &lt;/div>
@@ -490,120 +503,128 @@ $$&lt;br>
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>求证: 范数的严格凸性等价于下列条件:&lt;br>
-$$&lt;br>
-\Vert x + y \Vert = \Vert x \Vert + \Vert y \Vert \quad (\forall x \ne 0, y \ne 0) \implies x = c y \quad (c &amp;gt; 0).&lt;br>
-$$&lt;/p>
-&lt;div class="details admonition note">
+&lt;/p>
+$$ 
+\Vert x &amp;#43; y \Vert = \Vert x \Vert &amp;#43; \Vert y \Vert \quad (\forall x \ne 0, y \ne 0) \implies x = c y \quad (c &amp;gt; 0). 
+$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&amp;ldquo;$\Rightarrow$&amp;rdquo;: 考虑 $\Vert x+y \Vert = \Vert \dfrac{x}{\Vert x \Vert} \Vert x \Vert + \dfrac{y}{\Vert y \Vert} \Vert y \Vert \Vert = (\Vert x \Vert + \Vert y \Vert) \Vert \dfrac{x}{\Vert x \Vert} \dfrac{\Vert x \Vert}{\Vert x \Vert + \Vert y \Vert} + \dfrac{y}{\Vert y \Vert} \dfrac{\Vert y \Vert}{\Vert x \Vert + \Vert y \Vert} \Vert$ 如果 $\dfrac{x}{\Vert x \Vert} \ne \dfrac{y}{\Vert y \Vert}$ 那么结合严格凸性可得 $\Vert x+y \Vert &amp;lt; \Vert x \Vert + \Vert y \Vert = \Vert x+y \Vert$ 矛盾, 所以 $\dfrac{x}{\Vert x \Vert} = \dfrac{y}{\Vert y \Vert}$ 即 $x = c y, (c &amp;gt; 0)$.&lt;br>
-&amp;ldquo;$\Leftarrow$&amp;rdquo;: 首先范数一定是凸的, 故只需证明严格性. 反设存在 $x,y,\alpha,\beta$ 满足 $\Vert x \Vert = \Vert y \Vert = \alpha + \beta = 1, x \ne y$. 有 $\Vert \alpha x + \beta y \Vert = 1$. 那么有 $\Vert \alpha x + \beta y \Vert = 1 = \alpha \Vert x \Vert + \beta \Vert y \Vert \overset{\text{齐次性}}{=} \Vert \alpha x \Vert + \Vert \beta y \Vert$, 于是就有 $\alpha x = c \beta y$, 两边取范数立刻得到 $\alpha = c \beta$, 从而 $x = y$ 矛盾. 故该范数是严格凸的.&lt;/div>
+ &lt;div class="admonition-content">&amp;ldquo;$\Rightarrow$&amp;rdquo;: 考虑 $\Vert x&amp;#43;y \Vert = \Vert \dfrac{x}{\Vert x \Vert} \Vert x \Vert &amp;#43; \dfrac{y}{\Vert y \Vert} \Vert y \Vert \Vert = (\Vert x \Vert &amp;#43; \Vert y \Vert) \Vert \dfrac{x}{\Vert x \Vert} \dfrac{\Vert x \Vert}{\Vert x \Vert &amp;#43; \Vert y \Vert} &amp;#43; \dfrac{y}{\Vert y \Vert} \dfrac{\Vert y \Vert}{\Vert x \Vert &amp;#43; \Vert y \Vert} \Vert$ 如果 $\dfrac{x}{\Vert x \Vert} \ne \dfrac{y}{\Vert y \Vert}$ 那么结合严格凸性可得 $\Vert x&amp;#43;y \Vert &amp;lt; \Vert x \Vert &amp;#43; \Vert y \Vert = \Vert x&amp;#43;y \Vert$ 矛盾, 所以 $\dfrac{x}{\Vert x \Vert} = \dfrac{y}{\Vert y \Vert}$ 即 $x = c y, (c &amp;gt; 0)$.&lt;br>
+&amp;ldquo;$\Leftarrow$&amp;rdquo;: 首先范数一定是凸的, 故只需证明严格性. 反设存在 $x,y,\alpha,\beta$ 满足 $\Vert x \Vert = \Vert y \Vert = \alpha &amp;#43; \beta = 1, x \ne y$. 有 $\Vert \alpha x &amp;#43; \beta y \Vert = 1$. 那么有 $\Vert \alpha x &amp;#43; \beta y \Vert = 1 = \alpha \Vert x \Vert &amp;#43; \beta \Vert y \Vert \overset{\text{齐次性}}{=} \Vert \alpha x \Vert &amp;#43; \Vert \beta y \Vert$, 于是就有 $\alpha x = c \beta y$, 两边取范数立刻得到 $\alpha = c \beta$, 从而 $x = y$ 矛盾. 故该范数是严格凸的.&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="1413">&lt;span>1.4.13&lt;/span>
  &lt;a href="#1413" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $\mathscr{X}$ 是 $B^*$ 空间, $\mathscr{X}_0$ 是 $\mathscr{X}$ 的线性子空间, 假定 $\exists c \in (0,1)$, 使得&lt;br>
-$$&lt;br>
-\inf_{x \in \mathscr{X}_0} \Vert y - x \Vert \le c \Vert y \Vert \quad (\forall y \in \mathscr{X}).&lt;br>
-$$&lt;br>
-求证: $\mathscr{X}_0$ 在 $\mathscr{X}$ 中稠密.&lt;/p>
+&lt;/h2>&lt;p>设 $\mathscr{X}$ 是 $B^*$ 空间, $\mathscr{X}\_0$ 是 $\mathscr{X}$ 的线性子空间, 假定 $\exists c \in (0,1)$, 使得&lt;br>
+&lt;/p>
+$$ 
+\inf\_{x \in \mathscr{X}\_0} \Vert y - x \Vert \le c \Vert y \Vert \quad (\forall y \in \mathscr{X}). 
+$$&lt;p>&lt;br>
+求证: $\mathscr{X}\_0$ 在 $\mathscr{X}$ 中稠密.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">反设 $\mathscr X_0$ 不稠密, 那么 $\overline{\mathscr X_0}$ 是 $\mathscr X$ 中的真闭子空间, 那么根据 Riesz 引理, 取 $\varepsilon = \frac{1 - c}{2}$, 那么存在 $y \in \mathscr X$, 使得 $\Vert y \Vert = 1$ 且 $\Vert y - x \Vert \geqslant 1 - \varepsilon &amp;gt; c = c \Vert y \Vert \ \forall x \in \mathscr X_0$ 这就与条件 $\inf \Vert y - x \Vert \leqslant c \Vert y \Vert$ 矛盾. 从而 $\mathscr X_0$ 在 $\mathscr X$ 中稠密.&lt;/div>
+ &lt;div class="admonition-content">反设 $\mathscr X\_0$ 不稠密, 那么 $\overline{\mathscr X\_0}$ 是 $\mathscr X$ 中的真闭子空间, 那么根据 Riesz 引理, 取 $\varepsilon = \frac{1 - c}{2}$, 那么存在 $y \in \mathscr X$, 使得 $\Vert y \Vert = 1$ 且 $\Vert y - x \Vert \geqslant 1 - \varepsilon &amp;gt; c = c \Vert y \Vert \ \forall x \in \mathscr X\_0$ 这就与条件 $\inf \Vert y - x \Vert \leqslant c \Vert y \Vert$ 矛盾. 从而 $\mathscr X\_0$ 在 $\mathscr X$ 中稠密.&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="1414">&lt;span>1.4.14&lt;/span>
  &lt;a href="#1414" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $C_0$ 表示以 0 为极限的实数全体, 并在 $C_0$ 中赋以范数&lt;br>
-$$&lt;br>
-\Vert x \Vert = \max_{n \ge 1} |\xi_n| \quad (\forall x = (\xi_1, \xi_2, \cdots, \xi_n) \in C_0).&lt;br>
-$$&lt;br>
+&lt;/h2>&lt;p>设 $C\_0$ 表示以 0 为极限的实数全体, 并在 $C\_0$ 中赋以范数&lt;br>
+&lt;/p>
+$$ 
+\Vert x \Vert = \max\_{n \ge 1} |\xi\_n| \quad (\forall x = (\xi\_1, \xi\_2, \cdots, \xi\_n) \in C\_0). 
+$$&lt;p>&lt;br>
 又设&lt;br>
-$$&lt;br>
-M \triangleq \left\lbrace x = \lbrace \xi_n \rbrace_{n=1}^{\infty} \in C_0 \ \middle|\ \sum_{n=1}^{\infty} \frac{\xi_n}{2^n} = 0 \right\rbrace .&lt;br>
-$$&lt;/p>
-&lt;ul>
-&lt;li>(1) 求证: $M$ 是 $C_0$ 的闭线性子空间.&lt;/li>
-&lt;li>(2) 设 $x_0 = (2, 0, \cdots, 0, \cdots)$, 求证:&lt;br>
-$$&lt;br>
-\inf_{z \in M} \Vert x_0 - z \Vert = 1,&lt;br>
-$$&lt;br>
-但 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;/li>
+&lt;/p>
+$$ 
+M \triangleq \left\lbrace x = \lbrace \xi\_n \rbrace\_{n=1}^{\infty} \in C\_0 \ \middle|\ \sum\_{n=1}^{\infty} \frac{\xi\_n}{2^n} = 0 \right\rbrace . 
+$$&lt;ul>
+&lt;li>(1) 求证: $M$ 是 $C\_0$ 的闭线性子空间.&lt;/li>
+&lt;li>(2) 设 $x\_0 = (2, 0, \cdots, 0, \cdots)$, 求证:&lt;br>
+$ 
+\inf\_{z \in M} \Vert x\_0 - z \Vert = 1, 
+$&lt;br>
+但 $\forall y \in M$ 有 $\Vert x\_0 - y \Vert &amp;gt; 1$.&lt;/li>
 &lt;/ul>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">(1) 取映射 $f: C_0 \to \mathbb{R}, f(x) = \sum\limits_{n=1}^\infty \frac{\xi_n}{2^n}$&lt;br>
-线性性: 考虑 $\alpha x + \beta y$: $f(\alpha x + \beta y) = \sum\limits_{n=1}^\infty \frac{\alpha \xi_n + \beta \eta_n}{2^n} = \alpha f(x) + \beta f(y) = 0$.&lt;br>
-于是 $\alpha x + \beta y \in M$.&lt;br>
-闭性: 由于 $|f(x)| \leqslant \sum\limits_{n=1}^\infty \frac{|\xi_n|}{2^n} \leqslant \Vert x \Vert \sum\limits_{n=1}^\infty \frac{1}{2^n} = \Vert x \Vert$.&lt;br>
+ &lt;div class="admonition-content">&lt;p>(1) 取映射 $f: C\_0 \to \mathbb{R}, f(x) = \sum\limits\_{n=1}^\infty \frac{\xi\_n}{2^n}$&lt;br>
+线性性: 考虑 $\alpha x &amp;#43; \beta y$: $f(\alpha x &amp;#43; \beta y) = \sum\limits\_{n=1}^\infty \frac{\alpha \xi\_n &amp;#43; \beta \eta\_n}{2^n} = \alpha f(x) &amp;#43; \beta f(y) = 0$.&lt;br>
+于是 $\alpha x &amp;#43; \beta y \in M$.&lt;br>
+闭性: 由于 $|f(x)| \leqslant \sum\limits\_{n=1}^\infty \frac{|\xi\_n|}{2^n} \leqslant \Vert x \Vert \sum\limits\_{n=1}^\infty \frac{1}{2^n} = \Vert x \Vert$.&lt;br>
 所以 $f$ 是连续映射, 又 $\lbrace 0 \rbrace$ 是 $\mathbb{R}$ 中的闭集, 所以 $M = f^{-1}(\lbrace 0 \rbrace)$ 是闭集.&lt;br>
-故 $M$ 是 $C_0$ 的闭线性子空间.&lt;br>
-(2) 考虑第一项有 $\Vert x_0 - z \Vert \geqslant \max \lbrace |2 - \xi_1|, |\xi| \rbrace \geqslant 1$. 所以 $\inf\limits_{z \in M} \Vert x_0 - z \Vert = 1$.&lt;br>
-考虑数列 $x^N = (1 - \frac{1}{2^{N-1}}, \underbrace{-1, \ldots, -1}_{N\ \text{个}}, 0, \ldots, 0, \ldots) \in M$, 有 $\Vert x_0 - x^N \Vert = 1 + \frac{1}{2^{N-1}}$, 所以下确界取到 1. $\inf\limits_{z \in M} \Vert x_0 - z \Vert = 1$.&lt;br>
-下证 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;br>
-考虑反证法, 假设存在序列 $y = (\xi_1, \xi_2, \ldots, \xi_k, \ldots) \in M$, 使得 $\Vert x_0 - y \Vert = 1$, 则有 $$\begin{cases}&lt;br>
-|\xi_k| \leqslant 1, &amp;amp; k \geqslant 2, \\&lt;br>
-2 - \xi_1 \leqslant 1. &amp;amp;&lt;br>
-\end{cases}$$&lt;br>
-所以有 $$\left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| \leqslant \sum\limits_{k=2}^\infty \frac{|\xi_k|}{2^k} \overset{\text{由极限为 0 不可能一直是 1}}{&amp;lt;} \sum\limits_{k=2}^\infty \frac{1}{2^k} = \frac{1}{2}.$$&lt;br>
-$$\Rightarrow \left| \frac{\xi_1}{2} \right| = \left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| &amp;lt; \frac{1}{2} \Rightarrow |\xi_1| &amp;lt; 1.$$ 这与 $|2 - \xi_1| \leqslant 1$ 矛盾.&lt;br>
-所以有 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;/div>
+故 $M$ 是 $C\_0$ 的闭线性子空间.&lt;br>
+(2) 考虑第一项有 $\Vert x\_0 - z \Vert \geqslant \max \lbrace |2 - \xi\_1|, |\xi| \rbrace \geqslant 1$. 所以 $\inf\limits\_{z \in M} \Vert x\_0 - z \Vert = 1$.&lt;br>
+考虑数列 $x^N = (1 - \frac{1}{2^{N-1}}, \underbrace{-1, \ldots, -1}\_{N\ \text{个}}, 0, \ldots, 0, \ldots) \in M$, 有 $\Vert x\_0 - x^N \Vert = 1 &amp;#43; \frac{1}{2^{N-1}}$, 所以下确界取到 1. $\inf\limits\_{z \in M} \Vert x\_0 - z \Vert = 1$.&lt;br>
+下证 $\forall y \in M$ 有 $\Vert x\_0 - y \Vert &amp;gt; 1$.&lt;br>
+考虑反证法, 假设存在序列 $y = (\xi\_1, \xi\_2, \ldots, \xi\_k, \ldots) \in M$, 使得 $\Vert x\_0 - y \Vert = 1$, 则有 &lt;/p>
+$$\begin{cases} 
+|\xi\_k| \leqslant 1, &amp;amp; k \geqslant 2, \\\\ 
+2 - \xi\_1 \leqslant 1. &amp;amp; 
+\end{cases}$$&lt;p>&lt;br>
+所以有 &lt;/p>
+$$\left| \sum\limits\_{k=2}^\infty \frac{\xi\_k}{2^k} \right| \leqslant \sum\limits\_{k=2}^\infty \frac{|\xi\_k|}{2^k} \overset{\text{由极限为 0 不可能一直是 1}}{&amp;lt;} \sum\limits\_{k=2}^\infty \frac{1}{2^k} = \frac{1}{2}.$$&lt;p>&lt;br>
+&lt;/p>
+$$\Rightarrow \left| \frac{\xi\_1}{2} \right| = \left| \sum\limits\_{k=2}^\infty \frac{\xi\_k}{2^k} \right| &amp;lt; \frac{1}{2} \Rightarrow |\xi\_1| &amp;lt; 1.$$&lt;p> 这与 $|2 - \xi\_1| \leqslant 1$ 矛盾.&lt;br>
+所以有 $\forall y \in M$ 有 $\Vert x\_0 - y \Vert &amp;gt; 1$.&lt;/p>
+&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;div class="details admonition info open">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>注&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">本题提供一个例子说明: 对于无穷维闭线性子空间来说, 给定其外一点 $x_0$, 未必能在其上找到一点 $y$ 适合&lt;br>
-$$&lt;br>
-\Vert x_0 - y \Vert = \inf_{z \in M} \Vert x_0 - z \Vert.&lt;br>
-$$&lt;br>
-换句话说, 给定 $x_0 \notin M$, 未必能在 $M$ 上找到最佳逼近元.&lt;/div>
+ &lt;div class="admonition-content">&lt;p>本题提供一个例子说明: 对于无穷维闭线性子空间来说, 给定其外一点 $x\_0$, 未必能在其上找到一点 $y$ 适合&lt;br>
+&lt;/p>
+$$ 
+\Vert x\_0 - y \Vert = \inf\_{z \in M} \Vert x\_0 - z \Vert. 
+$$&lt;p>&lt;br>
+换句话说, 给定 $x\_0 \notin M$, 未必能在 $M$ 上找到最佳逼近元.&lt;/p>
+&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="1417">&lt;span>1.4.17&lt;/span>
  &lt;a href="#1417" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设有商空间 $\mathscr{X} / \mathscr{X}_0$.&lt;/p>
+&lt;/h2>&lt;p>设有商空间 $\mathscr{X} / \mathscr{X}\_0$.&lt;/p>
 &lt;ul>
-&lt;li>(1) 设 $[x] \in \mathscr{X} / \mathscr{X}_0$, 求证: 对 $\forall x \in [x]$, 有&lt;br>
-$$&lt;br>
-\inf_{z \in \mathscr{X}_0} \Vert x - z \Vert = \Vert [x] \Vert_0.&lt;br>
-$$&lt;/li>
-&lt;li>(2) 定义映射 $\varphi : \mathscr{X} \to \mathscr{X} / \mathscr{X}_0$ 为&lt;br>
-$$&lt;br>
-\varphi(x) = [x] \triangleq x + \mathscr{X}_0 \quad (\forall x \in \mathscr{X}),&lt;br>
-$$&lt;br>
+&lt;li>(1) 设 $[x] \in \mathscr{X} / \mathscr{X}\_0$, 求证: 对 $\forall x \in [x]$, 有&lt;br>
+$ 
+\inf\_{z \in \mathscr{X}\_0} \Vert x - z \Vert = \Vert [x] \Vert\_0. 
+$&lt;/li>
+&lt;li>(2) 定义映射 $\varphi : \mathscr{X} \to \mathscr{X} / \mathscr{X}\_0$ 为&lt;br>
+$ 
+\varphi(x) = [x] \triangleq x &amp;#43; \mathscr{X}\_0 \quad (\forall x \in \mathscr{X}), 
+$&lt;br>
 求证: $\varphi$ 是连续线性映射.&lt;/li>
-&lt;li>(3) $\forall [x] \in \mathscr{X} / \mathscr{X}_0$, 求证: $\exists x \in \mathscr{X}$, 使得&lt;br>
-$$&lt;br>
-\varphi(x) = [x], \quad \text{且} \quad \Vert x \Vert \le 2 \Vert [x] \Vert_0.&lt;br>
-$$&lt;/li>
-&lt;li>(4) 设 $\mathscr{X} = C[0,1]$, $\mathscr{X}_0 = \lbrace f \in \mathscr{X} \mid f(0) = 0 \rbrace$, 求证:&lt;br>
-$$&lt;br>
-\mathscr{X} / \mathscr{X}_0 \cong \mathbb{K},&lt;br>
-$$&lt;br>
+&lt;li>(3) $\forall [x] \in \mathscr{X} / \mathscr{X}\_0$, 求证: $\exists x \in \mathscr{X}$, 使得&lt;br>
+$ 
+\varphi(x) = [x], \quad \text{且} \quad \Vert x \Vert \le 2 \Vert [x] \Vert\_0. 
+$&lt;/li>
+&lt;li>(4) 设 $\mathscr{X} = C[0,1]$, $\mathscr{X}\_0 = \lbrace f \in \mathscr{X} \mid f(0) = 0 \rbrace$, 求证:&lt;br>
+$ 
+\mathscr{X} / \mathscr{X}\_0 \cong \mathbb{K}, 
+$&lt;br>
 其中记号 “$\cong$” 表示等距同构.&lt;/li>
 &lt;/ul>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ul>
-&lt;li>(1) $\Vert [x] \Vert = \inf\limits_{y \in [x]} \Vert y \Vert = \inf\limits_{y \in \mathscr X_0} \Vert x + y \Vert = \inf\limits_{z \in \mathscr X_0} \Vert x - z \Vert$.&lt;/li>
-&lt;li>(2) 根据商空间运算定义, 线性性显然. $\Vert \varphi(x) \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x - z \Vert \leqslant \Vert x - 0 \Vert = \Vert x \Vert$ 所以 $\varphi(x)$ 连续.&lt;/li>
-&lt;li>(3) 取代表元 $x&amp;rsquo;$, 根据 $\Vert [x] \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x&amp;rsquo; - z \Vert$ 所以对任意 $\varepsilon &amp;gt; 0$, 存在 $z \in \mathscr X_0$ 使得 $\Vert x&amp;rsquo; - z \Vert &amp;lt; \Vert [x] \Vert_0 + \varepsilon$, 现取 $\varepsilon = \Vert [x] \Vert_0$, 则 $x&amp;rsquo; + z_0$ 满足 $\varphi(x&amp;rsquo;) = [x],\ \Vert x \Vert \leqslant 2 \Vert [x] \Vert_0$.&lt;/li>
-&lt;li>(4) 取 $T: \mathscr X / \mathscr X_0 \to \mathbb K, T([f]) = f(0)$. 首先先探究等价类的性质, 若 $f - g \in \mathscr X_0$, 那么有 $f(0) = g(0)$, 所以我们不妨设等价类为 $[f_x]$ 表示所有 $f(0) = x$ 的函数.&lt;br>
-先证 $T$ 是线性映射, 即 $T(\alpha [f_x] + \beta [f_y]) = T([f_{\alpha x} + f_{\beta y}]) = \alpha x + \beta y = \alpha T([f_x]) + \beta T([f_y])$. 这一步用到了 $\mathbb{K}$ 的线性性.&lt;br>
-再证 $T$ 保范数, 即要证 $\Vert T([f_x]) \Vert = \Vert x \Vert$.&lt;br>
-根据定义取 $[f_x]$ 的代表元为 $f,\ f(0) = x$, 有 $\Vert T([f_x]) \Vert = \inf\limits_{g \in \mathscr X_0} \Vert f - g \Vert = \inf\limits_{g \in \mathscr X_0} \max\limits_{t \in [0,1]} |f(t) - g(t)|$&lt;br>
-一方面, $$\inf\limits_{g \in \mathscr X_0} \max\limits_{t \in [0,1]} |f(t) - g(t)| \geqslant \inf\limits_{g \in \mathscr X_0} |f(0) - g(0)| = |x|$$&lt;br>
-另一方面, 取 $g&amp;rsquo; = f - x \in \mathscr X_0$, 从而 $$\inf\limits_{g \in \mathscr X_0} \Vert f - g \Vert \leqslant \Vert f - g&amp;rsquo; \Vert \overset{\text{恒为 x 的常函数}}{=} \Vert x \Vert,$$ 所以有 $\Vert T([f_x]) \Vert = \Vert x \Vert$.&lt;/li>
+&lt;li>(1) $\Vert [x] \Vert = \inf\limits\_{y \in [x]} \Vert y \Vert = \inf\limits\_{y \in \mathscr X\_0} \Vert x &amp;#43; y \Vert = \inf\limits\_{z \in \mathscr X\_0} \Vert x - z \Vert$.&lt;/li>
+&lt;li>(2) 根据商空间运算定义, 线性性显然. $\Vert \varphi(x) \Vert\_0 = \inf\limits\_{z \in \mathscr X\_0} \Vert x - z \Vert \leqslant \Vert x - 0 \Vert = \Vert x \Vert$ 所以 $\varphi(x)$ 连续.&lt;/li>
+&lt;li>(3) 取代表元 $x&amp;#39;$, 根据 $\Vert [x] \Vert\_0 = \inf\limits\_{z \in \mathscr X\_0} \Vert x&amp;#39; - z \Vert$ 所以对任意 $\varepsilon &amp;gt; 0$, 存在 $z \in \mathscr X\_0$ 使得 $\Vert x&amp;#39; - z \Vert &amp;lt; \Vert [x] \Vert\_0 &amp;#43; \varepsilon$, 现取 $\varepsilon = \Vert [x] \Vert\_0$, 则 $x&amp;#39; &amp;#43; z\_0$ 满足 $\varphi(x&amp;#39;) = [x],\ \Vert x \Vert \leqslant 2 \Vert [x] \Vert\_0$.&lt;/li>
+&lt;li>(4) 取 $T: \mathscr X / \mathscr X\_0 \to \mathbb K, T([f]) = f(0)$. 首先先探究等价类的性质, 若 $f - g \in \mathscr X\_0$, 那么有 $f(0) = g(0)$, 所以我们不妨设等价类为 $[f\_x]$ 表示所有 $f(0) = x$ 的函数.&lt;br>
+先证 $T$ 是线性映射, 即 $T(\alpha [f\_x] &amp;#43; \beta [f\_y]) = T([f\_{\alpha x} &amp;#43; f\_{\beta y}]) = \alpha x &amp;#43; \beta y = \alpha T([f\_x]) &amp;#43; \beta T([f\_y])$. 这一步用到了 $\mathbb{K}$ 的线性性.&lt;br>
+再证 $T$ 保范数, 即要证 $\Vert T([f\_x]) \Vert = \Vert x \Vert$.&lt;br>
+根据定义取 $[f\_x]$ 的代表元为 $f,\ f(0) = x$, 有 $\Vert T([f\_x]) \Vert = \inf\limits\_{g \in \mathscr X\_0} \Vert f - g \Vert = \inf\limits\_{g \in \mathscr X\_0} \max\limits\_{t \in [0,1]} |f(t) - g(t)|$&lt;br>
+一方面, $\inf\limits\_{g \in \mathscr X\_0} \max\limits\_{t \in [0,1]} |f(t) - g(t)| \geqslant \inf\limits\_{g \in \mathscr X\_0} |f(0) - g(0)| = |x|$&lt;br>
+另一方面, 取 $g&amp;#39; = f - x \in \mathscr X\_0$, 从而 $\inf\limits\_{g \in \mathscr X\_0} \Vert f - g \Vert \leqslant \Vert f - g&amp;#39; \Vert \overset{\text{恒为 x 的常函数}}{=} \Vert x \Vert,$ 所以有 $\Vert T([f\_x]) \Vert = \Vert x \Vert$.&lt;/li>
 &lt;/ul>
 &lt;/div>
  &lt;/div>
@@ -617,27 +638,28 @@ $$&lt;br>
  &lt;a href="#question-1" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>有一推销员, 从城市 $v_0$ 出发, 要依次访问城市 $v_1, v_2, \dots, v_n$ 各一次, 最后返回到 $v_0$. 已知从 $v_i$ 到 $v_j$ 的旅费为 $c_{ij}$, 对于任意的 $v_i$ 和 $v_j$, 问他应按怎样的次序访问这些城市, 使得总旅费最小?&lt;/p>
+&lt;/h2>&lt;p>有一推销员, 从城市 $v\_0$ 出发, 要依次访问城市 $v\_1, v\_2, \dots, v\_n$ 各一次, 最后返回到 $v\_0$. 已知从 $v\_i$ 到 $v\_j$ 的旅费为 $c\_{ij}$, 对于任意的 $v\_i$ 和 $v\_j$, 问他应按怎样的次序访问这些城市, 使得总旅费最小?&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">定义变量 $x_{ij}=\left\lbrace\begin{array}{ll}
-1, &amp;amp; \text{路径中包含从} v_i\text{到} v_j \text{的边}\\
+ &lt;div class="admonition-content">&lt;p>定义变量 $x\_{ij}=\left\lbrace\begin{array}{ll}
+1, &amp;amp; \text{路径中包含从} v\_i\text{到} v\_j \text{的边}\\\\
 0, &amp;amp; \text{不包含}
 \end{array}\right.$&lt;br>
-那么我们的目标函数就是 $\min \sum\limits_{i,j=0}^n c_{ij}x_{ij}$.&lt;br>
-接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits_{i=0}^n x_{ij}=1$. 也只会有一条出边 $\sum\limits_{j=0}^n x_{ij}=1$.&lt;br>
-但仍要保证路径是一条, 考虑加入辅助变量 $u_i, i=1,2,\ldots, n$, 只需满足 $u_i-u_j+x_{ij}(n)\leqslant n-1, i,j=1,2,\ldots,n$.&lt;br>
-因为当 $1\sim n$ 中存在子连通图, 那么一定存在一个子环, 设大小, 而将这个环上的边 $(i,j)$ 对应的式子取出, 那么相加后所有的 $u_i,u_j$ 抵消, 左侧为 $kn$, 右侧为 $k(n-1)$ 显然不成立.&lt;br>
-所以该限制确保了不存在子环. 而当只有一条路径时, 只需取 $u_i$ 表示第 i 个点的顺序即可保证所有等式成立, 因为此时 $1\leqslant u_i\leqslant n$, $u_i-u_j\leqslant n-1$ 成立.&lt;br>
+那么我们的目标函数就是 $\min \sum\limits\_{i,j=0}^n c\_{ij}x\_{ij}$.&lt;br>
+接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits\_{i=0}^n x\_{ij}=1$. 也只会有一条出边 $\sum\limits\_{j=0}^n x\_{ij}=1$.&lt;br>
+但仍要保证路径是一条, 考虑加入辅助变量 $u\_i, i=1,2,\ldots, n$, 只需满足 $u\_i-u\_j&amp;#43;x\_{ij}(n)\leqslant n-1, i,j=1,2,\ldots,n$.&lt;br>
+因为当 $1\sim n$ 中存在子连通图, 那么一定存在一个子环, 设大小, 而将这个环上的边 $(i,j)$ 对应的式子取出, 那么相加后所有的 $u\_i,u\_j$ 抵消, 左侧为 $kn$, 右侧为 $k(n-1)$ 显然不成立.&lt;br>
+所以该限制确保了不存在子环. 而当只有一条路径时, 只需取 $u\_i$ 表示第 i 个点的顺序即可保证所有等式成立, 因为此时 $1\leqslant u\_i\leqslant n$, $u\_i-u\_j\leqslant n-1$ 成立.&lt;br>
 故满足上述限制的解一定构成一条符合要求的路径. 汇总后可将模型写成.&lt;br>
+&lt;/p>
 $$\left\lbrace\begin{array}{lll}
-\min &amp;amp; z=\sum\limits_{i,j=0}^n c_{ij}x_{ij} &amp;amp;\\
-\text{\ s.t.\ } &amp;amp; \sum\limits_{i=0}^{n}x_{ij}=1, &amp;amp; j=0,\ldots,n\\
-&amp;amp; \sum\limits_{j=0}^n x_{ij}=1, &amp;amp; i=0,\ldots,n\\
-&amp;amp; u_i-u_j+nx_{ij}\leqslant n-1, &amp;amp; 1\leqslant i,j \leqslant n. \\
-&amp;amp; x_{ij}\in {0,1}, &amp;amp; i,j=0,\ldots,n\\
-&amp;amp; u_i\in \mathbb{R} &amp;amp; i=1,\ldots,n
+\min &amp;amp; z=\sum\limits\_{i,j=0}^n c\_{ij}x\_{ij} &amp;amp;\\\\
+\text{\ s.t.\ } &amp;amp; \sum\limits\_{i=0}^{n}x\_{ij}=1, &amp;amp; j=0,\ldots,n\\\\
+&amp;amp; \sum\limits\_{j=0}^n x\_{ij}=1, &amp;amp; i=0,\ldots,n\\\\
+&amp;amp; u\_i-u\_j&amp;#43;nx\_{ij}\leqslant n-1, &amp;amp; 1\leqslant i,j \leqslant n. \\\\
+&amp;amp; x\_{ij}\in \{0,1\}, &amp;amp; i,j=0,\ldots,n\\\\
+&amp;amp; u\_i\in \mathbb{R} &amp;amp; i=1,\ldots,n
 \end{array}\right.$$&lt;/div>
  &lt;/div>
 &lt;/div>
@@ -700,40 +722,42 @@ $$\left\lbrace\begin{array}{lll}
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">将 $A-K$ 对应到 $1-11$.&lt;br>
-题目中的符号表示 $t_{ij}$ 表示第 $i$ 个任务在 $j$ 工作站上的耗时, 具体值见上表.&lt;br>
-$P_i$ 表示任务 $i$ 的直接前序依赖任务集合, 例如 $P_{3}={2}$.&lt;br>
+ &lt;div class="admonition-content">&lt;p>将 $A-K$ 对应到 $1-11$.&lt;br>
+题目中的符号表示 $t\_{ij}$ 表示第 $i$ 个任务在 $j$ 工作站上的耗时, 具体值见上表.&lt;br>
+$P\_i$ 表示任务 $i$ 的直接前序依赖任务集合, 例如 $P\_{3}=\{2\}$.&lt;br>
 $M$ 为充分大的常数.&lt;br>
 &lt;strong>决策变量&lt;/strong>:&lt;br>
-$x_i\in{0,1}$: 表示任务 $i$ 是否分配给工作站 $1$, $1$ 表示是, $0$ 表示否 ($i=1,\ldots,11$).&lt;br>
-$S_i$ 表示任务 $i$ 的开工时间 ($i=1,\ldots,11$).&lt;br>
-$y_{ij}\in{0,1}$ 表示任务 $i$ 是否在任务 $j$ 之前完成 ($i\neq j$).&lt;br>
-为了方便, 先推导每个任务的结束时间记作 $C_i=S_i+x_it_{i1}+(1-x_i)t_{i2}$ 用 $x_i$ 控制在哪个工作站上.&lt;br>
+$x\_i\in\{0,1\}$: 表示任务 $i$ 是否分配给工作站 $1$, $1$ 表示是, $0$ 表示否 ($i=1,\ldots,11$).&lt;br>
+$S\_i$ 表示任务 $i$ 的开工时间 ($i=1,\ldots,11$).&lt;br>
+$y\_{ij}\in\{0,1\}$ 表示任务 $i$ 是否在任务 $j$ 之前完成 ($i\neq j$).&lt;br>
+为了方便, 先推导每个任务的结束时间记作 $C\_i=S\_i&amp;#43;x\_it\_{i1}&amp;#43;(1-x\_i)t\_{i2}$ 用 $x\_i$ 控制在哪个工作站上.&lt;br>
 &lt;strong>目标函数&lt;/strong>:&lt;br>
-$f=\min C_{11}$.&lt;br>
+$f=\min C\_{11}$.&lt;br>
 &lt;strong>约束条件&lt;/strong>:&lt;br>
-第一类是依赖关系, 即对于每个任务 $i$, 要求 $C_j\leqslant S_i,\forall j\in P_i$.&lt;br>
-第二类是单个工作站上任务不重叠, 那么考虑先限定 $y_{ij}+y_{ji}=1$.&lt;br>
-然后当 $x_i=x_j$ 时要求根据 $y_{ij}$ 的取值判断 $i,j$ 的先后顺序.&lt;br>
+第一类是依赖关系, 即对于每个任务 $i$, 要求 $C\_j\leqslant S\_i,\forall j\in P\_i$.&lt;br>
+第二类是单个工作站上任务不重叠, 那么考虑先限定 $y\_{ij}&amp;#43;y\_{ji}=1$.&lt;br>
+然后当 $x\_i=x\_j$ 时要求根据 $y\_{ij}$ 的取值判断 $i,j$ 的先后顺序.&lt;br>
 可以构建下面的条件&lt;br>
+&lt;/p>
 $$\left\lbrace\begin{array}{l}
-C_i\leqslant S_j+M(y_{ji}+2-x_i-x_j)\\
-C_i\leqslant S_j+M(y_{ji}+x_i+x_j)
-\end{array}\right.$$&lt;br>
-不难验证, 当 $x_i\neq x_j$ 时, 上述两个限制肯定成立. 而当 $x_i=x_j$ 时, 上述限制具有约束力, 仅当 $y_{ji}=0$, 即 $y_{ij}=1$. 此时要求 $i$ 在 $j$ 之前完成, 即 $C_i\leqslant S_j$. 满足定义.&lt;br>
+C\_i\leqslant S\_j&amp;#43;M(y\_{ji}&amp;#43;2-x\_i-x\_j)\\\\
+C\_i\leqslant S\_j&amp;#43;M(y\_{ji}&amp;#43;x\_i&amp;#43;x\_j)
+\end{array}\right.$$&lt;p>&lt;br>
+不难验证, 当 $x\_i\neq x\_j$ 时, 上述两个限制肯定成立. 而当 $x\_i=x\_j$ 时, 上述限制具有约束力, 仅当 $y\_{ji}=0$, 即 $y\_{ij}=1$. 此时要求 $i$ 在 $j$ 之前完成, 即 $C\_i\leqslant S\_j$. 满足定义.&lt;br>
 所以只需对 $i\neq j$ 上述两条约束成立即可满足在单个工作站上不重叠.&lt;br>
 综上, 汇总可得总的运筹模型可建立为&lt;br>
+&lt;/p>
 $$\left\lbrace\begin{array}{lll}
-\min &amp;amp; C_{11} &amp;amp; \\
-\text{s.t.} &amp;amp; C_j\leqslant S_i &amp;amp; \forall j\in P_i, i=1,2,\ldots,11\\
-&amp;amp; y_{ij}+y_{ji}=1 &amp;amp; 1\leqslant i\neq j\leqslant 11\\
-&amp;amp; C_i\leqslant S_j+M(y_{ji}+2-x_i-x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11 \\
-&amp;amp; C_i\leqslant S_j+M(y_{ji}+x_i+x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11\\
-&amp;amp; x_{ij}\in {0,1} &amp;amp; 1\leqslant i\neq j\leqslant 11\\
-&amp;amp; y_{ij}\in {0,1} &amp;amp; 1\leqslant i\neq j\leqslant 11\\
-&amp;amp; C_i=S_i+x_i t_{i1}+(1-x_i)t_{i2} &amp;amp; i=1,\ldots,11\\
-&amp;amp; S_i\geqslant 0 &amp;amp; i=1,\ldots,11
-\end{array}\right.$$&lt;br>
+\min &amp;amp; C\_{11} &amp;amp; \\\\
+\text{s.t.} &amp;amp; C\_j\leqslant S\_i &amp;amp; \forall j\in P\_i, i=1,2,\ldots,11\\\\
+&amp;amp; y\_{ij}&amp;#43;y\_{ji}=1 &amp;amp; 1\leqslant i\neq j\leqslant 11\\\\
+&amp;amp; C\_i\leqslant S\_j&amp;#43;M(y\_{ji}&amp;#43;2-x\_i-x\_j) &amp;amp; 1\leqslant i\neq j \leqslant 11 \\\\
+&amp;amp; C\_i\leqslant S\_j&amp;#43;M(y\_{ji}&amp;#43;x\_i&amp;#43;x\_j) &amp;amp; 1\leqslant i\neq j \leqslant 11\\\\
+&amp;amp; x\_{ij}\in \{0,1\} &amp;amp; 1\leqslant i\neq j\leqslant 11\\\\
+&amp;amp; y\_{ij}\in \{0,1\} &amp;amp; 1\leqslant i\neq j\leqslant 11\\\\
+&amp;amp; C\_i=S\_i&amp;#43;x\_i t\_{i1}&amp;#43;(1-x\_i)t\_{i2} &amp;amp; i=1,\ldots,11\\\\
+&amp;amp; S\_i\geqslant 0 &amp;amp; i=1,\ldots,11
+\end{array}\right.$$&lt;p>&lt;br>
 下面是一组我得到的最优解, 并且分类讨论 A 一开始在 1,还是 2 可以证明该方案已经达到下界.&lt;br>
 先简要证明.&lt;br>
 如果 A 在工作站 1, 那么只考虑 A,B,C,F,G,J,K 这些任务, A 25h, B 最早 30h, C 最早 34h, F,G 最早 41h (F1G2), 再 J,K 依次完成最早要 47h.&lt;br>
@@ -747,37 +771,38 @@ $0\sim25h$ 工作站 1 完成 A, 工作站 2 完成 D,E,H.&lt;br>
 $25\sim30h$ 工作站 1 完成 B, 工作站 2 等待.&lt;br>
 $30\sim34h$ 工作站 1 完成 I, 工作站 2 完成 C.&lt;br>
 $34\sim41h$ 工作站 1 完成 F, 工作站 2 完成 G.&lt;br>
-接下来 6h 依次完成 J,K. 在 47h 时完成所有任务. 达到理论下界. 所以已经是最优解.&lt;/div>
+接下来 6h 依次完成 J,K. 在 47h 时完成所有任务. 达到理论下界. 所以已经是最优解.&lt;/p>
+&lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业251008</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="141">&lt;span>1.4.1&lt;/span>
  &lt;a href="#141" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>在二维空间 $\mathbb{R}^2$ 中, 对每一点 $z = (x, y)$, 令
+&lt;/p>
 $$
-|z|_1 = |x| + |y|; \quad |z|_2 = \sqrt{x^2 + y^2}; \quad
-|z|_3 = \max(|x|, |y|); \quad |z|_4 = (x^4 + y^4)^{\frac{1}{4}}.
-$$&lt;/p>
-&lt;p>(1) 求证 $|\cdot|_i$ ($i=1,2,3,4$) 都是 $\mathbb{R}^2$ 的范数.&lt;/p>
-&lt;p>(2) 画出 $(\mathbb{R}^2, |\cdot|_i)$ ($i=1,2,3,4$) 各空间中的单位球面图形.&lt;/p>
+	\|z\|\_1 = |x| &amp;#43; |y|; \quad \|z\|\_2 = \sqrt{x^2 &amp;#43; y^2}; \quad 
+	\|z\|\_3 = \max(|x|, |y|); \quad \|z\|\_4 = (x^4 &amp;#43; y^4)^{\frac{1}{4}}.
+$$&lt;p>(1) 求证 $\|\cdot\|\_i$ ($i=1,2,3,4$) 都是 $\mathbb{R}^2$ 的范数.&lt;/p>
+&lt;p>(2) 画出 $(\mathbb{R}^2, \|\cdot\|\_i)$ ($i=1,2,3,4$) 各空间中的单位球面图形.&lt;/p>
 &lt;p>(3) 在 $\mathbb{R}^2$ 中取定三点 $O = (0,0)$, $A = (1,0)$, $B = (0,1)$, 试在上述四种不同范数下求出 $\triangle OAB$ 三边的长度.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>(1) 正定性: 显然四者都是非负的, 并且当且仅当 $z=(0,0)$ 时为 0.&lt;/p>
-&lt;p>齐次性: $\Vert\alpha z\Vert_1=|\alpha x|+|\alpha y|=\alpha\Vert z_1\Vert$,&lt;br>
-$\Vert\alpha z\Vert_2=\sqrt{(\alpha x)^2+(\alpha y)^2}=\alpha\sqrt{x^2+y^2}=\alpha\Vert z\Vert_2$,&lt;br>
-$\Vert\alpha z\Vert_3=\max(|\alpha x|,|\alpha y|)=\alpha\max(|x|,|y|)=\alpha\Vert z\Vert_3$,&lt;br>
-$\Vert\alpha z\Vert_4=((\alpha x)^4+(\alpha y)^4)^{1/4}=\alpha (x^4+y^4)^{1/4}=\alpha\Vert z\Vert_4$.&lt;/p>
+&lt;p>齐次性: $\Vert\alpha z\Vert\_1=|\alpha x|&amp;#43;|\alpha y|=\alpha\Vert z\_1\Vert$,&lt;br>
+$\Vert\alpha z\Vert\_2=\sqrt{(\alpha x)^2&amp;#43;(\alpha y)^2}=\alpha\sqrt{x^2&amp;#43;y^2}=\alpha\Vert z\Vert\_2$,&lt;br>
+$\Vert\alpha z\Vert\_3=\max(|\alpha x|,|\alpha y|)=\alpha\max(|x|,|y|)=\alpha\Vert z\Vert\_3$,&lt;br>
+$\Vert\alpha z\Vert\_4=((\alpha x)^4&amp;#43;(\alpha y)^4)^{1/4}=\alpha (x^4&amp;#43;y^4)^{1/4}=\alpha\Vert z\Vert\_4$.&lt;/p>
 &lt;p>三角不等式:&lt;br>
-$\Vert z_1+z_2\Vert_1=|x_1+x_2|+|y_1+y_2|\leqslant |x_1|+|x_2|+|y_1|+|y_2|=\Vert z_1\Vert_1+\Vert z_2\Vert_1$,&lt;br>
-$\Vert z_1+z_2\Vert_2=\sqrt{(x_1+x_2)^2+(y_1+y_2)^2}\leqslant \sqrt{x_1^2+y_1^2}+\sqrt{x_2^2+y_2^2}=\Vert z_1\Vert_2+\Vert z_2\Vert_2$,&lt;br>
-$\Vert z_1+z_2\Vert_3=\max(|x_1+x_2|,|y_1+y_2|)\leqslant \max(|x_1|,|y_1|)+\max(|x_2|,|y_2|)=\Vert z_1\Vert_3+\Vert z_2\Vert_3$,&lt;br>
-$\Vert z_1+z_2\Vert_4=((x_1+x_2)^4+(y_1+y_2)^4)^{1/4}\leqslant (x_1^4+y_1^4)^{1/4}+(x_2^4+y_2^4)^{1/4}=\Vert z_1\Vert_4+\Vert z_2\Vert_4$.&lt;/p>
+$\Vert z\_1&amp;#43;z\_2\Vert\_1=|x\_1&amp;#43;x\_2|&amp;#43;|y\_1&amp;#43;y\_2|\leqslant |x\_1|&amp;#43;|x\_2|&amp;#43;|y\_1|&amp;#43;|y\_2|=\Vert z\_1\Vert\_1&amp;#43;\Vert z\_2\Vert\_1$,&lt;br>
+$\Vert z\_1&amp;#43;z\_2\Vert\_2=\sqrt{(x\_1&amp;#43;x\_2)^2&amp;#43;(y\_1&amp;#43;y\_2)^2}\leqslant \sqrt{x\_1^2&amp;#43;y\_1^2}&amp;#43;\sqrt{x\_2^2&amp;#43;y\_2^2}=\Vert z\_1\Vert\_2&amp;#43;\Vert z\_2\Vert\_2$,&lt;br>
+$\Vert z\_1&amp;#43;z\_2\Vert\_3=\max(|x\_1&amp;#43;x\_2|,|y\_1&amp;#43;y\_2|)\leqslant \max(|x\_1|,|y\_1|)&amp;#43;\max(|x\_2|,|y\_2|)=\Vert z\_1\Vert\_3&amp;#43;\Vert z\_2\Vert\_3$,&lt;br>
+$\Vert z\_1&amp;#43;z\_2\Vert\_4=((x\_1&amp;#43;x\_2)^4&amp;#43;(y\_1&amp;#43;y\_2)^4)^{1/4}\leqslant (x\_1^4&amp;#43;y\_1^4)^{1/4}&amp;#43;(x\_2^4&amp;#43;y\_2^4)^{1/4}=\Vert z\_1\Vert\_4&amp;#43;\Vert z\_2\Vert\_4$.&lt;/p>
 &lt;p>(2)&lt;br>
 &lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.4.1.png' alt="1.4.1 单位球面">&lt;/p>
 &lt;p>(3)&lt;br>
-$\Vert\cdot\Vert_1: 4$, $\Vert\cdot\Vert_2: 2+\sqrt{2}$, $\Vert\cdot\Vert_3: 3$, $\Vert\cdot\Vert_4: 2+\sqrt[4]{2}$.&lt;/p>
+$\Vert\cdot\Vert\_1: 4$, $\Vert\cdot\Vert\_2: 2&amp;#43;\sqrt{2}$, $\Vert\cdot\Vert\_3: 3$, $\Vert\cdot\Vert\_4: 2&amp;#43;\sqrt[4]{2}$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -785,21 +810,21 @@ $\Vert\cdot\Vert_1: 4$, $\Vert\cdot\Vert_2: 2+\sqrt{2}$, $\Vert\cdot\Vert_3: 3$,
  &lt;a href="#142" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $C(0,1]$ 表示 $(0,1]$ 上连续且有界的函数 $x(t)$ 全体. 对 $\forall x \in C(0,1]$, 令 $|x\Vert = \sup_{0 &amp;lt; t \leqslant 1} |x(t)|$. 求证:&lt;/p>
-&lt;p>(1) $|\cdot|$ 是 $C(0,1]$ 上的范数;&lt;/p>
+&lt;/h2>&lt;p>设 $C(0,1]$ 表示 $(0,1]$ 上连续且有界的函数 $x(t)$ 全体. 对 $\forall x \in C(0,1]$, 令 $\|x\Vert = \sup\_{0 &amp;lt; t \leqslant 1} |x(t)|$. 求证:&lt;/p>
+&lt;p>(1) $\|\cdot\|$ 是 $C(0,1]$ 上的范数;&lt;/p>
 &lt;p>(2) $l^\infty$ 与 $C(0,1]$ 的一个子空间是等距同构的.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>(1) 正定性显然.&lt;/p>
-&lt;p>齐次性 $\Vert\alpha x(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|\alpha x(t)|=\alpha\sup_{0&amp;lt;t\leqslant 1}|x(t)|=\alpha\Vert x(t)\Vert$.&lt;/p>
+&lt;p>齐次性 $\Vert\alpha x(t)\Vert=\sup\_{0&amp;lt;t\leqslant 1}|\alpha x(t)|=\alpha\sup\_{0&amp;lt;t\leqslant 1}|x(t)|=\alpha\Vert x(t)\Vert$.&lt;/p>
 &lt;p>三角不等式:&lt;br>
-$\Vert x_1(t)+x_2(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|x_1(t)+x_2(t)|\leqslant \sup|x_1(t)|+\sup|x_2(t)|=\Vert x_1(t)\Vert+\Vert x_2(t)\Vert$.&lt;/p>
-&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall \lbrace a_n\rbrace \in l^\infty$,&lt;br>
-$T(\lbrace a_n\rbrace )$ 表示 $x(\frac1n)=a_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n+1})$ 两点的连续函数.&lt;/p>
+$\Vert x\_1(t)&amp;#43;x\_2(t)\Vert=\sup\_{0&amp;lt;t\leqslant 1}|x\_1(t)&amp;#43;x\_2(t)|\leqslant \sup|x\_1(t)|&amp;#43;\sup|x\_2(t)|=\Vert x\_1(t)\Vert&amp;#43;\Vert x\_2(t)\Vert$.&lt;/p>
+&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall \lbrace a\_n\rbrace \in l^\infty$,&lt;br>
+$T(\lbrace a\_n\rbrace )$ 表示 $x(\frac1n)=a\_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n&amp;#43;1})$ 两点的连续函数.&lt;/p>
 &lt;p>显然这是个单射且像集是 $C(0,1]$ 的子集. 并且该映射是线性映射.&lt;/p>
 &lt;p>下面证其还保范数: 对折线段, 其最大值取在端点处, 故&lt;br>
-$\Vert T(\lbrace a_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert\lbrace a_n\rbrace \Vert$.&lt;/p>
+$\Vert T(\lbrace a\_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a\_n=\Vert\lbrace a\_n\rbrace \Vert$.&lt;/p>
 &lt;p>所以 $l^\infty$ 与 $C(0,1]$ 的一个子空间 $T(l^\infty)$ 等距同构.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -809,28 +834,28 @@ $\Vert T(\lbrace a_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert\lbrace a_n\r
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>在 $C^1[a,b]$ 中, 令&lt;br>
+&lt;/p>
 $$
-|f|_1 = \left( \int_a^b (|f|^2 + |f&amp;rsquo;|^2) \text{d}x \right)^{\frac{1}{2}} \quad (\forall f \in C^1[a,b]),
-$$&lt;/p>
-&lt;p>(1) 求证 $|\cdot|_1$ 是 $C^1[a,b]$ 上的范数.&lt;br>
-(2) 问 $(C^1[a,b], |\cdot|_1)$ 是否完备?&lt;/p>
+\|f\|\_1 = \left( \int\_a^b (|f|^2 &amp;#43; |f&amp;#39;|^2) \text{d}x \right)^{\frac{1}{2}} \quad (\forall f \in C^1[a,b]),
+$$&lt;p>(1) 求证 $\|\cdot\|\_1$ 是 $C^1[a,b]$ 上的范数.&lt;br>
+(2) 问 $(C^1[a,b], \|\cdot\|\_1)$ 是否完备?&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>(1) 正定性由连续函数性质可知. 齐次性由积分线性性可知.&lt;/p>
 &lt;p>三角不等式: 用柯西施瓦茨不等式可得&lt;br>
-$\int_a^b |fg|+|f&amp;rsquo;g&amp;rsquo;|\text{d}x\leqslant \Vert f\Vert_1\Vert g\Vert_1$.&lt;/p>
+$\int\_a^b |fg|&amp;#43;|f&amp;#39;g&amp;#39;|\text{d}x\leqslant \Vert f\Vert\_1\Vert g\Vert\_1$.&lt;/p>
 &lt;p>(2) 任取 $c\in (a,b)$, 对 $f(x)=|x-c|\notin C^1[a,b]$,&lt;br>
-但函数列 $f_n(x)=\sqrt{(x-c)^2+\frac 1n}$.&lt;/p>
-&lt;p>有 $|f_n(x)-f(x)|\leqslant\sqrt{\frac1n}$, 故 $\int_a^b |f_n-f|^2\text{d}x\leqslant (b-a)\frac1n$.&lt;/p>
-&lt;p>考虑 $sgn_c(x)=\left\lbrace\begin{array}{ll}
--1,&amp;amp; x&amp;lt;c\\
-0, &amp;amp; x=c\\
-1, &amp;amp; x&amp;gt;c
-\end{array}\right.$&lt;/p>
-&lt;p>有 $|f_n&amp;rsquo;(x)-sgn_c(x)|=|(x-c)|(\frac{1}{|x-c|}-\frac{1}{\sqrt{(x-c)^2+\frac 1 n}})$.&lt;/p>
-&lt;p>从而 $\Vert f_n-f\Vert=O(\frac{1}{\sqrt n})\to 0$,&lt;br>
-即 $\lbrace f_n\rbrace $ 收敛至 $f$, 但 $f\notin C^1[a,b]$, 故不完备.&lt;/p>
+但函数列 $f\_n(x)=\sqrt{(x-c)^2&amp;#43;\frac 1n}$.&lt;/p>
+&lt;p>有 $|f\_n(x)-f(x)|\leqslant\sqrt{\frac1n}$, 故 $\int\_a^b |f\_n-f|^2\text{d}x\leqslant (b-a)\frac1n$.&lt;/p>
+&lt;p>考虑 $sgn\_c(x)=\left\lbrace\begin{array}{ll}
+		-1,&amp;amp; x&amp;lt;c\\\\
+		0, &amp;amp; x=c\\\\
+		1, &amp;amp; x&amp;gt;c
+	\end{array}\right.$&lt;/p>
+&lt;p>有 $|f\_n&amp;#39;(x)-sgn\_c(x)|=|(x-c)|(\frac{1}{|x-c|}-\frac{1}{\sqrt{(x-c)^2&amp;#43;\frac 1 n}})$.&lt;/p>
+&lt;p>从而 $\Vert f\_n-f\Vert=O(\frac{1}{\sqrt n})\to 0$,&lt;br>
+即 $\lbrace f\_n\rbrace $ 收敛至 $f$, 但 $f\notin C^1[a,b]$, 故不完备.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -839,16 +864,16 @@ $\int_a^b |fg|+|f&amp;rsquo;g&amp;rsquo;|\text{d}x\leqslant \Vert f\Vert_1\Vert 
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>在 $C[0,1]$ 中, 对每一个 $f \in C[0,1]$, 令&lt;br>
+&lt;/p>
 $$
-|f|_1 = \left( \int_0^1 |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}, \quad
-|f|_2 = \left( \int_0^1 (1+x) |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
-$$&lt;/p>
-&lt;p>求证: $\Vert\cdot\Vert_1$ 和 $\Vert\cdot\Vert_2$ 是 $C[0,1]$ 中的两个等价范数.&lt;/p>
+\|f\|\_1 = \left( \int\_0^1 |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}, \quad
+\|f\|\_2 = \left( \int\_0^1 (1&amp;#43;x) |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
+$$&lt;p>求证: $\Vert\cdot\Vert\_1$ 和 $\Vert\cdot\Vert\_2$ 是 $C[0,1]$ 中的两个等价范数.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">由于 $1\leqslant (1+x)\leqslant 2$, 所以&lt;br>
-$\Vert f\Vert_1\leqslant\Vert f\Vert_2\leqslant\sqrt{2}\Vert f\Vert_1$.&lt;/div>
+ &lt;div class="admonition-content">由于 $1\leqslant (1&amp;#43;x)\leqslant 2$, 所以&lt;br>
+$\Vert f\Vert\_1\leqslant\Vert f\Vert\_2\leqslant\sqrt{2}\Vert f\Vert\_1$.&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="145">&lt;span>1.4.5&lt;/span>
@@ -856,31 +881,31 @@ $\Vert f\Vert_1\leqslant\Vert f\Vert_2\leqslant\sqrt{2}\Vert f\Vert_1$.&lt;/div>
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $BC[0,\infty)$ 表示 $[0,\infty)$ 上连续且有界的函数 $f(x)$ 全体, 对每个 $f \in BC[0,\infty)$ 及 $a &amp;gt; 0$, 定义
+&lt;/p>
 $$
-|f|_a = \left( \int_0^\infty e^{-ax} |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
-$$&lt;/p>
-&lt;p>(1) 求证 $|\cdot|_a$ 是 $BC[0,\infty)$ 上的范数.&lt;br>
-(2) 若 $a, b &amp;gt; 0$, $a \neq b$, 求证 $|\cdot|_a$ 与 $|\cdot|_b$ 不等价.&lt;/p>
+\|f\|\_a = \left( \int\_0^\infty e^{-ax} |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
+$$&lt;p>(1) 求证 $\|\cdot\|\_a$ 是 $BC[0,\infty)$ 上的范数.&lt;br>
+(2) 若 $a, b &amp;gt; 0$, $a \neq b$, 求证 $\|\cdot\|\_a$ 与 $\|\cdot\|\_b$ 不等价.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>(1) 正定性: 若 $f\neq 0$, 则 $\Vert f\Vert_a\neq 0$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>(1) 正定性: 若 $f\neq 0$, 则 $\Vert f\Vert\_a\neq 0$.&lt;/p>
 &lt;p>齐次性:&lt;br>
-$\Vert\alpha f\Vert=\left(\displaystyle\int_0^\infty e^{-ax}|\alpha f(x)|^2\text{d}x\right)^{1/2}
-=\alpha\Vert f\Vert_a$.&lt;/p>
+$\Vert\alpha f\Vert=\left(\displaystyle\int\_0^\infty e^{-ax}|\alpha f(x)|^2\text{d}x\right)^{1/2}
+=\alpha\Vert f\Vert\_a$.&lt;/p>
 &lt;p>三角不等式:&lt;br>
 由柯西-施瓦茨不等式,
-$\int_0^\infty e^{-ax}|f+g|^2\text{d}x\leqslant(\Vert f\Vert_a+\Vert g\Vert_a)^2$.&lt;/p>
+$\int\_0^\infty e^{-ax}|f&amp;#43;g|^2\text{d}x\leqslant(\Vert f\Vert\_a&amp;#43;\Vert g\Vert\_a)^2$.&lt;/p>
 &lt;p>(2) 不妨设 $a&amp;gt;b&amp;gt;0$, 考虑函数列
-$f_n(x)=\begin{cases}
-0,&amp;amp;x\in[0,n-\frac1b]\\
-be^{bn}(x-n+\frac1b),&amp;amp;x\in(n-\frac1b,n]\\
-e^{bx},&amp;amp;x\in(n,n+1]\\
-e^{b(n+1)}-(x-n-1)be^{b(n+1)},&amp;amp;x\in(n+1,n+1+\frac1b)\\
-0,&amp;amp;x\geqslant n+1+\frac1b
+$f\_n(x)=\begin{cases}
+0,&amp;amp;x\in[0,n-\frac1b]\\\\
+be^{bn}(x-n&amp;#43;\frac1b),&amp;amp;x\in(n-\frac1b,n]\\\\
+e^{bx},&amp;amp;x\in(n,n&amp;#43;1]\\\\
+e^{b(n&amp;#43;1)}-(x-n-1)be^{b(n&amp;#43;1)},&amp;amp;x\in(n&amp;#43;1,n&amp;#43;1&amp;#43;\frac1b)\\\\
+0,&amp;amp;x\geqslant n&amp;#43;1&amp;#43;\frac1b
 \end{cases}$&lt;/p>
-&lt;p>在 $\Vert\cdot\Vert_a$ 中, $\Vert f_n\Vert_a\leqslant \displaystyle\int_{n-\frac1b}^{n+1+\frac1b}e^{(b-a)x}\text{d}x\leqslant \frac{1}{a-b}e^{(b-a)(n-\frac1b)}\to0$.&lt;/p>
-&lt;p>但在 $\Vert\cdot\Vert_b$ 中, $\Vert f_n\Vert_b\geqslant \displaystyle\int_n^{n+1}e^{bx-bx}\text{d}x=1$,&lt;br>
+&lt;p>在 $\Vert\cdot\Vert\_a$ 中, $\Vert f\_n\Vert\_a\leqslant \displaystyle\int\_{n-\frac1b}^{n&amp;#43;1&amp;#43;\frac1b}e^{(b-a)x}\text{d}x\leqslant \frac{1}{a-b}e^{(b-a)(n-\frac1b)}\to0$.&lt;/p>
+&lt;p>但在 $\Vert\cdot\Vert\_b$ 中, $\Vert f\_n\Vert\_b\geqslant \displaystyle\int\_n^{n&amp;#43;1}e^{bx-bx}\text{d}x=1$,&lt;br>
 从而两个范数不等价.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -889,34 +914,37 @@ e^{b(n+1)}-(x-n-1)be^{b(n+1)},&amp;amp;x\in(n+1,n+1+\frac1b)\\
  &lt;a href="#148" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>记 $[a,b]$ 上次数不超过 $n$ 的多项式全体为 $\mathbb{P}_n$. 求证:
-$\forall f(x) \in C[a,b], \exists P_0(x) \in \mathbb{P}_n$, 使得
+&lt;/h2>&lt;p>记 $[a,b]$ 上次数不超过 $n$ 的多项式全体为 $\mathbb{P}\_n$. 求证:
+$\forall f(x) \in C[a,b], \exists P\_0(x) \in \mathbb{P}\_n$, 使得
+&lt;/p>
 $$
-\max_{a \leqslant x \leqslant b} |f(x) - P_0(x)| = \min_{P \in \mathbb{P}_n} \max_{a \leqslant x \leqslant b} |f(x) - P(x)|.
-$$
-即 $P_0(x)$ 是对 $f(x)$ 的最佳一致逼近.&lt;/p>
+\max\_{a \leqslant x \leqslant b} |f(x) - P\_0(x)| = \min\_{P \in \mathbb{P}\_n} \max\_{a \leqslant x \leqslant b} |f(x) - P(x)|.
+$$&lt;p>
+即 $P\_0(x)$ 是对 $f(x)$ 的最佳一致逼近.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">由于 $C[a,b]$ 关于范数 $\Vert f\Vert=\max_{a\leqslant x\leqslant b}|f(x)|$ 构成 Banach 空间,&lt;br>
-$\mathbb P_n$ 是有限维子空间, 故根据最佳逼近元定理,&lt;br>
-存在唯一的 $P_0(x)\in\mathbb P_n$ 使得&lt;br>
-$\Vert P_0-f\Vert=\rho(f,\mathbb P_n)$.&lt;/div>
+ &lt;div class="admonition-content">由于 $C[a,b]$ 关于范数 $\Vert f\Vert=\max\_{a\leqslant x\leqslant b}|f(x)|$ 构成 Banach 空间,&lt;br>
+$\mathbb P\_n$ 是有限维子空间, 故根据最佳逼近元定理,&lt;br>
+存在唯一的 $P\_0(x)\in\mathbb P\_n$ 使得&lt;br>
+$\Vert P\_0-f\Vert=\rho(f,\mathbb P\_n)$.&lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业250929</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250929/</link><pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250929/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="135">&lt;span>1.3.5&lt;/span>
  &lt;a href="#135" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $M$ 是 $C[a,b]$ 中的有界集, 求证: 集合 $$\lbrace F(x)=\int_a^x f(t) \mathrm{d} t | f\in M\rbrace $$ 是列紧集.&lt;/p>
+&lt;/h2>&lt;p>设 $M$ 是 $C[a,b]$ 中的有界集, 求证: 集合 &lt;/p>
+$$\lbrace F(x)=\int\_a^x f(t) \mathrm{d} t | f\in M\rbrace $$&lt;p> 是列紧集.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>根据微积分基本定理 $F(x)$ 也是 $[a,b]$ 上的连续函数。&lt;/p>
 &lt;p>所以考虑使用 Arzela-Ascoli 定理. 即需要证明 $F$ 一致有界且等度连续。&lt;/p>
 &lt;p>&amp;ldquo;一致有界&amp;rdquo;: 根据 $M$ 的有界性, 存在 $C&amp;gt;0$ 使得 $|f(x)|\leqslant C,\forall f\in M, x\in[a,b]$. 所以有
-$$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqslant (b-a)C$$
+&lt;/p>
+$$|F(x)|=|\int\_a^x f(t) \mathrm{d} t|\leqslant\int\_a^x|f(t)| \mathrm{d} t\leqslant (b-a)C$$&lt;p>
 所以 $F(x)$ 一致有界。&lt;/p>
-&lt;p>&amp;ldquo;等度连续&amp;rdquo;: 对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x_1-x_2|&amp;lt;\delta$ 就有 $|F(x_1)-F(x_2)|&amp;lt;C|x_1-x_2|&amp;lt;\varepsilon,\forall F$. 从而也是等度连续。&lt;/p>
+&lt;p>&amp;ldquo;等度连续&amp;rdquo;: 对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x\_1-x\_2|&amp;lt;\delta$ 就有 $|F(x\_1)-F(x\_2)|&amp;lt;C|x\_1-x\_2|&amp;lt;\varepsilon,\forall F$. 从而也是等度连续。&lt;/p>
 &lt;p>综上由 AA 定理可知该集合是列紧集。&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -925,12 +953,12 @@ $$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqsla
  &lt;a href="#136" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $E=\lbrace \sin nt\rbrace _{n=1}^\infty$, 求证: $E$ 在 $C[0,\pi]$ 中不是列紧的.&lt;/p>
+&lt;/h2>&lt;p>设 $E=\lbrace \sin nt\rbrace \_{n=1}^\infty$, 求证: $E$ 在 $C[0,\pi]$ 中不是列紧的.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>根据 AA 定理, 只需证 $E$ 不满足等度连续即可。&lt;/p>
-&lt;p>$\forall \delta&amp;gt;0$, 存在 $k\in\mathbb{N}$ 使得 $\frac \pi{2^k}&amp;lt;\delta$, 从而对于 $x_1=0,x_2=\frac \pi {2^k}, f(t)=\sin 2^{k-1}t$, 有 $|x_1-x_2|&amp;lt;\delta$ 但 $|f(x_2)-f(x_1)|=\sin\frac\pi{2}=1$ 所以不可能等度连续. 即 $E$ 不是列紧的.&lt;/p>
+&lt;p>$\forall \delta&amp;gt;0$, 存在 $k\in\mathbb{N}$ 使得 $\frac \pi{2^k}&amp;lt;\delta$, 从而对于 $x\_1=0,x\_2=\frac \pi {2^k}, f(t)=\sin 2^{k-1}t$, 有 $|x\_1-x\_2|&amp;lt;\delta$ 但 $|f(x\_2)-f(x\_1)|=\sin\frac\pi{2}=1$ 所以不可能等度连续. 即 $E$ 不是列紧的.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -938,20 +966,21 @@ $$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqsla
  &lt;a href="#137" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>求证: $S$ 空间的子集 $A$ 列紧的充要条件是: $\forall n\in \mathbb{N},\exists C_n&amp;gt;0$, 使得对 $\forall x=(\xi_1,\xi_2,\cdots,\xi_n,\cdots)\in A$, 有 $|\xi_n|\leqslant C_n(n=1,2,\cdot)$.&lt;/p>
-&lt;p>$S$ 空间: 在数列上定义距离 $\rho(x,y)=\sum\limits_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}$.&lt;/p>
+&lt;/h2>&lt;p>求证: $S$ 空间的子集 $A$ 列紧的充要条件是: $\forall n\in \mathbb{N},\exists C\_n&amp;gt;0$, 使得对 $\forall x=(\xi\_1,\xi\_2,\cdots,\xi\_n,\cdots)\in A$, 有 $|\xi\_n|\leqslant C\_n(n=1,2,\cdot)$.&lt;/p>
+&lt;p>$S$ 空间: 在数列上定义距离 $\rho(x,y)=\sum\limits\_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\eta\_k|}$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>&amp;ldquo;$\Rightarrow$&amp;rdquo;: 反设条件不成立, 即 $\exists n\in\mathbb{N}$, 不存在 $C_n&amp;gt;0$ 使得 $\xi_n$ 有界. 也就是说第 $n$ 个分量无界. 那么就可以取一列 $\lbrace x^{(m)}\rbrace $ 满足 $\xi_n^{(m)}&amp;gt;\xi_n^{(m-1)}+1$, 从而就有
-$$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(m_2)}|}{1+|\xi_n^{(m)}-\xi_n^{(m_2)}|}\geqslant\frac{1}{2^{n+1}}.$$
+ &lt;div class="admonition-content">&lt;p>&amp;ldquo;$\Rightarrow$&amp;rdquo;: 反设条件不成立, 即 $\exists n\in\mathbb{N}$, 不存在 $C\_n&amp;gt;0$ 使得 $\xi\_n$ 有界. 也就是说第 $n$ 个分量无界. 那么就可以取一列 $\lbrace x^{(m)}\rbrace $ 满足 $\xi\_n^{(m)}&amp;gt;\xi\_n^{(m-1)}&amp;#43;1$, 从而就有
+&lt;/p>
+$$\rho(x^{(m)},x^{(m\_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi\_n^{(m)}-\xi\_n^{(m\_2)}|}{1&amp;#43;|\xi\_n^{(m)}-\xi\_n^{(m\_2)}|}\geqslant\frac{1}{2^{n&amp;#43;1}}.$$&lt;p>
 所以不存在收敛子列, 与 $A$ 列紧矛盾. 故该条件成立。&lt;/p>
 &lt;p>&amp;ldquo;$\Leftarrow$&amp;rdquo;: 由于 $S$ 空间完备, 故考虑证明在该条件下 $A$ 是完全有界集. 即证明存在有穷 $\varepsilon$-网。&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 取 $N=\lceil -\log_2 \varepsilon \rceil + 1$, 那么对于度量中 $\sum\limits_{k=N+1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}&amp;lt;\sum\limits_{k=N+1}^\infty\frac{1}{2^k}&amp;lt;\frac{\varepsilon}{2}$。&lt;/p>
-&lt;p>而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi_1,\xi_2,\ldots,\xi_N) | \exists x\in A, s.t. x_i=\xi_i\ i=1,2,\ldots,N\rbrace $。&lt;/p>
-&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;rsquo;=\lbrace (\xi_1,\xi_2,\ldots,\xi_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D&amp;rsquo;$, 使得 $(\sum\limits_{i=1}^N |\xi_i-\eta_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi_i-\eta_i|&amp;lt;\varepsilon/2$。&lt;/p>
-&lt;p>所以 $\rho(x,y)=\sum\limits_{k=1}^N+\sum\limits_{k=N+1}^\infty&amp;lt;\frac\varepsilon 2+\frac\varepsilon 2=\varepsilon$。&lt;/p>
-&lt;p>故 $D&amp;rsquo;$ 就是 $A$ 的有穷 $\varepsilon$-网. 从而 $A$ 是完全有界集, 进而是列紧集.&lt;/p>
+&lt;p>$\forall \varepsilon&amp;gt;0$, 取 $N=\lceil -\log\_2 \varepsilon \rceil &amp;#43; 1$, 那么对于度量中 $\sum\limits\_{k=N&amp;#43;1}^\infty \frac{1}{2^k}\cdot\frac{|\xi\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\eta\_k|}&amp;lt;\sum\limits\_{k=N&amp;#43;1}^\infty\frac{1}{2^k}&amp;lt;\frac{\varepsilon}{2}$。&lt;/p>
+&lt;p>而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi\_1,\xi\_2,\ldots,\xi\_N) | \exists x\in A, s.t. x\_i=\xi\_i\ i=1,2,\ldots,N\rbrace $。&lt;/p>
+&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;#39;=\lbrace (\xi\_1,\xi\_2,\ldots,\xi\_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D&amp;#39;$, 使得 $(\sum\limits\_{i=1}^N |\xi\_i-\eta\_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi\_i-\eta\_i|&amp;lt;\varepsilon/2$。&lt;/p>
+&lt;p>所以 $\rho(x,y)=\sum\limits\_{k=1}^N&amp;#43;\sum\limits\_{k=N&amp;#43;1}^\infty&amp;lt;\frac\varepsilon 2&amp;#43;\frac\varepsilon 2=\varepsilon$。&lt;/p>
+&lt;p>故 $D&amp;#39;$ 就是 $A$ 的有穷 $\varepsilon$-网. 从而 $A$ 是完全有界集, 进而是列紧集.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -959,19 +988,20 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
  &lt;a href="#138" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $M$ 是 $\mathscr X$ 中的列紧集, 映射 $f:\mathscr X\to M$ 满足 $$\rho(f(x_1),f(x_2))&amp;lt;\rho(x_1,x_2),\quad (\forall x_1,x_2\in \mathscr X,x_1\neq x_2)$$ 求证: $f$ 在 $\mathscr X$ 中存在唯一不动点.&lt;/p>
+&lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $M$ 是 $\mathscr X$ 中的列紧集, 映射 $f:\mathscr X\to M$ 满足 &lt;/p>
+$$\rho(f(x\_1),f(x\_2))&amp;lt;\rho(x\_1,x\_2),\quad (\forall x\_1,x\_2\in \mathscr X,x\_1\neq x\_2)$$&lt;p> 求证: $f$ 在 $\mathscr X$ 中存在唯一不动点.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">记 $d=\inf\lbrace \rho(x,f(x))|x\in M\rbrace $.
 &lt;br>
-由下确界的定义, 存在点列 $\lbrace x_n\rbrace $ 满足 $\rho(x_n,f(x_n))&amp;lt;d+\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x_{n_k}\rbrace $ 且滿足 $\rho(x_{n_k},f(x_{n_k}))&amp;lt;d+\frac 1{n_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
+由下确界的定义, 存在点列 $\lbrace x\_n\rbrace $ 满足 $\rho(x\_n,f(x\_n))&amp;lt;d&amp;#43;\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x\_{n\_k}\rbrace $ 且滿足 $\rho(x\_{n\_k},f(x\_{n\_k}))&amp;lt;d&amp;#43;\frac 1{n\_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
 &lt;br>
 如果 $d\neq 0$, 即 $x\neq f(x)$, 则 $\rho(f(x),f(f(x)))&amp;lt;\rho(x,f(x))=d$, 则与下确界矛盾. 所以 $d=0$.
 &lt;br>
 于是 $x=f(x)$, 是 $\mathscr X$ 中的不动点.
 &lt;br>
-如果不动点不唯一, 那么 $\rho(x_1,x_2)=\rho(f(x_1),f(x_2))&amp;lt;\rho(x_1,x_2)$ 矛盾.
+如果不动点不唯一, 那么 $\rho(x\_1,x\_2)=\rho(f(x\_1),f(x\_2))&amp;lt;\rho(x\_1,x\_2)$ 矛盾.
 &lt;br>
 所以 $f$ 在 $\mathscr X$ 上存在唯一不动点.&lt;/div>
  &lt;/div>
@@ -980,13 +1010,14 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
  &lt;a href="#139" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $(M,\rho)$ 是一个紧度量空间, 又 $E\subset C(M)$, $E$ 中的函数一致有界并满足下列 Holder 条件: $$|x(t_1)-x(t_2)|\leqslant C\rho(t_1,t_2)^\alpha\quad (\forall x\in E, \forall t_1,t_2\in M),$$ 其中 $0&amp;lt;\alpha\leqslant 1, C&amp;gt;0$. 求证: $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
+&lt;/h2>&lt;p>设 $(M,\rho)$ 是一个紧度量空间, 又 $E\subset C(M)$, $E$ 中的函数一致有界并满足下列 Holder 条件: &lt;/p>
+$$|x(t\_1)-x(t\_2)|\leqslant C\rho(t\_1,t\_2)^\alpha\quad (\forall x\in E, \forall t\_1,t\_2\in M),$$&lt;p> 其中 $0&amp;lt;\alpha\leqslant 1, C&amp;gt;0$. 求证: $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>根据 AA 定理, 只需证 $E$ 中函数等度连续。&lt;/p>
 &lt;p>$\forall \varepsilon&amp;gt;0$, 取 $\delta=\left(\frac{\varepsilon}{C}\right)^{1/\alpha}$.&lt;/p>
-&lt;p>那么有 $\forall \rho(t_1,t_2)&amp;lt;\delta, x\in E$ 有 $|x(t_1)-x(t_2)|\leqslant C\rho(t_1,t_2)^\alpha&amp;lt;\varepsilon$. 从而 $E$ 中函数等度连续.&lt;/p>
+&lt;p>那么有 $\forall \rho(t\_1,t\_2)&amp;lt;\delta, x\in E$ 有 $|x(t\_1)-x(t\_2)|\leqslant C\rho(t\_1,t\_2)^\alpha&amp;lt;\varepsilon$. 从而 $E$ 中函数等度连续.&lt;/p>
 &lt;p>从而根据 AA 定理, $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1003,35 +1034,34 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>$$
+ &lt;div class="admonition-content">$$
 \begin{aligned}
-\min \quad &amp;amp; -10x_{1} - 12x_{2} - 12x_{3} \\
-\text{s.t.} \quad
-&amp;amp; x_{1} + 2x_{2} + 2x_{3} \leq 20, \\
-&amp;amp; 2x_{1} + x_{2} + 2x_{3} \leq 20, \\
-&amp;amp; 2x_{1} + 2x_{2} + x_{3} \leq 20, \\
-&amp;amp; x_{1}, x_{2}, x_{3} \geq 0.
+	\min \quad &amp;amp; -10x\_{1} - 12x\_{2} - 12x\_{3} \\\\
+	\text{s.t.} \quad
+	&amp;amp; x\_{1} &amp;#43; 2x\_{2} &amp;#43; 2x\_{3} \leq 20, \\\\
+	&amp;amp; 2x\_{1} &amp;#43; x\_{2} &amp;#43; 2x\_{3} \leq 20, \\\\
+	&amp;amp; 2x\_{1} &amp;#43; 2x\_{2} &amp;#43; x\_{3} \leq 20, \\\\
+	&amp;amp; x\_{1}, x\_{2}, x\_{3} \geq 0.
 \end{aligned}
 \overset{\text{标准形式}}{\Longrightarrow}
 \begin{aligned}
-\min\ f &amp;amp;= -10x_1 - 12x_2 - 12x_3 \\
-\text{s.t.}\quad
-&amp;amp; x_1 + 2x_2 + 2x_3 + x_4 = 20,\\
-&amp;amp; 2x_1 + x_2 + 2x_3 + x_5 = 20,\\
-&amp;amp; 2x_1 + 2x_2 + x_3 + x_6 = 20,\\
-&amp;amp; x_1,x_2,x_3,x_4,x_5,x_6 \ge 0.
+	\min\ f &amp;amp;= -10x\_1 - 12x\_2 - 12x\_3 \\\\
+	\text{s.t.}\quad
+	&amp;amp; x\_1 &amp;#43; 2x\_2 &amp;#43; 2x\_3 &amp;#43; x\_4 = 20,\\\\
+	&amp;amp; 2x\_1 &amp;#43; x\_2 &amp;#43; 2x\_3 &amp;#43; x\_5 = 20,\\\\
+	&amp;amp; 2x\_1 &amp;#43; 2x\_2 &amp;#43; x\_3 &amp;#43; x\_6 = 20,\\\\
+	&amp;amp; x\_1,x\_2,x\_3,x\_4,x\_5,x\_6 \ge 0.
 \end{aligned}
-$$&lt;/p>
-&lt;table>
+$$&lt;table>
  &lt;thead>
  &lt;tr>
  &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
+ &lt;th>$x\_1$&lt;/th>
+ &lt;th>$x\_2$&lt;/th>
+ &lt;th>$x\_3$&lt;/th>
+ &lt;th>$x\_4$&lt;/th>
+ &lt;th>$x\_5$&lt;/th>
+ &lt;th>$x\_6$&lt;/th>
  &lt;th>右端项&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -1047,7 +1077,7 @@ $$&lt;/p>
  &lt;td>$0$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_4$&lt;/td>
+ &lt;td>$x\_4$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$2$&lt;/td>
  &lt;td>$2$&lt;/td>
@@ -1057,7 +1087,7 @@ $$&lt;/p>
  &lt;td>$20$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_5$&lt;/td>
+ &lt;td>$x\_5$&lt;/td>
  &lt;td>$2$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$2$&lt;/td>
@@ -1067,7 +1097,7 @@ $$&lt;/p>
  &lt;td>$20$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_6$&lt;/td>
+ &lt;td>$x\_6$&lt;/td>
  &lt;td>$2$&lt;/td>
  &lt;td>$2$&lt;/td>
  &lt;td>$1$&lt;/td>
@@ -1083,12 +1113,12 @@ $$&lt;/p>
  &lt;thead>
  &lt;tr>
  &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
+ &lt;th>$x\_1$&lt;/th>
+ &lt;th>$x\_2$&lt;/th>
+ &lt;th>$x\_3$&lt;/th>
+ &lt;th>$x\_4$&lt;/th>
+ &lt;th>$x\_5$&lt;/th>
+ &lt;th>$x\_6$&lt;/th>
  &lt;th>右端项&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -1104,7 +1134,7 @@ $$&lt;/p>
  &lt;td>$120$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_2$&lt;/td>
+ &lt;td>$x\_2$&lt;/td>
  &lt;td>$\frac12$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$1$&lt;/td>
@@ -1114,7 +1144,7 @@ $$&lt;/p>
  &lt;td>$10$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_5$&lt;/td>
+ &lt;td>$x\_5$&lt;/td>
  &lt;td>$\frac32$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$1$&lt;/td>
@@ -1124,7 +1154,7 @@ $$&lt;/p>
  &lt;td>$10$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_6$&lt;/td>
+ &lt;td>$x\_6$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$-1$&lt;/td>
@@ -1135,17 +1165,17 @@ $$&lt;/p>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;em>第一次迭代 (入 $x_2$, 出 $x_4$)&lt;/em>&lt;/p>
+&lt;p>&lt;em>第一次迭代 (入 $x\_2$, 出 $x\_4$)&lt;/em>&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
  &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
+ &lt;th>$x\_1$&lt;/th>
+ &lt;th>$x\_2$&lt;/th>
+ &lt;th>$x\_3$&lt;/th>
+ &lt;th>$x\_4$&lt;/th>
+ &lt;th>$x\_5$&lt;/th>
+ &lt;th>$x\_6$&lt;/th>
  &lt;th>右端项&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -1161,7 +1191,7 @@ $$&lt;/p>
  &lt;td>$120$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_2$&lt;/td>
+ &lt;td>$x\_2$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$\frac32$&lt;/td>
@@ -1171,7 +1201,7 @@ $$&lt;/p>
  &lt;td>$10$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_5$&lt;/td>
+ &lt;td>$x\_5$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$\frac52$&lt;/td>
@@ -1181,7 +1211,7 @@ $$&lt;/p>
  &lt;td>$10$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_1$&lt;/td>
+ &lt;td>$x\_1$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$-1$&lt;/td>
@@ -1192,17 +1222,17 @@ $$&lt;/p>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;em>第二次迭代 (入 $x_1$, 出 $x_4$)&lt;/em>&lt;/p>
+&lt;p>&lt;em>第二次迭代 (入 $x\_1$, 出 $x\_4$)&lt;/em>&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
  &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
+ &lt;th>$x\_1$&lt;/th>
+ &lt;th>$x\_2$&lt;/th>
+ &lt;th>$x\_3$&lt;/th>
+ &lt;th>$x\_4$&lt;/th>
+ &lt;th>$x\_5$&lt;/th>
+ &lt;th>$x\_6$&lt;/th>
  &lt;th>右端项&lt;/th>
  &lt;/tr>
  &lt;/thead>
@@ -1218,7 +1248,7 @@ $$&lt;/p>
  &lt;td>$136$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_2$&lt;/td>
+ &lt;td>$x\_2$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$0$&lt;/td>
@@ -1228,7 +1258,7 @@ $$&lt;/p>
  &lt;td>$4$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_3$&lt;/td>
+ &lt;td>$x\_3$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$1$&lt;/td>
@@ -1238,7 +1268,7 @@ $$&lt;/p>
  &lt;td>$4$&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>$x_1$&lt;/td>
+ &lt;td>$x\_1$&lt;/td>
  &lt;td>$1$&lt;/td>
  &lt;td>$0$&lt;/td>
  &lt;td>$0$&lt;/td>
@@ -1249,7 +1279,7 @@ $$&lt;/p>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;em>第三次迭代 (入 $x_3$, 出 $x_5$)&lt;/em>&lt;/p>
+&lt;p>&lt;em>第三次迭代 (入 $x\_3$, 出 $x\_5$)&lt;/em>&lt;/p>
 &lt;p>综上, 在三次迭代后, 已得到最优解, 无法再优化. 此时的解为 $\vec x^T=(4,4,4)$, $f=136$.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1320,156 +1350,168 @@ $$&lt;/p>
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>设&lt;br>
+&lt;/p>
 $$
-\left\lbrace
+\left\lbrace 
 \begin{array}{ll}
-x_{1t} = \text{第 $t$ 年招收高中生升为初级工的人数} &amp;amp; t=1,2,3 \\
-x_{2t} = \text{第 $t$ 年招收高中生升为中级工的人数} &amp;amp; t=1 \\
-x_{3t} = \text{第 $t$ 年招收高中生升为高级工的人数} &amp;amp; t=1 \\
-x_{4t} = \text{第 $t$ 年由初级工升为中级工的人数} &amp;amp; t=1,2,3 \\
-x_{5t} = \text{第 $t$ 年由初级工升为高级工的人数} &amp;amp; t=1,2 \\
-x_{6t} = \text{第 $t$ 年由中级工升为高级工的人数} &amp;amp; t=1,2,3
+	x\_{1t} = \text{第 $t$ 年招收高中生升为初级工的人数} &amp;amp; t=1,2,3 \\\\
+	x\_{2t} = \text{第 $t$ 年招收高中生升为中级工的人数} &amp;amp; t=1 \\\\
+	x\_{3t} = \text{第 $t$ 年招收高中生升为高级工的人数} &amp;amp; t=1 \\\\
+	x\_{4t} = \text{第 $t$ 年由初级工升为中级工的人数} &amp;amp; t=1,2,3 \\\\
+	x\_{5t} = \text{第 $t$ 年由初级工升为高级工的人数} &amp;amp; t=1,2 \\\\
+	x\_{6t} = \text{第 $t$ 年由中级工升为高级工的人数} &amp;amp; t=1,2,3
 \end{array}
 \right.
-$$&lt;/p>
-&lt;p>有三种限制: 资金限制, 学员限制, 师资限制.&lt;br>
+$$&lt;p>有三种限制: 资金限制, 学员限制, 师资限制.&lt;br>
 对于资金限制&lt;br>
+&lt;/p>
 $$
-\left\lbrace
+\left\lbrace 
 \begin{array}{l}
-1000x_{11}+3000x_{21}+3000x_{31}+2800x_{41}+2000x_{51}+3600x_{61}\leqslant550000\\
-1000x_{12}+3000x_{21}+2000x_{31}+2800x_{42}+3200x_{51}+2000x_{52}+3600x_{62}\leqslant 450000\\
-1000x_{13}+1000x_{21}+4000x_{31}+2800x_{43}+3200x_{52}+3600x_{63}\leqslant 500000
+	1000x\_{11}&amp;#43;3000x\_{21}&amp;#43;3000x\_{31}&amp;#43;2800x\_{41}&amp;#43;2000x\_{51}&amp;#43;3600x\_{61}\leqslant550000\\\\
+	1000x\_{12}&amp;#43;3000x\_{21}&amp;#43;2000x\_{31}&amp;#43;2800x\_{42}&amp;#43;3200x\_{51}&amp;#43;2000x\_{52}&amp;#43;3600x\_{62}\leqslant 450000\\\\
+	1000x\_{13}&amp;#43;1000x\_{21}&amp;#43;4000x\_{31}&amp;#43;2800x\_{43}&amp;#43;3200x\_{52}&amp;#43;3600x\_{63}\leqslant 500000
 \end{array}
 \right.
-$$&lt;/p>
-&lt;p>对于师资限制&lt;br>
+$$&lt;p>对于师资限制&lt;br>
+&lt;/p>
 $$
-\text{第一年}:\left\lbrace
+\text{第一年}:\left\lbrace 
 \begin{array}{l}
-x_{11}\leqslant 90\\
-x_{21}+x_{41}\leqslant 80\\
-x_{31}+x_{51}+x_{61}\leqslant 80
+	x\_{11}\leqslant 90\\\\
+	x\_{21}&amp;#43;x\_{41}\leqslant 80\\\\
+	x\_{31}&amp;#43;x\_{51}&amp;#43;x\_{61}\leqslant 80
 \end{array}
 \right.
 \quad
-\text{第二年}:\left\lbrace
+\text{第二年}:\left\lbrace 
 \begin{array}{l}
-x_{12}\leqslant90\\
-x_{21}+x_{42}\leqslant 80\\
-x_{31}+x_{51}+x_{52}+x_{62}\leqslant 80
+x\_{12}\leqslant90\\\\
+x\_{21}&amp;#43;x\_{42}\leqslant 80\\\\
+x\_{31}&amp;#43;x\_{51}&amp;#43;x\_{52}&amp;#43;x\_{62}\leqslant 80
 \end{array}
 \right.
 \quad
-\text{第三年}:\left\lbrace
+\text{第三年}:\left\lbrace 
 \begin{array}{l}
-x_{13}\leqslant 90\\
-x_{21}+x_{43}\leqslant 80\\
-x_{31}+x_{52}+x_{63}\leqslant 80
+x\_{13}\leqslant 90\\\\
+x\_{21}&amp;#43;x\_{43}\leqslant 80\\\\
+x\_{31}&amp;#43;x\_{52}&amp;#43;x\_{63}\leqslant 80
 \end{array}
 \right.
-$$&lt;/p>
-&lt;p>对于学员限制&lt;br>
+$$&lt;p>对于学员限制&lt;br>
+&lt;/p>
 $$
-\text{第一年}:\left\lbrace
+\text{第一年}:\left\lbrace 
 \begin{array}{l}
-x_{41}+x_{51}\leqslant 226\\
-x_{61}\leqslant 560
+	x\_{41}&amp;#43;x\_{51}\leqslant 226\\\\
+	x\_{61}\leqslant 560
 \end{array}
 \right.
 \quad
-\text{第二年}:\left\lbrace
+\text{第二年}:\left\lbrace 
 \begin{array}{l}
-x_{41}+x_{51}+x_{42}+x_{52}\leqslant 226+x_{11}\\
-x_{61}+x_{62}\leqslant 560+x_{41}
+x\_{41}&amp;#43;x\_{51}&amp;#43;x\_{42}&amp;#43;x\_{52}\leqslant 226&amp;#43;x\_{11}\\\\
+x\_{61}&amp;#43;x\_{62}\leqslant 560&amp;#43;x\_{41}
 \end{array}
 \right.
-$$&lt;br>
+$$&lt;p>&lt;br>
+&lt;/p>
 $$
-\text{第三年}:\left\lbrace
+\text{第三年}:\left\lbrace 
 \begin{array}{l}
-x_{41}+x_{51}+x_{42}+x_{52}+x_{43}\leqslant 226+x_{11}+x_{12}\\
-x_{61}+x_{62}+x_{63}\leqslant 560+x_{41}+x_{42}
+x\_{41}&amp;#43;x\_{51}&amp;#43;x\_{42}&amp;#43;x\_{52}&amp;#43;x\_{43}\leqslant 226&amp;#43;x\_{11}&amp;#43;x\_{12}\\\\
+x\_{61}&amp;#43;x\_{62}&amp;#43;x\_{63}\leqslant 560&amp;#43;x\_{41}&amp;#43;x\_{42}
 \end{array}
 \right.
-$$&lt;br>
-但实际上结合每年各级别培训人数限制, 学员限制中有效的只有 $x_{41}+x_{42}+x_{43}+x_{51}+x_{52}\leqslant 226+x_{11}+x_{12}$.&lt;br>
+$$&lt;p>&lt;br>
+但实际上结合每年各级别培训人数限制, 学员限制中有效的只有 $x\_{41}&amp;#43;x\_{42}&amp;#43;x\_{43}&amp;#43;x\_{51}&amp;#43;x\_{52}\leqslant 226&amp;#43;x\_{11}&amp;#43;x\_{12}$.&lt;br>
 除了上述三种限制外, 还要求各阶段各级别培训人数非负.&lt;/p>
 &lt;p>下面考虑总收益函数 $f$ 的表示:&lt;br>
 感觉题目有不同理解.&lt;br>
 如果考虑三年之后每年的产值最高, 那么应该是 (本人理解题目应该是这种情况, 不然高中生培训三年的方案没有意义):&lt;br>
 三年后 (即最晚第四年起可以进行工作) 各级别工人人数依次为&lt;br>
+&lt;/p>
 $$
 \begin{array}{l}
-226-x_{41}-x_{42}-x_{43}-x_{51}-x_{52}+x_{11}+x_{12}+x_{13}\\
-560-x_{61}-x_{62}-x_{63}+x_{21}+x_{41}+x_{42}+x_{43}\\
-496+x_{31}+x_{51}+x_{52}+x_{61}+x_{62}+x_{63}
+	226-x\_{41}-x\_{42}-x\_{43}-x\_{51}-x\_{52}&amp;#43;x\_{11}&amp;#43;x\_{12}&amp;#43;x\_{13}\\\\
+	560-x\_{61}-x\_{62}-x\_{63}&amp;#43;x\_{21}&amp;#43;x\_{41}&amp;#43;x\_{42}&amp;#43;x\_{43}\\\\
+	496&amp;#43;x\_{31}&amp;#43;x\_{51}&amp;#43;x\_{52}&amp;#43;x\_{61}&amp;#43;x\_{62}&amp;#43;x\_{63}
 \end{array}
-$$&lt;br>
+$$&lt;p>&lt;br>
 整理后年产值增加 (单位: 万)&lt;br>
+&lt;/p>
 $$
-f=x_{11}+x_{12}+x_{13}+4x_{21}+5.5x_{31}+3x_{41}+3x_{42}+3x_{43}+4.5x_{51}+4.5x_{52}+1.5x_{61}+1.5x_{62}+1.5x_{63}.
-$$&lt;/p>
-&lt;p>若理解为只考虑这三年的总收益增加最多, 且培训期间不产生产值, 那么函数如下:&lt;br>
+f=x\_{11}&amp;#43;x\_{12}&amp;#43;x\_{13}&amp;#43;4x\_{21}&amp;#43;5.5x\_{31}&amp;#43;3x\_{41}&amp;#43;3x\_{42}&amp;#43;3x\_{43}&amp;#43;4.5x\_{51}&amp;#43;4.5x\_{52}&amp;#43;1.5x\_{61}&amp;#43;1.5x\_{62}&amp;#43;1.5x\_{63}.
+$$&lt;p>若理解为只考虑这三年的总收益增加最多, 且培训期间不产生产值, 那么函数如下:&lt;br>
 分年份考虑当年参与工作的各级别工人数量, 依次为初级工, 中级工和高级工.&lt;br>
+&lt;/p>
 $$
-\text{第一年}:\left\lbrace
+\text{第一年}:\left\lbrace 
 \begin{array}{ll}
-226-x_{41}-x_{51}\\
-560-x_{61}\\
-496
+	226-x\_{41}-x\_{51}\\\\
+	560-x\_{61}\\\\
+	496
 \end{array}
 \right.
 \quad
-\text{第二年}:\left\lbrace
+\text{第二年}:\left\lbrace 
 \begin{array}{ll}
-226-x_{41}-x_{51}-x_{42}-x_{52}+x_{11}\\
-560-x_{61}-x_{62}+x_{41}\\
-496+x_{61}
+226-x\_{41}-x\_{51}-x\_{42}-x\_{52}&amp;#43;x\_{11}\\\\
+560-x\_{61}-x\_{62}&amp;#43;x\_{41}\\\\
+496&amp;#43;x\_{61}
 \end{array}
 \right.
-$$&lt;br>
+$$&lt;p>&lt;br>
+&lt;/p>
 $$
-\text{第三年}:\left\lbrace
+\text{第三年}:\left\lbrace 
 \begin{array}{ll}
-226-x_{41}-x_{51}-x_{42}-x_{52}+x_{11}-x_{43}+x_{12}\\
-560-x_{61}-x_{62}-x_{63}+x_{41}+x_{42}\\
-496+x_{61}+x_{62}+x_{51}
+	226-x\_{41}-x\_{51}-x\_{42}-x\_{52}&amp;#43;x\_{11}-x\_{43}&amp;#43;x\_{12}\\\\
+	560-x\_{61}-x\_{62}-x\_{63}&amp;#43;x\_{41}&amp;#43;x\_{42}\\\\
+	496&amp;#43;x\_{61}&amp;#43;x\_{62}&amp;#43;x\_{51}
 \end{array}
 \right.
-$$&lt;br>
+$$&lt;p>&lt;br>
 整理后总的增加收益 (单位: 万) 为&lt;br>
+&lt;/p>
 $$
-f=x_{11}+x_{12}+5x_{41}+2x_{42}-x_{43}+2.5x_{51}-x_{52}-x_{61}-2.5x_{62}-4x_{63}.
-$$&lt;/p>
-&lt;/div>
+f=x\_{11}&amp;#43;x\_{12}&amp;#43;5x\_{41}&amp;#43;2x\_{42}-x\_{43}&amp;#43;2.5x\_{51}-x\_{52}-x\_{61}-2.5x\_{62}-4x\_{63}.
+$$&lt;/div>
  &lt;/div>
 &lt;/div>&lt;/p></description></item><item><title>泛函分析作业250922</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="121">&lt;span>1.2.1&lt;/span>
  &lt;a href="#121" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>(空间 S) 令 $S$ 为一切实 (或复) 数列 $$x=(\xi_1,\xi_2,\cdots,\xi_n,\cdots)$$ 组成的集合, 在 $S$ 中定义距离为
-$$\rho(x,y)=\sum\limits_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|},$$
-其中 $x=(\xi_1,\xi_2,\cdots,\xi_k,\cdots),y=(\eta_1,\eta_2,\cdots,\eta_k,\cdots)$. 求证 $S$ 为一个完备的度量空间.&lt;/p>
+&lt;/h2>&lt;p>(空间 S) 令 $S$ 为一切实 (或复) 数列 &lt;/p>
+$$x=(\xi\_1,\xi\_2,\cdots,\xi\_n,\cdots)$$&lt;p> 组成的集合, 在 $S$ 中定义距离为
+&lt;/p>
+$$\rho(x,y)=\sum\limits\_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\eta\_k|},$$&lt;p>
+其中 $x=(\xi\_1,\xi\_2,\cdots,\xi\_k,\cdots),y=(\eta\_1,\eta\_2,\cdots,\eta\_k,\cdots)$. 求证 $S$ 为一个完备的度量空间.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>首先证明 $\rho(x,y)$ 是度量。&lt;/p>
 &lt;p>非负性和对称性显然, 下证三角不等式。&lt;/p>
-&lt;p>由 $f(t)=\frac {t}{1+t}=1-\frac{1}{1+t}$ 递增, 于是用复数域 $|x-y|$ 度量的三角不等式得到
-$$\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|+|\zeta_k-\eta_k|}{1+|\xi_k-\zeta_k|+|\zeta_k-\eta_k|}.$$
-又 $f&amp;rsquo;(t)=\frac{1}{(1+t)^2}&amp;lt;1$, 所以有 $f(|a|+|b|)\leqslant f(|a|)+f(|b|)$. 故
-$$\frac{|\xi_k-\eta_k|}{1+|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|}{1+|\xi_k-\zeta_k|}+\frac{|\zeta_k-\eta_k|}{1+|\zeta_k-\eta_k|}$$
+&lt;p>由 $f(t)=\frac {t}{1&amp;#43;t}=1-\frac{1}{1&amp;#43;t}$ 递增, 于是用复数域 $|x-y|$ 度量的三角不等式得到
+&lt;/p>
+$$\frac{|\xi\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\eta\_k|}\leqslant \frac{|\xi\_k-\zeta\_k|&amp;#43;|\zeta\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\zeta\_k|&amp;#43;|\zeta\_k-\eta\_k|}.$$&lt;p>
+又 $f&amp;#39;(t)=\frac{1}{(1&amp;#43;t)^2}&amp;lt;1$, 所以有 $f(|a|&amp;#43;|b|)\leqslant f(|a|)&amp;#43;f(|b|)$. 故
+&lt;/p>
+$$\frac{|\xi\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\eta\_k|}\leqslant \frac{|\xi\_k-\zeta\_k|}{1&amp;#43;|\xi\_k-\zeta\_k|}&amp;#43;\frac{|\zeta\_k-\eta\_k|}{1&amp;#43;|\zeta\_k-\eta\_k|}$$&lt;p>
 再对 $k$ 求和就可以得到三角不等式成立。&lt;/p>
 &lt;p>然后证明 $S$ 是完备的。&lt;/p>
-&lt;p>任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}_+$) 即 $\forall \varepsilon&amp;gt;0,\exists M&amp;gt;0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m+p)},x^{(m)})&amp;lt;\varepsilon$。&lt;/p>
-&lt;p>现关注数列的第 $k$ 项, 当 $\varepsilon&amp;lt;\frac{1}{2^{k+1}}$ 时, 有
-$$\frac{|x_k^{(m+p)}-x_k^{(m)}|}{1+|x_k^{(m+p)}-x_k^{(m)}|}&amp;lt; 2^k\varepsilon.$$ 移向变换可得
-$$|x_k^{(m+p)}-x_k^{(m)}|&amp;lt;\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon&amp;lt;\frac 1 2}{&amp;lt;}2^{k+1}\varepsilon.$$
-由于现在关注的是第 $k$ 项构成的序列 $\lbrace x_k^{(m)}\rbrace _{m=1}^\infty$ 所以我们得到 $\lbrace x_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x_k$。&lt;/p>
-&lt;p>如此, 我们就得到了一个新的数列 $\lbrace x_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$。&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 由于 $\frac{|x_k^{(m)}-x_k|}{1+|x_k^{(m)}-x_k|}&amp;lt;1$, 所以
-$$\sum\limits_{k=n_0+1}^\infty \frac{1}{2^k}\cdot \frac{|x_k^{(m)}-x_k|}{1+|x_k^{(m)}|}&amp;lt;\frac{1}{2^{n_0}}.$$ 取 $n_0\geqslant\lceil-\log_2 \varepsilon\rceil+1$ 那么對於前 $n_0$ 項, 由于每一项都收敛至 $x_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x_k^{(m)}-x_k|&amp;lt;\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)&amp;lt;2\varepsilon,\ \forall m\geqslant M$。&lt;/p>
+&lt;p>任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}\_&amp;#43;$) 即 $\forall \varepsilon&amp;gt;0,\exists M&amp;gt;0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m&amp;#43;p)},x^{(m)})&amp;lt;\varepsilon$。&lt;/p>
+&lt;p>现关注数列的第 $k$ 项, 当 $\varepsilon&amp;lt;\frac{1}{2^{k&amp;#43;1}}$ 时, 有
+&lt;/p>
+$$\frac{|x\_k^{(m&amp;#43;p)}-x\_k^{(m)}|}{1&amp;#43;|x\_k^{(m&amp;#43;p)}-x\_k^{(m)}|}&amp;lt; 2^k\varepsilon.$$&lt;p> 移向变换可得
+&lt;/p>
+$$|x\_k^{(m&amp;#43;p)}-x\_k^{(m)}|&amp;lt;\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon&amp;lt;\frac 1 2}{&amp;lt;}2^{k&amp;#43;1}\varepsilon.$$&lt;p>
+由于现在关注的是第 $k$ 项构成的序列 $\lbrace x\_k^{(m)}\rbrace \_{m=1}^\infty$ 所以我们得到 $\lbrace x\_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x\_k$。&lt;/p>
+&lt;p>如此, 我们就得到了一个新的数列 $\lbrace x\_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$。&lt;/p>
+&lt;p>$\forall \varepsilon&amp;gt;0$, 由于 $\frac{|x\_k^{(m)}-x\_k|}{1&amp;#43;|x\_k^{(m)}-x\_k|}&amp;lt;1$, 所以
+&lt;/p>
+$$\sum\limits\_{k=n\_0&amp;#43;1}^\infty \frac{1}{2^k}\cdot \frac{|x\_k^{(m)}-x\_k|}{1&amp;#43;|x\_k^{(m)}|}&amp;lt;\frac{1}{2^{n\_0}}.$$&lt;p> 取 $n\_0\geqslant\lceil-\log\_2 \varepsilon\rceil&amp;#43;1$ 那么對於前 $n\_0$ 項, 由于每一项都收敛至 $x\_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x\_k^{(m)}-x\_k|&amp;lt;\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)&amp;lt;2\varepsilon,\ \forall m\geqslant M$。&lt;/p>
 &lt;p>即 $\lbrace x^{(m)}\rbrace $ 收敛. 综上 $S$ 是完备的度量空间。&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1478,23 +1520,28 @@ $$\sum\limits_{k=n_0+1}^\infty \frac{1}{2^k}\cdot \frac{|x_k^{(m)}-x_k|}{1+|x_k^
  &lt;a href="#123" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $F$ 是只有有限项不为 $0$ 的实数列全体, 在 $F$ 上引进距离 $$\rho(x,y)=\sup\limits_{k\geqslant 1}|\xi_k-\eta_k|,$$ 其中 $x=\lbrace \xi_k\rbrace \in F,y=\lbrace \eta_k\rbrace \in F$, 求证 $(F,\rho)$ 不完备, 并指出它的完备化空间.&lt;/p>
+&lt;/h2>&lt;p>设 $F$ 是只有有限项不为 $0$ 的实数列全体, 在 $F$ 上引进距离 &lt;/p>
+$$\rho(x,y)=\sup\limits\_{k\geqslant 1}|\xi\_k-\eta\_k|,$$&lt;p> 其中 $x=\lbrace \xi\_k\rbrace \in F,y=\lbrace \eta\_k\rbrace \in F$, 求证 $(F,\rho)$ 不完备, 并指出它的完备化空间.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑数列 $x_n=(1,\frac 1 2,\ldots,\frac 1 {n-1},\frac 1 n,0,0,\ldots)\in F$. 有 $\forall n,m\geqslant N$, $\rho(x_n,x_m)&amp;lt;\frac 1 N$, 从而 $\lbrace x_n\rbrace $ 是柯西列, 但显然 $\lbrace x_n\rbrace $ 收敛至 $(1,\frac 1 2,\ldots,\frac 1 n,\ldots)\notin F$. 从而 $F$ 不完备.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>考虑数列 $x\_n=(1,\frac 1 2,\ldots,\frac 1 {n-1},\frac 1 n,0,0,\ldots)\in F$. 有 $\forall n,m\geqslant N$, $\rho(x\_n,x\_m)&amp;lt;\frac 1 N$, 从而 $\lbrace x\_n\rbrace $ 是柯西列, 但显然 $\lbrace x\_n\rbrace $ 收敛至 $(1,\frac 1 2,\ldots,\frac 1 n,\ldots)\notin F$. 从而 $F$ 不完备.&lt;/p>
 &lt;p>$F$ 的完备化空间应该是所有极限为 0 的实数列的全体, 记为 $\widetilde{F}$。&lt;/p>
 &lt;p>先说明 $F$ 在 $\widetilde{F}$ 中稠密。&lt;/p>
 &lt;p>即证明 $\forall x\in\widetilde{F}, \varepsilon&amp;gt;0,\ \exists y\in F,\ s.t. \rho(x,y)&amp;lt;\varepsilon$。&lt;/p>
-&lt;p>设 $x=(\xi_1,\xi_2,\ldots,\xi_n,\ldots)$, 由于 $\lim\limits_{n\to\infty}\xi_n=0$, 所以存在 $N_0$ 使得 $n\geqslant N_0$ 时 $\xi_n&amp;lt;\varepsilon$. 故只需取 $y=(\xi_1,\xi_2,\ldots,\xi_{N_0},0,0,\ldots)$, 那么 $\rho(x,y)=\sup\limits_{n\geqslant N_0}\xi_n&amp;lt;\varepsilon$。&lt;/p>
+&lt;p>设 $x=(\xi\_1,\xi\_2,\ldots,\xi\_n,\ldots)$, 由于 $\lim\limits\_{n\to\infty}\xi\_n=0$, 所以存在 $N\_0$ 使得 $n\geqslant N\_0$ 时 $\xi\_n&amp;lt;\varepsilon$. 故只需取 $y=(\xi\_1,\xi\_2,\ldots,\xi\_{N\_0},0,0,\ldots)$, 那么 $\rho(x,y)=\sup\limits\_{n\geqslant N\_0}\xi\_n&amp;lt;\varepsilon$。&lt;/p>
 &lt;p>所以 $F$ 在 $\widetilde{F}$ 中稠密。&lt;/p>
 &lt;p>再说明 $\widetilde{F}$ 是完备的。&lt;/p>
 &lt;p>任取 $\lbrace x^{(n)}\rbrace $ 是柯西列。&lt;/p>
-&lt;p>$$\forall \varepsilon&amp;gt;0,\exists N,\ s.t. \forall n,m\geqslant N,\sup\limits_{k\geqslant 1}|\xi_k^{(n)}-\xi_k^{(m)}|&amp;lt;\varepsilon$$ 进而对每一维 $k$ 有 $$|\xi_k^{(n)}-\xi_k^{(m)}|\leqslant\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$ 即 $\lbrace \xi_k^{(n)}\rbrace _{n=1}^\infty$ 也是柯西列, 由 $\mathbb{R}$ 的完备性知其收敛, 记为 $\xi_k$. 故取 $x=(\xi_1,\xi_2,\ldots,\xi_n,\ldots)$, 下证 $x^{(n)}\to x$ 且 $x\in \widetilde{F}$。&lt;/p>
-&lt;p>由 $\lbrace x^{(n)}\rbrace $ 是柯西列, 可得 $\forall \varepsilon&amp;gt;0,\exists N,\ s.t.\forall n,m\geqslant N$ 有 $$\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$ 再固定 $n$ 对一切 $m\geqslant N$ 和 $k$ 有 $$|\xi_k^{(n)}-\xi_k^{(m)}|\leqslant\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$ 再令 $m\to\infty$ 得到 $$|\xi_k^{(n)}-\xi_k|\leqslant \varepsilon,\quad \forall k$$ 从而 $$
-\rho(x^{(n)},x)=\sup\limits_{k\geqslant 1}|\xi_k^{(n)}-\xi_k|\leqslant\varepsilon,\forall n\geqslant N\label{hw1.2.3}
-$$&lt;/p>
-&lt;p>即 $x^{(n)}\to x$. 并且由 $\lbrace \xi_k^{(n)}\rbrace _{k=1}$ 收敛至 $0$, 我们有 $\exists K,\ s.t.\forall k\geqslant K, \ |\xi_k^{(N)}-\xi_k|&amp;lt;\varepsilon,\ |\xi_k^{(N)}|&amp;lt;\varepsilon$ 从而 $|\xi_k|&amp;lt;2\varepsilon$ 即 $\xi_k\overset{k}{\to}0$, $x\in \widetilde{F}$。&lt;/p>
+$$\forall \varepsilon&amp;gt;0,\exists N,\ s.t. \forall n,m\geqslant N,\sup\limits\_{k\geqslant 1}|\xi\_k^{(n)}-\xi\_k^{(m)}|&amp;lt;\varepsilon$$&lt;p> 进而对每一维 $k$ 有 &lt;/p>
+$$|\xi\_k^{(n)}-\xi\_k^{(m)}|\leqslant\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 即 $\lbrace \xi\_k^{(n)}\rbrace \_{n=1}^\infty$ 也是柯西列, 由 $\mathbb{R}$ 的完备性知其收敛, 记为 $\xi\_k$. 故取 $x=(\xi\_1,\xi\_2,\ldots,\xi\_n,\ldots)$, 下证 $x^{(n)}\to x$ 且 $x\in \widetilde{F}$。&lt;/p>
+&lt;p>由 $\lbrace x^{(n)}\rbrace $ 是柯西列, 可得 $\forall \varepsilon&amp;gt;0,\exists N,\ s.t.\forall n,m\geqslant N$ 有 &lt;/p>
+$$\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再固定 $n$ 对一切 $m\geqslant N$ 和 $k$ 有 &lt;/p>
+$$|\xi\_k^{(n)}-\xi\_k^{(m)}|\leqslant\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再令 $m\to\infty$ 得到 &lt;/p>
+$$|\xi\_k^{(n)}-\xi\_k|\leqslant \varepsilon,\quad \forall k$$&lt;p> 从而 &lt;/p>
+$$
+\rho(x^{(n)},x)=\sup\limits\_{k\geqslant 1}|\xi\_k^{(n)}-\xi\_k|\leqslant\varepsilon,\forall n\geqslant N\label{hw1.2.3}
+$$&lt;p>即 $x^{(n)}\to x$. 并且由 $\lbrace \xi\_k^{(n)}\rbrace \_{k=1}$ 收敛至 $0$, 我们有 $\exists K,\ s.t.\forall k\geqslant K, \ |\xi\_k^{(N)}-\xi\_k|&amp;lt;\varepsilon,\ |\xi\_k^{(N)}|&amp;lt;\varepsilon$ 从而 $|\xi\_k|&amp;lt;2\varepsilon$ 即 $\xi\_k\overset{k}{\to}0$, $x\in \widetilde{F}$。&lt;/p>
 &lt;p>综上我们说明了 $\widetilde{F}$ 是 $F$ 的完备化空间.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1503,7 +1550,8 @@ $$&lt;/p>
  &lt;a href="#124" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>求证: [0,1] 上的多项式全体按距离 $$\rho(p,q)=\int_0^1 |p(x)-q(x)| \mathrm{d} x$$ 是不完备的, 并指出它的完备化空间.&lt;/p>
+&lt;/h2>&lt;p>求证: [0,1] 上的多项式全体按距离 &lt;/p>
+$$\rho(p,q)=\int\_0^1 |p(x)-q(x)| \mathrm{d} x$$&lt;p> 是不完备的, 并指出它的完备化空间.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
@@ -1517,15 +1565,20 @@ $$&lt;/p>
  &lt;a href="#125" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>在完备的度量空间 $(\mathscr X,\rho)$ 中给定点列 $\lbrace x_n\rbrace $, 如果 $\forall \varepsilon&amp;gt;0$, 存在基本列 $\lbrace y_n\rbrace $, 使得 $$\rho(x_n,y_n)&amp;lt;\varepsilon,\quad (n\in\mathbb{N})$$ 求证 $\lbrace x_n\rbrace $ 收敛.&lt;/p>
+&lt;/h2>&lt;p>在完备的度量空间 $(\mathscr X,\rho)$ 中给定点列 $\lbrace x\_n\rbrace $, 如果 $\forall \varepsilon&amp;gt;0$, 存在基本列 $\lbrace y\_n\rbrace $, 使得 &lt;/p>
+$$\rho(x\_n,y\_n)&amp;lt;\varepsilon,\quad (n\in\mathbb{N})$$&lt;p> 求证 $\lbrace x\_n\rbrace $ 收敛.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑 $\lbrace y_n^{(\varepsilon)}\rbrace $ 表示 $\varepsilon$ 对应得基本列, 由于空间完备, 故极限存在记作 $y^{(\varepsilon)}$, 有 $$\rho(y_n^{(\varepsilon_1)},y_n^{(\varepsilon_2)})\leqslant\rho(y_n^{(\varepsilon_1)},x_n)+\rho(y_n^{(\varepsilon_2)},x_n)&amp;lt;\varepsilon_1+\varepsilon_2$$ 再令 $n\to\infty$ 得 $$\rho(y^{(\varepsilon_1)},y^{(\varepsilon_2)})\leqslant\varepsilon_1+\varepsilon_2$$&lt;/p>
-&lt;p>考虑数列 $\lbrace y^{(1/m)}\rbrace $, $\forall \varepsilon&amp;gt;0,$ 取 $N=\lceil \frac 2 \varepsilon\rceil$, 则 $n,m\geqslant N$ 时 $\rho(y^{(1/m)},y^{(1/n)})\leqslant\frac 1 n+\frac 1 m&amp;lt; \varepsilon$ 从而 $\lbrace y^{(1/m)}\rbrace $ 是柯西列, 又空间完备故收敛记作 $y$.&lt;/p>
-&lt;p>下证 $x_n\to y$.&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0, \exists m, \rho(y^{(1/m)},y)&amp;lt;\frac \varepsilon 3\wedge \frac 1 m&amp;lt;\frac \varepsilon 3$, 又 $y_n^{(1/m)}\to y^{(1/m)}$ 故存在 $N$ 使得 $n\geqslant N$ 时有 $$\rho(y_n^{(1/m)},y^{(1/m)})&amp;lt;\frac \varepsilon 3$$ 再根据 $\lbrace y_n^{(1/m)}\rbrace $ 定义有 $$\rho(x_n,y_n^{(1/m)})&amp;lt;\frac 1 m&amp;lt;\varepsilon,\quad \forall n\geqslant N$$ 所以有 $$\rho(x_n,y)\leqslant\rho(x_n,y_n^{(1/m)})+\rho(y_n^{(1/m)},y^{(1/m)})+\rho(y^{(1/m)},y)&amp;lt;\varepsilon$$ 即 $x_n\to y$.&lt;/p>
-&lt;p>所以 $\lbrace x_n\rbrace $ 收敛.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>考虑 $\lbrace y\_n^{(\varepsilon)}\rbrace $ 表示 $\varepsilon$ 对应得基本列, 由于空间完备, 故极限存在记作 $y^{(\varepsilon)}$, 有 &lt;/p>
+$$\rho(y\_n^{(\varepsilon\_1)},y\_n^{(\varepsilon\_2)})\leqslant\rho(y\_n^{(\varepsilon\_1)},x\_n)&amp;#43;\rho(y\_n^{(\varepsilon\_2)},x\_n)&amp;lt;\varepsilon\_1&amp;#43;\varepsilon\_2$$&lt;p> 再令 $n\to\infty$ 得 &lt;/p>
+$$\rho(y^{(\varepsilon\_1)},y^{(\varepsilon\_2)})\leqslant\varepsilon\_1&amp;#43;\varepsilon\_2$$&lt;p>考虑数列 $\lbrace y^{(1/m)}\rbrace $, $\forall \varepsilon&amp;gt;0,$ 取 $N=\lceil \frac 2 \varepsilon\rceil$, 则 $n,m\geqslant N$ 时 $\rho(y^{(1/m)},y^{(1/n)})\leqslant\frac 1 n&amp;#43;\frac 1 m&amp;lt; \varepsilon$ 从而 $\lbrace y^{(1/m)}\rbrace $ 是柯西列, 又空间完备故收敛记作 $y$.&lt;/p>
+&lt;p>下证 $x\_n\to y$.&lt;/p>
+&lt;p>$\forall \varepsilon&amp;gt;0, \exists m, \rho(y^{(1/m)},y)&amp;lt;\frac \varepsilon 3\wedge \frac 1 m&amp;lt;\frac \varepsilon 3$, 又 $y\_n^{(1/m)}\to y^{(1/m)}$ 故存在 $N$ 使得 $n\geqslant N$ 时有 &lt;/p>
+$$\rho(y\_n^{(1/m)},y^{(1/m)})&amp;lt;\frac \varepsilon 3$$&lt;p> 再根据 $\lbrace y\_n^{(1/m)}\rbrace $ 定义有 &lt;/p>
+$$\rho(x\_n,y\_n^{(1/m)})&amp;lt;\frac 1 m&amp;lt;\varepsilon,\quad \forall n\geqslant N$$&lt;p> 所以有 &lt;/p>
+$$\rho(x\_n,y)\leqslant\rho(x\_n,y\_n^{(1/m)})&amp;#43;\rho(y\_n^{(1/m)},y^{(1/m)})&amp;#43;\rho(y^{(1/m)},y)&amp;lt;\varepsilon$$&lt;p> 即 $x\_n\to y$.&lt;/p>
+&lt;p>所以 $\lbrace x\_n\rbrace $ 收敛.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -1533,30 +1586,33 @@ $$&lt;/p>
  &lt;a href="#134" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $F_1,F_2$ 是它的两个紧子集, 求证: $\exists x_i\in F_i(i=1,2)$, 使得 $\rho(F_1,F_2)=\rho(x_1,x_2)$.&lt;/p>
+&lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $F\_1,F\_2$ 是它的两个紧子集, 求证: $\exists x\_i\in F\_i(i=1,2)$, 使得 $\rho(F\_1,F\_2)=\rho(x\_1,x\_2)$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>记 $d=\rho(F_1,F_2)$.&lt;/p>
-&lt;p>根据下确界的定义, 对任意 $n$ 存在 $x_n\in F_1,y_n\in F_2$, 使得 $$d\leqslant \rho(x_n,y_n)&amp;lt;d+\frac 1 n.$$ 由 $F_1$ 的紧性, 存在子列 $\lbrace x_{n_k}\rbrace $ 收敛, 记收敛至 $x_1\in F_1$. 考虑对应的子列 $\lbrace y_{n_k}\rbrace $, 由 $F_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y_{n_{k_j}}\rbrace $, 记收敛至 $x_2\in F_2$. 从而有 $$d\leqslant\rho(x_{n_{k_j}},y_{n_{k_j}})&amp;lt;d+\frac 1 {n_{k_j}}$$ 令 $j\to\infty$ 可得 $d=\rho(x_1,x_2)$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>记 $d=\rho(F\_1,F\_2)$.&lt;/p>
+&lt;p>根据下确界的定义, 对任意 $n$ 存在 $x\_n\in F\_1,y\_n\in F\_2$, 使得 &lt;/p>
+$$d\leqslant \rho(x\_n,y\_n)&amp;lt;d&amp;#43;\frac 1 n.$$&lt;p> 由 $F\_1$ 的紧性, 存在子列 $\lbrace x\_{n\_k}\rbrace $ 收敛, 记收敛至 $x\_1\in F\_1$. 考虑对应的子列 $\lbrace y\_{n\_k}\rbrace $, 由 $F\_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y\_{n\_{k\_j}}\rbrace $, 记收敛至 $x\_2\in F\_2$. 从而有 &lt;/p>
+$$d\leqslant\rho(x\_{n\_{k\_j}},y\_{n\_{k\_j}})&amp;lt;d&amp;#43;\frac 1 {n\_{k\_j}}$$&lt;p> 令 $j\to\infty$ 可得 $d=\rho(x\_1,x\_2)$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业250915</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="112">&lt;span>1.1.2&lt;/span>
  &lt;a href="#112" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>(Newton 法) 设 $f$ 是定义在 $[a,b]$ 上的二次连续可微的实值函数, $\hat{x}\in(a,b)$ 使得 $f(\hat x)=0, f&amp;rsquo;(\hat x)\neq 0$. 求证: 存在 $\hat x$ 的邻域 $U(\hat x)$, 使得 $\forall x_0\in U(\hat x)$, 迭代序列
-$$x_{n+1}=x_n-\frac{f(x_n)}{f&amp;rsquo;(x_n)}\quad (n=0,1,2,\ldots)$$
+&lt;/h2>&lt;p>(Newton 法) 设 $f$ 是定义在 $[a,b]$ 上的二次连续可微的实值函数, $\hat{x}\in(a,b)$ 使得 $f(\hat x)=0, f&amp;#39;(\hat x)\neq 0$. 求证: 存在 $\hat x$ 的邻域 $U(\hat x)$, 使得 $\forall x\_0\in U(\hat x)$, 迭代序列
+&lt;/p>
+$$x\_{n&amp;#43;1}=x\_n-\frac{f(x\_n)}{f&amp;#39;(x\_n)}\quad (n=0,1,2,\ldots)$$&lt;p>
 是收敛的, 并且
-$$\lim\limits_{n\to\infty}x_n=\hat x.$$&lt;/p>
-&lt;div class="details admonition note">
+&lt;/p>
+$$\lim\limits\_{n\to\infty}x\_n=\hat x.$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>设映射 $T(x)=x-\dfrac{f(x)}{f&amp;rsquo;(x)}$&lt;/p>
-&lt;p>由 $f\in C^2, f&amp;rsquo;(\hat x)\neq 0$, 故存在 $\delta_0, (x-\delta_0,x+\delta_0)\subset[a,b],m,M,L\in\mathbb{R},\ s.t.\ |x-\hat x|\leqslant \delta_0$ 时, 有 $m\overset{\text{保号性}}{\leqslant}|f&amp;rsquo;(x)|\overset{\text{有界性}}{\leqslant} M, |f&amp;rsquo;&amp;rsquo;(x)|\leqslant L$.&lt;/p>
-&lt;p>那么考虑导数 $T&amp;rsquo;(x)=\dfrac{f(x)f&amp;rsquo;&amp;rsquo;(x)}{(f&amp;rsquo;(x))^2}\overset{\text{柯西中值}}{=}\dfrac{(f&amp;rsquo;(\xi)|x-\hat x|+f(\hat x))f&amp;rsquo;&amp;rsquo;(x)}{(f&amp;rsquo;(x))^2}\leqslant \dfrac{M|x-\hat{x}|L}{m^2}$, 于是可以取 $\delta=\min(\frac {m^2}{ML+1},\delta_0)$, 则有 $|T&amp;rsquo;(x)|\leqslant \frac{ML}{ML+1}&amp;lt;1,\forall x\in (\hat x-\delta,\hat x+\delta)$.&lt;/p>
-&lt;p>所以在该邻域中有 $|T(x)-T(y)|\leqslant \frac{ML}{ML+1}|x-y|,\ \forall x,y\in (\hat x-\delta,\hat x+\delta)$, 再结合 $T(\hat{x})=\hat x$ 可以得到 $T x\in(\hat x-\delta,\hat x+\delta)$, 即 $T$ 在该邻域内是压缩映射.&lt;/p>
-&lt;p>又由实数的完备性, 根据 Banach 不动点定理可知存在唯一的不动点, 又 $\hat x=T(\hat x)$, 所以 $\hat x$ 是不动点, 即 $\lim\limits_{n\to\infty}x_n=\hat x$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>设映射 $T(x)=x-\dfrac{f(x)}{f&amp;#39;(x)}$&lt;/p>
+&lt;p>由 $f\in C^2, f&amp;#39;(\hat x)\neq 0$, 故存在 $\delta\_0, (x-\delta\_0,x&amp;#43;\delta\_0)\subset[a,b],m,M,L\in\mathbb{R},\ s.t.\ |x-\hat x|\leqslant \delta\_0$ 时, 有 $m\overset{\text{保号性}}{\leqslant}|f&amp;#39;(x)|\overset{\text{有界性}}{\leqslant} M, |f&amp;#39;&amp;#39;(x)|\leqslant L$.&lt;/p>
+&lt;p>那么考虑导数 $T&amp;#39;(x)=\dfrac{f(x)f&amp;#39;&amp;#39;(x)}{(f&amp;#39;(x))^2}\overset{\text{柯西中值}}{=}\dfrac{(f&amp;#39;(\xi)|x-\hat x|&amp;#43;f(\hat x))f&amp;#39;&amp;#39;(x)}{(f&amp;#39;(x))^2}\leqslant \dfrac{M|x-\hat{x}|L}{m^2}$, 于是可以取 $\delta=\min(\frac {m^2}{ML&amp;#43;1},\delta\_0)$, 则有 $|T&amp;#39;(x)|\leqslant \frac{ML}{ML&amp;#43;1}&amp;lt;1,\forall x\in (\hat x-\delta,\hat x&amp;#43;\delta)$.&lt;/p>
+&lt;p>所以在该邻域中有 $|T(x)-T(y)|\leqslant \frac{ML}{ML&amp;#43;1}|x-y|,\ \forall x,y\in (\hat x-\delta,\hat x&amp;#43;\delta)$, 再结合 $T(\hat{x})=\hat x$ 可以得到 $T x\in(\hat x-\delta,\hat x&amp;#43;\delta)$, 即 $T$ 在该邻域内是压缩映射.&lt;/p>
+&lt;p>又由实数的完备性, 根据 Banach 不动点定理可知存在唯一的不动点, 又 $\hat x=T(\hat x)$, 所以 $\hat x$ 是不动点, 即 $\lim\limits\_{n\to\infty}x\_n=\hat x$.&lt;/p>
 &lt;p>下面是 Mworks 程序.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="n">clear&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="n">clc&lt;/span>&lt;span class="p">()&lt;/span>
@@ -1598,7 +1654,7 @@ $$\lim\limits_{n\to\infty}x_n=\hat x.$$&lt;/p>
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>记度量空间为 $(\mathscr X,\rho)$.&lt;/p>
-&lt;p>设 $\lbrace x_n\rbrace _{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x_0$. 那么对于 $\rho(Tx_n,Tx_0)$, 由于 $T$ 是压缩映射, 故存在 $0&amp;lt;\alpha&amp;lt;1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx_n,Tx_0)\leqslant\alpha\rho(x_n,x_0)$, 根据夹逼准则可知 $\rho(Tx_n,Tx_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.&lt;/p>
+&lt;p>设 $\lbrace x\_n\rbrace \_{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x\_0$. 那么对于 $\rho(Tx\_n,Tx\_0)$, 由于 $T$ 是压缩映射, 故存在 $0&amp;lt;\alpha&amp;lt;1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx\_n,Tx\_0)\leqslant\alpha\rho(x\_n,x\_0)$, 根据夹逼准则可知 $\rho(Tx\_n,Tx\_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -1606,22 +1662,24 @@ $$\lim\limits_{n\to\infty}x_n=\hat x.$$&lt;/p>
  &lt;a href="#115" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $T$ 是压缩映射, 求证: $T^n(n\in\mathbb{N}_+)$ 也是压缩映射, 并说明逆命题不一定成立.&lt;/p>
+&lt;/h2>&lt;p>设 $T$ 是压缩映射, 求证: $T^n(n\in\mathbb{N}\_&amp;#43;)$ 也是压缩映射, 并说明逆命题不一定成立.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>记度量空间为 $(\mathscr X,\rho)$.&lt;/p>
 &lt;p>由 $T$ 是压缩映射, 所以存在 $0&amp;lt;\alpha&amp;lt;1$, 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in \mathscr X$. 于是有
-$$\rho(T^n x,T^n y)\leqslant\alpha\rho(T^{n-1}x,T^{n-1}y)\leqslant\cdots\leqslant\alpha^n\rho(x,y).$$
+&lt;/p>
+$$\rho(T^n x,T^n y)\leqslant\alpha\rho(T^{n-1}x,T^{n-1}y)\leqslant\cdots\leqslant\alpha^n\rho(x,y).$$&lt;p>
 由于 $0&amp;lt;\alpha&amp;lt;1$, 故 $0&amp;lt;\alpha^n&amp;lt;1$. 又 $T$ 将 $\mathscr X$ 映到自身, 因此 $T^n$ 也将 $\mathscr X$ 映到自身. 综上可知 $T^n$ 仍为压缩映射。&lt;/p>
 &lt;p>逆命题不一定成立, 下面给出一个反例:&lt;/p>
-&lt;p>在 $[0,1)$ 上以普通绝对值作度量, 取映射 $T(x)=\dfrac{1+\sqrt{3}}{6}x^3$。&lt;/p>
+&lt;p>在 $[0,1)$ 上以普通绝对值作度量, 取映射 $T(x)=\dfrac{1&amp;#43;\sqrt{3}}{6}x^3$。&lt;/p>
 &lt;p>显然 $T$ 将 $[0,1)$ 映到 $[0,1)$。&lt;/p>
-&lt;p>计算导数得 $T&amp;rsquo;(x)=\dfrac{1+\sqrt{3}}{2}x^2$, 存在 $x$ 使得 $T&amp;rsquo;(x)&amp;gt;1$, 因此 $T$ 不是压缩映射。&lt;/p>
+&lt;p>计算导数得 $T&amp;#39;(x)=\dfrac{1&amp;#43;\sqrt{3}}{2}x^2$, 存在 $x$ 使得 $T&amp;#39;(x)&amp;gt;1$, 因此 $T$ 不是压缩映射。&lt;/p>
 &lt;p>但是由链式法则,
-$$ (T^2(x))&amp;rsquo; = T&amp;rsquo;(T(x))\cdot T&amp;rsquo;(x) = \frac{(1+\sqrt 3)^4}{144} x^8 &amp;lt;1,\quad \forall x\in[0,1),$$
+&lt;/p>
+$$ (T^2(x))&amp;#39; = T&amp;#39;(T(x))\cdot T&amp;#39;(x) = \frac{(1&amp;#43;\sqrt 3)^4}{144} x^8 &amp;lt;1,\quad \forall x\in[0,1),$$&lt;p>
 因此 $T^2$ 是压缩映射。&lt;/p>
-&lt;p>注: 上述构造的思路是考虑幂函数 $T(x)=c x^k$, 通过对系数 $c$ 和次幂 $k$ 的选择可以令 $T&amp;rsquo;$ 在某些点大于 1 而 $T^2$ 的导数处处小于 1，从而构成逆命题不成立的反例。&lt;/p>
+&lt;p>注: 上述构造的思路是考虑幂函数 $T(x)=c x^k$, 通过对系数 $c$ 和次幂 $k$ 的选择可以令 $T&amp;#39;$ 在某些点大于 1 而 $T^2$ 的导数处处小于 1，从而构成逆命题不成立的反例。&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -1634,14 +1692,16 @@ $$ (T^2(x))&amp;rsquo; = T&amp;rsquo;(T(x))\cdot T&amp;rsquo;(x) = \frac{(1+\sqr
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>由 $\rho(Tx,Ty)&amp;lt;\rho(x,y)$ 和三角不等式可得
-$$|\rho(x,Tx)-\rho(y,Ty)|\leqslant \rho(x,y)+\rho(Tx,Ty)&amp;lt;2\rho(x,y),$$
+&lt;/p>
+$$|\rho(x,Tx)-\rho(y,Ty)|\leqslant \rho(x,y)&amp;#43;\rho(Tx,Ty)&amp;lt;2\rho(x,y),$$&lt;p>
 从而 $\rho(x,Tx)$ 是连续的。&lt;/p>
-&lt;p>由于 $M$ 是 $\mathbb{R}^n$ 中的有界闭集, 因此存在使 $\rho(x,Tx)$ 取得最小值的点 $x_0\in M$. 若 $\rho(x_0,Tx_0)=0$ 则 $x_0$ 为不动点。&lt;/p>
-&lt;p>若 $\rho(x_0,Tx_0)&amp;gt;0$, 则由假设有 $\rho(Tx_0,T^2x_0)&amp;lt;\rho(x_0,Tx_0)$, 即 $Tx_0$ 的值更小，这与 $x_0$ 为最小值点矛盾。因此必须有 $\rho(x_0,Tx_0)=0$，即存在不动点。&lt;/p>
-&lt;p>唯一性则与压缩映像原理一致：若存在两个不动点 $x_0,x_1$，则
-$$\rho(x_0,x_1)=\rho(Tx_0,Tx_1)&amp;lt;\rho(x_0,x_1),$$
+&lt;p>由于 $M$ 是 $\mathbb{R}^n$ 中的有界闭集, 因此存在使 $\rho(x,Tx)$ 取得最小值的点 $x\_0\in M$. 若 $\rho(x\_0,Tx\_0)=0$ 则 $x\_0$ 为不动点。&lt;/p>
+&lt;p>若 $\rho(x\_0,Tx\_0)&amp;gt;0$, 则由假设有 $\rho(Tx\_0,T^2x\_0)&amp;lt;\rho(x\_0,Tx\_0)$, 即 $Tx\_0$ 的值更小，这与 $x\_0$ 为最小值点矛盾。因此必须有 $\rho(x\_0,Tx\_0)=0$，即存在不动点。&lt;/p>
+&lt;p>唯一性则与压缩映像原理一致：若存在两个不动点 $x\_0,x\_1$，则
+&lt;/p>
+$$\rho(x\_0,x\_1)=\rho(Tx\_0,Tx\_1)&amp;lt;\rho(x\_0,x\_1),$$&lt;p>
 矛盾。因此不动点唯一。&lt;/p>
-&lt;p>注: 在度量空间中关于连续性的论证要以度量 $\rho$ 为度量依据，即在选取 $\delta$ 时是针对 $\rho(x,x&amp;rsquo;)$ 的限制，注意区分欧式距离上的连续性与一般度量空间中的连续性的表述。&lt;/p>
+&lt;p>注: 在度量空间中关于连续性的论证要以度量 $\rho$ 为度量依据，即在选取 $\delta$ 时是针对 $\rho(x,x&amp;#39;)$ 的限制，注意区分欧式距离上的连续性与一般度量空间中的连续性的表述。&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -1649,19 +1709,19 @@ $$\rho(x_0,x_1)=\rho(Tx_0,Tx_1)&amp;lt;\rho(x_0,x_1),$$
  &lt;a href="#117" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>对于积分方程 $$x(t)-\lambda\int_0^1 e^{t-s}x(s)\text{d} s=y(t),$$ 其中 $y(t)\in C[0,1]$ 为给定函数, $\lambda$ 为常数, $|\lambda|&amp;lt;1$, 求证: 存在唯一解 $x(t)\in C[0,1]$.&lt;/p>
+&lt;/h2>&lt;p>对于积分方程 &lt;/p>
+$$x(t)-\lambda\int\_0^1 e^{t-s}x(s)\text{d} s=y(t),$$&lt;p> 其中 $y(t)\in C[0,1]$ 为给定函数, $\lambda$ 为常数, $|\lambda|&amp;lt;1$, 求证: 存在唯一解 $x(t)\in C[0,1]$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑度量 $\rho(f,g)=\max\limits_{t\in[0,1]}|f(t)-g(t)|$.&lt;/p>
-&lt;p>对积分方程做变换得到 $e^{-t}x(t)-\lambda\int_0^1 e^{-s}x(s)\text{d} s=e^{-t}y(t)$.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>考虑度量 $\rho(f,g)=\max\limits\_{t\in[0,1]}|f(t)-g(t)|$.&lt;/p>
+&lt;p>对积分方程做变换得到 $e^{-t}x(t)-\lambda\int\_0^1 e^{-s}x(s)\text{d} s=e^{-t}y(t)$.&lt;/p>
 &lt;p>不妨设 $\varphi(t)=e^{-t}x(t),\ \psi(t)=e^{-t}y(t)$, 新的函数显然仍属于 $C[0,1]$, 那么方程变为
-$$\varphi(t)=\lambda\int_0^1 \varphi(s)\text{d} s+\psi(t).$$&lt;/p>
-&lt;p>考虑映射 $T(\varphi)=\psi+\lambda\int_0^1 \varphi\text{d} s$。&lt;/p>
+&lt;/p>
+$$\varphi(t)=\lambda\int\_0^1 \varphi(s)\text{d} s&amp;#43;\psi(t).$$&lt;p>考虑映射 $T(\varphi)=\psi&amp;#43;\lambda\int\_0^1 \varphi\text{d} s$。&lt;/p>
 &lt;p>首先, 由 $\psi\in C[0,1]$, 所以 $T(\varphi)\in C[0,1]$, 映射到自身。&lt;/p>
 &lt;p>其次, 对于任意两个属于 $C[0,1]$ 的函数 $f,g$ 有&lt;/p>
-&lt;p>$$\rho(Tf,Tg)=|\lambda\int_0^1 f(t)-g(t)\text{d} t|\leqslant|\lambda|\max\limits_{t\in[0,1]}|f(t)-g(t)|=\lambda\rho(f,g).$$&lt;/p>
-&lt;p>由于 $|\lambda|&amp;lt;1$, 可知 $T$ 是压缩映射, 因此由压缩映像原理可得方程有唯一解. 乘以 $e^{t}$ 的变换是双射, 故原方程在 $C[0,1]$ 上也有唯一解。&lt;/p>
+$$\rho(Tf,Tg)=|\lambda\int\_0^1 f(t)-g(t)\text{d} t|\leqslant|\lambda|\max\limits\_{t\in[0,1]}|f(t)-g(t)|=\lambda\rho(f,g).$$&lt;p>由于 $|\lambda|&amp;lt;1$, 可知 $T$ 是压缩映射, 因此由压缩映像原理可得方程有唯一解. 乘以 $e^{t}$ 的变换是双射, 故原方程在 $C[0,1]$ 上也有唯一解。&lt;/p>
 &lt;p>下面是 Mworks 程序.&lt;/p>
 &lt;pre tabindex="0">&lt;code>clear()
 clc()
