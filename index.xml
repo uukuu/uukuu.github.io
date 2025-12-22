@@ -52,59 +52,16 @@ $$&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>定义映射 $T:L^2([0,1])\to L^2([0,1])$ 为
-$$
-(Tx)(t)\triangleq y(t)-\displaystyle\int_{0}^{t} e^{ts}x(s)\text{d} s .
-$$&lt;/p>
-&lt;p>先验证 $Tx\in L^2[0,1]$, 利用 Cauchy-Schwarz 不等式
-$$
-|Tx(t)|
-\leqslant
-\left(\displaystyle\int_{0}^{t} e^{2ts}\text{d} s\right)^{1/2}
-\left(\displaystyle\int_{0}^{t}|x(s)|^2\text{d} s\right)^{1/2}
-=e\sqrt{t}\Vert x \Vert .
-$$&lt;/p>
-&lt;p>从而
-$$
-\left(\displaystyle\int_{0}^{1} |Tx(t)|^2\text{d} t\right)^{1/2}
-\leqslant
-\frac{e^2}{2}\Vert x \Vert^2 .
-$$&lt;/p>
+ &lt;div class="admonition-content">&lt;p>定义映射 $T:L^2([0,1])\to L^2([0,1])$ 为 $$(Tx)(t)\triangleq y(t)-\int_0^t e^{ts}x(s)\text{d} s.$$&lt;/p>
+&lt;p>先验证 $Tx\in L^2[0,1]$, 利用 Cauchy-Schwarz 不等式 $$|Tx(t)|\leqslant\left(\int_0^t e^{2ts}\text{d} s\right)^{1/2}\left(\int_0^t|x(s)|^2\text{d} s\right)^{1/2}=e\sqrt{t}\Vert x \Vert $$&lt;/p>
+&lt;p>从而 $\left(\displaystyle\int_{0}^{1} |Tx(t)|^2\text{d} t\right)^{1/2}\leqslant \frac{e^2}{2}\Vert x \Vert ^2$ 即 $Tx\in L^2[0,1]$.&lt;/p>
 &lt;p>那么方程的解就等价于 $Tx=x$. 下证存在唯一的不动点.&lt;/p>
-&lt;p>取度量
-$$
-\rho(x,y)=\left(\displaystyle\int_{0}^{1} |x(t)-y(t)|^2\text{d} t\right)^{1/2}.
-$$&lt;/p>
-&lt;p>$\forall x,y\in L^2[0,1]$, 考虑
-$$|T^nx(t)-T^n y(t)|=\left|
-\displaystyle\int_{0}^{t}
-e^{ts}(T^{n-1}x(s)-T^{n-1}y(s))\text{d} s
-\right|
-\leqslant
-e^n
-\underset{n\text{个}}{\int_{0}^{t}\cdots\int_{0}^{s_{n-1}}}
-|x(s_n)-y(s_n)|\text{d} \bm s .
-$$&lt;/p>
-&lt;p>由 Cauchy-Schwarz 不等式
-$$
-\int_{0}^{1} |x(t)-y(t)|\text{d} t
-\leqslant
-\rho(x,y)\triangleq M .
-$$&lt;/p>
-&lt;p>即
-$$
-|T^nx(t)-T^ny(t)|
-\leqslant
-\frac{e^n M}{(n-1)!}.
-$$&lt;/p>
-&lt;p>据此
-$$
-\rho(T^nx,T^ny)
-\leqslant
-\frac{e^n}{(n-1)!}\rho(x,y).
-$$&lt;/p>
-&lt;p>当 $n$ 充分大时, $T^n$ 是压缩映射. 由 Banach 不动点定理, 存在唯一的不动点. 同时也满足 $Tx=x$.&lt;/p>
-&lt;p>综上, 原方程存在唯一解.&lt;/p>
+&lt;p>取度量为 $\rho(x,y)=\left(\displaystyle\int_{0}^{1} |x(t)-y(t)|^2\text{d} t\right)^{1/2}$.&lt;/p>
+&lt;p>$\forall x,y\in L^2[0,1]$, 考虑 $$|T^nx(t)-T^n y(t)|=|\displaystyle\int_{0}^{t} e^{ts}(T^{n-1}x(s)-T^{n-1}y(s))\text{d} s|\leqslant e^n\underset{n\text{个}}{\int_0^{t}\cdots\int_0^{s_{n-1}}} |x(s_n)-y(s_n)|\text{d} s.$$而由 $x,y\in L^2[0,1]$ 根据 Cauchy-Schwarz 不等式有$$\int_0^1 |x(t)-y(t)|\text{d} t\leqslant \left(\int_0^1|x(t)-y(t)|^2\text{d} t\right)^{1/2}\left(\int_0^1 1^2\text{d} t\right)^{1/2}=\rho(x,y)\triangleq M$$ 即&lt;/p>
+&lt;p>$$|T^nx(t)-T^ny(t)|\leqslant \underset{n-1\text{个}}{\int_0^t\cdots\int_0^{s_{n-2}}}M\text{d} s=\frac{e^n M}{(n-1)!}$$&lt;/p>
+&lt;p>据此我们有,
+$$\rho(T^nx,T^ny)=\left(\int_0^1|T^n x(t)-T^ny(t)|^2\text{d} t\right)^{1/2}\leqslant \frac{e^nM}{(n-1)!}$$ 即当 $n$ 充分大时, 存在 $n$ 使得 $\frac{e^n}{(n-1)!}&amp;lt;1$ 从而 $\rho(T^nx,T^n y)\leqslant \frac{e^n}{(n-1)!}\rho(x,y)$, 即 $T^n$ 是压缩映射, 又 $L^2[0,1]$ 是完备的度量空间, 故根据 Banach 不动点定理存在唯一的不动点 $x(t)$ 满足 $T^n x=x$. 同时也满足 $Tx=x$ 因为 $\rho(Tx,x)=\rho(T^{n+1}x,T^nx)\leqslant \frac{e^n}{(n-1)!}\rho(Tx,x)$ 只能 $\rho(Tx,x)=0$.&lt;/p>
+&lt;p>综上所述, 存在唯一的解 $x$ 满足原方程.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -126,57 +83,16 @@ $$&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>取三次多项式
-$g(x)=Ax^3+Bx^2+Cx+D\in A$,
-由边界条件解得
-$$
-g(x)=(x-b)^2\left(
-\frac{2}{(b-a)^3}x+\frac{b-3a}{(b-a)^3}
-\right).
-$$&lt;/p>
-&lt;p>定义内积
-$$
-(f,g)=\displaystyle\int_a^b f(x)g(x)\text{d} x ,
-$$
-及其诱导的范数
-$$
-\Vert f \Vert
-=\left(\displaystyle\int_a^b |f(x)|^2\text{d} x\right)^{1/2}.
-$$&lt;/p>
-&lt;p>由 Cauchy-Schwarz 不等式
-$$
-\Vert f&amp;rsquo;&amp;rsquo; \Vert\cdot\Vert g&amp;rsquo;&amp;rsquo; \Vert
-\geqslant |(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)|.
-$$&lt;/p>
-&lt;p>计算
-$$
-g&amp;rsquo;&amp;rsquo;(x)=\frac{6}{(b-a)^3}(2x-a-b).
-$$&lt;/p>
-&lt;p>于是
-$$
-\begin{aligned}
-(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)
-&amp;amp;=\int_a^b f&amp;rsquo;&amp;rsquo;(x)g&amp;rsquo;&amp;rsquo;(x)\text{d} x \\
-&amp;amp;=g&amp;rsquo;&amp;rsquo;(x)f&amp;rsquo;(x)|_a^b-\int_a^b f&amp;rsquo;(x)\text{d} g&amp;rsquo;&amp;rsquo;(x) \\
-&amp;amp;=-\int_a^b f&amp;rsquo;(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)\text{d} x \\
-&amp;amp;=-f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)|_a^b + \int_a^b f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)\text{d} x \\
-&amp;amp;=-f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)|_a^b=\frac{12}{(b-a)^3}.
-\end{aligned}
-$$&lt;/p>
-&lt;p>又
-$$
-\Vert g&amp;rsquo;&amp;rsquo; \Vert=\sqrt{\frac{12}{(b-a)^3}}.
-$$&lt;/p>
-&lt;p>从而
-$$
-\Vert f&amp;rsquo;&amp;rsquo; \Vert^2
-\geqslant
-\frac{12}{(b-a)^3}.
-$$&lt;/p>
-&lt;p>且由于 $g\in A$, 等号可取, 故最大常数
-$$
-C=12.
-$$&lt;/p>
+ &lt;div class="admonition-content">&lt;p>取三次多项式 $g(x)=Ax^3+Bx^2+Cx+D\in A$, 由边界条件解得 $g(x)=(x-b)^2\left(\dfrac{2}{(b-a)^3}x+\dfrac{b-3a}{(b-a)^3}\right)$.&lt;/p>
+&lt;p>定义内积 $(f,g)=\displaystyle\int_{a}^{b} f(x)g(x)\text{d} x$, 及其诱导的范数 $\Vert f \Vert =\left(\displaystyle\int_{a}^{b} |f(x)|^2\text{d} x\right)^{1/2}$.&lt;/p>
+&lt;p>由 Cauchy-Schwarz 不等式 $$\Vert f&amp;rsquo;&amp;rsquo; \Vert \cdot\Vert g&amp;rsquo;&amp;rsquo; \Vert \geqslant |(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)|$$下面计算 $(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)$. 首先有 $g&amp;rsquo;&amp;rsquo;(x)=\frac{6}{(b-a)^3}(2x-a-b)$. 那么$$\begin{aligned}
+(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)&amp;amp;= \int_a^b f&amp;rsquo;&amp;rsquo;(x)g&amp;rsquo;&amp;rsquo;(x)\text{d} x\\
+&amp;amp;=g&amp;rsquo;&amp;rsquo;(x)f&amp;rsquo;(x)|_a^b-\int_a^b f&amp;rsquo;(x)\text{d} g&amp;rsquo;&amp;rsquo;(x)\\
+&amp;amp;=-\int_a^b f&amp;rsquo;(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)\text{d} x\\
+&amp;amp;=-f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)|_a^b + \int_a^b f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)\text{d} x\\
+&amp;amp;=-f(x)g&amp;rsquo;&amp;rsquo;&amp;rsquo;(x)|_a^b=\frac{12}{(b-a)^3}
+\end{aligned}$$&lt;/p>
+&lt;p>又 $\Vert g&amp;rsquo;&amp;rsquo; \Vert =\sqrt{\dfrac{12}{(b-a)^3}}$ 从而 $\Vert f&amp;rsquo;&amp;rsquo; \Vert ^2\geqslant\frac{(f&amp;rsquo;&amp;rsquo;,g&amp;rsquo;&amp;rsquo;)}{\Vert g&amp;rsquo;&amp;rsquo; \Vert ^2}=\frac{12}{(b-a)^3}$ 并且由于 $g\in A$ 所以等号可以取到, 故最大的常数 $C=12$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -194,9 +110,7 @@ $$&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ol>
-&lt;li>
-&lt;p>先验证范数&lt;/p>
+ &lt;div class="admonition-content">&lt;p>(1) 先验证范数&lt;/p>
 &lt;p>正定性: 显然 $\Vert f \Vert _{0,\alpha}\geqslant 0$, 当 $\Vert f \Vert _{0,\alpha}=0$ 时, 有 $\max|f(x)|=0$, 从而 $f=0$.&lt;/p>
 &lt;p>齐次性: $\Vert af \Vert _{0,\alpha}=\max|af(x)|+\sup\frac{|af(x)-af(y)|}{|x-y|^\alpha}=a\Vert f \Vert _{0,\alpha}.$&lt;/p>
 &lt;p>三角不等式:&lt;/p>
@@ -204,39 +118,20 @@ $$&lt;/p>
 &lt;p>第二部分: $|f+g|&lt;em>\alpha=\sup\frac{|(f+g)x-(f+g)y|}{|x-y|^\alpha}\leqslant\sup\frac{|fx-fy|+|gx-gy|}{|x-y|^\alpha}\leqslant|f|&lt;/em>\alpha+|g|_\alpha$.&lt;/p>
 &lt;p>从而 $\Vert f+g \Vert _{0,\alpha}\leqslant\Vert f \Vert _{0,\alpha}+\Vert g \Vert _{0,\alpha}$.&lt;/p>
 &lt;p>下面证明完备性&lt;/p>
-&lt;p>设 $\lbrace f_n \rbrace$ 是 $C^{0,\alpha}[0,1]$ 中的柯西列.&lt;/p>
-&lt;p>首先, 在范数 $\Vert \cdot \Vert=\max\limits_{x\in[0,1]}|f(x)|$ 意义下 $(C[0,1],\Vert \cdot \Vert)$ 是完备的, 并且根据 $\Vert f \Vert _{0,\alpha}$ 的定义 $\lbrace f_n \rbrace$ 在 $C[0,1]$ 中也是柯西列, 故收敛, 记收敛到 $f$.&lt;/p>
+&lt;p>设 $\lbrace f_n \rbrace $ 是 $C^{0,\alpha}[0,1]$ 中的柯西列.&lt;/p>
+&lt;p>首先, 在范数 $\Vert \cdot \Vert =\max\limits_{x\in[0,1]}|f(x)|$ 意义下 $(C[0,1],\Vert \cdot \Vert )$ 是完备的, 并且根据 $\Vert f \Vert _{0,\alpha}$ 的定义 $\lbrace f_n \rbrace $ 在 $C[0,1]$ 中也是柯西列, 故收敛, 记收敛到 $f$.&lt;/p>
 &lt;p>先证 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
-&lt;p>由于 $\lbrace f_n \rbrace$ 在 $\Vert \cdot \Vert &lt;em>{0,\alpha}$ 下是柯西列, 所以存在 $N$, 满足 $|f_n-f_N|&lt;/em>\alpha\leqslant \Vert f_n-f_N \Vert &lt;em>{0,\alpha}&amp;lt;1,\forall n&amp;gt;N$. 从而由三角不等式有
-$$
-|f_n|&lt;/em>{\alpha}\leqslant |f_n-f_N|&lt;em>\alpha+|f_N|&lt;/em>\alpha&amp;lt;|f_N|&lt;em>\alpha+1\quad\forall n&amp;gt;N
-$$
-故存在 $M&amp;gt;0$ 满足 $|f_n|&lt;/em>\alpha&amp;lt;M,\forall n\geqslant 1$.&lt;/p>
-&lt;p>那么就有
-$$
-|f_n(x)-f_n(y)|&amp;lt;M|x-y|^\alpha,\quad \forall x,y,n
-$$
-令 $n\to\infty$ 则有
-$$
-|f(x)-f(y)|&amp;lt;M|x-y|^\alpha
-$$
-移项并取上确界就得到 $|f|_\alpha\leqslant M$, 即 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
-&lt;p>再证 $\Vert f-f_n \Vert &lt;em>{0,\alpha}\to 0$. 只要证 $|f-f_n|&lt;/em>{\alpha}\to 0$.&lt;/p>
-&lt;p>由 $\lbrace f_n \rbrace$ 是柯西列, 从而 $\forall\varepsilon&amp;gt;0$, $\exists N$, 满足 $\forall n,m&amp;gt;N$ 有 $|f_n-f_m|&lt;em>\alpha\leqslant\Vert f_n-f_m \Vert &lt;em>{0,\alpha}&amp;lt;\varepsilon$. 从而对任意 $x\neq y$ 有
-$$
-\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits&lt;/em>{m\to\infty}\frac{|(f_n-f_m)(x)-(f_n-f_m)(y)|}{|x-y|^\alpha}\leqslant\varlimsup\limits&lt;/em>{m\to\infty}|f_n-f_m|_\alpha\leqslant \varepsilon.
-$$&lt;/p>
+&lt;p>由于 $\lbrace f_n \rbrace $ 在 $\Vert \cdot \Vert _{0,\alpha}$ 下是柯西列, 所以存在 $N$, 满足 $|f_n-f_N|&lt;em>\alpha\leqslant \Vert f_n-f_N \Vert _{0,\alpha}&amp;lt;1,\forall n&amp;gt;N$. 从而由三角不等式有 $$|f_n|_{\alpha}\leqslant |f_n-f_N|&lt;/em>\alpha+|f_N|&lt;em>\alpha&amp;lt;|f_N|&lt;/em>\alpha+1\quad\forall n&amp;gt;N$$ 故存在 $M&amp;gt;0$ 满足 $|f_n|_\alpha&amp;lt;M,\forall n\geqslant 1$.&lt;/p>
+&lt;p>那么就有 $$|f_n(x)-f_n(y)|&amp;lt;M|x-y|^\alpha,\quad \forall x,y,n$$令 $n\to\infty$ 则有$$|f(x)-f(y)|&amp;lt;M|x-y|^\alpha$$ 移项并取上确界就得到 $|f|_\alpha\leqslant M$, 即 $f\in C^{0,\alpha}[0,1]$.&lt;/p>
+&lt;p>再证 $\Vert f-f_n \Vert _{0,\alpha}\to 0$. 只要证 $|f-f_n|_{\alpha}\to 0$.&lt;/p>
+&lt;p>由 $\lbrace f_n \rbrace $ 是柯西列, 从而 $\forall\varepsilon&amp;gt;0$, $\exists N$, 满足 $\forall n,m&amp;gt;N$ 有 $|f_n-f_m|&lt;em>\alpha\leqslant\Vert f_n-f_m \Vert _{0,\alpha}&amp;lt;\varepsilon$. 从而对任意 $x\neq y$ 有 $$\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits_{m\to\infty}\frac{|(f_n-f_m)(x)-(f_n-f_m)(y)|}{|x-y|^\alpha}\leqslant\varlimsup\limits_{m\to\infty}|f_n-f_m|&lt;/em>\alpha\leqslant \varepsilon.$$&lt;/p>
 &lt;p>再对 $x\neq y$ 取上确界即可得到 $|f_n-f|&lt;em>\alpha\leqslant\varepsilon$ 所以 $|f_n-f|&lt;/em>\alpha\to 0$.&lt;/p>
 &lt;p>综上 $(C^{0,\alpha}[0,1],\Vert \cdot \Vert _{0,\alpha})$ 是完备的.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>由于 $C[0,1]$ 是紧度量空间上的连续函数空间, 考虑 AA 定理, 故只需证明 $C^{0,\alpha}[0,1]$ 中的有界集 $X$ 一致有界且等度连续就能说明 $X$ 是列紧集.&lt;/p>
+&lt;p>(2) 由于 $C[0,1]$ 是紧度量空间上的连续函数空间, 考虑 AA 定理, 故只需证明 $C^{0,\alpha}[0,1]$ 中的有界集 $X$ 一致有界且等度连续就能说明 $X$ 是列紧集.&lt;/p>
 &lt;p>一致有界: $X$ 为 $C^{0,\alpha}[0,1]$ 中的有界集, 即存在 $M&amp;gt;0$ 使得 $\Vert f \Vert _{0,\alpha}&amp;lt;M,\forall f\in X$. 从而 $|f(x)|\leqslant\Vert f \Vert _{0,\alpha}&amp;lt;M\forall f\in X,x\in[0,1]$, 即 $X$ 中的函数一致有界.&lt;/p>
-&lt;p>等度连续: $\Vert f \Vert &lt;em>{0,\alpha}&amp;lt;M\Rightarrow |f|&lt;/em>\alpha&amp;lt;M\Rightarrow |f(x)-f(y)|\leqslant M|x-y|^\alpha\quad\forall x,y,f$.&lt;/p>
+&lt;p>等度连续: $\Vert f \Vert _{0,\alpha}&amp;lt;M\Rightarrow |f|_\alpha&amp;lt;M\Rightarrow |f(x)-f(y)|\leqslant M|x-y|^\alpha\quad\forall x,y,f$.&lt;/p>
 &lt;p>故 $\forall \varepsilon&amp;gt;0$, 取 $\delta=(\frac{\varepsilon}{M})^{1/\alpha}$ 则 $|f(x)-f(y)|\leqslant \varepsilon\quad\forall x,y,f$ 即等度连续.&lt;/p>
 &lt;p>所以 $C^{0,\alpha}[0,1]$ 中的有界集是 $C[0,1]$ 中的列紧集.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;/div>
  &lt;/div>
 &lt;/div>&lt;/p>
