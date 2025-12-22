@@ -142,8 +142,8 @@ $$\frac{|(f_n-f)(x)-(f_n-f)(y)|}{|x-y|^\alpha}=\lim\limits_{m\to\infty}\frac{|(f
  &lt;/div>
 &lt;/div>&lt;/p>
 &lt;hr>
-&lt;h2 class="heading-element" id="15-分">&lt;span>(15 分)&lt;/span>
- &lt;a href="#15-%e5%88%86" class="heading-mark">
+&lt;h2 class="heading-element" id="5-15-分">&lt;span>5. (15 分)&lt;/span>
+ &lt;a href="#5-15-%e5%88%86" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $f$ 是 $B^*$ 空间 $X$ 上的非零线性泛函. 证明: $f$ 无界当且仅当 $\ker f$ 在 $X$ 中稠密.&lt;/p>
@@ -162,8 +162,8 @@ $$&lt;p>那么对任意的 $x\in X$, 有 $f(x-f(x)x_n)=f(x)-f(x)f(x_n)=0$ 即 $x
  &lt;/div>
 &lt;/div>
 &lt;hr>
-&lt;h2 class="heading-element" id="20-分">&lt;span>(20 分)&lt;/span>
- &lt;a href="#20-%e5%88%86" class="heading-mark">
+&lt;h2 class="heading-element" id="6-20-分">&lt;span>6. (20 分)&lt;/span>
+ &lt;a href="#6-20-%e5%88%86" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $X,Y$ 是 $B$ 空间, $T$ 是闭线性算子, $D(T)\subset X, R(T)\subset Y$. 求证: $R(T)$ 在 $Y$ 中闭的充要条件是, $\exists C&amp;gt;0$ 使得 $d(x,N(T))\leqslant C\Vert Tx \Vert\ (\forall x\in D(T))$.&lt;/p>
