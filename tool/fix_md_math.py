@@ -115,7 +115,8 @@ def process_file(path: Path, dry_run=False):
     # tail
     if last < len(text):
         tail = text[last:]
-        new_tail = RE_UNDERSCORE.sub(r"\\_", tail)
+        # new_tail = RE_UNDERSCORE.sub(r"\\_", tail)
+        new_tail = tail
         if new_tail != tail:
             changed = True
         out_parts.append(new_tail)
