@@ -346,8 +346,8 @@ $$\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}=\left|\int_0^1 \dfrac{x(t)}{\max\limits_
 $\displaystyle\int_{0}^{1} |g(t)-x_0(t)|\text{d} t&amp;lt;\varepsilon/\Vert y\Vert$,
 从而
 &lt;/p>
-$$\left|\int\_0^1 g(t)y(t)\text{d} t-M\right|&amp;lt;\left|\int\_0^1|g(t)-x\_0(t)|y(t)\text{d} t\right|\leqslant\Vert y\Vert\int\_0^1 |g(t)-x\_0(t)|\text{d} t&amp;lt;\varepsilon.$$&lt;p>从而说明存在一列 $x\_n(t)$ 使得 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to M$,
-从而 $M=\displaystyle\int\_{0}^{1} |y(t)|\text{d} t$ 就是上确界 $\Vert f\Vert$.&lt;/p>
+$$\left|\int_0^1 g(t)y(t)\text{d} t-M\right|&amp;lt;\left|\int_0^1|g(t)-x_0(t)|y(t)\text{d} t\right|\leqslant\Vert y\Vert\int_0^1 |g(t)-x_0(t)|\text{d} t&amp;lt;\varepsilon.$$&lt;p>从而说明存在一列 $x_n(t)$ 使得 $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to M$,
+从而 $M=\displaystyle\int_{0}^{1} |y(t)|\text{d} t$ 就是上确界 $\Vert f\Vert$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -403,9 +403,9 @@ $T(\alpha x&amp;#43;\beta y)=\alpha T(x)&amp;#43;\beta T(y)=0$, 从而 $\alpha x
 $\Rightarrow$: 由 (1) 可知.
 $\Leftarrow$: 反设 $f$ 无界, 则 $\forall n\in \mathbb N$ 存在 $x_n\in\mathscr X$, 使得
 &lt;/p>
-$$\Vert x_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x\_n)=1.$$&lt;p>
-于是 ${x\_n-x\_1}\subset N(f)$ 且 $\Vert(x\_n-x\_1)-(-x\_1)\Vert\to 0$.
-但 $f(-x\_1)=-1$, 即 $-x\_1\notin N(f)$, 与 $N(f)$ 闭性矛盾.&lt;/p>
+$$\Vert x_n\Vert&amp;lt;\frac 1n,\ \text{且} f(x_n)=1.$$&lt;p>
+于是 ${x_n-x_1}\subset N(f)$ 且 $\Vert(x_n-x_1)-(-x_1)\Vert\to 0$.
+但 $f(-x_1)=-1$, 即 $-x_1\notin N(f)$, 与 $N(f)$ 闭性矛盾.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/div>
@@ -568,10 +568,10 @@ $$\begin{cases}
 2 - \xi_1 \leqslant 1. &amp;amp; 
 \end{cases}$$&lt;p>&lt;br>
 所以有 &lt;/p>
-$$\left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| \leqslant \sum\limits_{k=2}^\infty \frac{|\xi_k|}{2^k} \overset{\text{由极限为 0 不可能一直是 1}}{&amp;lt;} \sum\limits\_{k=2}^\infty \frac{1}{2^k} = \frac{1}{2}.$$&lt;p>&lt;br>
+$$\left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| \leqslant \sum\limits_{k=2}^\infty \frac{|\xi_k|}{2^k} \overset{\text{由极限为 0 不可能一直是 1}}{&amp;lt;} \sum\limits_{k=2}^\infty \frac{1}{2^k} = \frac{1}{2}.$$&lt;p>&lt;br>
 &lt;/p>
-$$\Rightarrow \left| \frac{\xi\_1}{2} \right| = \left| \sum\limits\_{k=2}^\infty \frac{\xi\_k}{2^k} \right| &amp;lt; \frac{1}{2} \Rightarrow |\xi\_1| &amp;lt; 1.$$&lt;p> 这与 $|2 - \xi\_1| \leqslant 1$ 矛盾.&lt;br>
-所以有 $\forall y \in M$ 有 $\Vert x\_0 - y \Vert &amp;gt; 1$.&lt;/p>
+$$\Rightarrow \left| \frac{\xi_1}{2} \right| = \left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| &amp;lt; \frac{1}{2} \Rightarrow |\xi_1| &amp;lt; 1.$$&lt;p> 这与 $|2 - \xi_1| \leqslant 1$ 矛盾.&lt;br>
+所以有 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -618,13 +618,13 @@ $&lt;br>
  &lt;div class="admonition-content">&lt;ul>
 &lt;li>(1) $\Vert [x] \Vert = \inf\limits_{y \in [x]} \Vert y \Vert = \inf\limits_{y \in \mathscr X_0} \Vert x &amp;#43; y \Vert = \inf\limits_{z \in \mathscr X_0} \Vert x - z \Vert$.&lt;/li>
 &lt;li>(2) 根据商空间运算定义, 线性性显然. $\Vert \varphi(x) \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x - z \Vert \leqslant \Vert x - 0 \Vert = \Vert x \Vert$ 所以 $\varphi(x)$ 连续.&lt;/li>
-&lt;li>(3) 取代表元 $x&amp;#39;$, 根据 $\Vert [x] \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x&amp;#39; - z \Vert$ 所以对任意 $\varepsilon &amp;gt; 0$, 存在 $z \in \mathscr X_0$ 使得 $\Vert x&amp;#39; - z \Vert &amp;lt; \Vert [x] \Vert\_0 &amp;#43; \varepsilon$, 现取 $\varepsilon = \Vert [x] \Vert\_0$, 则 $x&amp;#39; &amp;#43; z\_0$ 满足 $\varphi(x&amp;#39;) = [x],\ \Vert x \Vert \leqslant 2 \Vert [x] \Vert\_0$.&lt;/li>
-&lt;li>(4) 取 $T: \mathscr X / \mathscr X\_0 \to \mathbb K, T([f]) = f(0)$. 首先先探究等价类的性质, 若 $f - g \in \mathscr X\_0$, 那么有 $f(0) = g(0)$, 所以我们不妨设等价类为 $[f\_x]$ 表示所有 $f(0) = x$ 的函数.&lt;br>
-先证 $T$ 是线性映射, 即 $T(\alpha [f\_x] &amp;#43; \beta [f\_y]) = T([f\_{\alpha x} &amp;#43; f\_{\beta y}]) = \alpha x &amp;#43; \beta y = \alpha T([f\_x]) &amp;#43; \beta T([f\_y])$. 这一步用到了 $\mathbb{K}$ 的线性性.&lt;br>
-再证 $T$ 保范数, 即要证 $\Vert T([f\_x]) \Vert = \Vert x \Vert$.&lt;br>
-根据定义取 $[f\_x]$ 的代表元为 $f,\ f(0) = x$, 有 $\Vert T([f\_x]) \Vert = \inf\limits\_{g \in \mathscr X\_0} \Vert f - g \Vert = \inf\limits\_{g \in \mathscr X\_0} \max\limits\_{t \in [0,1]} |f(t) - g(t)|$&lt;br>
-一方面, $\inf\limits\_{g \in \mathscr X\_0} \max\limits\_{t \in [0,1]} |f(t) - g(t)| \geqslant \inf\limits\_{g \in \mathscr X\_0} |f(0) - g(0)| = |x|$&lt;br>
-另一方面, 取 $g&amp;#39; = f - x \in \mathscr X\_0$, 从而 $\inf\limits\_{g \in \mathscr X\_0} \Vert f - g \Vert \leqslant \Vert f - g&amp;#39; \Vert \overset{\text{恒为 x 的常函数}}{=} \Vert x \Vert,$ 所以有 $\Vert T([f\_x]) \Vert = \Vert x \Vert$.&lt;/li>
+&lt;li>(3) 取代表元 $x&amp;#39;$, 根据 $\Vert [x] \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x&amp;#39; - z \Vert$ 所以对任意 $\varepsilon &amp;gt; 0$, 存在 $z \in \mathscr X_0$ 使得 $\Vert x&amp;#39; - z \Vert &amp;lt; \Vert [x] \Vert_0 &amp;#43; \varepsilon$, 现取 $\varepsilon = \Vert [x] \Vert_0$, 则 $x&amp;#39; &amp;#43; z_0$ 满足 $\varphi(x&amp;#39;) = [x],\ \Vert x \Vert \leqslant 2 \Vert [x] \Vert_0$.&lt;/li>
+&lt;li>(4) 取 $T: \mathscr X / \mathscr X_0 \to \mathbb K, T([f]) = f(0)$. 首先先探究等价类的性质, 若 $f - g \in \mathscr X_0$, 那么有 $f(0) = g(0)$, 所以我们不妨设等价类为 $[f_x]$ 表示所有 $f(0) = x$ 的函数.&lt;br>
+先证 $T$ 是线性映射, 即 $T(\alpha [f_x] &amp;#43; \beta [f_y]) = T([f_{\alpha x} &amp;#43; f_{\beta y}]) = \alpha x &amp;#43; \beta y = \alpha T([f_x]) &amp;#43; \beta T([f_y])$. 这一步用到了 $\mathbb{K}$ 的线性性.&lt;br>
+再证 $T$ 保范数, 即要证 $\Vert T([f_x]) \Vert = \Vert x \Vert$.&lt;br>
+根据定义取 $[f_x]$ 的代表元为 $f,\ f(0) = x$, 有 $\Vert T([f_x]) \Vert = \inf\limits_{g \in \mathscr X_0} \Vert f - g \Vert = \inf\limits_{g \in \mathscr X_0} \max\limits_{t \in [0,1]} |f(t) - g(t)|$&lt;br>
+一方面, $\inf\limits_{g \in \mathscr X_0} \max\limits_{t \in [0,1]} |f(t) - g(t)| \geqslant \inf\limits_{g \in \mathscr X_0} |f(0) - g(0)| = |x|$&lt;br>
+另一方面, 取 $g&amp;#39; = f - x \in \mathscr X_0$, 从而 $\inf\limits_{g \in \mathscr X_0} \Vert f - g \Vert \leqslant \Vert f - g&amp;#39; \Vert \overset{\text{恒为 x 的常函数}}{=} \Vert x \Vert,$ 所以有 $\Vert T([f_x]) \Vert = \Vert x \Vert$.&lt;/li>
 &lt;/ul>
 &lt;/div>
  &lt;/div>
@@ -817,14 +817,14 @@ $\Vert\cdot\Vert_1: 4$, $\Vert\cdot\Vert_2: 2&amp;#43;\sqrt{2}$, $\Vert\cdot\Ver
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>(1) 正定性显然.&lt;/p>
-&lt;p>齐次性 $\Vert\alpha x(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|\alpha x(t)|=\alpha\sup\_{0&amp;lt;t\leqslant 1}|x(t)|=\alpha\Vert x(t)\Vert$.&lt;/p>
+&lt;p>齐次性 $\Vert\alpha x(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|\alpha x(t)|=\alpha\sup_{0&amp;lt;t\leqslant 1}|x(t)|=\alpha\Vert x(t)\Vert$.&lt;/p>
 &lt;p>三角不等式:&lt;br>
-$\Vert x\_1(t)&amp;#43;x\_2(t)\Vert=\sup\_{0&amp;lt;t\leqslant 1}|x\_1(t)&amp;#43;x\_2(t)|\leqslant \sup|x\_1(t)|&amp;#43;\sup|x\_2(t)|=\Vert x\_1(t)\Vert&amp;#43;\Vert x\_2(t)\Vert$.&lt;/p>
-&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall \lbrace a\_n\rbrace \in l^\infty$,&lt;br>
-$T(\lbrace a\_n\rbrace )$ 表示 $x(\frac1n)=a\_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n&amp;#43;1})$ 两点的连续函数.&lt;/p>
+$\Vert x_1(t)&amp;#43;x_2(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|x_1(t)&amp;#43;x_2(t)|\leqslant \sup|x_1(t)|&amp;#43;\sup|x_2(t)|=\Vert x_1(t)\Vert&amp;#43;\Vert x_2(t)\Vert$.&lt;/p>
+&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall \lbrace a_n\rbrace \in l^\infty$,&lt;br>
+$T(\lbrace a_n\rbrace )$ 表示 $x(\frac1n)=a_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n&amp;#43;1})$ 两点的连续函数.&lt;/p>
 &lt;p>显然这是个单射且像集是 $C(0,1]$ 的子集. 并且该映射是线性映射.&lt;/p>
 &lt;p>下面证其还保范数: 对折线段, 其最大值取在端点处, 故&lt;br>
-$\Vert T(\lbrace a\_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a\_n=\Vert\lbrace a\_n\rbrace \Vert$.&lt;/p>
+$\Vert T(\lbrace a_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert\lbrace a_n\rbrace \Vert$.&lt;/p>
 &lt;p>所以 $l^\infty$ 与 $C(0,1]$ 的一个子空间 $T(l^\infty)$ 等距同构.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -944,7 +944,7 @@ $$\lbrace F(x)=\int_a^x f(t) \mathrm{d} t | f\in M\rbrace $$&lt;p> 是列紧集.
 &lt;/p>
 $$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqslant (b-a)C$$&lt;p>
 所以 $F(x)$ 一致有界。&lt;/p>
-&lt;p>&amp;ldquo;等度连续&amp;rdquo;: 对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x_1-x_2|&amp;lt;\delta$ 就有 $|F(x\_1)-F(x\_2)|&amp;lt;C|x\_1-x\_2|&amp;lt;\varepsilon,\forall F$. 从而也是等度连续。&lt;/p>
+&lt;p>&amp;ldquo;等度连续&amp;rdquo;: 对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x_1-x_2|&amp;lt;\delta$ 就有 $|F(x_1)-F(x_2)|&amp;lt;C|x_1-x_2|&amp;lt;\varepsilon,\forall F$. 从而也是等度连续。&lt;/p>
 &lt;p>综上由 AA 定理可知该集合是列紧集。&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -958,7 +958,7 @@ $$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqsla
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>根据 AA 定理, 只需证 $E$ 不满足等度连续即可。&lt;/p>
-&lt;p>$\forall \delta&amp;gt;0$, 存在 $k\in\mathbb{N}$ 使得 $\frac \pi{2^k}&amp;lt;\delta$, 从而对于 $x\_1=0,x\_2=\frac \pi {2^k}, f(t)=\sin 2^{k-1}t$, 有 $|x\_1-x\_2|&amp;lt;\delta$ 但 $|f(x\_2)-f(x\_1)|=\sin\frac\pi{2}=1$ 所以不可能等度连续. 即 $E$ 不是列紧的.&lt;/p>
+&lt;p>$\forall \delta&amp;gt;0$, 存在 $k\in\mathbb{N}$ 使得 $\frac \pi{2^k}&amp;lt;\delta$, 从而对于 $x_1=0,x_2=\frac \pi {2^k}, f(t)=\sin 2^{k-1}t$, 有 $|x_1-x_2|&amp;lt;\delta$ 但 $|f(x_2)-f(x_1)|=\sin\frac\pi{2}=1$ 所以不可能等度连续. 即 $E$ 不是列紧的.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -976,10 +976,10 @@ $$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqsla
 $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(m_2)}|}{1&amp;#43;|\xi_n^{(m)}-\xi_n^{(m_2)}|}\geqslant\frac{1}{2^{n&amp;#43;1}}.$$&lt;p>
 所以不存在收敛子列, 与 $A$ 列紧矛盾. 故该条件成立。&lt;/p>
 &lt;p>&amp;ldquo;$\Leftarrow$&amp;rdquo;: 由于 $S$ 空间完备, 故考虑证明在该条件下 $A$ 是完全有界集. 即证明存在有穷 $\varepsilon$-网。&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 取 $N=\lceil -\log_2 \varepsilon \rceil &amp;#43; 1$, 那么对于度量中 $\sum\limits_{k=N&amp;#43;1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}&amp;lt;\sum\limits\_{k=N&amp;#43;1}^\infty\frac{1}{2^k}&amp;lt;\frac{\varepsilon}{2}$。&lt;/p>
-&lt;p>而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi\_1,\xi\_2,\ldots,\xi\_N) | \exists x\in A, s.t. x\_i=\xi\_i\ i=1,2,\ldots,N\rbrace $。&lt;/p>
-&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;#39;=\lbrace (\xi\_1,\xi\_2,\ldots,\xi\_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D&amp;#39;$, 使得 $(\sum\limits\_{i=1}^N |\xi\_i-\eta\_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi\_i-\eta\_i|&amp;lt;\varepsilon/2$。&lt;/p>
-&lt;p>所以 $\rho(x,y)=\sum\limits\_{k=1}^N&amp;#43;\sum\limits\_{k=N&amp;#43;1}^\infty&amp;lt;\frac\varepsilon 2&amp;#43;\frac\varepsilon 2=\varepsilon$。&lt;/p>
+&lt;p>$\forall \varepsilon&amp;gt;0$, 取 $N=\lceil -\log_2 \varepsilon \rceil &amp;#43; 1$, 那么对于度量中 $\sum\limits_{k=N&amp;#43;1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}&amp;lt;\sum\limits_{k=N&amp;#43;1}^\infty\frac{1}{2^k}&amp;lt;\frac{\varepsilon}{2}$。&lt;/p>
+&lt;p>而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi_1,\xi_2,\ldots,\xi_N) | \exists x\in A, s.t. x_i=\xi_i\ i=1,2,\ldots,N\rbrace $。&lt;/p>
+&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;#39;=\lbrace (\xi_1,\xi_2,\ldots,\xi_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D&amp;#39;$, 使得 $(\sum\limits_{i=1}^N |\xi_i-\eta_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi_i-\eta_i|&amp;lt;\varepsilon/2$。&lt;/p>
+&lt;p>所以 $\rho(x,y)=\sum\limits_{k=1}^N&amp;#43;\sum\limits_{k=N&amp;#43;1}^\infty&amp;lt;\frac\varepsilon 2&amp;#43;\frac\varepsilon 2=\varepsilon$。&lt;/p>
 &lt;p>故 $D&amp;#39;$ 就是 $A$ 的有穷 $\varepsilon$-网. 从而 $A$ 是完全有界集, 进而是列紧集.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -989,19 +989,19 @@ $$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $M$ 是 $\mathscr X$ 中的列紧集, 映射 $f:\mathscr X\to M$ 满足 &lt;/p>
-$$\rho(f(x_1),f(x_2))&amp;lt;\rho(x\_1,x\_2),\quad (\forall x\_1,x\_2\in \mathscr X,x\_1\neq x\_2)$$&lt;p> 求证: $f$ 在 $\mathscr X$ 中存在唯一不动点.&lt;/p>
+$$\rho(f(x_1),f(x_2))&amp;lt;\rho(x_1,x_2),\quad (\forall x_1,x_2\in \mathscr X,x_1\neq x_2)$$&lt;p> 求证: $f$ 在 $\mathscr X$ 中存在唯一不动点.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">记 $d=\inf\lbrace \rho(x,f(x))|x\in M\rbrace $.
 &lt;br>
-由下确界的定义, 存在点列 $\lbrace x_n\rbrace $ 满足 $\rho(x_n,f(x_n))&amp;lt;d&amp;#43;\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x\_{n\_k}\rbrace $ 且滿足 $\rho(x\_{n\_k},f(x\_{n\_k}))&amp;lt;d&amp;#43;\frac 1{n\_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
+由下确界的定义, 存在点列 $\lbrace x_n\rbrace $ 满足 $\rho(x_n,f(x_n))&amp;lt;d&amp;#43;\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x_{n_k}\rbrace $ 且滿足 $\rho(x_{n_k},f(x_{n_k}))&amp;lt;d&amp;#43;\frac 1{n_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
 &lt;br>
 如果 $d\neq 0$, 即 $x\neq f(x)$, 则 $\rho(f(x),f(f(x)))&amp;lt;\rho(x,f(x))=d$, 则与下确界矛盾. 所以 $d=0$.
 &lt;br>
 于是 $x=f(x)$, 是 $\mathscr X$ 中的不动点.
 &lt;br>
-如果不动点不唯一, 那么 $\rho(x\_1,x\_2)=\rho(f(x\_1),f(x\_2))&amp;lt;\rho(x\_1,x\_2)$ 矛盾.
+如果不动点不唯一, 那么 $\rho(x_1,x_2)=\rho(f(x_1),f(x_2))&amp;lt;\rho(x_1,x_2)$ 矛盾.
 &lt;br>
 所以 $f$ 在 $\mathscr X$ 上存在唯一不动点.&lt;/div>
  &lt;/div>
@@ -1017,7 +1017,7 @@ $$|x(t_1)-x(t_2)|\leqslant C\rho(t_1,t_2)^\alpha\quad (\forall x\in E, \forall t
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>根据 AA 定理, 只需证 $E$ 中函数等度连续。&lt;/p>
 &lt;p>$\forall \varepsilon&amp;gt;0$, 取 $\delta=\left(\frac{\varepsilon}{C}\right)^{1/\alpha}$.&lt;/p>
-&lt;p>那么有 $\forall \rho(t_1,t_2)&amp;lt;\delta, x\in E$ 有 $|x(t\_1)-x(t\_2)|\leqslant C\rho(t\_1,t\_2)^\alpha&amp;lt;\varepsilon$. 从而 $E$ 中函数等度连续.&lt;/p>
+&lt;p>那么有 $\forall \rho(t_1,t_2)&amp;lt;\delta, x\in E$ 有 $|x(t_1)-x(t_2)|\leqslant C\rho(t_1,t_2)^\alpha&amp;lt;\varepsilon$. 从而 $E$ 中函数等度连续.&lt;/p>
 &lt;p>从而根据 AA 定理, $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1498,20 +1498,20 @@ $$\rho(x,y)=\sum\limits_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1&a
 $$\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|&amp;#43;|\zeta_k-\eta_k|}{1&amp;#43;|\xi_k-\zeta_k|&amp;#43;|\zeta_k-\eta_k|}.$$&lt;p>
 又 $f&amp;#39;(t)=\frac{1}{(1&amp;#43;t)^2}&amp;lt;1$, 所以有 $f(|a|&amp;#43;|b|)\leqslant f(|a|)&amp;#43;f(|b|)$. 故
 &lt;/p>
-$$\frac{|\xi\_k-\eta\_k|}{1&amp;#43;|\xi\_k-\eta\_k|}\leqslant \frac{|\xi\_k-\zeta\_k|}{1&amp;#43;|\xi\_k-\zeta\_k|}&amp;#43;\frac{|\zeta\_k-\eta\_k|}{1&amp;#43;|\zeta\_k-\eta\_k|}$$&lt;p>
+$$\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|}{1&amp;#43;|\xi_k-\zeta_k|}&amp;#43;\frac{|\zeta_k-\eta_k|}{1&amp;#43;|\zeta_k-\eta_k|}$$&lt;p>
 再对 $k$ 求和就可以得到三角不等式成立。&lt;/p>
 &lt;p>然后证明 $S$ 是完备的。&lt;/p>
-&lt;p>任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}\_&amp;#43;$) 即 $\forall \varepsilon&amp;gt;0,\exists M&amp;gt;0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m&amp;#43;p)},x^{(m)})&amp;lt;\varepsilon$。&lt;/p>
+&lt;p>任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}_&amp;#43;$) 即 $\forall \varepsilon&amp;gt;0,\exists M&amp;gt;0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m&amp;#43;p)},x^{(m)})&amp;lt;\varepsilon$。&lt;/p>
 &lt;p>现关注数列的第 $k$ 项, 当 $\varepsilon&amp;lt;\frac{1}{2^{k&amp;#43;1}}$ 时, 有
 &lt;/p>
-$$\frac{|x\_k^{(m&amp;#43;p)}-x\_k^{(m)}|}{1&amp;#43;|x\_k^{(m&amp;#43;p)}-x\_k^{(m)}|}&amp;lt; 2^k\varepsilon.$$&lt;p> 移向变换可得
+$$\frac{|x_k^{(m&amp;#43;p)}-x_k^{(m)}|}{1&amp;#43;|x_k^{(m&amp;#43;p)}-x_k^{(m)}|}&amp;lt; 2^k\varepsilon.$$&lt;p> 移向变换可得
 &lt;/p>
-$$|x\_k^{(m&amp;#43;p)}-x\_k^{(m)}|&amp;lt;\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon&amp;lt;\frac 1 2}{&amp;lt;}2^{k&amp;#43;1}\varepsilon.$$&lt;p>
-由于现在关注的是第 $k$ 项构成的序列 $\lbrace x\_k^{(m)}\rbrace \_{m=1}^\infty$ 所以我们得到 $\lbrace x\_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x\_k$。&lt;/p>
-&lt;p>如此, 我们就得到了一个新的数列 $\lbrace x\_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$。&lt;/p>
+$$|x_k^{(m&amp;#43;p)}-x_k^{(m)}|&amp;lt;\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon&amp;lt;\frac 1 2}{&amp;lt;}2^{k&amp;#43;1}\varepsilon.$$&lt;p>
+由于现在关注的是第 $k$ 项构成的序列 $\lbrace x_k^{(m)}\rbrace _{m=1}^\infty$ 所以我们得到 $\lbrace x_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x_k$。&lt;/p>
+&lt;p>如此, 我们就得到了一个新的数列 $\lbrace x_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$。&lt;/p>
 &lt;p>$\forall \varepsilon&amp;gt;0$, 由于 $\frac{|x_k^{(m)}-x_k|}{1&amp;#43;|x_k^{(m)}-x_k|}&amp;lt;1$, 所以
 &lt;/p>
-$$\sum\limits\_{k=n\_0&amp;#43;1}^\infty \frac{1}{2^k}\cdot \frac{|x\_k^{(m)}-x\_k|}{1&amp;#43;|x\_k^{(m)}|}&amp;lt;\frac{1}{2^{n\_0}}.$$&lt;p> 取 $n\_0\geqslant\lceil-\log\_2 \varepsilon\rceil&amp;#43;1$ 那么對於前 $n\_0$ 項, 由于每一项都收敛至 $x\_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x\_k^{(m)}-x\_k|&amp;lt;\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)&amp;lt;2\varepsilon,\ \forall m\geqslant M$。&lt;/p>
+$$\sum\limits_{k=n_0&amp;#43;1}^\infty \frac{1}{2^k}\cdot \frac{|x_k^{(m)}-x_k|}{1&amp;#43;|x_k^{(m)}|}&amp;lt;\frac{1}{2^{n_0}}.$$&lt;p> 取 $n_0\geqslant\lceil-\log_2 \varepsilon\rceil&amp;#43;1$ 那么對於前 $n_0$ 項, 由于每一项都收敛至 $x_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x_k^{(m)}-x_k|&amp;lt;\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)&amp;lt;2\varepsilon,\ \forall m\geqslant M$。&lt;/p>
 &lt;p>即 $\lbrace x^{(m)}\rbrace $ 收敛. 综上 $S$ 是完备的度量空间。&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1525,23 +1525,23 @@ $$\rho(x,y)=\sup\limits_{k\geqslant 1}|\xi_k-\eta_k|,$$&lt;p> 其中 $x=\lbrace 
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑数列 $x_n=(1,\frac 1 2,\ldots,\frac 1 {n-1},\frac 1 n,0,0,\ldots)\in F$. 有 $\forall n,m\geqslant N$, $\rho(x_n,x_m)&amp;lt;\frac 1 N$, 从而 $\lbrace x\_n\rbrace $ 是柯西列, 但显然 $\lbrace x\_n\rbrace $ 收敛至 $(1,\frac 1 2,\ldots,\frac 1 n,\ldots)\notin F$. 从而 $F$ 不完备.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>考虑数列 $x_n=(1,\frac 1 2,\ldots,\frac 1 {n-1},\frac 1 n,0,0,\ldots)\in F$. 有 $\forall n,m\geqslant N$, $\rho(x_n,x_m)&amp;lt;\frac 1 N$, 从而 $\lbrace x_n\rbrace $ 是柯西列, 但显然 $\lbrace x_n\rbrace $ 收敛至 $(1,\frac 1 2,\ldots,\frac 1 n,\ldots)\notin F$. 从而 $F$ 不完备.&lt;/p>
 &lt;p>$F$ 的完备化空间应该是所有极限为 0 的实数列的全体, 记为 $\widetilde{F}$。&lt;/p>
 &lt;p>先说明 $F$ 在 $\widetilde{F}$ 中稠密。&lt;/p>
 &lt;p>即证明 $\forall x\in\widetilde{F}, \varepsilon&amp;gt;0,\ \exists y\in F,\ s.t. \rho(x,y)&amp;lt;\varepsilon$。&lt;/p>
-&lt;p>设 $x=(\xi\_1,\xi\_2,\ldots,\xi\_n,\ldots)$, 由于 $\lim\limits\_{n\to\infty}\xi\_n=0$, 所以存在 $N\_0$ 使得 $n\geqslant N\_0$ 时 $\xi\_n&amp;lt;\varepsilon$. 故只需取 $y=(\xi\_1,\xi\_2,\ldots,\xi\_{N\_0},0,0,\ldots)$, 那么 $\rho(x,y)=\sup\limits\_{n\geqslant N\_0}\xi\_n&amp;lt;\varepsilon$。&lt;/p>
+&lt;p>设 $x=(\xi_1,\xi_2,\ldots,\xi_n,\ldots)$, 由于 $\lim\limits_{n\to\infty}\xi_n=0$, 所以存在 $N_0$ 使得 $n\geqslant N_0$ 时 $\xi_n&amp;lt;\varepsilon$. 故只需取 $y=(\xi_1,\xi_2,\ldots,\xi_{N_0},0,0,\ldots)$, 那么 $\rho(x,y)=\sup\limits_{n\geqslant N_0}\xi_n&amp;lt;\varepsilon$。&lt;/p>
 &lt;p>所以 $F$ 在 $\widetilde{F}$ 中稠密。&lt;/p>
 &lt;p>再说明 $\widetilde{F}$ 是完备的。&lt;/p>
 &lt;p>任取 $\lbrace x^{(n)}\rbrace $ 是柯西列。&lt;/p>
 $$\forall \varepsilon&amp;gt;0,\exists N,\ s.t. \forall n,m\geqslant N,\sup\limits_{k\geqslant 1}|\xi_k^{(n)}-\xi_k^{(m)}|&amp;lt;\varepsilon$$&lt;p> 进而对每一维 $k$ 有 &lt;/p>
-$$|\xi\_k^{(n)}-\xi\_k^{(m)}|\leqslant\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 即 $\lbrace \xi\_k^{(n)}\rbrace \_{n=1}^\infty$ 也是柯西列, 由 $\mathbb{R}$ 的完备性知其收敛, 记为 $\xi\_k$. 故取 $x=(\xi\_1,\xi\_2,\ldots,\xi\_n,\ldots)$, 下证 $x^{(n)}\to x$ 且 $x\in \widetilde{F}$。&lt;/p>
+$$|\xi_k^{(n)}-\xi_k^{(m)}|\leqslant\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 即 $\lbrace \xi_k^{(n)}\rbrace _{n=1}^\infty$ 也是柯西列, 由 $\mathbb{R}$ 的完备性知其收敛, 记为 $\xi_k$. 故取 $x=(\xi_1,\xi_2,\ldots,\xi_n,\ldots)$, 下证 $x^{(n)}\to x$ 且 $x\in \widetilde{F}$。&lt;/p>
 &lt;p>由 $\lbrace x^{(n)}\rbrace $ 是柯西列, 可得 $\forall \varepsilon&amp;gt;0,\exists N,\ s.t.\forall n,m\geqslant N$ 有 &lt;/p>
 $$\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再固定 $n$ 对一切 $m\geqslant N$ 和 $k$ 有 &lt;/p>
-$$|\xi\_k^{(n)}-\xi\_k^{(m)}|\leqslant\sup\limits\_{j\geqslant 1}|\xi\_j^{(n)}-\xi\_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再令 $m\to\infty$ 得到 &lt;/p>
-$$|\xi\_k^{(n)}-\xi\_k|\leqslant \varepsilon,\quad \forall k$$&lt;p> 从而 &lt;/p>
+$$|\xi_k^{(n)}-\xi_k^{(m)}|\leqslant\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再令 $m\to\infty$ 得到 &lt;/p>
+$$|\xi_k^{(n)}-\xi_k|\leqslant \varepsilon,\quad \forall k$$&lt;p> 从而 &lt;/p>
 $$
-\rho(x^{(n)},x)=\sup\limits\_{k\geqslant 1}|\xi\_k^{(n)}-\xi\_k|\leqslant\varepsilon,\forall n\geqslant N\label{hw1.2.3}
-$$&lt;p>即 $x^{(n)}\to x$. 并且由 $\lbrace \xi\_k^{(n)}\rbrace \_{k=1}$ 收敛至 $0$, 我们有 $\exists K,\ s.t.\forall k\geqslant K, \ |\xi\_k^{(N)}-\xi\_k|&amp;lt;\varepsilon,\ |\xi\_k^{(N)}|&amp;lt;\varepsilon$ 从而 $|\xi\_k|&amp;lt;2\varepsilon$ 即 $\xi\_k\overset{k}{\to}0$, $x\in \widetilde{F}$。&lt;/p>
+\rho(x^{(n)},x)=\sup\limits_{k\geqslant 1}|\xi_k^{(n)}-\xi_k|\leqslant\varepsilon,\forall n\geqslant N\label{hw1.2.3}
+$$&lt;p>即 $x^{(n)}\to x$. 并且由 $\lbrace \xi_k^{(n)}\rbrace _{k=1}$ 收敛至 $0$, 我们有 $\exists K,\ s.t.\forall k\geqslant K, \ |\xi_k^{(N)}-\xi_k|&amp;lt;\varepsilon,\ |\xi_k^{(N)}|&amp;lt;\varepsilon$ 从而 $|\xi_k|&amp;lt;2\varepsilon$ 即 $\xi_k\overset{k}{\to}0$, $x\in \widetilde{F}$。&lt;/p>
 &lt;p>综上我们说明了 $\widetilde{F}$ 是 $F$ 的完备化空间.&lt;/p>
 &lt;/div>
  &lt;/div>
@@ -1566,19 +1566,19 @@ $$\rho(p,q)=\int_0^1 |p(x)-q(x)| \mathrm{d} x$$&lt;p> 是不完备的, 并指出
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>在完备的度量空间 $(\mathscr X,\rho)$ 中给定点列 $\lbrace x_n\rbrace $, 如果 $\forall \varepsilon&amp;gt;0$, 存在基本列 $\lbrace y_n\rbrace $, 使得 &lt;/p>
-$$\rho(x_n,y_n)&amp;lt;\varepsilon,\quad (n\in\mathbb{N})$$&lt;p> 求证 $\lbrace x\_n\rbrace $ 收敛.&lt;/p>
+$$\rho(x_n,y_n)&amp;lt;\varepsilon,\quad (n\in\mathbb{N})$$&lt;p> 求证 $\lbrace x_n\rbrace $ 收敛.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>考虑 $\lbrace y_n^{(\varepsilon)}\rbrace $ 表示 $\varepsilon$ 对应得基本列, 由于空间完备, 故极限存在记作 $y^{(\varepsilon)}$, 有 &lt;/p>
-$$\rho(y_n^{(\varepsilon_1)},y_n^{(\varepsilon_2)})\leqslant\rho(y_n^{(\varepsilon_1)},x_n)&amp;#43;\rho(y_n^{(\varepsilon_2)},x_n)&amp;lt;\varepsilon\_1&amp;#43;\varepsilon\_2$$&lt;p> 再令 $n\to\infty$ 得 &lt;/p>
-$$\rho(y^{(\varepsilon\_1)},y^{(\varepsilon\_2)})\leqslant\varepsilon\_1&amp;#43;\varepsilon\_2$$&lt;p>考虑数列 $\lbrace y^{(1/m)}\rbrace $, $\forall \varepsilon&amp;gt;0,$ 取 $N=\lceil \frac 2 \varepsilon\rceil$, 则 $n,m\geqslant N$ 时 $\rho(y^{(1/m)},y^{(1/n)})\leqslant\frac 1 n&amp;#43;\frac 1 m&amp;lt; \varepsilon$ 从而 $\lbrace y^{(1/m)}\rbrace $ 是柯西列, 又空间完备故收敛记作 $y$.&lt;/p>
-&lt;p>下证 $x\_n\to y$.&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0, \exists m, \rho(y^{(1/m)},y)&amp;lt;\frac \varepsilon 3\wedge \frac 1 m&amp;lt;\frac \varepsilon 3$, 又 $y\_n^{(1/m)}\to y^{(1/m)}$ 故存在 $N$ 使得 $n\geqslant N$ 时有 &lt;/p>
-$$\rho(y\_n^{(1/m)},y^{(1/m)})&amp;lt;\frac \varepsilon 3$$&lt;p> 再根据 $\lbrace y\_n^{(1/m)}\rbrace $ 定义有 &lt;/p>
-$$\rho(x\_n,y\_n^{(1/m)})&amp;lt;\frac 1 m&amp;lt;\varepsilon,\quad \forall n\geqslant N$$&lt;p> 所以有 &lt;/p>
-$$\rho(x\_n,y)\leqslant\rho(x\_n,y\_n^{(1/m)})&amp;#43;\rho(y\_n^{(1/m)},y^{(1/m)})&amp;#43;\rho(y^{(1/m)},y)&amp;lt;\varepsilon$$&lt;p> 即 $x\_n\to y$.&lt;/p>
-&lt;p>所以 $\lbrace x\_n\rbrace $ 收敛.&lt;/p>
+$$\rho(y_n^{(\varepsilon_1)},y_n^{(\varepsilon_2)})\leqslant\rho(y_n^{(\varepsilon_1)},x_n)&amp;#43;\rho(y_n^{(\varepsilon_2)},x_n)&amp;lt;\varepsilon_1&amp;#43;\varepsilon_2$$&lt;p> 再令 $n\to\infty$ 得 &lt;/p>
+$$\rho(y^{(\varepsilon_1)},y^{(\varepsilon_2)})\leqslant\varepsilon_1&amp;#43;\varepsilon_2$$&lt;p>考虑数列 $\lbrace y^{(1/m)}\rbrace $, $\forall \varepsilon&amp;gt;0,$ 取 $N=\lceil \frac 2 \varepsilon\rceil$, 则 $n,m\geqslant N$ 时 $\rho(y^{(1/m)},y^{(1/n)})\leqslant\frac 1 n&amp;#43;\frac 1 m&amp;lt; \varepsilon$ 从而 $\lbrace y^{(1/m)}\rbrace $ 是柯西列, 又空间完备故收敛记作 $y$.&lt;/p>
+&lt;p>下证 $x_n\to y$.&lt;/p>
+&lt;p>$\forall \varepsilon&amp;gt;0, \exists m, \rho(y^{(1/m)},y)&amp;lt;\frac \varepsilon 3\wedge \frac 1 m&amp;lt;\frac \varepsilon 3$, 又 $y_n^{(1/m)}\to y^{(1/m)}$ 故存在 $N$ 使得 $n\geqslant N$ 时有 &lt;/p>
+$$\rho(y_n^{(1/m)},y^{(1/m)})&amp;lt;\frac \varepsilon 3$$&lt;p> 再根据 $\lbrace y_n^{(1/m)}\rbrace $ 定义有 &lt;/p>
+$$\rho(x_n,y_n^{(1/m)})&amp;lt;\frac 1 m&amp;lt;\varepsilon,\quad \forall n\geqslant N$$&lt;p> 所以有 &lt;/p>
+$$\rho(x_n,y)\leqslant\rho(x_n,y_n^{(1/m)})&amp;#43;\rho(y_n^{(1/m)},y^{(1/m)})&amp;#43;\rho(y^{(1/m)},y)&amp;lt;\varepsilon$$&lt;p> 即 $x_n\to y$.&lt;/p>
+&lt;p>所以 $\lbrace x_n\rbrace $ 收敛.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -1592,8 +1592,8 @@ $$\rho(x\_n,y)\leqslant\rho(x\_n,y\_n^{(1/m)})&amp;#43;\rho(y\_n^{(1/m)},y^{(1/m
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>记 $d=\rho(F_1,F_2)$.&lt;/p>
 &lt;p>根据下确界的定义, 对任意 $n$ 存在 $x_n\in F_1,y_n\in F_2$, 使得 &lt;/p>
-$$d\leqslant \rho(x_n,y_n)&amp;lt;d&amp;#43;\frac 1 n.$$&lt;p> 由 $F\_1$ 的紧性, 存在子列 $\lbrace x\_{n\_k}\rbrace $ 收敛, 记收敛至 $x\_1\in F\_1$. 考虑对应的子列 $\lbrace y\_{n\_k}\rbrace $, 由 $F\_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y\_{n\_{k\_j}}\rbrace $, 记收敛至 $x\_2\in F\_2$. 从而有 &lt;/p>
-$$d\leqslant\rho(x\_{n\_{k\_j}},y\_{n\_{k\_j}})&amp;lt;d&amp;#43;\frac 1 {n\_{k\_j}}$$&lt;p> 令 $j\to\infty$ 可得 $d=\rho(x\_1,x\_2)$.&lt;/p>
+$$d\leqslant \rho(x_n,y_n)&amp;lt;d&amp;#43;\frac 1 n.$$&lt;p> 由 $F_1$ 的紧性, 存在子列 $\lbrace x_{n_k}\rbrace $ 收敛, 记收敛至 $x_1\in F_1$. 考虑对应的子列 $\lbrace y_{n_k}\rbrace $, 由 $F_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y_{n_{k_j}}\rbrace $, 记收敛至 $x_2\in F_2$. 从而有 &lt;/p>
+$$d\leqslant\rho(x_{n_{k_j}},y_{n_{k_j}})&amp;lt;d&amp;#43;\frac 1 {n_{k_j}}$$&lt;p> 令 $j\to\infty$ 可得 $d=\rho(x_1,x_2)$.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业250915</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="112">&lt;span>1.1.2&lt;/span>
@@ -1612,7 +1612,7 @@ $$\lim\limits_{n\to\infty}x_n=\hat x.$$&lt;div class="details admonition note">
 &lt;p>由 $f\in C^2, f&amp;#39;(\hat x)\neq 0$, 故存在 $\delta_0, (x-\delta_0,x&amp;#43;\delta_0)\subset[a,b],m,M,L\in\mathbb{R},\ s.t.\ |x-\hat x|\leqslant \delta_0$ 时, 有 $m\overset{\text{保号性}}{\leqslant}|f&amp;#39;(x)|\overset{\text{有界性}}{\leqslant} M, |f&amp;#39;&amp;#39;(x)|\leqslant L$.&lt;/p>
 &lt;p>那么考虑导数 $T&amp;#39;(x)=\dfrac{f(x)f&amp;#39;&amp;#39;(x)}{(f&amp;#39;(x))^2}\overset{\text{柯西中值}}{=}\dfrac{(f&amp;#39;(\xi)|x-\hat x|&amp;#43;f(\hat x))f&amp;#39;&amp;#39;(x)}{(f&amp;#39;(x))^2}\leqslant \dfrac{M|x-\hat{x}|L}{m^2}$, 于是可以取 $\delta=\min(\frac {m^2}{ML&amp;#43;1},\delta_0)$, 则有 $|T&amp;#39;(x)|\leqslant \frac{ML}{ML&amp;#43;1}&amp;lt;1,\forall x\in (\hat x-\delta,\hat x&amp;#43;\delta)$.&lt;/p>
 &lt;p>所以在该邻域中有 $|T(x)-T(y)|\leqslant \frac{ML}{ML&amp;#43;1}|x-y|,\ \forall x,y\in (\hat x-\delta,\hat x&amp;#43;\delta)$, 再结合 $T(\hat{x})=\hat x$ 可以得到 $T x\in(\hat x-\delta,\hat x&amp;#43;\delta)$, 即 $T$ 在该邻域内是压缩映射.&lt;/p>
-&lt;p>又由实数的完备性, 根据 Banach 不动点定理可知存在唯一的不动点, 又 $\hat x=T(\hat x)$, 所以 $\hat x$ 是不动点, 即 $\lim\limits\_{n\to\infty}x\_n=\hat x$.&lt;/p>
+&lt;p>又由实数的完备性, 根据 Banach 不动点定理可知存在唯一的不动点, 又 $\hat x=T(\hat x)$, 所以 $\hat x$ 是不动点, 即 $\lim\limits_{n\to\infty}x_n=\hat x$.&lt;/p>
 &lt;p>下面是 Mworks 程序.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="n">clear&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="n">clc&lt;/span>&lt;span class="p">()&lt;/span>
@@ -1695,11 +1695,11 @@ $$ (T^2(x))&amp;#39; = T&amp;#39;(T(x))\cdot T&amp;#39;(x) = \frac{(1&amp;#43;\s
 &lt;/p>
 $$|\rho(x,Tx)-\rho(y,Ty)|\leqslant \rho(x,y)&amp;#43;\rho(Tx,Ty)&amp;lt;2\rho(x,y),$$&lt;p>
 从而 $\rho(x,Tx)$ 是连续的。&lt;/p>
-&lt;p>由于 $M$ 是 $\mathbb{R}^n$ 中的有界闭集, 因此存在使 $\rho(x,Tx)$ 取得最小值的点 $x\_0\in M$. 若 $\rho(x\_0,Tx\_0)=0$ 则 $x\_0$ 为不动点。&lt;/p>
-&lt;p>若 $\rho(x\_0,Tx\_0)&amp;gt;0$, 则由假设有 $\rho(Tx_0,T^2x_0)&amp;lt;\rho(x\_0,Tx\_0)$, 即 $Tx\_0$ 的值更小，这与 $x\_0$ 为最小值点矛盾。因此必须有 $\rho(x\_0,Tx\_0)=0$，即存在不动点。&lt;/p>
-&lt;p>唯一性则与压缩映像原理一致：若存在两个不动点 $x\_0,x\_1$，则
+&lt;p>由于 $M$ 是 $\mathbb{R}^n$ 中的有界闭集, 因此存在使 $\rho(x,Tx)$ 取得最小值的点 $x_0\in M$. 若 $\rho(x_0,Tx_0)=0$ 则 $x_0$ 为不动点。&lt;/p>
+&lt;p>若 $\rho(x_0,Tx_0)&amp;gt;0$, 则由假设有 $\rho(Tx_0,T^2x_0)&amp;lt;\rho(x_0,Tx_0)$, 即 $Tx_0$ 的值更小，这与 $x_0$ 为最小值点矛盾。因此必须有 $\rho(x_0,Tx_0)=0$，即存在不动点。&lt;/p>
+&lt;p>唯一性则与压缩映像原理一致：若存在两个不动点 $x_0,x_1$，则
 &lt;/p>
-$$\rho(x\_0,x\_1)=\rho(Tx\_0,Tx\_1)&amp;lt;\rho(x\_0,x\_1),$$&lt;p>
+$$\rho(x_0,x_1)=\rho(Tx_0,Tx_1)&amp;lt;\rho(x_0,x_1),$$&lt;p>
 矛盾。因此不动点唯一。&lt;/p>
 &lt;p>注: 在度量空间中关于连续性的论证要以度量 $\rho$ 为度量依据，即在选取 $\delta$ 时是针对 $\rho(x,x&amp;#39;)$ 的限制，注意区分欧式距离上的连续性与一般度量空间中的连续性的表述。&lt;/p>
 &lt;/div>
