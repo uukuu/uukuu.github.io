@@ -1654,7 +1654,7 @@ $$\lim\limits_{n\to\infty}x_n=\hat x.$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>记度量空间为 $(\mathscr X,\rho)$.&lt;/p>
-&lt;p>设 $\lbrace x_n\rbrace _{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x_0$. 那么对于 $\rho(Tx_n,Tx_0)$, 由于 $T$ 是压缩映射, 故存在 $0&amp;lt;\alpha&amp;lt;1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx\_n,Tx\_0)\leqslant\alpha\rho(x\_n,x\_0)$, 根据夹逼准则可知 $\rho(Tx\_n,Tx\_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.&lt;/p>
+&lt;p>设 $\lbrace x_n\rbrace _{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x_0$. 那么对于 $\rho(Tx_n,Tx_0)$, 由于 $T$ 是压缩映射, 故存在 $0&amp;lt;\alpha&amp;lt;1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx_n,Tx_0)\leqslant\alpha\rho(x_n,x_0)$, 根据夹逼准则可知 $\rho(Tx_n,Tx_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
