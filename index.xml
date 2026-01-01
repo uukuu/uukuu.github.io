@@ -1,4 +1,619 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>23强基泛函分析期中</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/23%E5%BC%BA%E5%9F%BA%E6%9C%9F%E4%B8%AD/</link><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/23%E5%BC%BA%E5%9F%BA%E6%9C%9F%E4%B8%AD/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="23级强基期中">&lt;span>23级强基期中&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251117</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251117/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251117/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251117">&lt;span>251117&lt;/span>
+ &lt;a href="#251117" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;h2 class="heading-element" id="244">&lt;span>2.4.4&lt;/span>
+ &lt;a href="#244" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是 $B^*$ 空间, $\lbrace x_n \rbrace $ 是 $\mathscr X$ 中的点列.
+如果 $\forall f\in \mathscr X^*$, 数列 $\lbrace f(x_n) \rbrace $ 有界, 求证: $\lbrace x_n \rbrace $ 在 $\mathscr X$ 内有界.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>考虑第二共轭空间的自然嵌入 $J_x(f)=f(x)$. 有 $\Vert J_x \Vert = \Vert x \Vert $.
+由 $\forall f$ $\lbrace f(x_n) \rbrace $ 有界, 即对于 $\lbrace J_{x_n} \rbrace $ 来说点点有界, 那么根据一致有界定理知存在 $M$, 满足 $\Vert J_{x_n} \Vert \leqslant M$.&lt;/p>
+&lt;p>又 $\Vert x_n \Vert = \Vert J_{x_n} \Vert $. 从而 $\lbrace x_n \rbrace $ 有界.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="246">&lt;span>2.4.6&lt;/span>
+ &lt;a href="#246" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr{X}$ 是 $B^{*}$ 空间. 给定 $\mathscr{X}$ 中 $n$ 个线性无关的元素
+$x_{1},x_{2},\dots,x_{n}$ 与数域 $\mathbb{K}$ 中的 $n$ 个数
+$C_{1},C_{2},\dots,C_{n}$, 及 $M&amp;gt;0$.
+求证: 为了 $\exists\, f\in \mathscr{X}^{*}$ 适合 $f(x_{k})=C_{k}$（$k=1,2,\dots,n$）, 以及
+$\Vert f \Vert \le M$, 必须且仅必须对任意的
+$\alpha_{1},\alpha_{2},\dots,\alpha_{n}\in\mathbb{K}$ 有
+[
+\left|\sum_{k=1}^{n} \alpha_{k} C_{k}\right|
+\le
+M \left\Vert \sum_{k=1}^{n} \alpha_{k} x_{k} \right\Vert.
+]&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>$\Rightarrow$: 根据算子范数的定义, 我们有 &lt;/p>
+$$\frac{|\sum\limits_{k}f(\alpha_k x_k)|}{\Vert \sum\limits_{k}\alpha_k x_k \Vert }\leqslant \Vert f \Vert \leqslant M$$&lt;p>从而&lt;/p>
+$$|\sum\limits_{k}\alpha_kC_k|\leqslant M \Vert \sum\limits_{k}\alpha_k x_k \Vert .$$&lt;p>$\Leftarrow$: 设 $Y=\text{span} \lbrace x_1,\ldots,x_n \rbrace $, 由于 $\lbrace x_k \rbrace $ 线性无关, 所以 $Y$ 中元素可表示为 $\sum\limits_{k}\alpha_k x_k$.
+再设 $g(\sum\limits_{k}\alpha_k x_k)=\sum\limits_{k}\alpha_k C_k$, 显然是 $Y$ 上的线性泛函, 且由条件受 $M \Vert \sum\limits_{k}\alpha_kx_k \Vert $ 控制, 那么由 Hahn-Banach 定理可以将 $g(x)$ 延拓到 $X$ 上.
+且满足 $f(x)=g(x), x\in Y$, $|f(x)|\leqslant M \Vert x \Vert $.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="247">&lt;span>2.4.7&lt;/span>
+ &lt;a href="#247" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>给定 $B^*$ 空间 $\mathscr X$ 中 $n$ 个线性无关的元素 $x_1,x_2,\cdots,x_n$, 求证: $\exists f_1,f_2,\cdots,f_n\in \mathscr X^*$, 使得 &lt;/p>
+$$(f_i,x_j)=\delta_{ij}.$$&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">令 $Y=\text{span} \lbrace x_1,\ldots,x_n \rbrace $, 由于 $\lbrace x_n \rbrace $ 线性无关, 故 $Y$ 中元素可表示为其线性组合, 设 $g_i:Y\to\mathbb K$, $g_i(\sum\limits_{k}\alpha_k x_k)=\alpha_i$.
+显然 $g_i$ 是 $Y$ 上的连续泛函, 从而有界. 那么根据上题结论知, 可以延拓到 $X$ 上且满足 $g_i(x_j)=\delta_{ij}$.&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2412">&lt;span>2.4.12&lt;/span>
+ &lt;a href="#2412" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $C$ 是实 $B^{*}$ 空间 $\mathscr{X}$ 中的一个凸集, 并设 $x_{0}\in \overset{\circ}{C}$,
+$x_{1}\in \partial C$, $x_{2}=m(x_{1}-x_{0})&amp;#43;x_{0}$ (m&amp;gt;1). 求证: $x_{2}\notin C$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>反设 $x_2\in C$, 那么线段 $[x_0,x_2]\subset{C}$, 由 $x_0\in\overset{\circ}{C}$,存在 $r&amp;gt;0$, $B(x_0,r)\subset C$.&lt;/p>
+&lt;p>由 $x_1=\frac{1}{m}x_2&amp;#43;(1-\frac1m) x_0$.&lt;/p>
+&lt;p>取 $\Vert u \Vert &amp;lt;(1-\frac1m)r$. 从而 $x_0&amp;#43;\frac{u}{1-1/m}\in C$.
+则 $x_1&amp;#43;u=\frac1m x_2&amp;#43;(1-\frac1m)(x_0&amp;#43;u/(1-\frac 1m))\in C$.&lt;/p>
+&lt;p>从而 $B(x_1,(1-\frac 1m)r)\subset C$. 即 $x_1\in\overset{\circ}{C}$ 与 $x_1\in\partial C$ 矛盾.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2413">&lt;span>2.4.13&lt;/span>
+ &lt;a href="#2413" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $M$ 是 $B^{*}$ 空间 $\mathscr{X}$ 中的闭凸集, 求证: $\forall x\in \mathscr{X}\setminus M$,
+必 $\exists\, f_{1}\in \mathscr{X}^{*}$, 满足 $\Vert f_{1} \Vert = 1$, 并且
+[
+\sup_{y\in M} f_{1}(y) \leqslant f_{1}(x) - d(x),
+]
+其中
+[
+d(x) = \inf_{z\in M} \Vert x - z \Vert.
+]&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251124</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251124/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251124/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251124">&lt;span>251124&lt;/span>
+ &lt;a href="#251124" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;h2 class="heading-element" id="259">&lt;span>2.5.9&lt;/span>
+ &lt;a href="#259" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $H$ 是 Hilbert 空间, $A\in \mathscr L (H)$ 并满足 &lt;/p>
+$$(Ax,y)=(x,Ay)\quad (\forall x,y\in H)$$&lt;p> 求证:&lt;/p>
+&lt;ul>
+&lt;li>(1) $A^*=A$;&lt;/li>
+&lt;li>(2) 若 $R(A)$ 在 $H$ 中稠密, 则方程 $Ax=y$ 对 $\forall y\in R(A)$ 存在唯一解.&lt;/li>
+&lt;/ul>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ul>
+&lt;li>(1) 对任意的 $y\in H$, 设 $A^*y=y&amp;#39;$, 我们有 $(Ax,y)=(x,y&amp;#39;)\quad\forall x\in H$, 根据题设条件得到 $(x,y&amp;#39;)=(Ax,y)=(x,Ay)$, 从而有 $Ay=y&amp;#39;$. 即 $Ay=A^*y(\forall y\in H)$. 故 $A=A^*$.&lt;/li>
+&lt;li>(2) 存在唯一解只需证 $A$ 是单射. 根据 Hilbert 空间的性质 $\text{Ker}(T^*)=\text{Ran}(T)^\perp$. 又 $R(A)$ 在 $H$ 中稠密, 从而 $\text{Ker}(A)=\text{Ker}(A^*)=\text{Ran}(A)^\perp=\lbrace 0 \rbrace .$ 即 $A$ 是单射, 只有唯一解.&lt;/li>
+&lt;/ul>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2512">&lt;span>2.5.12&lt;/span>
+ &lt;a href="#2512" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B$ 空间, $T$ 是 $\mathscr X$ 到 $\mathscr Y$ 的线性算子, 又设对 $\forall g\in\mathscr Y^*$, $g(Tx)$ 是 $\mathscr X$ 上的有界线性泛函, 求证: $T$ 是连续的.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>考虑 $G=\lbrace g:\Vert g \Vert =1 \rbrace $. 那么由 Hahn-Banach 定理可得 $\forall x\in X$ &lt;/p>
+$$\sup\limits_{g\in G}|gT(x)|=\sup\limits_{g\in G}|g(Tx)|=\Vert Tx \Vert &amp;lt;\infty$$&lt;p> 从而由一致有界定理知存在 $M&amp;gt;0$ 使得 $\Vert gT \Vert \leqslant M \forall g\in G$.
+所以 &lt;/p>
+$$\Vert Tx \Vert =\sup\limits_{g\in G}|gT(x)|\leqslant M\Vert x \Vert $$&lt;p> 即 $\Vert T \Vert \leqslant M$, $T$ 有界. 从而 $T$ 是连续的.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2519">&lt;span>2.5.19&lt;/span>
+ &lt;a href="#2519" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $H$ 是 Hilbert 空间, 求证: 在 $H$ 中 $x_n\to x(n\to\infty)$ 的充要条件是&lt;/p>
+&lt;ul>
+&lt;li>(1) $\Vert x_n \Vert \to\Vert x \Vert \ (n\to\infty)$;&lt;/li>
+&lt;li>(2) $x_n\rightharpoonup x\ (n\to\infty)$.&lt;/li>
+&lt;/ul>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>&amp;ldquo;$\Rightarrow$:&amp;rdquo; (1) 显然, (2) 有 $|f(x_n-x)|\leqslant \Vert f \Vert \cdot\Vert x_n-x \Vert \to 0$.&lt;/p>
+&lt;p>&amp;ldquo;$\Leftarrow$:&amp;rdquo; $\Vert x_n-x \Vert ^2=(x_n-x,x_n-x)=(x_n,x_n)&amp;#43;(x,x)-2\text{Re}(x_n,x)$. 其中由 (1) $(x_n,x_n)=\Vert x_n \Vert ^2\to\Vert x \Vert ^2$.
+由 Riesz 表示定理, 存在 $f\in H^*$ 满足 $f(y)=(y,x)\forall y\in H$. 从而 $f(x_n)=(x_n,x)$, 再由 (2) 得到 $f(x_n)\to f(x)$. 故 $(x_n,x)\to (x,x)=\Vert x \Vert ^2$.
+从而 $\Vert x_n-x \Vert ^2\to 0$. 即 $x_n\to x$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2522">&lt;span>2.5.22&lt;/span>
+ &lt;a href="#2522" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是自反的 $B$ 空间, $M$ 是 $\mathscr X$ 中的有界闭凸子集, $\forall f\in\mathscr X^*$, 求证: $f$ 在 $M$ 上达到最大值和最小值.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>对于最大值 $\sup\limits_{x\in M}f(x)$, 根据上确界的定义, 存在 $\lbrace x_n \rbrace \subset M$, 满足 $f(x_n)\to f(x_0)$.
+由 $X$ 是自反空间 $M$ 有界, 从而 $\lbrace x_n \rbrace $ 是自反空间中的有界列, 从而有弱收敛子列记作 $\lbrace x_{n_k} \rbrace $.
+再根据 $M$ 是闭凸子集, 由 Mazur 定理知 $M$ 是弱闭集, 从而 $x_{n_k}\rightharpoonup x&amp;#39;\in M$, 又弱收敛的唯一性及 $f(x_{n_k})\to f(x_0)$, 得到 $x&amp;#39;=x_0$. 即 $x_0\in M$.
+从而能取到最大值.&lt;/p>
+&lt;p>最小值同理, 考虑 $-f$ 即可.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2523">&lt;span>2.5.23&lt;/span>
+ &lt;a href="#2523" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是自反的 $B$ 空间, $M$ 是 $\mathscr X$ 中的非空闭凸子集, 求证: $\exists x_0\in M$, 使得 $\Vert x_0 \Vert =\inf\lbrace \Vert x \Vert |x\in M \rbrace $.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>由下确界的定义, 存在 $\lbrace x_n \rbrace $ 满足 $\Vert x_n \Vert \to \inf\lbrace \Vert x \Vert |x\in M \rbrace \triangleq V$. 由极限定义知存在 $N$ 满足 $n&amp;gt;N$ 时 $|\Vert x_n \Vert -V|&amp;lt;1$ 从而 $\lbrace x_n \rbrace $ 有界.&lt;/p>
+&lt;p>其余过程同上题.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251201</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251201/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251201/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251201">&lt;span>251201&lt;/span>
+ &lt;a href="#251201" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;h2 class="heading-element" id="262">&lt;span>2.6.2&lt;/span>
+ &lt;a href="#262" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A$ 是闭线性算子, $\lambda_1,\lambda_2,\ldots,\lambda_n\in\sigma_p(A)$ 两两互异, 又设 $x_i$ 是对应于 $\lambda_i$ 的特征元 $(i=1,2,\cdots,n)$. 求证: $\lbrace x_1,x_2,\cdots,x_n \rbrace $ 是线性无关的.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>考虑数学归纳法.&lt;/p>
+&lt;p>$n=1$ 时显然成立.
+设 $n=k-1$ 时成立, 当 $n=k$ 时.&lt;/p>
+&lt;p>设 $c_1x_1&amp;#43;\cdots&amp;#43;c_kx_k=0$. 考虑 $(\lambda_k I-A)$ 作用在 $\sum c_ix_i$ 上, 由 $(\lambda_k I-A)x_k=0$&lt;/p>
+&lt;p>从而 $(\lambda_kI-A)(\sum\limits_{i=1}^{k}c_ix_i)=(\lambda_kI-A)(\sum\limits_{i=1}^{k-1}c_ix_i)=(\lambda_kI-A)(0)=0$&lt;/p>
+&lt;p>根据归纳假设 $x_1,\ldots,x_{k-1}$ 线性无关, 从而 $c_1=c_2=\cdots=c_{k-1}=0$, 故 $c_kx_k=0$ 则有 $c_k=0$.
+综上 $x_1,\ldots,x_k$ 线性无关.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="313">&lt;span>3.1.3&lt;/span>
+ &lt;a href="#313" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是一个 $B$ 空间, $A\in\mathscr L(\mathscr X)$ 满足 &lt;/p>
+$$\Vert Ax \Vert \geqslant\alpha\Vert x \Vert \quad(\forall x\in\mathscr X),$$&lt;p> 其中 $\alpha$ 是正常数.
+求证: $A\in\mathscr C (\mathscr X)$ 的充要条件是 $\mathscr X$ 是有穷维的.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">$\Leftarrow$: 由于有限维 $B^*$ 空间的有界间是列紧的, 所以 $A$ 将有界集映成列紧集, 从而 $A$ 是紧算子.
+$\Rightarrow$: 由题设条件, $Ax=0$ 时, 必有 $\Vert x \Vert \leqslant 0\Rightarrow x=0$. 从而 $A$ 是单射, 且 $A^{-1}$ 有界. 根据紧算子的性质, 若 $X$ 是无穷维则不存在有界逆, 矛盾.
+所以 $X$ 必是有穷维的.&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="314">&lt;span>3.1.4&lt;/span>
+ &lt;a href="#314" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $H$ 是 Hilbert 空间, $A:H\to H$ 是紧算子, 又设 $x_n\overset{w}{\rightarrow}x_0$, $y_n\overset{w}{\rightarrow} y_0$, 求证: &lt;/p>
+$$(x_n, Ay_n)\to (x_0,Ay_0)\ (n\to \infty).$$&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>根据紧算子的性质, 由 $y_n\xrightarrow{w}y_0$ 得到 $Ay_n\to Ay_0$.
+那么考虑 $(x_n, Ay_n)=(x_n,Ay_0)&amp;#43;(x_n,Ay_n-Ay_0)$.&lt;/p>
+&lt;p>由 $x_n\xrightarrow{w}x_0$ 知 $\Vert x_n \Vert $ 有界. 所以由 Cauchy-Schwarz 不等式 $|(x_n,Ay_n-Ay_0)|\leqslant\Vert x_n \Vert \Vert Ay_n-Ay_0 \Vert \to 0$.&lt;/p>
+&lt;p>下证 $(x_n,Ay_0)\to (x_0,Ay_0)$.
+由 Riesz 表示定理, 存在唯一的泛函 $f$ 满足 $f(x)=(x,Ay_0)$, 故等价于证明 $f(x_n)\to f(x_0)$ 由 $x_n$ 弱收敛立即得到.&lt;/p>
+&lt;p>综上 $(x_n,Ay_n)\to (x_0,Ay_0)$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="315">&lt;span>3.1.5&lt;/span>
+ &lt;a href="#315" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是 $B$ 空间, $A\in\mathscr L(\mathscr X,\mathscr Y)$, 如果 $R(A)$ 闭且 $\dim R(A)=\infty$, 求证: $A\notin\mathscr C(\mathscr X,\mathscr Y)$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>$R(A)$ 在 $Y$ 中是闭的, 从而 $R(A)$ 也是 $B$ 空间.&lt;/p>
+&lt;p>考虑到商空间上的映射 $\widetilde{A}:X/\text{Ker} A\to R(A)$.
+由于 $X$ 是 $B$ 空间, $A$ 有界, 从而 $\text{Ker} A$ 是闭子空间, 故 $X/\text{Ker} A$ 是 $B$ 空间.&lt;/p>
+&lt;p>于是 $\widetilde{A}$ 是双射.
+再根据 Banach 逆映射定理得到 $A^{-1}$ 也是有界的.&lt;/p>
+&lt;p>反设 $A$ 是紧算子. 那么对于 $\widetilde{A}$ 及 $X/\text{Ker} A$ 中的任意有界集, 取其中每个元素的代表元满足 $\Vert x \Vert \leqslant\Vert [x] \Vert &amp;#43;1$, 就构成了 $X$ 中的一个有界集记作 $X_0$, 又 $A(x)=\widetilde{A}([x])$, 从而 $A(X_0)=\widetilde{A}([X_0])$.
+再根据 $A$ 的紧性, $\widetilde{A}([X_0])$ 是列紧的, 从而 $\widetilde{A}$ 也是紧算子.&lt;/p>
+&lt;p>但根据紧算子的性质, 如果 $X,Y$ 中有一个是无穷维的, 那么就不存在有界逆, 这与 $A^{-1}$ 有界矛盾.&lt;/p>
+&lt;p>从而 $A$ 不是紧算子.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="316">&lt;span>3.1.6&lt;/span>
+ &lt;a href="#316" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $w_n\in\mathbb K, w_n\to 0(n\to\infty)$, 求证: 映射 &lt;/p>
+$$T:\lbrace \xi_n \rbrace \mapsto\lbrace w_n\xi_n \rbrace \quad (\forall\lbrace \xi_n \rbrace \in l^p)$$&lt;p> 是 $l^p(p\geqslant 1)$ 上的紧算子.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>考虑 $T_N:\lbrace \xi_n \rbrace \mapsto\lbrace w_n\xi_n \rbrace _{n=1}^N\cup\lbrace 0 \rbrace _{n=N&amp;#43;1}^\infty\quad (\forall\lbrace \xi_n \rbrace \in l^p)$.
+显然 $T_N$ 是有穷秩算子, 从而 $T_N$ 是紧算子.&lt;/p>
+&lt;p>又 $\Vert T\xi-T_N\xi \Vert _{l^p}\leqslant\sup\limits_{n\geqslant N}|\omega_n|\cdot\Vert \xi \Vert _{l^p}$&lt;/p>
+&lt;p>即 $\Vert T-T_n \Vert \leqslant\sup\limits_{n\geqslant N}|\omega_n|\to $ $(N\to\infty)$.
+又由 $Y$ 是 Banach 空间, 故 $\overline{F(X,Y)}\subset C(X,Y)$, 从而 $T\in C(l^p)$ 是紧算子.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251208</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251208/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251208/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251208">&lt;span>251208&lt;/span>
+ &lt;a href="#251208" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;h2 class="heading-element" id="317">&lt;span>3.1.7&lt;/span>
+ &lt;a href="#317" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\Omega\subset\mathbb{R}^n$ 是一个可测集, 又设 $f$ 是 $\Omega$ 上的有界可测函数, 求证: $F:x(t)\mapsto f(t)x(t)$ 是 $L^2(\Omega)$ 上的紧算子, 当且仅当 $f=0(\text{a.e. 于 }\Omega)$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">$\Leftarrow$: $f=0,\text{a.e.}$ 时, 有 $Fx=0,\text{a.e.}$ 在 $L^2$ 度量下均为零元, 从而 $\text{Ker}(F)=L^2(\Omega)$. 故显然 $F$ 是紧算子.
+$\Rightarrow$:&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="318">&lt;span>3.1.8&lt;/span>
+ &lt;a href="#318" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\Omega\subset\mathbb{R}^n$ 是一个可测集, 又设 $K\in L^2(\Omega\times\Omega)$, 求证 &lt;/p>
+$$A:u(x)\mapsto\int_{\Omega}K(x,y)u(y)\text{d} y\quad(\forall u\in L^2(\Omega))$$&lt;p> 是 $L^2(\Omega)$ 上的紧算子.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>由于 $L^2$ 是自反空间, 根据紧算子的性质只需证明 $A$ 全连续, 即证明当 $u_n\xrightarrow{w}0$ 时有 $Au_n\to 0$.&lt;/p>
+&lt;p>由 $K\in L^2(\Omega\times\Omega)$, 从而 $\Vert Au \Vert \leqslant \Vert u \Vert \displaystyle\int_{\Omega} \Vert K(x,\cdot) \Vert \text{d} x= \Vert K(\cdot,\cdot) \Vert \cdot \Vert u \Vert $, 即 $A$ 有界.
+我们有 $Au_n\xrightarrow{w}0$, 又 $L^2(\Omega)$ 是 Hilbert 空间, 故只需要证明 $\Vert Au_n \Vert \to 0$ 即可. (习题 2.5.19)&lt;/p>
+&lt;p>设 $\varphi_x(u)=\displaystyle\int_{\Omega}K(x,y)u(y)\text{d} y$.
+由 Cauchy-Schwarz 不等式 $|\varphi_x(u)|\leqslant \Vert K(x,\cdot) \Vert \cdot \Vert u \Vert $ 从而 $\varphi_x$ 是连续的, 故 $\varphi_x\in L^2(\Omega)^*$.&lt;/p>
+&lt;p>那么由 $u_n\xrightarrow{w}0$ 知 $\varphi_x(u_n)\to 0$, 即 $\forall x\in\Omega, Au_n(x)\to 0$.
+由 $u_n\xrightarrow{w}0$ 故存在 $M&amp;gt;0$ 使得 $\Vert u_n \Vert &amp;lt;M$. (考虑到第二共轭空间的自然嵌入 $J_{u_n}$ 作为有界线性算子族对 $\Vert f \Vert =1$ 一致有界.)&lt;/p>
+&lt;p>从而 &lt;/p>
+$$|Au_n(x)|\leqslant M \Vert K(x,\cdot) \Vert $$&lt;p>由题设 $G(x)=M^2\displaystyle\int_{\Omega}|K(x,y)|^2\text{d} y\in L^2(\Omega)$ 且控制了 $|Au_n(x)|$, 根据 Lebesgue 控制收敛定理&lt;/p>
+$$\Vert Au_n \Vert ^2=\int_{\Omega}|\int_\Omega K(x,y)u_n(y)|^2\text{d} x\to 0$$&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="3110">&lt;span>3.1.10&lt;/span>
+ &lt;a href="#3110" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是 $B$ 空间, $A\in\mathscr{C}(\mathscr X)$, $\mathscr X_0$ 是 $\mathscr X$ 的闭子空间并使得 $A(\mathscr X_0)\subset\mathscr X_0$, 求证: 映射 &lt;/p>
+$$T:[x]\mapsto[Ax]$$&lt;p> 是商空间 $\mathscr X/\mathscr X_0$ 上的紧算子.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>对 $X/X_0$ 中的任意有界列 $\lbrace [x_n] \rbrace $, 存在代表元列 $\lbrace x_n&amp;#39; \rbrace $ 满足 $\Vert x_n&amp;#39; \Vert \leqslant \Vert [x_n] \Vert &amp;#43;1$ 且有 $T[x_n]=T[x_n&amp;#39;]=[Ax_n&amp;#39;]$, 从而 $\lbrace x_n&amp;#39; \rbrace $ 是 $X$ 中的有界集, 故 $\lbrace Ax_n&amp;#39; \rbrace $ 是列紧的.
+即存在收敛子列 $\lbrace Ax_{n_k}&amp;#39; \rbrace $, 设收敛至 $x_0$.&lt;/p>
+&lt;p>下证 $\Vert [Ax_{n_k}&amp;#39;]-[x_0] \Vert \to 0$.&lt;/p>
+&lt;p>有 $\Vert [Ax_{n_k}&amp;#39;]-[x_0] \Vert = \Vert [Ax_{n_k}&amp;#39;-x_0] \Vert =\inf\limits_{y\in X_0} \Vert Ax_{n_k}&amp;#39;-x_0&amp;#43;y \Vert \leqslant \Vert Ax_{n_k}&amp;#39;-x_0 \Vert \to 0$.&lt;/p>
+&lt;p>从而 $[Ax_{n_k}&amp;#39;]\to [x_0]$, 即 $\lbrace [Ax_n&amp;#39;] \rbrace $ 存在收敛子列. 所以 $T$ 将有界集映成列紧集是紧算子.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="3111">&lt;span>3.1.11&lt;/span>
+ &lt;a href="#3111" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y,\mathscr Z$ 是 $B$ 空间, $\mathscr X\subset\mathscr Y\subset\mathscr Z$, 如果 $\mathscr X\to\mathscr Y$ 的嵌入映射是紧的, $\mathscr Y\to\mathscr Z$ 的嵌入映射是连续的, 求证: $\forall \varepsilon&amp;gt;0, \exists c(\varepsilon)&amp;gt;0$, 使得 &lt;/p>
+$$\Vert x \Vert _{\mathscr Y}\leqslant\varepsilon \Vert x \Vert _{\mathscr X}&amp;#43;c(\varepsilon) \Vert x \Vert _{\mathscr Z}\quad(\forall x\in\mathscr X).$$&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>反设不成立, 即存在 $\varepsilon&amp;gt;0$, 存在 $\lbrace x_n \rbrace $ 满足 $\Vert x_n \Vert _Y&amp;gt;\varepsilon \Vert x_n \Vert _X&amp;#43;n \Vert x_n \Vert _Z$.
+设 $u_n=x_n/ \Vert x_n \Vert _Y$ 等价于 &lt;/p>
+$$1&amp;gt;\varepsilon \Vert u_n \Vert &amp;#43;n \Vert u_n \Vert _Z$$&lt;p>从而得到&lt;/p>
+$$\Vert u_n \Vert _X&amp;lt;\frac 1\varepsilon,\quad \Vert u_n \Vert _Z&amp;lt;\frac1n$$&lt;p> 即 $\lbrace u_n \rbrace $ 在 $X$ 中有界, $\lbrace u_n \rbrace $ 在 $Z$ 中趋于 $0$.
+由 $X\to Y$ 的嵌入映射是紧的, 从而在 $Y$ 中存在收敛子列, 设 $u_{n_k}\xrightarrow{ \Vert \cdot \Vert _Y}u_0$.&lt;/p>
+&lt;p>再由 $Y\to Z$ 是连续的, 所以 $u_{n_k}\xrightarrow{ \Vert \cdot \Vert _Z}u_0$. 结合前面的结论有 $u_0=0$.
+但我们还有 $\Vert u_n \Vert _Y=1$, 所以 $\Vert u_0 \Vert _Y=1$ 矛盾!&lt;/p>
+&lt;p>综上假设不成立, 即原命题成立.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="321">&lt;span>3.2.1&lt;/span>
+ &lt;a href="#321" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是 $B$ 空间, $M\subset\mathscr X$ 是一个闭线性子空间, $\text{codim}M=n$, 求证: 存在线性无关集 $\lbrace \varphi_k \rbrace _{k=1}^\infty\subset\mathscr X^*$, 使得 &lt;/p>
+$$M=\bigcap\limits_{k=1}^n N(\varphi_k).$$&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>由题设条件 $\text{dim}X/M=\text{codim}M=n$.
+从而可以取 $X/M$ 的基 $\lbrace [e_1],[e_2],\ldots,[e_n] \rbrace $.&lt;/p>
+&lt;p>考虑映射 $g_i([x])=g_i(\sum\limits_{i=1}^n\alpha_i[e_i])=\alpha_i$ 显然是连续的, 从而是有界线性泛函.&lt;/p>
+&lt;p>那么定义 $\varphi_i(x)=g_i([x])$. 下证 $\lbrace \varphi_i \rbrace $ 线性无关.
+设 $\sum\limits_{k=1}^n c_k\varphi_k=0$ 那么有 &lt;/p>
+$$0=\sum\limits_{k=1}^n c_k\varphi_k(x)=\sum\limits_{k=1}^nc_kg_k([x])\quad\forall x\in X$$&lt;p> 依次代入 $[x]=[e_j]&amp;#43;M$ 则有 $c_j=0$. 所以 $\lbrace \varphi_i \rbrace $ 线性无关.&lt;/p>
+&lt;p>首先, 显然有 $\varphi_i(M)=g_i([0])=[0]$.
+所以 $M\subset N(\varphi_i)$, 即 $M\subset\bigcap\limits_{k=1}^n N(\varphi_k)$.&lt;/p>
+&lt;p>另一方面, 若 $x\in\bigcap\limits_{k=1}^n N(\varphi_k)$, 即 $0=\varphi_k(x)=g_k([x])$.&lt;/p>
+&lt;p>设 $[x]=\sum\limits_{k=1}^n c_k [e_k]$, 依次带入 $g_k$ 得到 $g_k([x])=c_k=0$.
+从而 $[x]=[0]$, 即 $x\in M$.&lt;/p>
+&lt;p>综上 $M=\bigcap\limits_{k=1}^n N(\varphi_k)$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251215</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251215/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251215/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251215">&lt;span>251215&lt;/span>
+ &lt;a href="#251215" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;h2 class="heading-element" id="322">&lt;span>3.2.2&lt;/span>
+ &lt;a href="#322" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是两个 Banach 空间, $T\in\mathscr L(\mathscr X,\mathscr Y)$ 是满射.
+定义
+[
+\widetilde T:\mathscr X/N(T)\to \mathscr Y,\qquad \widetilde T([x])=Tx,
+]
+其中 $[x]=x&amp;#43;N(T)$ 为陪集. 证明：$\widetilde T$ 是线性同胚映射.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>线性性: $\widetilde{T}(\alpha[x]&amp;#43;\beta[y])=\widetilde{T}([\alpha x&amp;#43;\beta y])=T(\alpha x&amp;#43;\beta y)=\alpha Tx&amp;#43;\beta Ty=\alpha \widetilde{T}([x])&amp;#43;\beta\widetilde{T}([y])$.&lt;/p>
+&lt;p>由 $T$ 是满射, 故 $\widetilde{T}$ 是满射.
+下证 $\widetilde{T}$ 是单射, 设 $\widetilde{T}([x])=\widetilde{T}([y])$, 则有 $Tx=Ty$, 故 $T(x-y)=0$, 即 $x-y\in N(T)$. 所以 $y=x&amp;#43;y-x\in [x]$. 即 $[x]=[y]$.&lt;/p>
+&lt;p>所以 $\widetilde{T}$ 是双射.
+此外 $\Vert \widetilde{T}([x]) \Vert =\Vert T(x&amp;#43;z) \Vert \leqslant \Vert T \Vert \Vert x&amp;#43;z \Vert \quad\forall z\in N(T)$.&lt;/p>
+&lt;p>故 $\Vert \widetilde{T}([x]) \Vert \leqslant\Vert T \Vert \inf\limits_{z\in N(T)}\Vert x&amp;#43;z \Vert =\Vert T \Vert \Vert [x] \Vert $.&lt;/p>
+&lt;p>从而 $\widetilde{T}$ 有界.&lt;/p>
+&lt;p>由 $X$ 完备, $N(T)$ 是闭子空间, 从而 $X/N(T)$ 完备.
+再由 $X/N(T),Y$ 完备, 根据 Banach 逆映射定理知 $\widetilde{T}^{-1}$ 也有界.&lt;/p>
+&lt;p>综上 $\widetilde{T}$ 是线性同胚映射.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="323">&lt;span>3.2.3&lt;/span>
+ &lt;a href="#323" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $\mathscr X$ 是 Banach 空间, $M,N_1,N_2$ 都是 $\mathscr X$ 的闭线性子空间. 若
+[
+\mathscr X=M\oplus N_1=;M\oplus N_2,
+]
+证明：$N_1$ 和 $N_2$ 同胚.
+（提示：只要证明 $N_1,N_2$ 都与 $\mathscr X/M$ 同胚. ）&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>由 $X=M\oplus N_1$, 故 $\forall x\in X$, 可唯一表示为 $x=x_0&amp;#43;x_1,x_0\in M, x_1\in N_1$.
+定义 $T: X\to N_1,\quad Tx=x_1$.&lt;/p>
+&lt;p>线性性: $T(\alpha x&amp;#43;\beta x&amp;#39;)=T(\alpha x_0&amp;#43;\beta x_0&amp;#39;&amp;#43;\alpha x_1&amp;#43;\beta x_1&amp;#39;)=\alpha x_1&amp;#43;\beta x_1&amp;#39;=\alpha T(x_0&amp;#43;x_1)&amp;#43;\beta T(x_0&amp;#39;&amp;#43;x_1&amp;#39;)=\alpha T(x)&amp;#43;\beta T(x&amp;#39;)$.
+有界性:&lt;/p>
+&lt;p>考虑 $x_n\to x$ 于 $X$ 且 $Tx_n\to y$ 于 $N_1$.&lt;/p>
+&lt;p>设 $x_n=m_n&amp;#43;n_n(m_n\in M, n_n\in N_1)$, 则 $n_n\to y$.
+且 $m_n=x_n-n_n\to x-y$, 由 $M$ 是闭的, $x-y\in M$, 由 $N_1$ 是闭的, $y\in N_1$.&lt;/p>
+&lt;p>所以 $x=(x-y)&amp;#43;y$ 是 $x$ 的分解, 且有 $Tx=y$.
+故 $T$ 为闭算子.&lt;/p>
+&lt;p>再根据闭图像定理得到 $T$ 是有界算子.&lt;/p>
+&lt;p>又 $\forall x_1\in N_1$, $Tx_1=x_1$, 所以 $T$ 是满射.&lt;/p>
+&lt;p>由 $N(T)=M$, 定义 $\widetilde{T}:X/M\to N_1,\quad \widetilde{T}([x])=Tx$.
+由 3.2.2 结论, $\widetilde{T}$ 是线性同胚映射, 从而 $N_1$ 和 $X/M$ 同胚.&lt;/p>
+&lt;p>同理, $N_2$ 和 $X/M$ 同胚.
+故 $N_1$ 和 $N_2$ 同胚, 因为可以将上述两个线性同胚映射复合.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="324">&lt;span>3.2.4&lt;/span>
+ &lt;a href="#324" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A\in \mathscr C(\mathscr X)$（紧算子）, $T=I-A$.
+证明：&lt;/p>
+&lt;ol>
+&lt;li>对任意 $[x]\in \mathscr X/N(T)$, 存在 $x_0\in [x]$ 使得 $\Vert x_0 \Vert =\Vert [x] \Vert $；&lt;/li>
+&lt;li>若 $y\in\mathscr X$ 使方程 $Tx=y$ 有解, 则其中必有一个解达到范数最小.&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ul>
+&lt;li>(1) $\forall x\in N(T)$, 满足 $(I-A)x=0\Rightarrow Ax=x$.&lt;/li>
+&lt;/ul>
+&lt;p>根据商空间等价类定义, 存在点列 $\lbrace x_n \rbrace $ 满足 $\Vert x_n \Vert \leqslant \Vert [x] \Vert &amp;#43;\frac1n$. 任取一代表元 $x_0$, 则点列 $\lbrace x_n-x_0 \rbrace $ 是 $N(T)$ 中的有界列.
+记 $y_n=x_n-x_0$, 由 $A$ 是紧算子, 所以 $\lbrace Ay_n \rbrace $ 是列紧的, 又 $Ay_n=y_n$, 所以 $\lbrace y_n \rbrace $ 是列紧的, 设 $\lbrace y_{n_k} \rbrace $ 收敛.
+由 $T$ 是有界线性算子, 从而 $\text{Ker} T$ 是闭的, 故 $y_{n_k}\to y\in \text{Ker}T$. 所以 $x_0&amp;#43;y_{n_k}\to x_0&amp;#43;y\in [x]$. 且由 $\lbrace x_n \rbrace $ 的取法直接有 $\Vert x_0&amp;#43;y \Vert =\Vert [x] \Vert $.&lt;/p>
+&lt;ul>
+&lt;li>(2) 若有解 $x$, 那么 $[x]=x&amp;#43;N(T)$ 均是 $Tx=y$ 的解. 由上一问知 $\exists x_0$, 使得 $\Vert x_0 \Vert =\Vert [x] \Vert $. 故 (2) 成立.&lt;/li>
+&lt;/ul>&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="325">&lt;span>3.2.5&lt;/span>
+ &lt;a href="#325" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A\in \mathscr C(\mathscr X)$, 且 $T=I-A$. 对任意 $k\in\mathbb N$, 证明：&lt;/p>
+&lt;ol>
+&lt;li>$N(T^k)$ 是有限维的；&lt;/li>
+&lt;li>$R(T^k)$ 是闭的.&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ul>
+&lt;li>(1) 考虑 $T^k=(I-A)^K=I-\sum\limits_{j=1}^k\binom{k}{j}(-1)^{k-1}A^k\triangleq I-T&amp;#39;$.
+由 $A$ 是紧算子, 所以 $T&amp;#39;$ 也是紧算子. 所以根据 Riesz-Fredholm 定理 $N(T^k)=N(I-T&amp;#39;)$ 是有限维的.&lt;/li>
+&lt;li>(2) 同 (1) $T^k=I-T&amp;#39;$, 故由 Riesz-Fredholm (i) 可知 $R(I-T&amp;#39;)$ 是闭的.&lt;/li>
+&lt;/ul>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="332">&lt;span>3.3.2&lt;/span>
+ &lt;a href="#332" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>在 $C[0,1]$ 中, 考虑映射
+[
+T:x(t)\mapsto \int_0^t x(s),ds,\qquad x\in C[0,1].
+]&lt;/p>
+&lt;ol>
+&lt;li>证明: $T$ 是紧算子;&lt;/li>
+&lt;li>求 $\sigma(T)$ 及 $T$ 的一个非平凡的闭不变子空间.&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ul>
+&lt;li>(1) 由微积分基本定理 $Tx(t)$ 关于 $t$ 可导, 故 $Tx\in C[0,1]$.
+线性性: 由积分的线性性, $T(\alpha x(t)&amp;#43;\beta y(t))=\displaystyle\int_{0}^{t} \alpha x(s)&amp;#43;\beta y(s)\text{d} s=\alpha Tx(t)&amp;#43;\beta Ty(t)$.&lt;/li>
+&lt;/ul>
+&lt;p>有界性: $\Vert Tx \Vert =\max\limits_{t\in[0,1]}|Tx(t)|\leqslant\max\limits_{t\in[0,1]}t\Vert x \Vert \leqslant\Vert x \Vert $.
+任取 $X$ 中的有界列 $\lbrace x_n \rbrace $, $\lbrace Tx_n \rbrace \subset C[0,1]$, 根据 AA 定理, $\lbrace Tx_n \rbrace $ 列紧 $\Leftrightarrow$ $\lbrace Tx_n \rbrace $ 一致有界且等度连续.
+由 $\lbrace x_n \rbrace $ 有界, 故存在 $M&amp;gt;0$, 满足 $\Vert x_n \Vert &amp;lt;M$, 于是 $|Tx_n(t)|\leqslant t M\leqslant M$. 故一致有界.
+$|Tx_n(t_1)-Tx_n(t_2)|\leqslant|t_2-t_1|M$, 故对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{M}$ 则有 $|Tx_n(t_1)-Tx_n(t_2)|\leqslant \varepsilon$ 即等度连续.&lt;/p>
+&lt;p>从而 $\lbrace Tx_n \rbrace $ 列紧.&lt;/p>
+&lt;p>综上 $T$ 是紧算子.&lt;/p>
+&lt;ul>
+&lt;li>(2) 由 Riesz-Schauder 理论, $\sigma(T)\setminus\lbrace 0 \rbrace =\sigma_p(T)\setminus\lbrace 0 \rbrace $, 且连续函数空间维数是无穷故 $0\in\sigma(T)$.&lt;/li>
+&lt;/ul>
+&lt;p>当 $\lambda\neq 0$ 时.
+设 $Tx(t)=\lambda x(t)$, 由微积分基本定理, 等式左侧可导, 从而右侧也可导, 故有 $x(t)\in C^1[0,1]$.&lt;/p>
+&lt;p>则有 $x(t)=\lambda x&amp;#39;(t)$.
+再带入 $t=0$, $\lambda x(0) = Tx(0)=\displaystyle\int_{0}^{0} x(s)\text{d} s=0$, 故 $x(0)=0$.&lt;/p>
+&lt;p>下面解微分方程 $x(t)=\lambda x&amp;#39;(t)$ 得到 $x(t)=Ce^{t/\lambda}$, 带入 $x(0)=0$ 得 $C=0$.
+从而 $x=0$ 即 $(\lambda I-T)x=0$ 只有零解.&lt;/p>
+&lt;p>故 $\sigma_p(T)$ 中不含非 0 元.&lt;/p>
+&lt;p>结合 Riesz-Schauder 非零谱点均为特征值, 从而谱点只有 $0$.&lt;/p>
+&lt;p>综上 $\sigma(T)=\lbrace 0 \rbrace $.&lt;/p>
+&lt;p>不变子空间部分不考.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251222</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251222/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251222/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251222">&lt;span>251222&lt;/span>
+ &lt;a href="#251222" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;h2 class="heading-element" id="333">&lt;span>3.3.3&lt;/span>
+ &lt;a href="#333" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A\in\mathscr C(\mathscr X)$, 求证: 当且仅当 $x-Ax=0$ 只有零解时, 方程 $x-Ax=y$ 对 $\forall y\in\mathscr X$ 都有解.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">ppt Riesz-Fredholm 理论 (iii) 过长不考证明.&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="335">&lt;span>3.3.5&lt;/span>
+ &lt;a href="#335" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A,B\in\mathscr L(\mathscr X)$, 并且 $AB=BA$, 求证:&lt;/p>
+&lt;ul>
+&lt;li>(1) $R(A)$ 和 $N(A)$ 都是 $B$ 的不变子空间;&lt;/li>
+&lt;li>(2) $R(B^n)$ 和 $N(B^n)$ 都是 $B$ 的不变子空间 $(\forall n\in\mathbb N)$.&lt;/li>
+&lt;/ul>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">不变子空间不考&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="341">&lt;span>3.4.1&lt;/span>
+ &lt;a href="#341" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A\in\mathscr L(H)$, 求证: $A&amp;#43;A^*,AA^*,A^*A$ 都是对称算子, 并且 &lt;/p>
+$$\Vert AA^* \Vert =\Vert A^*A \Vert =\Vert A \Vert ^2.$$&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>根据共轭算子性质 $A^{**}=A$, 从而 $(AA^*)^*=A^{**}A^*=AA^*$, $(A^*A)^*=A^*A^{**}=A^*A$.&lt;/p>
+&lt;p>$(A^*&amp;#43;A)^*=A&amp;#43;A^*=A^*&amp;#43;A$.&lt;/p>
+&lt;p>由自伴算子的范数可用二次型刻画&lt;/p>
+$$\Vert AA^* \Vert =\sup\limits_{\Vert x \Vert =1}|(AA^*x,x)|=\sup\limits_{\Vert x \Vert =1}|(A^*x,A^*x)|=\sup\limits_{\Vert x \Vert =1}\Vert A^*x \Vert ^2=\Vert A^* \Vert ^2=\Vert A \Vert ^2$$&lt;p>同理可证 $\Vert A^*A \Vert =\Vert A \Vert ^2$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="342">&lt;span>3.4.2&lt;/span>
+ &lt;a href="#342" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A\in\mathscr L(H)$, 满足 $(Ax,x)\geqslant 0(\forall x\in H)$, 且 &lt;/p>
+$$(Ax,x)=0\Leftrightarrow x=0,$$&lt;p>求证:&lt;/p>
+$$\Vert Ax \Vert ^2\leqslant \Vert A \Vert (Ax,x)\quad (\forall x\in H).$$&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>定义新内积 $(x,y)_A=(Ax,y)$.
+有题设条件满足正定性 $(x,x)_A\geqslant 0$, 且 $(x,x)_A=0\Leftrightarrow x=0$.&lt;/p>
+&lt;p>且根据 $(Ax,x)\geqslant 0$, 从而 $(Ax,x)\in\mathbb{R}$, 故 $A$ 是自伴算子.&lt;/p>
+&lt;p>从而满足共轭对称性 $(x,y)_A=(Ax,y)=(x,Ay)=\overline{(Ay,x)}=\overline{(y,x)_A}$.
+线性性: $(\alpha x_1&amp;#43;\beta x_2,y)_A=(A(\alpha x_1&amp;#43;\beta x_2),y)=\alpha (Ax_1,y)&amp;#43;\beta(Ax_2,y)=\alpha(x_1,y)_A&amp;#43;\beta(x_2,y)_A$.&lt;/p>
+&lt;p>所以 $(x,y)_A$ 是一个内积.
+那么使用 Cauchy-Schwarz 不等式可得 &lt;/p>
+$$(x,y)_A^2\leqslant (x,x)_A(y,y)_A=(Ax,x)(Ay,y)\leqslant(Ax,x)\Vert A \Vert (y,y)$$&lt;p>我们取 $y=Ax$ 则有&lt;/p>
+$$(x,Ax)_A^2=\Vert Ax \Vert ^4\leqslant (Ax,x)\Vert A \Vert \Vert Ax \Vert ^2$$&lt;p>整理即得&lt;/p>
+$$\Vert Ax \Vert ^2\leqslant\Vert A \Vert (Ax,x)\quad (\forall x\in H)$$&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="343">&lt;span>3.4.3&lt;/span>
+ &lt;a href="#343" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A$ 是 $H$ 上的有界对称算子, 令 &lt;/p>
+$$m(A)\triangleq\inf\limits_{\Vert x \Vert =1}(Ax,x),\quad M(A)\triangleq\sup\limits_{\Vert x \Vert =1}(Ax,x).$$&lt;p> 求证:&lt;/p>
+&lt;ul>
+&lt;li>(1) $\sigma(A)\subset[m(A),M(A)]$, 且 $m(A),M(A)\in\sigma(A)$.&lt;/li>
+&lt;/ul>
+&lt;p>进一步假设 $A$ 是 $H$ 上的对称紧算子, 求证:&lt;/p>
+&lt;ul>
+&lt;li>(2) 若 $m(A)\neq 0$, 则 $m(A)\in\sigma_p(A)$;&lt;/li>
+&lt;li>(3) 若 $M(A)\neq 0$, 则 $M(A)\in\sigma_p(A)$.&lt;/li>
+&lt;/ul>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>
+&lt;p>首先当 $A$ 自伴时, 其点谱均是实数.&lt;/p>
+&lt;p>设 $\lambda&amp;gt;M(A)$, $T_\lambda=\lambda I-A$. 共轭双线性型 $a(x,y)=(T_\lambda x,y)$.
+首先由 $T_\lambda$ 有界及 Cauchy-Schwarz 不等式, 存在 $M&amp;gt;0$ , $|a(x,y)|&amp;lt;M\Vert x \Vert \Vert y \Vert $.&lt;/p>
+&lt;p>其次 $(T_\lambda x,x)=\lambda\Vert x \Vert ^2-(Ax,x)\geqslant (\lambda-M)\Vert x \Vert ^2$.
+从而根据 Lax-Milgram 定理, $T_\lambda$ 是唯一的有界线性算子使得 $a(x,y)=(T_\lambda x,y)$ 且 $\Vert T_\lambda^{-1} \Vert \leqslant \frac{1}{\lambda-M}$.&lt;/p>
+&lt;p>所以 $\lambda\in\rho(T)$.&lt;/p>
+&lt;p>同理当 $\lambda&amp;lt;m(A)$ 时, 取 $T_\lambda=A-\lambda I$.
+即可得到 $\lambda\in \rho (T)$.&lt;/p>
+&lt;p>所以 $\sigma(A)\subset[m(A),M(A)]$.&lt;/p>
+&lt;p>下证 $M(A)\in \sigma(A)$.&lt;/p>
+&lt;p>还是考虑 $T_{m(A)}=A-m(A)I$, 有 $(T_{m(A)}x,x)=(Ax,x)-(m(A)x,x)\geqslant 0$.&lt;/p>
+&lt;p>从而对于 $T_{m(A)}$ 有其谱点均为非负实数.
+那么根据自伴算子的谱半径等于其算子范数, 故 $r_\sigma(T)=\Vert T_{m(A)} \Vert =\sup\limits_{\Vert x \Vert =1}|(T_{m(A)}x,x)|$ 所以 $\sup\limits_{\lambda\in\sigma(T_{m(A)})}|\lambda|=M(A)-m(A)$ 再根据有界线性算子的谱集是紧集, 所以 $M(A)-m(A)\in\sigma(T_{m(A)})$, 而 $T_{m(A)}$ 和 $A$ 的谱点只做平移变换, 故 $M(A)\in \sigma(A)$.
+同理考虑 $T_{M(A)}=M(A)I-A$, 即可证明 $m(A)\in \sigma(A)$.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>(2) 由 Riesz-Schauder 理论 $\sigma(A)\setminus\lbrace 0 \rbrace =\sigma_p(A)\setminus\lbrace 0 \rbrace $.&lt;/li>
+&lt;/ul>
+&lt;p>由上一问 $m(A),M(A)\in\sigma(A)$, 所以当 $m(A)\neq0,M(A)\neq0$ 时有 $m(A)\in\sigma_p(A),M(A)\in\sigma_p(A)$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>23强基泛函分析期中</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/23%E5%BC%BA%E5%9F%BA%E6%9C%9F%E4%B8%AD/</link><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/23%E5%BC%BA%E5%9F%BA%E6%9C%9F%E4%B8%AD/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="23级强基期中">&lt;span>23级强基期中&lt;/span>
  &lt;a href="#23%e7%ba%a7%e5%bc%ba%e5%9f%ba%e6%9c%9f%e4%b8%ad" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -633,1123 +1248,5 @@ $&lt;br>
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>注&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">注意区分上述过程中的范数具体含义.&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>Assignment 2</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/2/</link><pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/2/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;h2 class="heading-element" id="question-1">&lt;span>Question 1:&lt;/span>
- &lt;a href="#question-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>有一推销员, 从城市 $v_0$ 出发, 要依次访问城市 $v_1, v_2, \dots, v_n$ 各一次, 最后返回到 $v_0$. 已知从 $v_i$ 到 $v_j$ 的旅费为 $c_{ij}$, 对于任意的 $v_i$ 和 $v_j$, 问他应按怎样的次序访问这些城市, 使得总旅费最小?&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>定义变量 $x_{ij}=\left\lbrace\begin{array}{ll}
-1, &amp;amp; \text{路径中包含从} v_i\text{到} v_j \text{的边}\\\\
-0, &amp;amp; \text{不包含}
-\end{array}\right.$&lt;br>
-那么我们的目标函数就是 $\min \sum\limits_{i,j=0}^n c_{ij}x_{ij}$.&lt;br>
-接着考虑约束条件, 由于要用一条路径覆盖, 所以每个点只会有一个入边即 $\sum\limits_{i=0}^n x_{ij}=1$. 也只会有一条出边 $\sum\limits_{j=0}^n x_{ij}=1$.&lt;br>
-但仍要保证路径是一条, 考虑加入辅助变量 $u_i, i=1,2,\ldots, n$, 只需满足 $u_i-u_j&amp;#43;x_{ij}(n)\leqslant n-1, i,j=1,2,\ldots,n$.&lt;br>
-因为当 $1\sim n$ 中存在子连通图, 那么一定存在一个子环, 设大小, 而将这个环上的边 $(i,j)$ 对应的式子取出, 那么相加后所有的 $u_i,u_j$ 抵消, 左侧为 $kn$, 右侧为 $k(n-1)$ 显然不成立.&lt;br>
-所以该限制确保了不存在子环. 而当只有一条路径时, 只需取 $u_i$ 表示第 i 个点的顺序即可保证所有等式成立, 因为此时 $1\leqslant u_i\leqslant n$, $u_i-u_j\leqslant n-1$ 成立.&lt;br>
-故满足上述限制的解一定构成一条符合要求的路径. 汇总后可将模型写成.&lt;br>
-&lt;/p>
-$$\left\lbrace\begin{array}{lll}
-\min &amp;amp; z=\sum\limits_{i,j=0}^n c_{ij}x_{ij} &amp;amp;\\\\
-\text{\ s.t.\ } &amp;amp; \sum\limits_{i=0}^{n}x_{ij}=1, &amp;amp; j=0,\ldots,n\\\\
-&amp;amp; \sum\limits_{j=0}^n x_{ij}=1, &amp;amp; i=0,\ldots,n\\\\
-&amp;amp; u_i-u_j&amp;#43;nx_{ij}\leqslant n-1, &amp;amp; 1\leqslant i,j \leqslant n. \\\\
-&amp;amp; x_{ij}\in \{0,1\}, &amp;amp; i,j=0,\ldots,n\\\\
-&amp;amp; u_i\in \mathbb{R} &amp;amp; i=1,\ldots,n
-\end{array}\right.$$&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="question-2">&lt;span>Question 2:&lt;/span>
- &lt;a href="#question-2" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>需要将 11 件加工任务 (A-K) 分配到两个工作站, 任务需要依次经过工作站 1, 2 以完成加工. 任务间的依赖关系如下图 (后续节点任务的启动需要前序任务完成), 每件任务在工作站所花费的时间如下表:&lt;/p>
-&lt;p>&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/运筹/作业/2.1.png' alt="依赖关系图">&lt;/p>
-&lt;p>每件任务在两个工作站上所需时间如下表 (单位: 小时):&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>任务&lt;/th>
- &lt;th>A&lt;/th>
- &lt;th>B&lt;/th>
- &lt;th>C&lt;/th>
- &lt;th>D&lt;/th>
- &lt;th>E&lt;/th>
- &lt;th>F&lt;/th>
- &lt;th>G&lt;/th>
- &lt;th>H&lt;/th>
- &lt;th>I&lt;/th>
- &lt;th>J&lt;/th>
- &lt;th>K&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>在工作站 1 上花费时间 (小时)&lt;/td>
- &lt;td>25&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>35&lt;/td>
- &lt;td>10&lt;/td>
- &lt;td>7&lt;/td>
- &lt;td>8&lt;/td>
- &lt;td>7&lt;/td>
- &lt;td>2&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>7&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>在工作站 2 上花费时间 (小时)&lt;/td>
- &lt;td>20&lt;/td>
- &lt;td>6&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>15&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>5&lt;/td>
- &lt;td>10&lt;/td>
- &lt;td>4&lt;/td>
- &lt;td>2&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>设计装配任务分配方案, 目标是为工作站分配加工任务, 尽可能使总装配时间最短.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>将 $A-K$ 对应到 $1-11$.&lt;br>
-题目中的符号表示 $t_{ij}$ 表示第 $i$ 个任务在 $j$ 工作站上的耗时, 具体值见上表.&lt;br>
-$P_i$ 表示任务 $i$ 的直接前序依赖任务集合, 例如 $P_{3}=\{2\}$.&lt;br>
-$M$ 为充分大的常数.&lt;br>
-&lt;strong>决策变量&lt;/strong>:&lt;br>
-$x_i\in\{0,1\}$: 表示任务 $i$ 是否分配给工作站 $1$, $1$ 表示是, $0$ 表示否 ($i=1,\ldots,11$).&lt;br>
-$S_i$ 表示任务 $i$ 的开工时间 ($i=1,\ldots,11$).&lt;br>
-$y_{ij}\in\{0,1\}$ 表示任务 $i$ 是否在任务 $j$ 之前完成 ($i\neq j$).&lt;br>
-为了方便, 先推导每个任务的结束时间记作 $C_i=S_i&amp;#43;x_it_{i1}&amp;#43;(1-x_i)t_{i2}$ 用 $x_i$ 控制在哪个工作站上.&lt;br>
-&lt;strong>目标函数&lt;/strong>:&lt;br>
-$f=\min C_{11}$.&lt;br>
-&lt;strong>约束条件&lt;/strong>:&lt;br>
-第一类是依赖关系, 即对于每个任务 $i$, 要求 $C_j\leqslant S_i,\forall j\in P_i$.&lt;br>
-第二类是单个工作站上任务不重叠, 那么考虑先限定 $y_{ij}&amp;#43;y_{ji}=1$.&lt;br>
-然后当 $x_i=x_j$ 时要求根据 $y_{ij}$ 的取值判断 $i,j$ 的先后顺序.&lt;br>
-可以构建下面的条件&lt;br>
-&lt;/p>
-$$\left\lbrace\begin{array}{l}
-C_i\leqslant S_j&amp;#43;M(y_{ji}&amp;#43;2-x_i-x_j)\\\\
-C_i\leqslant S_j&amp;#43;M(y_{ji}&amp;#43;x_i&amp;#43;x_j)
-\end{array}\right.$$&lt;p>&lt;br>
-不难验证, 当 $x_i\neq x_j$ 时, 上述两个限制肯定成立. 而当 $x_i=x_j$ 时, 上述限制具有约束力, 仅当 $y_{ji}=0$, 即 $y_{ij}=1$. 此时要求 $i$ 在 $j$ 之前完成, 即 $C_i\leqslant S_j$. 满足定义.&lt;br>
-所以只需对 $i\neq j$ 上述两条约束成立即可满足在单个工作站上不重叠.&lt;br>
-综上, 汇总可得总的运筹模型可建立为&lt;br>
-&lt;/p>
-$$\left\lbrace\begin{array}{lll}
-\min &amp;amp; C_{11} &amp;amp; \\\\
-\text{s.t.} &amp;amp; C_j\leqslant S_i &amp;amp; \forall j\in P_i, i=1,2,\ldots,11\\\\
-&amp;amp; y_{ij}&amp;#43;y_{ji}=1 &amp;amp; 1\leqslant i\neq j\leqslant 11\\\\
-&amp;amp; C_i\leqslant S_j&amp;#43;M(y_{ji}&amp;#43;2-x_i-x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11 \\\\
-&amp;amp; C_i\leqslant S_j&amp;#43;M(y_{ji}&amp;#43;x_i&amp;#43;x_j) &amp;amp; 1\leqslant i\neq j \leqslant 11\\\\
-&amp;amp; x_{ij}\in \{0,1\} &amp;amp; 1\leqslant i\neq j\leqslant 11\\\\
-&amp;amp; y_{ij}\in \{0,1\} &amp;amp; 1\leqslant i\neq j\leqslant 11\\\\
-&amp;amp; C_i=S_i&amp;#43;x_i t_{i1}&amp;#43;(1-x_i)t_{i2} &amp;amp; i=1,\ldots,11\\\\
-&amp;amp; S_i\geqslant 0 &amp;amp; i=1,\ldots,11
-\end{array}\right.$$&lt;p>&lt;br>
-下面是一组我得到的最优解, 并且分类讨论 A 一开始在 1,还是 2 可以证明该方案已经达到下界.&lt;br>
-先简要证明.&lt;br>
-如果 A 在工作站 1, 那么只考虑 A,B,C,F,G,J,K 这些任务, A 25h, B 最早 30h, C 最早 34h, F,G 最早 41h (F1G2), 再 J,K 依次完成最早要 47h.&lt;br>
-如果 A 在工作站 2, 那么 D 最早在 35h 完成, E 最早 40h, H,I 最早 45h, 再 J,K 依次完成最早要 51h.&lt;br>
-注意上述两种假设都忽略了部分任务以考虑最优, 所以实际必定不低于上述考虑, 所以总时间至少为 47h.&lt;br>
-下面给出恰好为 47h 的方案.&lt;br>
-在工作站 1 上依次完成 A,B,I,F.&lt;br>
-在工作站 2 上依次完成 D,E,H,C,G,J,K.&lt;br>
-几个重要的时间点,&lt;br>
-$0\sim25h$ 工作站 1 完成 A, 工作站 2 完成 D,E,H.&lt;br>
-$25\sim30h$ 工作站 1 完成 B, 工作站 2 等待.&lt;br>
-$30\sim34h$ 工作站 1 完成 I, 工作站 2 完成 C.&lt;br>
-$34\sim41h$ 工作站 1 完成 F, 工作站 2 完成 G.&lt;br>
-接下来 6h 依次完成 J,K. 在 47h 时完成所有任务. 达到理论下界. 所以已经是最优解.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>泛函分析作业251008</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</link><pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251008/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="141">&lt;span>1.4.1&lt;/span>
- &lt;a href="#141" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>在二维空间 $\mathbb{R}^2$ 中, 对每一点 $z = (x, y)$, 令
-&lt;/p>
-$$
-	\|z\|_1 = |x| &amp;#43; |y|; \quad \|z\|_2 = \sqrt{x^2 &amp;#43; y^2}; \quad 
-	\|z\|_3 = \max(|x|, |y|); \quad \|z\|_4 = (x^4 &amp;#43; y^4)^{\frac{1}{4}}.
-$$&lt;p>(1) 求证 $\|\cdot\|_i$ ($i=1,2,3,4$) 都是 $\mathbb{R}^2$ 的范数.&lt;/p>
-&lt;p>(2) 画出 $(\mathbb{R}^2, \|\cdot\|_i)$ ($i=1,2,3,4$) 各空间中的单位球面图形.&lt;/p>
-&lt;p>(3) 在 $\mathbb{R}^2$ 中取定三点 $O = (0,0)$, $A = (1,0)$, $B = (0,1)$, 试在上述四种不同范数下求出 $\triangle OAB$ 三边的长度.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>(1) 正定性: 显然四者都是非负的, 并且当且仅当 $z=(0,0)$ 时为 0.&lt;/p>
-&lt;p>齐次性: $\Vert\alpha z\Vert_1=|\alpha x|&amp;#43;|\alpha y|=\alpha\Vert z_1\Vert$,&lt;br>
-$\Vert\alpha z\Vert_2=\sqrt{(\alpha x)^2&amp;#43;(\alpha y)^2}=\alpha\sqrt{x^2&amp;#43;y^2}=\alpha\Vert z\Vert_2$,&lt;br>
-$\Vert\alpha z\Vert_3=\max(|\alpha x|,|\alpha y|)=\alpha\max(|x|,|y|)=\alpha\Vert z\Vert_3$,&lt;br>
-$\Vert\alpha z\Vert_4=((\alpha x)^4&amp;#43;(\alpha y)^4)^{1/4}=\alpha (x^4&amp;#43;y^4)^{1/4}=\alpha\Vert z\Vert_4$.&lt;/p>
-&lt;p>三角不等式:&lt;br>
-$\Vert z_1&amp;#43;z_2\Vert_1=|x_1&amp;#43;x_2|&amp;#43;|y_1&amp;#43;y_2|\leqslant |x_1|&amp;#43;|x_2|&amp;#43;|y_1|&amp;#43;|y_2|=\Vert z_1\Vert_1&amp;#43;\Vert z_2\Vert_1$,&lt;br>
-$\Vert z_1&amp;#43;z_2\Vert_2=\sqrt{(x_1&amp;#43;x_2)^2&amp;#43;(y_1&amp;#43;y_2)^2}\leqslant \sqrt{x_1^2&amp;#43;y_1^2}&amp;#43;\sqrt{x_2^2&amp;#43;y_2^2}=\Vert z_1\Vert_2&amp;#43;\Vert z_2\Vert_2$,&lt;br>
-$\Vert z_1&amp;#43;z_2\Vert_3=\max(|x_1&amp;#43;x_2|,|y_1&amp;#43;y_2|)\leqslant \max(|x_1|,|y_1|)&amp;#43;\max(|x_2|,|y_2|)=\Vert z_1\Vert_3&amp;#43;\Vert z_2\Vert_3$,&lt;br>
-$\Vert z_1&amp;#43;z_2\Vert_4=((x_1&amp;#43;x_2)^4&amp;#43;(y_1&amp;#43;y_2)^4)^{1/4}\leqslant (x_1^4&amp;#43;y_1^4)^{1/4}&amp;#43;(x_2^4&amp;#43;y_2^4)^{1/4}=\Vert z_1\Vert_4&amp;#43;\Vert z_2\Vert_4$.&lt;/p>
-&lt;p>(2)&lt;br>
-&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.4.1.png' alt="1.4.1 单位球面">&lt;/p>
-&lt;p>(3)&lt;br>
-$\Vert\cdot\Vert_1: 4$, $\Vert\cdot\Vert_2: 2&amp;#43;\sqrt{2}$, $\Vert\cdot\Vert_3: 3$, $\Vert\cdot\Vert_4: 2&amp;#43;\sqrt[4]{2}$.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="142">&lt;span>1.4.2&lt;/span>
- &lt;a href="#142" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $C(0,1]$ 表示 $(0,1]$ 上连续且有界的函数 $x(t)$ 全体. 对 $\forall x \in C(0,1]$, 令 $\|x\Vert = \sup_{0 &amp;lt; t \leqslant 1} |x(t)|$. 求证:&lt;/p>
-&lt;p>(1) $\|\cdot\|$ 是 $C(0,1]$ 上的范数;&lt;/p>
-&lt;p>(2) $l^\infty$ 与 $C(0,1]$ 的一个子空间是等距同构的.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>(1) 正定性显然.&lt;/p>
-&lt;p>齐次性 $\Vert\alpha x(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|\alpha x(t)|=\alpha\sup_{0&amp;lt;t\leqslant 1}|x(t)|=\alpha\Vert x(t)\Vert$.&lt;/p>
-&lt;p>三角不等式:&lt;br>
-$\Vert x_1(t)&amp;#43;x_2(t)\Vert=\sup_{0&amp;lt;t\leqslant 1}|x_1(t)&amp;#43;x_2(t)|\leqslant \sup|x_1(t)|&amp;#43;\sup|x_2(t)|=\Vert x_1(t)\Vert&amp;#43;\Vert x_2(t)\Vert$.&lt;/p>
-&lt;p>(2) 构造映射 $T: l^\infty\to C(0,1]$, $\forall \lbrace a_n\rbrace \in l^\infty$,&lt;br>
-$T(\lbrace a_n\rbrace )$ 表示 $x(\frac1n)=a_n$ 且用折线段连接 $x(\frac 1n),x(\frac1{n&amp;#43;1})$ 两点的连续函数.&lt;/p>
-&lt;p>显然这是个单射且像集是 $C(0,1]$ 的子集. 并且该映射是线性映射.&lt;/p>
-&lt;p>下面证其还保范数: 对折线段, 其最大值取在端点处, 故&lt;br>
-$\Vert T(\lbrace a_n\rbrace )\Vert=\sup x(\frac 1 n)=\sup a_n=\Vert\lbrace a_n\rbrace \Vert$.&lt;/p>
-&lt;p>所以 $l^\infty$ 与 $C(0,1]$ 的一个子空间 $T(l^\infty)$ 等距同构.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="143">&lt;span>1.4.3&lt;/span>
- &lt;a href="#143" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>在 $C^1[a,b]$ 中, 令&lt;br>
-&lt;/p>
-$$
-\|f\|_1 = \left( \int_a^b (|f|^2 &amp;#43; |f&amp;#39;|^2) \text{d}x \right)^{\frac{1}{2}} \quad (\forall f \in C^1[a,b]),
-$$&lt;p>(1) 求证 $\|\cdot\|_1$ 是 $C^1[a,b]$ 上的范数.&lt;br>
-(2) 问 $(C^1[a,b], \|\cdot\|_1)$ 是否完备?&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>(1) 正定性由连续函数性质可知. 齐次性由积分线性性可知.&lt;/p>
-&lt;p>三角不等式: 用柯西施瓦茨不等式可得&lt;br>
-$\int_a^b |fg|&amp;#43;|f&amp;#39;g&amp;#39;|\text{d}x\leqslant \Vert f\Vert_1\Vert g\Vert_1$.&lt;/p>
-&lt;p>(2) 任取 $c\in (a,b)$, 对 $f(x)=|x-c|\notin C^1[a,b]$,&lt;br>
-但函数列 $f_n(x)=\sqrt{(x-c)^2&amp;#43;\frac 1n}$.&lt;/p>
-&lt;p>有 $|f_n(x)-f(x)|\leqslant\sqrt{\frac1n}$, 故 $\int_a^b |f_n-f|^2\text{d}x\leqslant (b-a)\frac1n$.&lt;/p>
-&lt;p>考虑 $sgn_c(x)=\left\lbrace\begin{array}{ll}
-		-1,&amp;amp; x&amp;lt;c\\\\
-		0, &amp;amp; x=c\\\\
-		1, &amp;amp; x&amp;gt;c
-	\end{array}\right.$&lt;/p>
-&lt;p>有 $|f_n&amp;#39;(x)-sgn_c(x)|=|(x-c)|(\frac{1}{|x-c|}-\frac{1}{\sqrt{(x-c)^2&amp;#43;\frac 1 n}})$.&lt;/p>
-&lt;p>从而 $\Vert f_n-f\Vert=O(\frac{1}{\sqrt n})\to 0$,&lt;br>
-即 $\lbrace f_n\rbrace $ 收敛至 $f$, 但 $f\notin C^1[a,b]$, 故不完备.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="144">&lt;span>1.4.4&lt;/span>
- &lt;a href="#144" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>在 $C[0,1]$ 中, 对每一个 $f \in C[0,1]$, 令&lt;br>
-&lt;/p>
-$$
-\|f\|_1 = \left( \int_0^1 |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}, \quad
-\|f\|_2 = \left( \int_0^1 (1&amp;#43;x) |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
-$$&lt;p>求证: $\Vert\cdot\Vert_1$ 和 $\Vert\cdot\Vert_2$ 是 $C[0,1]$ 中的两个等价范数.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">由于 $1\leqslant (1&amp;#43;x)\leqslant 2$, 所以&lt;br>
-$\Vert f\Vert_1\leqslant\Vert f\Vert_2\leqslant\sqrt{2}\Vert f\Vert_1$.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="145">&lt;span>1.4.5&lt;/span>
- &lt;a href="#145" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $BC[0,\infty)$ 表示 $[0,\infty)$ 上连续且有界的函数 $f(x)$ 全体, 对每个 $f \in BC[0,\infty)$ 及 $a &amp;gt; 0$, 定义
-&lt;/p>
-$$
-\|f\|_a = \left( \int_0^\infty e^{-ax} |f(x)|^2 \text{d}x \right)^{\frac{1}{2}}.
-$$&lt;p>(1) 求证 $\|\cdot\|_a$ 是 $BC[0,\infty)$ 上的范数.&lt;br>
-(2) 若 $a, b &amp;gt; 0$, $a \neq b$, 求证 $\|\cdot\|_a$ 与 $\|\cdot\|_b$ 不等价.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>(1) 正定性: 若 $f\neq 0$, 则 $\Vert f\Vert_a\neq 0$.&lt;/p>
-&lt;p>齐次性:&lt;br>
-$\Vert\alpha f\Vert=\left(\displaystyle\int_0^\infty e^{-ax}|\alpha f(x)|^2\text{d}x\right)^{1/2}
-=\alpha\Vert f\Vert_a$.&lt;/p>
-&lt;p>三角不等式:&lt;br>
-由柯西-施瓦茨不等式,
-$\int_0^\infty e^{-ax}|f&amp;#43;g|^2\text{d}x\leqslant(\Vert f\Vert_a&amp;#43;\Vert g\Vert_a)^2$.&lt;/p>
-&lt;p>(2) 不妨设 $a&amp;gt;b&amp;gt;0$, 考虑函数列
-$f_n(x)=\begin{cases}
-0,&amp;amp;x\in[0,n-\frac1b]\\\\
-be^{bn}(x-n&amp;#43;\frac1b),&amp;amp;x\in(n-\frac1b,n]\\\\
-e^{bx},&amp;amp;x\in(n,n&amp;#43;1]\\\\
-e^{b(n&amp;#43;1)}-(x-n-1)be^{b(n&amp;#43;1)},&amp;amp;x\in(n&amp;#43;1,n&amp;#43;1&amp;#43;\frac1b)\\\\
-0,&amp;amp;x\geqslant n&amp;#43;1&amp;#43;\frac1b
-\end{cases}$&lt;/p>
-&lt;p>在 $\Vert\cdot\Vert_a$ 中, $\Vert f_n\Vert_a\leqslant \displaystyle\int_{n-\frac1b}^{n&amp;#43;1&amp;#43;\frac1b}e^{(b-a)x}\text{d}x\leqslant \frac{1}{a-b}e^{(b-a)(n-\frac1b)}\to0$.&lt;/p>
-&lt;p>但在 $\Vert\cdot\Vert_b$ 中, $\Vert f_n\Vert_b\geqslant \displaystyle\int_n^{n&amp;#43;1}e^{bx-bx}\text{d}x=1$,&lt;br>
-从而两个范数不等价.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="148">&lt;span>1.4.8&lt;/span>
- &lt;a href="#148" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>记 $[a,b]$ 上次数不超过 $n$ 的多项式全体为 $\mathbb{P}_n$. 求证:
-$\forall f(x) \in C[a,b], \exists P_0(x) \in \mathbb{P}_n$, 使得
-&lt;/p>
-$$
-\max_{a \leqslant x \leqslant b} |f(x) - P_0(x)| = \min_{P \in \mathbb{P}_n} \max_{a \leqslant x \leqslant b} |f(x) - P(x)|.
-$$&lt;p>
-即 $P_0(x)$ 是对 $f(x)$ 的最佳一致逼近.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">由于 $C[a,b]$ 关于范数 $\Vert f\Vert=\max_{a\leqslant x\leqslant b}|f(x)|$ 构成 Banach 空间,&lt;br>
-$\mathbb P_n$ 是有限维子空间, 故根据最佳逼近元定理,&lt;br>
-存在唯一的 $P_0(x)\in\mathbb P_n$ 使得&lt;br>
-$\Vert P_0-f\Vert=\rho(f,\mathbb P_n)$.&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>泛函分析作业250929</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250929/</link><pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250929/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="135">&lt;span>1.3.5&lt;/span>
- &lt;a href="#135" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $M$ 是 $C[a,b]$ 中的有界集, 求证: 集合 &lt;/p>
-$$\lbrace F(x)=\int_a^x f(t) \mathrm{d} t | f\in M\rbrace $$&lt;p> 是列紧集.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>根据微积分基本定理 $F(x)$ 也是 $[a,b]$ 上的连续函数。&lt;/p>
-&lt;p>所以考虑使用 Arzela-Ascoli 定理. 即需要证明 $F$ 一致有界且等度连续。&lt;/p>
-&lt;p>&amp;ldquo;一致有界&amp;rdquo;: 根据 $M$ 的有界性, 存在 $C&amp;gt;0$ 使得 $|f(x)|\leqslant C,\forall f\in M, x\in[a,b]$. 所以有
-&lt;/p>
-$$|F(x)|=|\int_a^x f(t) \mathrm{d} t|\leqslant\int_a^x|f(t)| \mathrm{d} t\leqslant (b-a)C$$&lt;p>
-所以 $F(x)$ 一致有界。&lt;/p>
-&lt;p>&amp;ldquo;等度连续&amp;rdquo;: 对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{C}$, 只要 $|x_1-x_2|&amp;lt;\delta$ 就有 $|F(x_1)-F(x_2)|&amp;lt;C|x_1-x_2|&amp;lt;\varepsilon,\forall F$. 从而也是等度连续。&lt;/p>
-&lt;p>综上由 AA 定理可知该集合是列紧集。&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="136">&lt;span>1.3.6&lt;/span>
- &lt;a href="#136" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $E=\lbrace \sin nt\rbrace _{n=1}^\infty$, 求证: $E$ 在 $C[0,\pi]$ 中不是列紧的.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>根据 AA 定理, 只需证 $E$ 不满足等度连续即可。&lt;/p>
-&lt;p>$\forall \delta&amp;gt;0$, 存在 $k\in\mathbb{N}$ 使得 $\frac \pi{2^k}&amp;lt;\delta$, 从而对于 $x_1=0,x_2=\frac \pi {2^k}, f(t)=\sin 2^{k-1}t$, 有 $|x_1-x_2|&amp;lt;\delta$ 但 $|f(x_2)-f(x_1)|=\sin\frac\pi{2}=1$ 所以不可能等度连续. 即 $E$ 不是列紧的.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="137">&lt;span>1.3.7&lt;/span>
- &lt;a href="#137" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>求证: $S$ 空间的子集 $A$ 列紧的充要条件是: $\forall n\in \mathbb{N},\exists C_n&amp;gt;0$, 使得对 $\forall x=(\xi_1,\xi_2,\cdots,\xi_n,\cdots)\in A$, 有 $|\xi_n|\leqslant C_n(n=1,2,\cdot)$.&lt;/p>
-&lt;p>$S$ 空间: 在数列上定义距离 $\rho(x,y)=\sum\limits_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}$.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>&amp;ldquo;$\Rightarrow$&amp;rdquo;: 反设条件不成立, 即 $\exists n\in\mathbb{N}$, 不存在 $C_n&amp;gt;0$ 使得 $\xi_n$ 有界. 也就是说第 $n$ 个分量无界. 那么就可以取一列 $\lbrace x^{(m)}\rbrace $ 满足 $\xi_n^{(m)}&amp;gt;\xi_n^{(m-1)}&amp;#43;1$, 从而就有
-&lt;/p>
-$$\rho(x^{(m)},x^{(m_2)})\geqslant \frac 1 {2^n}\cdot\frac{|\xi_n^{(m)}-\xi_n^{(m_2)}|}{1&amp;#43;|\xi_n^{(m)}-\xi_n^{(m_2)}|}\geqslant\frac{1}{2^{n&amp;#43;1}}.$$&lt;p>
-所以不存在收敛子列, 与 $A$ 列紧矛盾. 故该条件成立。&lt;/p>
-&lt;p>&amp;ldquo;$\Leftarrow$&amp;rdquo;: 由于 $S$ 空间完备, 故考虑证明在该条件下 $A$ 是完全有界集. 即证明存在有穷 $\varepsilon$-网。&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 取 $N=\lceil -\log_2 \varepsilon \rceil &amp;#43; 1$, 那么对于度量中 $\sum\limits_{k=N&amp;#43;1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}&amp;lt;\sum\limits_{k=N&amp;#43;1}^\infty\frac{1}{2^k}&amp;lt;\frac{\varepsilon}{2}$。&lt;/p>
-&lt;p>而对于前 $N$ 项, 定义集合 $D=\lbrace (\xi_1,\xi_2,\ldots,\xi_N) | \exists x\in A, s.t. x_i=\xi_i\ i=1,2,\ldots,N\rbrace $。&lt;/p>
-&lt;p>根据条件每一分量都是有界的, 又只有有限维所以 $D$ 作为 $\mathbb K^N$ 的子集是有界的, 所以是完全有界的, 即存在有穷 $\frac{\varepsilon}{2}$-网 $N$. 而根据 $D$ 的定义, 这个网中的每个元素都对应 $A$ 中的一个或多个元素, 我们取其中任意一个作为该网中元素在 $A$ 中的代表元, 即存在有限集 $D&amp;#39;=\lbrace (\xi_1,\xi_2,\ldots,\xi_N,\ldots)\rbrace \subset A$ 满足 $\forall x\in A, \exists y\in D&amp;#39;$, 使得 $(\sum\limits_{i=1}^N |\xi_i-\eta_i|^2)^{1/2}&amp;lt;\varepsilon/2$, 从而有 $\forall i\in[1,N], |\xi_i-\eta_i|&amp;lt;\varepsilon/2$。&lt;/p>
-&lt;p>所以 $\rho(x,y)=\sum\limits_{k=1}^N&amp;#43;\sum\limits_{k=N&amp;#43;1}^\infty&amp;lt;\frac\varepsilon 2&amp;#43;\frac\varepsilon 2=\varepsilon$。&lt;/p>
-&lt;p>故 $D&amp;#39;$ 就是 $A$ 的有穷 $\varepsilon$-网. 从而 $A$ 是完全有界集, 进而是列紧集.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="138">&lt;span>1.3.8&lt;/span>
- &lt;a href="#138" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $M$ 是 $\mathscr X$ 中的列紧集, 映射 $f:\mathscr X\to M$ 满足 &lt;/p>
-$$\rho(f(x_1),f(x_2))&amp;lt;\rho(x_1,x_2),\quad (\forall x_1,x_2\in \mathscr X,x_1\neq x_2)$$&lt;p> 求证: $f$ 在 $\mathscr X$ 中存在唯一不动点.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">记 $d=\inf\lbrace \rho(x,f(x))|x\in M\rbrace $.
-&lt;br>
-由下确界的定义, 存在点列 $\lbrace x_n\rbrace $ 满足 $\rho(x_n,f(x_n))&amp;lt;d&amp;#43;\frac 1 n$. 由于 $M$ 是列紧集, 故存在收敛子列 $\lbrace x_{n_k}\rbrace $ 且滿足 $\rho(x_{n_k},f(x_{n_k}))&amp;lt;d&amp;#43;\frac 1{n_k}$, 设其收敛至 $x\in\mathscr X$, 则有 $\rho(x,f(x))=d$.
-&lt;br>
-如果 $d\neq 0$, 即 $x\neq f(x)$, 则 $\rho(f(x),f(f(x)))&amp;lt;\rho(x,f(x))=d$, 则与下确界矛盾. 所以 $d=0$.
-&lt;br>
-于是 $x=f(x)$, 是 $\mathscr X$ 中的不动点.
-&lt;br>
-如果不动点不唯一, 那么 $\rho(x_1,x_2)=\rho(f(x_1),f(x_2))&amp;lt;\rho(x_1,x_2)$ 矛盾.
-&lt;br>
-所以 $f$ 在 $\mathscr X$ 上存在唯一不动点.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="139">&lt;span>1.3.9&lt;/span>
- &lt;a href="#139" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $(M,\rho)$ 是一个紧度量空间, 又 $E\subset C(M)$, $E$ 中的函数一致有界并满足下列 Holder 条件: &lt;/p>
-$$|x(t_1)-x(t_2)|\leqslant C\rho(t_1,t_2)^\alpha\quad (\forall x\in E, \forall t_1,t_2\in M),$$&lt;p> 其中 $0&amp;lt;\alpha\leqslant 1, C&amp;gt;0$. 求证: $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>根据 AA 定理, 只需证 $E$ 中函数等度连续。&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 取 $\delta=\left(\frac{\varepsilon}{C}\right)^{1/\alpha}$.&lt;/p>
-&lt;p>那么有 $\forall \rho(t_1,t_2)&amp;lt;\delta, x\in E$ 有 $|x(t_1)-x(t_2)|\leqslant C\rho(t_1,t_2)^\alpha&amp;lt;\varepsilon$. 从而 $E$ 中函数等度连续.&lt;/p>
-&lt;p>从而根据 AA 定理, $E$ 在 $C(M)$ 中是列紧集.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>Assignment 1</title><link>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E8%BF%90%E7%AD%B9%E5%AD%A6/%E4%BD%9C%E4%B8%9A/1/</guid><category domain="http://localhost:1313/categories/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</category><description>&lt;h2 class="heading-element" id="homework-1">&lt;span>Homework 1&lt;/span>
- &lt;a href="#homework-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;h2 class="heading-element" id="question-1">&lt;span>Question 1&lt;/span>
- &lt;a href="#question-1" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>使用单纯形法来求解如下优化问题：&lt;br>
-&lt;strong>要求：&lt;/strong> 将其转化为标准形式，列出单纯形表手算作答。&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">$$
-\begin{aligned}
-	\min \quad &amp;amp; -10x_{1} - 12x_{2} - 12x_{3} \\\\
-	\text{s.t.} \quad
-	&amp;amp; x_{1} &amp;#43; 2x_{2} &amp;#43; 2x_{3} \leq 20, \\\\
-	&amp;amp; 2x_{1} &amp;#43; x_{2} &amp;#43; 2x_{3} \leq 20, \\\\
-	&amp;amp; 2x_{1} &amp;#43; 2x_{2} &amp;#43; x_{3} \leq 20, \\\\
-	&amp;amp; x_{1}, x_{2}, x_{3} \geq 0.
-\end{aligned}
-\overset{\text{标准形式}}{\Longrightarrow}
-\begin{aligned}
-	\min\ f &amp;amp;= -10x_1 - 12x_2 - 12x_3 \\\\
-	\text{s.t.}\quad
-	&amp;amp; x_1 &amp;#43; 2x_2 &amp;#43; 2x_3 &amp;#43; x_4 = 20,\\\\
-	&amp;amp; 2x_1 &amp;#43; x_2 &amp;#43; 2x_3 &amp;#43; x_5 = 20,\\\\
-	&amp;amp; 2x_1 &amp;#43; 2x_2 &amp;#43; x_3 &amp;#43; x_6 = 20,\\\\
-	&amp;amp; x_1,x_2,x_3,x_4,x_5,x_6 \ge 0.
-\end{aligned}
-$$&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
- &lt;th>右端项&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>$-f$&lt;/td>
- &lt;td>$-10$&lt;/td>
- &lt;td>$-12$&lt;/td>
- &lt;td>$-12$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_4$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$20$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_5$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$20$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_6$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$20$&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;em>初始表&lt;/em>&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
- &lt;th>右端项&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>$-f$&lt;/td>
- &lt;td>$-4$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$6$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$120$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_2$&lt;/td>
- &lt;td>$\frac12$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$\frac12$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$10$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_5$&lt;/td>
- &lt;td>$\frac32$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$-\frac12$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$10$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_6$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$-1$&lt;/td>
- &lt;td>$-1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;em>第一次迭代 (入 $x_2$, 出 $x_4$)&lt;/em>&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
- &lt;th>右端项&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>$-f$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$-4$&lt;/td>
- &lt;td>$2$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$4$&lt;/td>
- &lt;td>$120$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_2$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$\frac32$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$-\frac12$&lt;/td>
- &lt;td>$10$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_5$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$\frac52$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$-\frac32$&lt;/td>
- &lt;td>$10$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_1$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$-1$&lt;/td>
- &lt;td>$-1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;em>第二次迭代 (入 $x_1$, 出 $x_4$)&lt;/em>&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>基变量&lt;/th>
- &lt;th>$x_1$&lt;/th>
- &lt;th>$x_2$&lt;/th>
- &lt;th>$x_3$&lt;/th>
- &lt;th>$x_4$&lt;/th>
- &lt;th>$x_5$&lt;/th>
- &lt;th>$x_6$&lt;/th>
- &lt;th>右端项&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>$-f$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$\frac{18}{5}$&lt;/td>
- &lt;td>$\frac{8}{5}$&lt;/td>
- &lt;td>$\frac{8}{5}$&lt;/td>
- &lt;td>$136$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_2$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$\frac{2}{5}$&lt;/td>
- &lt;td>$-\frac{3}{5}$&lt;/td>
- &lt;td>$\frac{2}{5}$&lt;/td>
- &lt;td>$4$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_3$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$\frac{2}{5}$&lt;/td>
- &lt;td>$\frac{2}{5}$&lt;/td>
- &lt;td>$-\frac{3}{5}$&lt;/td>
- &lt;td>$4$&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>$x_1$&lt;/td>
- &lt;td>$1$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$0$&lt;/td>
- &lt;td>$-\frac{3}{5}$&lt;/td>
- &lt;td>$\frac{2}{5}$&lt;/td>
- &lt;td>$\frac{2}{5}$&lt;/td>
- &lt;td>$4$&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>&lt;em>第三次迭代 (入 $x_3$, 出 $x_5$)&lt;/em>&lt;/p>
-&lt;p>综上, 在三次迭代后, 已得到最优解, 无法再优化. 此时的解为 $\vec x^T=(4,4,4)$, $f=136$.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="question-2-人才培养">&lt;span>Question 2 人才培养&lt;/span>
- &lt;a href="#question-2-%e4%ba%ba%e6%89%8d%e5%9f%b9%e5%85%bb" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>北方印染公司需要的技术工人分为初级工、中级工和高级工三个层次。统计资料显示：培养出来的每个初级工每年可为公司增加产值 1 万元，每个中级工每年可为公司增加产值 4 万元，每个高级工每年可为公司增加产值 5.5 万元。公司计划在今后三年中对招聘的高中生和本公司的技工进行培训，预计拨出 150 万元作为职工培训费，其中，第一年投资 55 万元，第二年投资 45 万元，第三年投资 50 万元。每个等级的技术工人培训费用和时间如下表所示。&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>&lt;/th>
- &lt;th>培训方式&lt;/th>
- &lt;th>第一年&lt;/th>
- &lt;th>第二年&lt;/th>
- &lt;th>第三年&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>1&lt;/td>
- &lt;td>高中生升初级工&lt;/td>
- &lt;td>1000&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2&lt;/td>
- &lt;td>高中生升中级工&lt;/td>
- &lt;td>3000&lt;/td>
- &lt;td>3000&lt;/td>
- &lt;td>1000&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>3&lt;/td>
- &lt;td>高中生升高级工&lt;/td>
- &lt;td>3000&lt;/td>
- &lt;td>2000&lt;/td>
- &lt;td>4000&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>4&lt;/td>
- &lt;td>初级工升中级工&lt;/td>
- &lt;td>2800&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>5&lt;/td>
- &lt;td>初级工升高级工&lt;/td>
- &lt;td>2000&lt;/td>
- &lt;td>3200&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>6&lt;/td>
- &lt;td>中级工升高级工&lt;/td>
- &lt;td>3600&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>目前公司共有初级工 226 人，中级工 560 人，高级工 496 人。由于公司目前师资力量不足，教学环境有限，每年在培养的职工人数受到一定限制。根据目前的情况，每年在培的初级工不超过 90 人，在培的中级工不超过 80 人，在培的高级工不超过 80 人。制定培训方案，使企业增加的产值最大。&lt;br>
-&lt;strong>要求：&lt;/strong> 请确定决策变量，写出完成的优化模型并附简要说明。
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>设&lt;br>
-&lt;/p>
-$$
-\left\lbrace 
-\begin{array}{ll}
-	x_{1t} = \text{第 $t$ 年招收高中生升为初级工的人数} &amp;amp; t=1,2,3 \\\\
-	x_{2t} = \text{第 $t$ 年招收高中生升为中级工的人数} &amp;amp; t=1 \\\\
-	x_{3t} = \text{第 $t$ 年招收高中生升为高级工的人数} &amp;amp; t=1 \\\\
-	x_{4t} = \text{第 $t$ 年由初级工升为中级工的人数} &amp;amp; t=1,2,3 \\\\
-	x_{5t} = \text{第 $t$ 年由初级工升为高级工的人数} &amp;amp; t=1,2 \\\\
-	x_{6t} = \text{第 $t$ 年由中级工升为高级工的人数} &amp;amp; t=1,2,3
-\end{array}
-\right.
-$$&lt;p>有三种限制: 资金限制, 学员限制, 师资限制.&lt;br>
-对于资金限制&lt;br>
-&lt;/p>
-$$
-\left\lbrace 
-\begin{array}{l}
-	1000x_{11}&amp;#43;3000x_{21}&amp;#43;3000x_{31}&amp;#43;2800x_{41}&amp;#43;2000x_{51}&amp;#43;3600x_{61}\leqslant550000\\\\
-	1000x_{12}&amp;#43;3000x_{21}&amp;#43;2000x_{31}&amp;#43;2800x_{42}&amp;#43;3200x_{51}&amp;#43;2000x_{52}&amp;#43;3600x_{62}\leqslant 450000\\\\
-	1000x_{13}&amp;#43;1000x_{21}&amp;#43;4000x_{31}&amp;#43;2800x_{43}&amp;#43;3200x_{52}&amp;#43;3600x_{63}\leqslant 500000
-\end{array}
-\right.
-$$&lt;p>对于师资限制&lt;br>
-&lt;/p>
-$$
-\text{第一年}:\left\lbrace 
-\begin{array}{l}
-	x_{11}\leqslant 90\\\\
-	x_{21}&amp;#43;x_{41}\leqslant 80\\\\
-	x_{31}&amp;#43;x_{51}&amp;#43;x_{61}\leqslant 80
-\end{array}
-\right.
-\quad
-\text{第二年}:\left\lbrace 
-\begin{array}{l}
-x_{12}\leqslant90\\\\
-x_{21}&amp;#43;x_{42}\leqslant 80\\\\
-x_{31}&amp;#43;x_{51}&amp;#43;x_{52}&amp;#43;x_{62}\leqslant 80
-\end{array}
-\right.
-\quad
-\text{第三年}:\left\lbrace 
-\begin{array}{l}
-x_{13}\leqslant 90\\\\
-x_{21}&amp;#43;x_{43}\leqslant 80\\\\
-x_{31}&amp;#43;x_{52}&amp;#43;x_{63}\leqslant 80
-\end{array}
-\right.
-$$&lt;p>对于学员限制&lt;br>
-&lt;/p>
-$$
-\text{第一年}:\left\lbrace 
-\begin{array}{l}
-	x_{41}&amp;#43;x_{51}\leqslant 226\\\\
-	x_{61}\leqslant 560
-\end{array}
-\right.
-\quad
-\text{第二年}:\left\lbrace 
-\begin{array}{l}
-x_{41}&amp;#43;x_{51}&amp;#43;x_{42}&amp;#43;x_{52}\leqslant 226&amp;#43;x_{11}\\\\
-x_{61}&amp;#43;x_{62}\leqslant 560&amp;#43;x_{41}
-\end{array}
-\right.
-$$&lt;p>&lt;br>
-&lt;/p>
-$$
-\text{第三年}:\left\lbrace 
-\begin{array}{l}
-x_{41}&amp;#43;x_{51}&amp;#43;x_{42}&amp;#43;x_{52}&amp;#43;x_{43}\leqslant 226&amp;#43;x_{11}&amp;#43;x_{12}\\\\
-x_{61}&amp;#43;x_{62}&amp;#43;x_{63}\leqslant 560&amp;#43;x_{41}&amp;#43;x_{42}
-\end{array}
-\right.
-$$&lt;p>&lt;br>
-但实际上结合每年各级别培训人数限制, 学员限制中有效的只有 $x_{41}&amp;#43;x_{42}&amp;#43;x_{43}&amp;#43;x_{51}&amp;#43;x_{52}\leqslant 226&amp;#43;x_{11}&amp;#43;x_{12}$.&lt;br>
-除了上述三种限制外, 还要求各阶段各级别培训人数非负.&lt;/p>
-&lt;p>下面考虑总收益函数 $f$ 的表示:&lt;br>
-感觉题目有不同理解.&lt;br>
-如果考虑三年之后每年的产值最高, 那么应该是 (本人理解题目应该是这种情况, 不然高中生培训三年的方案没有意义):&lt;br>
-三年后 (即最晚第四年起可以进行工作) 各级别工人人数依次为&lt;br>
-&lt;/p>
-$$
-\begin{array}{l}
-	226-x_{41}-x_{42}-x_{43}-x_{51}-x_{52}&amp;#43;x_{11}&amp;#43;x_{12}&amp;#43;x_{13}\\\\
-	560-x_{61}-x_{62}-x_{63}&amp;#43;x_{21}&amp;#43;x_{41}&amp;#43;x_{42}&amp;#43;x_{43}\\\\
-	496&amp;#43;x_{31}&amp;#43;x_{51}&amp;#43;x_{52}&amp;#43;x_{61}&amp;#43;x_{62}&amp;#43;x_{63}
-\end{array}
-$$&lt;p>&lt;br>
-整理后年产值增加 (单位: 万)&lt;br>
-&lt;/p>
-$$
-f=x_{11}&amp;#43;x_{12}&amp;#43;x_{13}&amp;#43;4x_{21}&amp;#43;5.5x_{31}&amp;#43;3x_{41}&amp;#43;3x_{42}&amp;#43;3x_{43}&amp;#43;4.5x_{51}&amp;#43;4.5x_{52}&amp;#43;1.5x_{61}&amp;#43;1.5x_{62}&amp;#43;1.5x_{63}.
-$$&lt;p>若理解为只考虑这三年的总收益增加最多, 且培训期间不产生产值, 那么函数如下:&lt;br>
-分年份考虑当年参与工作的各级别工人数量, 依次为初级工, 中级工和高级工.&lt;br>
-&lt;/p>
-$$
-\text{第一年}:\left\lbrace 
-\begin{array}{ll}
-	226-x_{41}-x_{51}\\\\
-	560-x_{61}\\\\
-	496
-\end{array}
-\right.
-\quad
-\text{第二年}:\left\lbrace 
-\begin{array}{ll}
-226-x_{41}-x_{51}-x_{42}-x_{52}&amp;#43;x_{11}\\\\
-560-x_{61}-x_{62}&amp;#43;x_{41}\\\\
-496&amp;#43;x_{61}
-\end{array}
-\right.
-$$&lt;p>&lt;br>
-&lt;/p>
-$$
-\text{第三年}:\left\lbrace 
-\begin{array}{ll}
-	226-x_{41}-x_{51}-x_{42}-x_{52}&amp;#43;x_{11}-x_{43}&amp;#43;x_{12}\\\\
-	560-x_{61}-x_{62}-x_{63}&amp;#43;x_{41}&amp;#43;x_{42}\\\\
-	496&amp;#43;x_{61}&amp;#43;x_{62}&amp;#43;x_{51}
-\end{array}
-\right.
-$$&lt;p>&lt;br>
-整理后总的增加收益 (单位: 万) 为&lt;br>
-&lt;/p>
-$$
-f=x_{11}&amp;#43;x_{12}&amp;#43;5x_{41}&amp;#43;2x_{42}-x_{43}&amp;#43;2.5x_{51}-x_{52}-x_{61}-2.5x_{62}-4x_{63}.
-$$&lt;/div>
- &lt;/div>
-&lt;/div>&lt;/p></description></item><item><title>泛函分析作业250922</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</link><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250922/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="121">&lt;span>1.2.1&lt;/span>
- &lt;a href="#121" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>(空间 S) 令 $S$ 为一切实 (或复) 数列 &lt;/p>
-$$x=(\xi_1,\xi_2,\cdots,\xi_n,\cdots)$$&lt;p> 组成的集合, 在 $S$ 中定义距离为
-&lt;/p>
-$$\rho(x,y)=\sum\limits_{k=1}^\infty \frac{1}{2^k}\cdot\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|},$$&lt;p>
-其中 $x=(\xi_1,\xi_2,\cdots,\xi_k,\cdots),y=(\eta_1,\eta_2,\cdots,\eta_k,\cdots)$. 求证 $S$ 为一个完备的度量空间.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>首先证明 $\rho(x,y)$ 是度量。&lt;/p>
-&lt;p>非负性和对称性显然, 下证三角不等式。&lt;/p>
-&lt;p>由 $f(t)=\frac {t}{1&amp;#43;t}=1-\frac{1}{1&amp;#43;t}$ 递增, 于是用复数域 $|x-y|$ 度量的三角不等式得到
-&lt;/p>
-$$\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|&amp;#43;|\zeta_k-\eta_k|}{1&amp;#43;|\xi_k-\zeta_k|&amp;#43;|\zeta_k-\eta_k|}.$$&lt;p>
-又 $f&amp;#39;(t)=\frac{1}{(1&amp;#43;t)^2}&amp;lt;1$, 所以有 $f(|a|&amp;#43;|b|)\leqslant f(|a|)&amp;#43;f(|b|)$. 故
-&lt;/p>
-$$\frac{|\xi_k-\eta_k|}{1&amp;#43;|\xi_k-\eta_k|}\leqslant \frac{|\xi_k-\zeta_k|}{1&amp;#43;|\xi_k-\zeta_k|}&amp;#43;\frac{|\zeta_k-\eta_k|}{1&amp;#43;|\zeta_k-\eta_k|}$$&lt;p>
-再对 $k$ 求和就可以得到三角不等式成立。&lt;/p>
-&lt;p>然后证明 $S$ 是完备的。&lt;/p>
-&lt;p>任取一个 $S$ 中的柯西列 $\lbrace x^{(m)}\rbrace $ ($m\to\infty, \forall p\in\mathbb{N}_&amp;#43;$) 即 $\forall \varepsilon&amp;gt;0,\exists M&amp;gt;0,\ s.t. \forall m\geqslant M, p\geqslant 1$ 有 $\rho(x^{(m&amp;#43;p)},x^{(m)})&amp;lt;\varepsilon$。&lt;/p>
-&lt;p>现关注数列的第 $k$ 项, 当 $\varepsilon&amp;lt;\frac{1}{2^{k&amp;#43;1}}$ 时, 有
-&lt;/p>
-$$\frac{|x_k^{(m&amp;#43;p)}-x_k^{(m)}|}{1&amp;#43;|x_k^{(m&amp;#43;p)}-x_k^{(m)}|}&amp;lt; 2^k\varepsilon.$$&lt;p> 移向变换可得
-&lt;/p>
-$$|x_k^{(m&amp;#43;p)}-x_k^{(m)}|&amp;lt;\frac{2^k\varepsilon}{1-2^k\varepsilon}\overset{2^k\varepsilon&amp;lt;\frac 1 2}{&amp;lt;}2^{k&amp;#43;1}\varepsilon.$$&lt;p>
-由于现在关注的是第 $k$ 项构成的序列 $\lbrace x_k^{(m)}\rbrace _{m=1}^\infty$ 所以我们得到 $\lbrace x_k^{(m)}\rbrace $ 是 $\mathbb{C}$ 中的柯西列, 根据复数域的完备性该序列收敛, 记收敛于 $x_k$。&lt;/p>
-&lt;p>如此, 我们就得到了一个新的数列 $\lbrace x_k\rbrace \in S$ 记作 $x$. 下证 $\lbrace x^{(m)}\rbrace $ 收敛于 $x$。&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0$, 由于 $\frac{|x_k^{(m)}-x_k|}{1&amp;#43;|x_k^{(m)}-x_k|}&amp;lt;1$, 所以
-&lt;/p>
-$$\sum\limits_{k=n_0&amp;#43;1}^\infty \frac{1}{2^k}\cdot \frac{|x_k^{(m)}-x_k|}{1&amp;#43;|x_k^{(m)}|}&amp;lt;\frac{1}{2^{n_0}}.$$&lt;p> 取 $n_0\geqslant\lceil-\log_2 \varepsilon\rceil&amp;#43;1$ 那么對於前 $n_0$ 項, 由于每一项都收敛至 $x_k$, 又是有限项, 故可以取一个一致的 $M$, 使得 $|x_k^{(m)}-x_k|&amp;lt;\varepsilon,\ \forall m\geqslant M$, 从而 $\rho(x^{(m)},x)&amp;lt;2\varepsilon,\ \forall m\geqslant M$。&lt;/p>
-&lt;p>即 $\lbrace x^{(m)}\rbrace $ 收敛. 综上 $S$ 是完备的度量空间。&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="123">&lt;span>1.2.3&lt;/span>
- &lt;a href="#123" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $F$ 是只有有限项不为 $0$ 的实数列全体, 在 $F$ 上引进距离 &lt;/p>
-$$\rho(x,y)=\sup\limits_{k\geqslant 1}|\xi_k-\eta_k|,$$&lt;p> 其中 $x=\lbrace \xi_k\rbrace \in F,y=\lbrace \eta_k\rbrace \in F$, 求证 $(F,\rho)$ 不完备, 并指出它的完备化空间.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑数列 $x_n=(1,\frac 1 2,\ldots,\frac 1 {n-1},\frac 1 n,0,0,\ldots)\in F$. 有 $\forall n,m\geqslant N$, $\rho(x_n,x_m)&amp;lt;\frac 1 N$, 从而 $\lbrace x_n\rbrace $ 是柯西列, 但显然 $\lbrace x_n\rbrace $ 收敛至 $(1,\frac 1 2,\ldots,\frac 1 n,\ldots)\notin F$. 从而 $F$ 不完备.&lt;/p>
-&lt;p>$F$ 的完备化空间应该是所有极限为 0 的实数列的全体, 记为 $\widetilde{F}$。&lt;/p>
-&lt;p>先说明 $F$ 在 $\widetilde{F}$ 中稠密。&lt;/p>
-&lt;p>即证明 $\forall x\in\widetilde{F}, \varepsilon&amp;gt;0,\ \exists y\in F,\ s.t. \rho(x,y)&amp;lt;\varepsilon$。&lt;/p>
-&lt;p>设 $x=(\xi_1,\xi_2,\ldots,\xi_n,\ldots)$, 由于 $\lim\limits_{n\to\infty}\xi_n=0$, 所以存在 $N_0$ 使得 $n\geqslant N_0$ 时 $\xi_n&amp;lt;\varepsilon$. 故只需取 $y=(\xi_1,\xi_2,\ldots,\xi_{N_0},0,0,\ldots)$, 那么 $\rho(x,y)=\sup\limits_{n\geqslant N_0}\xi_n&amp;lt;\varepsilon$。&lt;/p>
-&lt;p>所以 $F$ 在 $\widetilde{F}$ 中稠密。&lt;/p>
-&lt;p>再说明 $\widetilde{F}$ 是完备的。&lt;/p>
-&lt;p>任取 $\lbrace x^{(n)}\rbrace $ 是柯西列。&lt;/p>
-$$\forall \varepsilon&amp;gt;0,\exists N,\ s.t. \forall n,m\geqslant N,\sup\limits_{k\geqslant 1}|\xi_k^{(n)}-\xi_k^{(m)}|&amp;lt;\varepsilon$$&lt;p> 进而对每一维 $k$ 有 &lt;/p>
-$$|\xi_k^{(n)}-\xi_k^{(m)}|\leqslant\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 即 $\lbrace \xi_k^{(n)}\rbrace _{n=1}^\infty$ 也是柯西列, 由 $\mathbb{R}$ 的完备性知其收敛, 记为 $\xi_k$. 故取 $x=(\xi_1,\xi_2,\ldots,\xi_n,\ldots)$, 下证 $x^{(n)}\to x$ 且 $x\in \widetilde{F}$。&lt;/p>
-&lt;p>由 $\lbrace x^{(n)}\rbrace $ 是柯西列, 可得 $\forall \varepsilon&amp;gt;0,\exists N,\ s.t.\forall n,m\geqslant N$ 有 &lt;/p>
-$$\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再固定 $n$ 对一切 $m\geqslant N$ 和 $k$ 有 &lt;/p>
-$$|\xi_k^{(n)}-\xi_k^{(m)}|\leqslant\sup\limits_{j\geqslant 1}|\xi_j^{(n)}-\xi_j^{(m)}|&amp;lt;\varepsilon$$&lt;p> 再令 $m\to\infty$ 得到 &lt;/p>
-$$|\xi_k^{(n)}-\xi_k|\leqslant \varepsilon,\quad \forall k$$&lt;p> 从而 &lt;/p>
-$$
-\rho(x^{(n)},x)=\sup\limits_{k\geqslant 1}|\xi_k^{(n)}-\xi_k|\leqslant\varepsilon,\forall n\geqslant N\label{hw1.2.3}
-$$&lt;p>即 $x^{(n)}\to x$. 并且由 $\lbrace \xi_k^{(n)}\rbrace _{k=1}$ 收敛至 $0$, 我们有 $\exists K,\ s.t.\forall k\geqslant K, \ |\xi_k^{(N)}-\xi_k|&amp;lt;\varepsilon,\ |\xi_k^{(N)}|&amp;lt;\varepsilon$ 从而 $|\xi_k|&amp;lt;2\varepsilon$ 即 $\xi_k\overset{k}{\to}0$, $x\in \widetilde{F}$。&lt;/p>
-&lt;p>综上我们说明了 $\widetilde{F}$ 是 $F$ 的完备化空间.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="124">&lt;span>1.2.4&lt;/span>
- &lt;a href="#124" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>求证: [0,1] 上的多项式全体按距离 &lt;/p>
-$$\rho(p,q)=\int_0^1 |p(x)-q(x)| \mathrm{d} x$$&lt;p> 是不完备的, 并指出它的完备化空间.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>对于 $[0,1]$ 上的连续函数 $\sin x$, 根据魏尔斯特拉斯逼近定理存在一列多项式一致收敛于 $\sin x$, 但 $\sin x$ 显然不是多项式, 故多项式空间不完备.&lt;/p>
-&lt;p>其完备化空间应该为 $L^1([0,1])$ 即在 $[0,1]$ 上 Lebesgue 可积的函数全体.&lt;/p>
-&lt;p>稠密性: 由实变函数对任意可积函数存在具有紧支集的连续函数逼近, 再由数学分析中魏尔斯特拉斯定理存在多项式逼近有界闭区间上的连续函数. 从而可以用多项式逼近任意可积函数.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="125">&lt;span>1.2.5&lt;/span>
- &lt;a href="#125" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>在完备的度量空间 $(\mathscr X,\rho)$ 中给定点列 $\lbrace x_n\rbrace $, 如果 $\forall \varepsilon&amp;gt;0$, 存在基本列 $\lbrace y_n\rbrace $, 使得 &lt;/p>
-$$\rho(x_n,y_n)&amp;lt;\varepsilon,\quad (n\in\mathbb{N})$$&lt;p> 求证 $\lbrace x_n\rbrace $ 收敛.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑 $\lbrace y_n^{(\varepsilon)}\rbrace $ 表示 $\varepsilon$ 对应得基本列, 由于空间完备, 故极限存在记作 $y^{(\varepsilon)}$, 有 &lt;/p>
-$$\rho(y_n^{(\varepsilon_1)},y_n^{(\varepsilon_2)})\leqslant\rho(y_n^{(\varepsilon_1)},x_n)&amp;#43;\rho(y_n^{(\varepsilon_2)},x_n)&amp;lt;\varepsilon_1&amp;#43;\varepsilon_2$$&lt;p> 再令 $n\to\infty$ 得 &lt;/p>
-$$\rho(y^{(\varepsilon_1)},y^{(\varepsilon_2)})\leqslant\varepsilon_1&amp;#43;\varepsilon_2$$&lt;p>考虑数列 $\lbrace y^{(1/m)}\rbrace $, $\forall \varepsilon&amp;gt;0,$ 取 $N=\lceil \frac 2 \varepsilon\rceil$, 则 $n,m\geqslant N$ 时 $\rho(y^{(1/m)},y^{(1/n)})\leqslant\frac 1 n&amp;#43;\frac 1 m&amp;lt; \varepsilon$ 从而 $\lbrace y^{(1/m)}\rbrace $ 是柯西列, 又空间完备故收敛记作 $y$.&lt;/p>
-&lt;p>下证 $x_n\to y$.&lt;/p>
-&lt;p>$\forall \varepsilon&amp;gt;0, \exists m, \rho(y^{(1/m)},y)&amp;lt;\frac \varepsilon 3\wedge \frac 1 m&amp;lt;\frac \varepsilon 3$, 又 $y_n^{(1/m)}\to y^{(1/m)}$ 故存在 $N$ 使得 $n\geqslant N$ 时有 &lt;/p>
-$$\rho(y_n^{(1/m)},y^{(1/m)})&amp;lt;\frac \varepsilon 3$$&lt;p> 再根据 $\lbrace y_n^{(1/m)}\rbrace $ 定义有 &lt;/p>
-$$\rho(x_n,y_n^{(1/m)})&amp;lt;\frac 1 m&amp;lt;\varepsilon,\quad \forall n\geqslant N$$&lt;p> 所以有 &lt;/p>
-$$\rho(x_n,y)\leqslant\rho(x_n,y_n^{(1/m)})&amp;#43;\rho(y_n^{(1/m)},y^{(1/m)})&amp;#43;\rho(y^{(1/m)},y)&amp;lt;\varepsilon$$&lt;p> 即 $x_n\to y$.&lt;/p>
-&lt;p>所以 $\lbrace x_n\rbrace $ 收敛.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="134">&lt;span>1.3.4&lt;/span>
- &lt;a href="#134" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $(\mathscr X,\rho)$ 是度量空间, $F_1,F_2$ 是它的两个紧子集, 求证: $\exists x_i\in F_i(i=1,2)$, 使得 $\rho(F_1,F_2)=\rho(x_1,x_2)$.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>记 $d=\rho(F_1,F_2)$.&lt;/p>
-&lt;p>根据下确界的定义, 对任意 $n$ 存在 $x_n\in F_1,y_n\in F_2$, 使得 &lt;/p>
-$$d\leqslant \rho(x_n,y_n)&amp;lt;d&amp;#43;\frac 1 n.$$&lt;p> 由 $F_1$ 的紧性, 存在子列 $\lbrace x_{n_k}\rbrace $ 收敛, 记收敛至 $x_1\in F_1$. 考虑对应的子列 $\lbrace y_{n_k}\rbrace $, 由 $F_2$ 的紧性, 该序列也存在收敛子列 $\lbrace y_{n_{k_j}}\rbrace $, 记收敛至 $x_2\in F_2$. 从而有 &lt;/p>
-$$d\leqslant\rho(x_{n_{k_j}},y_{n_{k_j}})&amp;lt;d&amp;#43;\frac 1 {n_{k_j}}$$&lt;p> 令 $j\to\infty$ 可得 $d=\rho(x_1,x_2)$.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>泛函分析作业250915</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</link><pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/250915/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="112">&lt;span>1.1.2&lt;/span>
- &lt;a href="#112" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>(Newton 法) 设 $f$ 是定义在 $[a,b]$ 上的二次连续可微的实值函数, $\hat{x}\in(a,b)$ 使得 $f(\hat x)=0, f&amp;#39;(\hat x)\neq 0$. 求证: 存在 $\hat x$ 的邻域 $U(\hat x)$, 使得 $\forall x_0\in U(\hat x)$, 迭代序列
-&lt;/p>
-$$x_{n&amp;#43;1}=x_n-\frac{f(x_n)}{f&amp;#39;(x_n)}\quad (n=0,1,2,\ldots)$$&lt;p>
-是收敛的, 并且
-&lt;/p>
-$$\lim\limits_{n\to\infty}x_n=\hat x.$$&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>设映射 $T(x)=x-\dfrac{f(x)}{f&amp;#39;(x)}$&lt;/p>
-&lt;p>由 $f\in C^2, f&amp;#39;(\hat x)\neq 0$, 故存在 $\delta_0, (x-\delta_0,x&amp;#43;\delta_0)\subset[a,b],m,M,L\in\mathbb{R},\ s.t.\ |x-\hat x|\leqslant \delta_0$ 时, 有 $m\overset{\text{保号性}}{\leqslant}|f&amp;#39;(x)|\overset{\text{有界性}}{\leqslant} M, |f&amp;#39;&amp;#39;(x)|\leqslant L$.&lt;/p>
-&lt;p>那么考虑导数 $T&amp;#39;(x)=\dfrac{f(x)f&amp;#39;&amp;#39;(x)}{(f&amp;#39;(x))^2}\overset{\text{柯西中值}}{=}\dfrac{(f&amp;#39;(\xi)|x-\hat x|&amp;#43;f(\hat x))f&amp;#39;&amp;#39;(x)}{(f&amp;#39;(x))^2}\leqslant \dfrac{M|x-\hat{x}|L}{m^2}$, 于是可以取 $\delta=\min(\frac {m^2}{ML&amp;#43;1},\delta_0)$, 则有 $|T&amp;#39;(x)|\leqslant \frac{ML}{ML&amp;#43;1}&amp;lt;1,\forall x\in (\hat x-\delta,\hat x&amp;#43;\delta)$.&lt;/p>
-&lt;p>所以在该邻域中有 $|T(x)-T(y)|\leqslant \frac{ML}{ML&amp;#43;1}|x-y|,\ \forall x,y\in (\hat x-\delta,\hat x&amp;#43;\delta)$, 再结合 $T(\hat{x})=\hat x$ 可以得到 $T x\in(\hat x-\delta,\hat x&amp;#43;\delta)$, 即 $T$ 在该邻域内是压缩映射.&lt;/p>
-&lt;p>又由实数的完备性, 根据 Banach 不动点定理可知存在唯一的不动点, 又 $\hat x=T(\hat x)$, 所以 $\hat x$ 是不动点, 即 $\lim\limits_{n\to\infty}x_n=\hat x$.&lt;/p>
-&lt;p>下面是 Mworks 程序.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="n">clear&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="n">clc&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">exp&lt;/span>&lt;span class="p">.(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span> &lt;span class="err">#求此函数的零点&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">&lt;span class="n">df&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">exp&lt;/span>&lt;span class="p">.(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="err">#此函数的导数&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">&lt;span class="cp">#绘制f的函数图像
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mf">0.1&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mf">1.1&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="s">&amp;#34;k&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl">&lt;span class="n">hold&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;on&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl">&lt;span class="cp">#绘制直线y=0
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">zeros&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)),&lt;/span>&lt;span class="s">&amp;#34;r&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">&lt;span class="n">x0&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span> &lt;span class="err">#初始猜测&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">&lt;span class="n">N&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="err">#总迭代次数&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl">&lt;span class="n">x&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">zeros&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl">&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">x0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">ii&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="n">N&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="p">])&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">df&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">&lt;span class="n">text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="p">]),&lt;/span>&lt;span class="n">string&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="n">color&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;black&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">fontsize&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">14&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl">&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nl">ii&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nl">ii&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]),&lt;/span>&lt;span class="s">&amp;#34;b&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl">&lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">ii&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]),&lt;/span>&lt;span class="s">&amp;#34;r*&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl">&lt;span class="n">end&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">&lt;span class="n">text&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">f&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]),&lt;/span>&lt;span class="n">string&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">N&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="n">color&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;black&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">fontsize&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">14&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">26&lt;/span>&lt;span class="cl">&lt;span class="n">saveas&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">gcf&lt;/span>&lt;span class="p">(),&lt;/span>&lt;span class="s">&amp;#34;1d1d2.eps&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">27&lt;/span>&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">28&lt;/span>&lt;span class="cl">&lt;span class="n">abs&lt;/span>&lt;span class="p">.(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">))]&lt;/span> &lt;span class="err">#零点为&lt;/span>&lt;span class="n">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.1.2.png' alt="1.1.2">&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="114">&lt;span>1.1.4&lt;/span>
- &lt;a href="#114" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $T$ 是度量空间上的压缩映射, 求证: $T$ 是连续的.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>记度量空间为 $(\mathscr X,\rho)$.&lt;/p>
-&lt;p>设 $\lbrace x_n\rbrace _{n=1}^\infty$ 是该度量空间上的任意收敛列, 且收敛至 $x_0$. 那么对于 $\rho(Tx_n,Tx_0)$, 由于 $T$ 是压缩映射, 故存在 $0&amp;lt;\alpha&amp;lt;1$ 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in\mathscr X$, 于是 $0\leqslant\rho(Tx_n,Tx_0)\leqslant\alpha\rho(x_n,x_0)$, 根据夹逼准则可知 $\rho(Tx_n,Tx_0)\to 0\ (n\to \infty)$, 所以 $T$ 是连续的.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="115">&lt;span>1.1.5&lt;/span>
- &lt;a href="#115" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $T$ 是压缩映射, 求证: $T^n(n\in\mathbb{N}_&amp;#43;)$ 也是压缩映射, 并说明逆命题不一定成立.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>记度量空间为 $(\mathscr X,\rho)$.&lt;/p>
-&lt;p>由 $T$ 是压缩映射, 所以存在 $0&amp;lt;\alpha&amp;lt;1$, 满足 $\rho(Tx,Ty)\leqslant\alpha\rho(x,y),\ \forall x,y\in \mathscr X$. 于是有
-&lt;/p>
-$$\rho(T^n x,T^n y)\leqslant\alpha\rho(T^{n-1}x,T^{n-1}y)\leqslant\cdots\leqslant\alpha^n\rho(x,y).$$&lt;p>
-由于 $0&amp;lt;\alpha&amp;lt;1$, 故 $0&amp;lt;\alpha^n&amp;lt;1$. 又 $T$ 将 $\mathscr X$ 映到自身, 因此 $T^n$ 也将 $\mathscr X$ 映到自身. 综上可知 $T^n$ 仍为压缩映射。&lt;/p>
-&lt;p>逆命题不一定成立, 下面给出一个反例:&lt;/p>
-&lt;p>在 $[0,1)$ 上以普通绝对值作度量, 取映射 $T(x)=\dfrac{1&amp;#43;\sqrt{3}}{6}x^3$。&lt;/p>
-&lt;p>显然 $T$ 将 $[0,1)$ 映到 $[0,1)$。&lt;/p>
-&lt;p>计算导数得 $T&amp;#39;(x)=\dfrac{1&amp;#43;\sqrt{3}}{2}x^2$, 存在 $x$ 使得 $T&amp;#39;(x)&amp;gt;1$, 因此 $T$ 不是压缩映射。&lt;/p>
-&lt;p>但是由链式法则,
-&lt;/p>
-$$ (T^2(x))&amp;#39; = T&amp;#39;(T(x))\cdot T&amp;#39;(x) = \frac{(1&amp;#43;\sqrt 3)^4}{144} x^8 &amp;lt;1,\quad \forall x\in[0,1),$$&lt;p>
-因此 $T^2$ 是压缩映射。&lt;/p>
-&lt;p>注: 上述构造的思路是考虑幂函数 $T(x)=c x^k$, 通过对系数 $c$ 和次幂 $k$ 的选择可以令 $T&amp;#39;$ 在某些点大于 1 而 $T^2$ 的导数处处小于 1，从而构成逆命题不成立的反例。&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="116">&lt;span>1.1.6&lt;/span>
- &lt;a href="#116" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $M$ 是 $(\mathbb{R}^n,\rho)$ 中的有界闭集, 映射 $T:M\to M$ 满足: $\rho(Tx,Ty)&amp;lt;\rho(x,y)(\forall x,y\in M,x\neq y)$, 求证: $T$ 在 $M$ 中存在唯一的不动点.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>由 $\rho(Tx,Ty)&amp;lt;\rho(x,y)$ 和三角不等式可得
-&lt;/p>
-$$|\rho(x,Tx)-\rho(y,Ty)|\leqslant \rho(x,y)&amp;#43;\rho(Tx,Ty)&amp;lt;2\rho(x,y),$$&lt;p>
-从而 $\rho(x,Tx)$ 是连续的。&lt;/p>
-&lt;p>由于 $M$ 是 $\mathbb{R}^n$ 中的有界闭集, 因此存在使 $\rho(x,Tx)$ 取得最小值的点 $x_0\in M$. 若 $\rho(x_0,Tx_0)=0$ 则 $x_0$ 为不动点。&lt;/p>
-&lt;p>若 $\rho(x_0,Tx_0)&amp;gt;0$, 则由假设有 $\rho(Tx_0,T^2x_0)&amp;lt;\rho(x_0,Tx_0)$, 即 $Tx_0$ 的值更小，这与 $x_0$ 为最小值点矛盾。因此必须有 $\rho(x_0,Tx_0)=0$，即存在不动点。&lt;/p>
-&lt;p>唯一性则与压缩映像原理一致：若存在两个不动点 $x_0,x_1$，则
-&lt;/p>
-$$\rho(x_0,x_1)=\rho(Tx_0,Tx_1)&amp;lt;\rho(x_0,x_1),$$&lt;p>
-矛盾。因此不动点唯一。&lt;/p>
-&lt;p>注: 在度量空间中关于连续性的论证要以度量 $\rho$ 为度量依据，即在选取 $\delta$ 时是针对 $\rho(x,x&amp;#39;)$ 的限制，注意区分欧式距离上的连续性与一般度量空间中的连续性的表述。&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="117">&lt;span>1.1.7&lt;/span>
- &lt;a href="#117" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>对于积分方程 &lt;/p>
-$$x(t)-\lambda\int_0^1 e^{t-s}x(s)\text{d} s=y(t),$$&lt;p> 其中 $y(t)\in C[0,1]$ 为给定函数, $\lambda$ 为常数, $|\lambda|&amp;lt;1$, 求证: 存在唯一解 $x(t)\in C[0,1]$.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>考虑度量 $\rho(f,g)=\max\limits_{t\in[0,1]}|f(t)-g(t)|$.&lt;/p>
-&lt;p>对积分方程做变换得到 $e^{-t}x(t)-\lambda\int_0^1 e^{-s}x(s)\text{d} s=e^{-t}y(t)$.&lt;/p>
-&lt;p>不妨设 $\varphi(t)=e^{-t}x(t),\ \psi(t)=e^{-t}y(t)$, 新的函数显然仍属于 $C[0,1]$, 那么方程变为
-&lt;/p>
-$$\varphi(t)=\lambda\int_0^1 \varphi(s)\text{d} s&amp;#43;\psi(t).$$&lt;p>考虑映射 $T(\varphi)=\psi&amp;#43;\lambda\int_0^1 \varphi\text{d} s$。&lt;/p>
-&lt;p>首先, 由 $\psi\in C[0,1]$, 所以 $T(\varphi)\in C[0,1]$, 映射到自身。&lt;/p>
-&lt;p>其次, 对于任意两个属于 $C[0,1]$ 的函数 $f,g$ 有&lt;/p>
-$$\rho(Tf,Tg)=|\lambda\int_0^1 f(t)-g(t)\text{d} t|\leqslant|\lambda|\max\limits_{t\in[0,1]}|f(t)-g(t)|=\lambda\rho(f,g).$$&lt;p>由于 $|\lambda|&amp;lt;1$, 可知 $T$ 是压缩映射, 因此由压缩映像原理可得方程有唯一解. 乘以 $e^{t}$ 的变换是双射, 故原方程在 $C[0,1]$ 上也有唯一解。&lt;/p>
-&lt;p>下面是 Mworks 程序.&lt;/p>
-&lt;pre tabindex="0">&lt;code>clear()
-clc()
-
-n=20; #离散节点总数
-t=1/(2*n):1/n:1-1/(2*n) #居中节点
-
-iter=5 #总迭代次数
-x=zeros(n,iter+1)
-plot(t,x[:,1],&amp;#34;b*&amp;#34;,linewidth=4) #绘制初始猜测(蓝色点)
-hold(&amp;#34;on&amp;#34;)
-text(t[end],x[end,1],string(0),color=&amp;#34;black&amp;#34;,fontsize=14)
-lambda=0.5
-y=(1-lambda).*exp.(t)
-for ii=1:iter
-x[:,ii+1]=lambda/n*exp.(t .- transpose(t))*x[:,ii]+y
-color_value=2*ii/iter-1 #取值范围调整为-1 到 1, 为使线段颜色可以rgb插值渐变
-if color_value&amp;gt;0
-plot(t,x[:,ii+1],color=[color_value,1-color_value,0]) #绘制此步结果
-else
-plot(t,x[:,ii+1],color=[0,1+color_value,-color_value]) #绘制此步结果
-end
-text(t[end],x[end,ii+1],string(ii),color=&amp;#34;black&amp;#34;,fontsize=14)
-end
-x_true=exp.(t)
-plot(t,x_true,&amp;#34;r*&amp;#34;,linewidth=4) #绘制精确结果(红色点)
-saveas(gcf(),&amp;#34;1d1d7.eps&amp;#34;)
-[x x_true]&lt;/code>&lt;/pre>&lt;p>&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.1.7.png' alt="1.1.7">&lt;/p>
-&lt;/div>
  &lt;/div>
 &lt;/div></description></item></channel></rss>
