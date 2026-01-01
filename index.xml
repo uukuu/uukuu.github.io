@@ -100,17 +100,17 @@ d(x) = \inf_{z\in M} \Vert x - z \Vert.
  &lt;/a>
 &lt;/h2>&lt;p>设 $H$ 是 Hilbert 空间, $A\in \mathscr L (H)$ 并满足 &lt;/p>
 $$(Ax,y)=(x,Ay)\quad (\forall x,y\in H)$$&lt;p> 求证:&lt;/p>
-&lt;ul>
-&lt;li>(1) $A^*=A$;&lt;/li>
-&lt;li>(2) 若 $R(A)$ 在 $H$ 中稠密, 则方程 $Ax=y$ 对 $\forall y\in R(A)$ 存在唯一解.&lt;/li>
-&lt;/ul>
+&lt;ol>
+&lt;li>$A^*=A$;&lt;/li>
+&lt;li>若 $R(A)$ 在 $H$ 中稠密, 则方程 $Ax=y$ 对 $\forall y\in R(A)$ 存在唯一解.&lt;/li>
+&lt;/ol>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ul>
-&lt;li>(1) 对任意的 $y\in H$, 设 $A^*y=y&amp;#39;$, 我们有 $(Ax,y)=(x,y&amp;#39;)\quad\forall x\in H$, 根据题设条件得到 $(x,y&amp;#39;)=(Ax,y)=(x,Ay)$, 从而有 $Ay=y&amp;#39;$. 即 $Ay=A^*y(\forall y\in H)$. 故 $A=A^*$.&lt;/li>
-&lt;li>(2) 存在唯一解只需证 $A$ 是单射. 根据 Hilbert 空间的性质 $\text{Ker}(T^*)=\text{Ran}(T)^\perp$. 又 $R(A)$ 在 $H$ 中稠密, 从而 $\text{Ker}(A)=\text{Ker}(A^*)=\text{Ran}(A)^\perp=\lbrace 0 \rbrace .$ 即 $A$ 是单射, 只有唯一解.&lt;/li>
-&lt;/ul>
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>对任意的 $y\in H$, 设 $A^*y=y&amp;#39;$, 我们有 $(Ax,y)=(x,y&amp;#39;)\quad\forall x\in H$, 根据题设条件得到 $(x,y&amp;#39;)=(Ax,y)=(x,Ay)$, 从而有 $Ay=y&amp;#39;$. 即 $Ay=A^*y(\forall y\in H)$. 故 $A=A^*$.&lt;/li>
+&lt;li>存在唯一解只需证 $A$ 是单射. 根据 Hilbert 空间的性质 $\text{Ker}(T^*)=\text{Ran}(T)^\perp$. 又 $R(A)$ 在 $H$ 中稠密, 从而 $\text{Ker}(A)=\text{Ker}(A^*)=\text{Ran}(A)^\perp=\lbrace 0 \rbrace .$ 即 $A$ 是单射, 只有唯一解.&lt;/li>
+&lt;/ol>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -134,10 +134,10 @@ $$\Vert Tx \Vert =\sup\limits_{g\in G}|gT(x)|\leqslant M\Vert x \Vert $$&lt;p> �
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $H$ 是 Hilbert 空间, 求证: 在 $H$ 中 $x_n\to x(n\to\infty)$ 的充要条件是&lt;/p>
-&lt;ul>
-&lt;li>(1) $\Vert x_n \Vert \to\Vert x \Vert \ (n\to\infty)$;&lt;/li>
-&lt;li>(2) $x_n\rightharpoonup x\ (n\to\infty)$.&lt;/li>
-&lt;/ul>
+&lt;ol>
+&lt;li>$\Vert x_n \Vert \to\Vert x \Vert \ (n\to\infty)$;&lt;/li>
+&lt;li>$x_n\rightharpoonup x\ (n\to\infty)$.&lt;/li>
+&lt;/ol>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
@@ -278,8 +278,9 @@ $$T:\lbrace \xi_n \rbrace \mapsto\lbrace w_n\xi_n \rbrace \quad (\forall\lbrace 
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">$\Leftarrow$: $f=0,\text{a.e.}$ 时, 有 $Fx=0,\text{a.e.}$ 在 $L^2$ 度量下均为零元, 从而 $\text{Ker}(F)=L^2(\Omega)$. 故显然 $F$ 是紧算子.
-$\Rightarrow$:&lt;/div>
+ &lt;div class="admonition-content">&lt;p>$\Leftarrow$: $f=0,\text{a.e.}$ 时, 有 $Fx=0,\text{a.e.}$ 在 $L^2$ 度量下均为零元, 从而 $\text{Ker}(F)=L^2(\Omega)$. 故显然 $F$ 是紧算子.&lt;/p>
+&lt;p>$\Rightarrow$:&lt;/p>
+&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="318">&lt;span>3.1.8&lt;/span>
@@ -435,15 +436,18 @@ $$0=\sum\limits_{k=1}^n c_k\varphi_k(x)=\sum\limits_{k=1}^nc_kg_k([x])\quad\fora
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ul>
-&lt;li>(1) $\forall x\in N(T)$, 满足 $(I-A)x=0\Rightarrow Ax=x$.&lt;/li>
-&lt;/ul>
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>
+&lt;p>$\forall x\in N(T)$, 满足 $(I-A)x=0\Rightarrow Ax=x$.&lt;/p>
 &lt;p>根据商空间等价类定义, 存在点列 $\lbrace x_n \rbrace $ 满足 $\Vert x_n \Vert \leqslant \Vert [x] \Vert &amp;#43;\frac1n$. 任取一代表元 $x_0$, 则点列 $\lbrace x_n-x_0 \rbrace $ 是 $N(T)$ 中的有界列.
 记 $y_n=x_n-x_0$, 由 $A$ 是紧算子, 所以 $\lbrace Ay_n \rbrace $ 是列紧的, 又 $Ay_n=y_n$, 所以 $\lbrace y_n \rbrace $ 是列紧的, 设 $\lbrace y_{n_k} \rbrace $ 收敛.
 由 $T$ 是有界线性算子, 从而 $\text{Ker} T$ 是闭的, 故 $y_{n_k}\to y\in \text{Ker}T$. 所以 $x_0&amp;#43;y_{n_k}\to x_0&amp;#43;y\in [x]$. 且由 $\lbrace x_n \rbrace $ 的取法直接有 $\Vert x_0&amp;#43;y \Vert =\Vert [x] \Vert $.&lt;/p>
-&lt;ul>
-&lt;li>(2) 若有解 $x$, 那么 $[x]=x&amp;#43;N(T)$ 均是 $Tx=y$ 的解. 由上一问知 $\exists x_0$, 使得 $\Vert x_0 \Vert =\Vert [x] \Vert $. 故 (2) 成立.&lt;/li>
-&lt;/ul>&lt;/div>
+&lt;/li>
+&lt;li>
+&lt;p>若有解 $x$, 那么 $[x]=x&amp;#43;N(T)$ 均是 $Tx=y$ 的解. 由上一问知 $\exists x_0$, 使得 $\Vert x_0 \Vert =\Vert [x] \Vert $. 故 (2) 成立.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div>
  &lt;/div>
 &lt;/div>
 &lt;h2 class="heading-element" id="325">&lt;span>3.2.5&lt;/span>
@@ -458,11 +462,11 @@ $$0=\sum\limits_{k=1}^n c_k\varphi_k(x)=\sum\limits_{k=1}^nc_kg_k([x])\quad\fora
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ul>
-&lt;li>(1) 考虑 $T^k=(I-A)^K=I-\sum\limits_{j=1}^k\binom{k}{j}(-1)^{k-1}A^k\triangleq I-T&amp;#39;$.
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>考虑 $T^k=(I-A)^K=I-\sum\limits_{j=1}^k\binom{k}{j}(-1)^{k-1}A^k\triangleq I-T&amp;#39;$.
 由 $A$ 是紧算子, 所以 $T&amp;#39;$ 也是紧算子. 所以根据 Riesz-Fredholm 定理 $N(T^k)=N(I-T&amp;#39;)$ 是有限维的.&lt;/li>
-&lt;li>(2) 同 (1) $T^k=I-T&amp;#39;$, 故由 Riesz-Fredholm (i) 可知 $R(I-T&amp;#39;)$ 是闭的.&lt;/li>
-&lt;/ul>
+&lt;li>同 (1) $T^k=I-T&amp;#39;$, 故由 Riesz-Fredholm (i) 可知 $R(I-T&amp;#39;)$ 是闭的.&lt;/li>
+&lt;/ol>
 &lt;/div>
  &lt;/div>
 &lt;/div>
@@ -481,19 +485,19 @@ T:x(t)\mapsto \int_0^t x(s),ds,\qquad x\in C[0,1].
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ul>
-&lt;li>(1) 由微积分基本定理 $Tx(t)$ 关于 $t$ 可导, 故 $Tx\in C[0,1]$.
-线性性: 由积分的线性性, $T(\alpha x(t)&amp;#43;\beta y(t))=\displaystyle\int_{0}^{t} \alpha x(s)&amp;#43;\beta y(s)\text{d} s=\alpha Tx(t)&amp;#43;\beta Ty(t)$.&lt;/li>
-&lt;/ul>
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>
+&lt;p>由微积分基本定理 $Tx(t)$ 关于 $t$ 可导, 故 $Tx\in C[0,1]$.
+线性性: 由积分的线性性, $T(\alpha x(t)&amp;#43;\beta y(t))=\displaystyle\int_{0}^{t} \alpha x(s)&amp;#43;\beta y(s)\text{d} s=\alpha Tx(t)&amp;#43;\beta Ty(t)$.&lt;/p>
 &lt;p>有界性: $\Vert Tx \Vert =\max\limits_{t\in[0,1]}|Tx(t)|\leqslant\max\limits_{t\in[0,1]}t\Vert x \Vert \leqslant\Vert x \Vert $.
 任取 $X$ 中的有界列 $\lbrace x_n \rbrace $, $\lbrace Tx_n \rbrace \subset C[0,1]$, 根据 AA 定理, $\lbrace Tx_n \rbrace $ 列紧 $\Leftrightarrow$ $\lbrace Tx_n \rbrace $ 一致有界且等度连续.
 由 $\lbrace x_n \rbrace $ 有界, 故存在 $M&amp;gt;0$, 满足 $\Vert x_n \Vert &amp;lt;M$, 于是 $|Tx_n(t)|\leqslant t M\leqslant M$. 故一致有界.
 $|Tx_n(t_1)-Tx_n(t_2)|\leqslant|t_2-t_1|M$, 故对任意 $\varepsilon&amp;gt;0$, 取 $\delta=\frac{\varepsilon}{M}$ 则有 $|Tx_n(t_1)-Tx_n(t_2)|\leqslant \varepsilon$ 即等度连续.&lt;/p>
 &lt;p>从而 $\lbrace Tx_n \rbrace $ 列紧.&lt;/p>
 &lt;p>综上 $T$ 是紧算子.&lt;/p>
-&lt;ul>
-&lt;li>(2) 由 Riesz-Schauder 理论, $\sigma(T)\setminus\lbrace 0 \rbrace =\sigma_p(T)\setminus\lbrace 0 \rbrace $, 且连续函数空间维数是无穷故 $0\in\sigma(T)$.&lt;/li>
-&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>由 Riesz-Schauder 理论, $\sigma(T)\setminus\lbrace 0 \rbrace =\sigma_p(T)\setminus\lbrace 0 \rbrace $, 且连续函数空间维数是无穷故 $0\in\sigma(T)$.&lt;/p>
 &lt;p>当 $\lambda\neq 0$ 时.
 设 $Tx(t)=\lambda x(t)$, 由微积分基本定理, 等式左侧可导, 从而右侧也可导, 故有 $x(t)\in C^1[0,1]$.&lt;/p>
 &lt;p>则有 $x(t)=\lambda x&amp;#39;(t)$.
@@ -504,6 +508,8 @@ $|Tx_n(t_1)-Tx_n(t_2)|\leqslant|t_2-t_1|M$, 故对任意 $\varepsilon&amp;gt;0$,
 &lt;p>结合 Riesz-Schauder 非零谱点均为特征值, 从而谱点只有 $0$.&lt;/p>
 &lt;p>综上 $\sigma(T)=\lbrace 0 \rbrace $.&lt;/p>
 &lt;p>不变子空间部分不考.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>泛函分析作业251222</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251222/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251222/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251222">&lt;span>251222&lt;/span>
@@ -526,10 +532,10 @@ $|Tx_n(t_1)-Tx_n(t_2)|\leqslant|t_2-t_1|M$, 故对任意 $\varepsilon&amp;gt;0$,
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $A,B\in\mathscr L(\mathscr X)$, 并且 $AB=BA$, 求证:&lt;/p>
-&lt;ul>
-&lt;li>(1) $R(A)$ 和 $N(A)$ 都是 $B$ 的不变子空间;&lt;/li>
-&lt;li>(2) $R(B^n)$ 和 $N(B^n)$ 都是 $B$ 的不变子空间 $(\forall n\in\mathbb N)$.&lt;/li>
-&lt;/ul>
+&lt;ol>
+&lt;li>$R(A)$ 和 $N(A)$ 都是 $B$ 的不变子空间;&lt;/li>
+&lt;li>$R(B^n)$ 和 $N(B^n)$ 都是 $B$ 的不变子空间 $(\forall n\in\mathbb N)$.&lt;/li>
+&lt;/ol>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
@@ -578,14 +584,12 @@ $$\Vert Ax \Vert ^2\leqslant\Vert A \Vert (Ax,x)\quad (\forall x\in H)$$&lt;/div
  &lt;/a>
 &lt;/h2>&lt;p>设 $A$ 是 $H$ 上的有界对称算子, 令 &lt;/p>
 $$m(A)\triangleq\inf\limits_{\Vert x \Vert =1}(Ax,x),\quad M(A)\triangleq\sup\limits_{\Vert x \Vert =1}(Ax,x).$$&lt;p> 求证:&lt;/p>
-&lt;ul>
-&lt;li>(1) $\sigma(A)\subset[m(A),M(A)]$, 且 $m(A),M(A)\in\sigma(A)$.&lt;/li>
-&lt;/ul>
-&lt;p>进一步假设 $A$ 是 $H$ 上的对称紧算子, 求证:&lt;/p>
-&lt;ul>
-&lt;li>(2) 若 $m(A)\neq 0$, 则 $m(A)\in\sigma_p(A)$;&lt;/li>
-&lt;li>(3) 若 $M(A)\neq 0$, 则 $M(A)\in\sigma_p(A)$.&lt;/li>
-&lt;/ul>
+&lt;ol>
+&lt;li>$\sigma(A)\subset[m(A),M(A)]$, 且 $m(A),M(A)\in\sigma(A)$.&lt;/li>
+&lt;/ol>
+&lt;p>进一步假设 $A$ 是 $H$ 上的对称紧算子, 求证:
+2. 若 $m(A)\neq 0$, 则 $m(A)\in\sigma_p(A)$;
+3. 若 $M(A)\neq 0$, 则 $M(A)\in\sigma_p(A)$.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
@@ -606,11 +610,11 @@ $$m(A)\triangleq\inf\limits_{\Vert x \Vert =1}(Ax,x),\quad M(A)\triangleq\sup\li
 那么根据自伴算子的谱半径等于其算子范数, 故 $r_\sigma(T)=\Vert T_{m(A)} \Vert =\sup\limits_{\Vert x \Vert =1}|(T_{m(A)}x,x)|$ 所以 $\sup\limits_{\lambda\in\sigma(T_{m(A)})}|\lambda|=M(A)-m(A)$ 再根据有界线性算子的谱集是紧集, 所以 $M(A)-m(A)\in\sigma(T_{m(A)})$, 而 $T_{m(A)}$ 和 $A$ 的谱点只做平移变换, 故 $M(A)\in \sigma(A)$.
 同理考虑 $T_{M(A)}=M(A)I-A$, 即可证明 $m(A)\in \sigma(A)$.&lt;/p>
 &lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>(2) 由 Riesz-Schauder 理论 $\sigma(A)\setminus\lbrace 0 \rbrace =\sigma_p(A)\setminus\lbrace 0 \rbrace $.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>由 Riesz-Schauder 理论 $\sigma(A)\setminus\lbrace 0 \rbrace =\sigma_p(A)\setminus\lbrace 0 \rbrace $.&lt;/p>
 &lt;p>由上一问 $m(A),M(A)\in\sigma(A)$, 所以当 $m(A)\neq0,M(A)\neq0$ 时有 $m(A)\in\sigma_p(A),M(A)\in\sigma_p(A)$.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>23强基泛函分析期中</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/23%E5%BC%BA%E5%9F%BA%E6%9C%9F%E4%B8%AD/</link><pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/23%E5%BC%BA%E5%9F%BA%E6%9C%9F%E4%B8%AD/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="23级强基期中">&lt;span>23级强基期中&lt;/span>
