@@ -587,9 +587,11 @@ $$m(A)\triangleq\inf\limits_{\Vert x \Vert =1}(Ax,x),\quad M(A)\triangleq\sup\li
 &lt;ol>
 &lt;li>$\sigma(A)\subset[m(A),M(A)]$, 且 $m(A),M(A)\in\sigma(A)$.&lt;/li>
 &lt;/ol>
-&lt;p>进一步假设 $A$ 是 $H$ 上的对称紧算子, 求证:
-2. 若 $m(A)\neq 0$, 则 $m(A)\in\sigma_p(A)$;
-3. 若 $M(A)\neq 0$, 则 $M(A)\in\sigma_p(A)$.&lt;/p>
+&lt;p>进一步假设 $A$ 是 $H$ 上的对称紧算子, 求证:&lt;/p>
+&lt;ol start="2">
+&lt;li>若 $m(A)\neq 0$, 则 $m(A)\in\sigma_p(A)$;&lt;/li>
+&lt;li>若 $M(A)\neq 0$, 则 $M(A)\in\sigma_p(A)$.&lt;/li>
+&lt;/ol>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
