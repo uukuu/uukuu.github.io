@@ -597,7 +597,7 @@ $$m(A)\triangleq\inf\limits_{\Vert x \Vert =1}(Ax,x),\quad M(A)\triangleq\sup\li
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ol>
 &lt;li>
-&lt;p>首先当 $A$ 自伴时, 其点谱均是实数.&lt;/p>
+&lt;p>首先当 $A$ 自伴时, 其谱点均是实数.&lt;/p>
 &lt;p>设 $\lambda&amp;gt;M(A)$, $T_\lambda=\lambda I-A$. 共轭双线性型 $a(x,y)=(T_\lambda x,y)$.
 首先由 $T_\lambda$ 有界及 Cauchy-Schwarz 不等式, 存在 $M&amp;gt;0$ , $|a(x,y)|&amp;lt;M\Vert x \Vert \Vert y \Vert $.&lt;/p>
 &lt;p>其次 $(T_\lambda x,x)=\lambda\Vert x \Vert ^2-(Ax,x)\geqslant (\lambda-M)\Vert x \Vert ^2$.
