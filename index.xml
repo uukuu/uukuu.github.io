@@ -990,8 +990,8 @@ $$\begin{cases}
  y=\widetilde{T}[x]\\\\
  x\in D(\widetilde{T})
  \end{cases}$$&lt;p>记 $x$ 为 $[x]$ 的一个代表元.&lt;/p>
-&lt;p>由 $[x_n]\to [x]$ 即 $\norm{[x_n]-[x]}\to 0$.&lt;/p>
-&lt;p>由 $\norm{[x_n-x]}$ 存在 $y\in[x_n-x]$ 满足 $\norm{y}\leqslant2\norm{[x_n-x]}$. 故取 $x_n&amp;#39;=y&amp;#43;x$ 即有 $\norm{x_n&amp;#39;-x}\leqslant2\norm{[x_n-x]}\to 0$&lt;/p>
+&lt;p>由 $[x_n]\to [x]$ 即 $\Vert[x_n]-[x]\Vert\to 0$.&lt;/p>
+&lt;p>由 $\Vert [x_n-x]\Vert$ 存在 $y\in[x_n-x]$ 满足 $\Vert y\Vert\leqslant2\Vert [x_n-x]\Vert$. 故取 $x_n&amp;#39;=y&amp;#43;x$ 即有 $\Vert x_n&amp;#39;-x\Vert\leqslant2\Vert [x_n-x]\Vert\to 0$&lt;/p>
 &lt;p>从而 $x_n&amp;#39;\to x$.&lt;/p>
 &lt;p>另一方面, $\widetilde{T}[x]=Tx\to y$. 故由 $T$ 是闭算子, 知 $Tx=y$ 且 $x\in D(T)$.&lt;/p>
 &lt;p>所以 $\widetilde{T}[x]=Tx=y$ 且 $[x]\in D(\widetilde(T))$.&lt;/p>
