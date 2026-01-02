@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>泛函分析作业251117</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251117/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251117/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251117">&lt;span>251117&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>uuku 的小站</title><link>http://localhost:1313/</link><description>数学与算法的笔记、作业与竞赛题解。</description><generator>Hugo 0.148.2 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator><language>zh-cn</language><managingEditor>nan22inf@google.com (uuku)</managingEditor><webMaster>nan22inf@google.com (uuku)</webMaster><lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>22强基泛函分析期末</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/22%E5%BC%BA%E5%9F%BA%E6%9C%9F%E6%9C%AB/</link><pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E8%AF%95%E5%8D%B7/22%E5%BC%BA%E5%9F%BA%E6%9C%9F%E6%9C%AB/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="22级强基期末">&lt;span>22级强基期末&lt;/span>
+ &lt;a href="#22%e7%ba%a7%e5%bc%ba%e5%9f%ba%e6%9c%9f%e6%9c%ab" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h1>&lt;p>任课老师: xxx.&lt;/p>
+&lt;h2 class="heading-element" id="1">&lt;span>1&lt;/span>
+ &lt;a href="#1" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A$ 为定义在 Banach 空间 $X$ 上的线性算子, $B$ 是定义在 $X$ 的共轭空间 $X^*$ 上的线性算子, 如果
+&lt;/p>
+$$
+f(Ax) = (Bf)(x), \quad \forall x \in X, f \in X^*.
+$$&lt;p>
+证明: $A \in \mathscr{L}(X)$, $B \in \mathscr{L}(X^*)$ 且 $B = A^*$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>由 $B:X^*\to X^*$, 故 $\forall f\in X^*, Bf\in X^*$.&lt;/p>
+&lt;p>从而 $\forall f\in X^*, f\circ A$ 是 $X$ 上的有界线性泛函.&lt;/p>
+&lt;p>考虑到第二共轭空间的自然嵌入 $J_x:X\to X^{**}$, 有 $\Vert J_x \Vert =\Vert x \Vert $.&lt;/p>
+&lt;p>任取有界列 $\{x_n\}$, 为了证明 $A$ 有界, 只需证明 $\{Ax_n\}$ 有界.&lt;/p>
+&lt;p>那么对 $\{J_{Ax_n}\}$ $\forall f\in X^*$, $J_{Ax_n}(f)=f(Ax_n)=f\circ A (x_n)$.&lt;/p>
+&lt;p>由 $f\circ A$ 是有界线性泛函, 所以 $\{J_{Ax_n}(f)\}$ 是有界的, 那么 $\{J_{Ax_n}\}$ 点点有界, 由一致有界原理知存在 $M&amp;gt;0$, $\Vert J_{Ax_n} \Vert &amp;lt;M\quad \forall n$.&lt;/p>
+&lt;p>从而 $\Vert Ax_n \Vert =\Vert J_{Ax_n} \Vert &amp;lt;M$ 故 $\{Ax_n\}$ 有界, 所以 $A$ 是有界线性算子.&lt;/p>
+&lt;p>此时考虑 $A^*:X^*\to X^*$, $A^*(f)=f\circ A$. 故 $\forall f\in X^*, x\in X$, $A^*(f)(x)=f(Ax)=(Bf)(x)$. 从而 $A^*f=Bf,\quad \forall f$, 则有 $A^*=B$.&lt;/p>
+&lt;p>再根据伴随算子性质 $\Vert B \Vert =\Vert A^* \Vert =\Vert A \Vert $, 故 $B\in\mathscr L(X^*)$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="2">&lt;span>2&lt;/span>
+ &lt;a href="#2" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;ol>
+&lt;li>(10 分) 设 $\Omega \subset \mathbb{R}^n$ 是一个可测集, $K \in L^2(\Omega \times \Omega)$. 定义
+$
+ T: u(x) \mapsto \int_\Omega K(x,y) u(y)\,\text{d}y, \quad \forall u \in L^2(\Omega)
+ $
+证明：$T \in \mathfrak{C}(L^2(\Omega))$.&lt;/li>
+&lt;li>(5 分) 若 $f = 0$ 时, 下列积分方程
+$
+ u(x) &amp;#43; \int_\Omega K(x,y) u(y)\,\text{d}y = f(x).
+ $
+只有零解 $u = 0$, 证明：$\forall f \in L^2(\Omega)$, 上述积分方程都存在唯一的解 $u \in L^2(\Omega)$, 且存在常数 $C &amp;gt; 0$, 使得
+$
+ \Vert u \Vert _{L^2(\Omega)} \leq C \Vert f \Vert _{L^2(\Omega)} \quad (\forall f \in L^2(\Omega)).
+ $&lt;/li>
+&lt;/ol>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>
+&lt;p>由积分的线性性显然 $T$ 是线性算子.&lt;/p>
+&lt;p>有界性: &lt;/p>
+$$\Vert Tu \Vert =\left(\int_\Omega|Tu(x)|^2\text{d} x\right)^{1/2}=\left(\int_\Omega|\int_\Omega K(x,y)u(y)|\text{d} y\right)^{1/2}$$&lt;p>由 Cauchy-Schwarz 不等式及 $K(x,y)\in L^2(\Omega\times\Omega)$ &lt;/p>
+$$\Vert Tu \Vert \leqslant\left(\int_\Omega\Vert K(x,\cdot) \Vert _2^2\cdot\Vert u \Vert ^2\text{d} x\right)^{1/2}=\Vert K(\cdot,\cdot) \Vert _2\cdot\Vert u \Vert $$&lt;p>所以 $T\in \mathscr L(L^2(\Omega))$.&lt;/p>
+&lt;p>设 $K_n$ 是 $L^2(\Omega\times\Omega)$ 上的依范数收敛于 $K$ 的简单函数, 并且每个取值集合均为 $E_i\times F_i$ 的形式, $E_i,F_i\subset\Omega$ 令 $T_n:u(x)\mapsto\int_{\Omega} K_n(x,y)u(y)\text{d} y$.&lt;/p>
+&lt;p>由于 $T_n$ 的值域是有限维的, 故每个 $T_n$ 都是紧算子. 并且有 $\Vert T-T_n \Vert \leqslant \Vert K-K_n \Vert \to 0$&lt;/p>
+&lt;p>又 Hilbert 空间完备, 故紧算子在有界算子中闭, 从而 $T$ 是紧算子.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设 $\widetilde{T}=-T$, 由 (1) 知 $\widetilde{T}$ 也是紧算子.&lt;/p>
+&lt;p>$f=0$ 时只有零解, 即 $\text{Ker}(I-\widetilde{T})=\{0\}$, 而由 Riesz-Fredholm 理论 (iii) $\text{Ker}(I-T)=\{0\}\Leftrightarrow\text{Ran}(I-T)=X$ 得到 $\text{Ran}(I-\widetilde{T})=L^2(\Omega)$.&lt;/p>
+&lt;p>即 $I-\widetilde{T}$ 是双射. 所以对任意 $f\in L^2(\Omega)$ 存在唯一解.&lt;/p>
+&lt;p>又 $L^2(\Omega)$ 完备, 故根据 Banach 逆映射定理 $(I-\widetilde{T})^{-1}\in\mathscr L(L^2(\Omega))$.
+从而存在 $C&amp;gt;0$ 使得 $\Vert u \Vert \leqslant\Vert (I-\widetilde{T})^{-1} \Vert \Vert f \Vert =C\Vert f \Vert $.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="3">&lt;span>3&lt;/span>
+ &lt;a href="#3" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>(10 分) 设 $\mathscr X$ 是赋范线性空间而 $f_0,f_1,\cdots,f_n\in\mathscr X^*$, 其满足 &lt;/p>
+$$N(f_0)\supseteq N(f_1)\cap N(f_2)\cap \cdots\cap N(f_n).$$&lt;p> 试证: 存在常数 $\alpha_1,\alpha_2,\cdots,\alpha_n$, 使得 $f_0=\alpha_1f_1&amp;#43;\alpha_2f_2&amp;#43;\cdots\alpha_nf_n$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="4">&lt;span>4&lt;/span>
+ &lt;a href="#4" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>(20 分) 设 $s\in\mathbb{R}$ 并定义如下复值数列构成的集合 &lt;/p>
+$$X_s=\{\boldsymbol{x}=(x_1,x_2,\cdots,x_n,\cdots)|\sum\limits_{n=1}^\infty n^s|x_n|^2&amp;lt;\infty\}$$&lt;p> 定义 $\Vert \{x_n\} \Vert _s=\left(\sum\limits_{n=1}^\infty n^s|x_n|^2\right)^{1/2}$.&lt;/p>
+&lt;ol>
+&lt;li>(5 分) 证明: $(X_s,\Vert \cdot \Vert _s)$ 是 $B$ 空间且可以定义内积形成 $Hilbert$ 空间.&lt;/li>
+&lt;li>(15 分) 设 $s&amp;gt;t$ 证明: $(X_s,\Vert \cdot \Vert _s)$ 中的单位闭球是 $(X_t,\Vert \cdot \Vert _t)$ 中的紧集.&lt;/li>
+&lt;/ol>
+&lt;h2 class="heading-element" id="5">&lt;span>5&lt;/span>
+ &lt;a href="#5" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $X$ 是自反空间, $E$ 是 $X$ 的闭凸子集. 那么 $\forall x\in X$, 都存在 $y\in E$ 使得 $\Vert x-y \Vert =\rho(x,E)$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>(1) $x\in E$, 直接取 $y=x$, $\Vert x-y \Vert =\rho(x,E)=0$.&lt;/p>
+&lt;p>(2) $x\notin E$. 由下确界定义知存在 $\{y_n\}\subset E$ 使得 $\Vert x-y_n \Vert &amp;lt;\rho(x,E)&amp;#43;\frac 1n$.&lt;/p>
+&lt;p>则 $\{y_n\}$ 是自反空间中的有界列, 故存在弱收敛子列, 设 $y_{n_k}\xrightarrow{w}y\in X$.&lt;/p>
+&lt;p>由 $E$ 是闭凸子集, 根据 Mazur 定理, $E$ 是弱闭的, 从而 $y\in E$.&lt;/p>
+&lt;p>一方面 $\Vert x-y \Vert \geqslant \rho(x,E)$.&lt;/p>
+&lt;p>另一方面, 由 Hahn-Banach 定理, 存在 $f\in X^*$, 满足 $\Vert f \Vert =1$ 且 $f(x-y)=\Vert x-y \Vert $. 从而 $\Vert x-y \Vert =f(x-y)=f(x-y_{n_k})&amp;#43;f(y_{n_k}-y)\leqslant\Vert x-y_{n_k} \Vert &amp;#43;f(y_{n_k}-y)\leqslant \rho(x,E)&amp;#43;\frac 1n&amp;#43;f(y_{n_k})-f(y)\to \rho(x,E)$.&lt;/p>
+&lt;p>从而 $\Vert x-y \Vert =\rho(x,E)$.&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="6">&lt;span>6&lt;/span>
+ &lt;a href="#6" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>设 $A$ 是复 Hilbert 空间 $H$ 上的有界自伴算子, 则 $\sigma(A)\subset\mathbb R$ (免证).&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>(10 分) 证明: $\Vert A \Vert =\sup\limits_{\Vert x \Vert =1}|(Ax,x)|$.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>(10 分) 令 $m(A)\triangleq \inf\limits_{\Vert x \Vert =1}(Ax,x), M(A)\triangleq\sup\limits_{\Vert x \Vert =1}(Ax,x)$&lt;/p>
+&lt;p>证明: $\sigma(A)\subset[m(A),M(A)]$ 且 $m(A),M(A)\in\sigma(A)$.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>(5 分) 进一步假设 $A\in\mathscr C(H)$.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>证明: 若 $m(A)\neq 0$, 则 $m(A)\in\sigma_p(A)$; 若 $M(A)\neq 0$, 则 $M(A)\in\sigma_p(A)$.&lt;/p>
+&lt;div class="details admonition note">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ol>
+&lt;li>一方面, $|(Th,h)|\leqslant\Vert T \Vert \Vert h \Vert ^2$ 故 $\sup\limits_{\Vert h \Vert =1}|(Th,h)|\leqslant \Vert T \Vert $.&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code>另一方面, $\Vert T \Vert =\sup\limits_{\Vert x \Vert =1}\Vert Tx \Vert =\sup\limits_{\Vert x \Vert }\sup\limits_{\Vert f \Vert =1}|f(Tx)|=\sup\limits_{\Vert x \Vert =1}\sup\limits_{\Vert y \Vert =1}|(Tx,y)|$ 前一个等号利用 Hahn-Banach 定理, 后一个等号利用 Riesz 表示定理.
+
+而利用自伴算子 $(Tx,y)=(x,Ty)$ 可得 $(Tx,y)=\frac14((T(x+y),x+y)-(T(x-y),x-y))$
+
+从而 $(Tx,y)\leqslant\frac 14 \sup\limits_{\Vert h \Vert =1}|(Th,h)|(\Vert x+y \Vert +\Vert x-y \Vert )\leqslant\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.
+
+所以 $\Vert T \Vert \leqslant\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.
+
+综上 $\Vert T \Vert =\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.
+&lt;/code>&lt;/pre>
+&lt;ol start="2">
+&lt;li>
+&lt;p>首先当 $A$ 自伴时, 其谱点均是实数.&lt;/p>
+&lt;p>设 $\lambda&amp;gt;M(A)$, $T_\lambda=\lambda I-A$. 共轭双线性型 $a(x,y)=(T_\lambda x,y)$.&lt;/p>
+&lt;p>首先由 $T_\lambda$ 有界及 Cauchy-Schwarz 不等式, 存在 $M&amp;gt;0$ , $|a(x,y)|&amp;lt;M\Vert x \Vert \Vert y \Vert $.&lt;/p>
+&lt;p>其次 $(T_\lambda x,x)=\lambda\Vert x \Vert ^2-(Ax,x)\geqslant (\lambda-M)\Vert x \Vert ^2$.&lt;/p>
+&lt;p>从而根据 Lax-Milgram 定理, $T_\lambda$ 是唯一的有界线性算子使得 $a(x,y)=(T_\lambda x,y)$ 且 $\Vert T_\lambda^{-1} \Vert \leqslant \frac{1}{\lambda-M}$.&lt;/p>
+&lt;p>所以 $\lambda\in\rho(T)$.&lt;/p>
+&lt;p>同理当 $\lambda&amp;lt;m(A)$ 时, 取 $T_\lambda=A-\lambda I$. 即可得到 $\lambda\in \rho (T)$.&lt;/p>
+&lt;p>所以 $\sigma(A)\subset[m(A),M(A)]$.&lt;/p>
+&lt;p>下证 $M(A)\in \sigma(A)$.&lt;/p>
+&lt;p>还是考虑 $T_{m(A)}=A-m(A)I$, 有 $(T_{m(A)}x,x)=(Ax,x)-(m(A)x,x)\geqslant 0$.&lt;/p>
+&lt;p>从而对于 $T_{m(A)}$ 有其谱点均为非负实数.&lt;/p>
+&lt;p>那么根据自伴算子的谱半径等于其算子范数, 故 $r_\sigma(T)=\Vert T_{m(A)} \Vert =\sup\limits_{\Vert x \Vert =1}|(T_{m(A)}x,x)|$ 所以 $\sup\limits_{\lambda\in\sigma(T_{m(A)})}|\lambda|=M(A)-m(A)$ 再根据有界线性算子的谱集是紧集, 所以 $M(A)-m(A)\in\sigma(T_{m(A)})$, 而 $T_{m(A)}$ 和 $A$ 的谱点只做平移变换, 故 $M(A)\in \sigma(A)$.&lt;/p>
+&lt;p>同理考虑 $T_{M(A)}=M(A)I-A$, 即可证明 $m(A)\in \sigma(A)$.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>由 Riesz-Schauder 理论 $\sigma(A)\setminus\{0\}=\sigma_p(A)\setminus\{0\}$.&lt;/p>
+&lt;p>由上一问 $m(A),M(A)\in\sigma(A)$, 所以当 $m(A)\neq0,M(A)\neq0$ 时有 $m(A)\in\sigma_p(A),M(A)\in\sigma_p(A)$.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>泛函分析作业251117</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251117/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251117/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h1 class="heading-element" id="251117">&lt;span>251117&lt;/span>
  &lt;a href="#251117" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -27,12 +197,12 @@ $C_{1},C_{2},\dots,C_{n}$, 及 $M&amp;gt;0$.
 求证: 为了 $\exists\, f\in \mathscr{X}^{*}$ 适合 $f(x_{k})=C_{k}$（$k=1,2,\dots,n$）, 以及
 $\Vert f \Vert \le M$, 必须且仅必须对任意的
 $\alpha_{1},\alpha_{2},\dots,\alpha_{n}\in\mathbb{K}$ 有
-[
+&lt;/p>
+$$
 \left|\sum_{k=1}^{n} \alpha_{k} C_{k}\right|
 \le
 M \left\Vert \sum_{k=1}^{n} \alpha_{k} x_{k} \right\Vert.
-]&lt;/p>
-&lt;div class="details admonition note">
+$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>$\Rightarrow$: 根据算子范数的定义, 我们有 &lt;/p>
@@ -78,14 +248,15 @@ $x_{1}\in \partial C$, $x_{2}=m(x_{1}-x_{0})&amp;#43;x_{0}$ (m&amp;gt;1). 求证
  &lt;/a>
 &lt;/h2>&lt;p>设 $M$ 是 $B^{*}$ 空间 $\mathscr{X}$ 中的闭凸集, 求证: $\forall x\in \mathscr{X}\setminus M$,
 必 $\exists\, f_{1}\in \mathscr{X}^{*}$, 满足 $\Vert f_{1} \Vert = 1$, 并且
-[
+&lt;/p>
+$$
 \sup_{y\in M} f_{1}(y) \leqslant f_{1}(x) - d(x),
-]
+$$&lt;p>
 其中
-[
+&lt;/p>
+$$
 d(x) = \inf_{z\in M} \Vert x - z \Vert.
-]&lt;/p>
-&lt;div class="details admonition note">
+$$&lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;/div>
@@ -1093,166 +1264,5 @@ $\dfrac{\Vert f(x)\Vert}{\Vert x\Vert}\to 1$,
 &lt;p>从而必须有 $f(x)=0$, 否则若 $f(x)&amp;lt;0$, 则 $f(-x)&amp;gt;0$ 矛盾.&lt;/p>
 &lt;p>故假设矛盾. 极小值同理, 可推出在整个定义域上非负从而恒为 0.&lt;/p>
 &lt;/div>
- &lt;/div>
-&lt;/div></description></item><item><title>泛函分析作业251020</title><link>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251020/</link><pubDate>Mon, 13 Oct 2025 00:00:00 +0000</pubDate><author>nan22inf@google.com (uuku)</author><guid>http://localhost:1313/posts/math/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/%E4%BD%9C%E4%B8%9A/251020/</guid><category domain="http://localhost:1313/categories/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</category><description>&lt;h2 class="heading-element" id="149">&lt;span>1.4.9&lt;/span>
- &lt;a href="#149" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>在 $\mathbb{R}^2$ 中, 对 $\forall x = (x_1, x_2) \in \mathbb{R}^2$, 定义范数&lt;br>
-&lt;/p>
-$$ 
-\Vert x \Vert = \max(|x_1|, |x_2|), 
-$$&lt;p>&lt;br>
-并设 $e_1 = (1, 0)$, $x_0 = (0, 1)$. 求 $a \in \mathbb{R}$ 适合&lt;br>
-&lt;/p>
-$$ 
-\Vert x_0 - a e_1 \Vert = \min_{\lambda \in \mathbb{R}} \Vert x_0 - \lambda e_1 \Vert, 
-$$&lt;p>&lt;br>
-并问这样的 $a$ 是否唯一? 请对结果做出几何解释.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">不唯一, $x_0-\lambda e_1$ 对应 $xOy$ 坐标系中 $y=1$ 的直线, 而在该范数定义下, $\Vert (a,1) \Vert =\begin{cases} 
-1,\quad a\in[-1,1] \\\\ 
-|a|,\quad |a|&amp;gt;1 
-\end{cases}$ 于是当 $a\in[-1,1]$ 时均满足条件, 不唯一.&lt;br>
-&lt;img loading="lazy" src='https://blog.nan2inf.com/figures/泛函/1.4.9.png' alt="泛函/1.4.9.png">&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="1410">&lt;span>1.4.10&lt;/span>
- &lt;a href="#1410" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>求证: 范数的严格凸性等价于下列条件:&lt;br>
-&lt;/p>
-$$ 
-\Vert x &amp;#43; y \Vert = \Vert x \Vert &amp;#43; \Vert y \Vert \quad (\forall x \ne 0, y \ne 0) \implies x = c y \quad (c &amp;gt; 0). 
-$$&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&amp;ldquo;$\Rightarrow$&amp;rdquo;: 考虑 $\Vert x&amp;#43;y \Vert = \Vert \dfrac{x}{\Vert x \Vert} \Vert x \Vert &amp;#43; \dfrac{y}{\Vert y \Vert} \Vert y \Vert \Vert = (\Vert x \Vert &amp;#43; \Vert y \Vert) \Vert \dfrac{x}{\Vert x \Vert} \dfrac{\Vert x \Vert}{\Vert x \Vert &amp;#43; \Vert y \Vert} &amp;#43; \dfrac{y}{\Vert y \Vert} \dfrac{\Vert y \Vert}{\Vert x \Vert &amp;#43; \Vert y \Vert} \Vert$ 如果 $\dfrac{x}{\Vert x \Vert} \ne \dfrac{y}{\Vert y \Vert}$ 那么结合严格凸性可得 $\Vert x&amp;#43;y \Vert &amp;lt; \Vert x \Vert &amp;#43; \Vert y \Vert = \Vert x&amp;#43;y \Vert$ 矛盾, 所以 $\dfrac{x}{\Vert x \Vert} = \dfrac{y}{\Vert y \Vert}$ 即 $x = c y, (c &amp;gt; 0)$.&lt;br>
-&amp;ldquo;$\Leftarrow$&amp;rdquo;: 首先范数一定是凸的, 故只需证明严格性. 反设存在 $x,y,\alpha,\beta$ 满足 $\Vert x \Vert = \Vert y \Vert = \alpha &amp;#43; \beta = 1, x \ne y$. 有 $\Vert \alpha x &amp;#43; \beta y \Vert = 1$. 那么有 $\Vert \alpha x &amp;#43; \beta y \Vert = 1 = \alpha \Vert x \Vert &amp;#43; \beta \Vert y \Vert \overset{\text{齐次性}}{=} \Vert \alpha x \Vert &amp;#43; \Vert \beta y \Vert$, 于是就有 $\alpha x = c \beta y$, 两边取范数立刻得到 $\alpha = c \beta$, 从而 $x = y$ 矛盾. 故该范数是严格凸的.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="1413">&lt;span>1.4.13&lt;/span>
- &lt;a href="#1413" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $\mathscr{X}$ 是 $B^*$ 空间, $\mathscr{X}_0$ 是 $\mathscr{X}$ 的线性子空间, 假定 $\exists c \in (0,1)$, 使得&lt;br>
-&lt;/p>
-$$ 
-\inf_{x \in \mathscr{X}_0} \Vert y - x \Vert \le c \Vert y \Vert \quad (\forall y \in \mathscr{X}). 
-$$&lt;p>&lt;br>
-求证: $\mathscr{X}_0$ 在 $\mathscr{X}$ 中稠密.&lt;/p>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">反设 $\mathscr X_0$ 不稠密, 那么 $\overline{\mathscr X_0}$ 是 $\mathscr X$ 中的真闭子空间, 那么根据 Riesz 引理, 取 $\varepsilon = \frac{1 - c}{2}$, 那么存在 $y \in \mathscr X$, 使得 $\Vert y \Vert = 1$ 且 $\Vert y - x \Vert \geqslant 1 - \varepsilon &amp;gt; c = c \Vert y \Vert \ \forall x \in \mathscr X_0$ 这就与条件 $\inf \Vert y - x \Vert \leqslant c \Vert y \Vert$ 矛盾. 从而 $\mathscr X_0$ 在 $\mathscr X$ 中稠密.&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="1414">&lt;span>1.4.14&lt;/span>
- &lt;a href="#1414" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设 $C_0$ 表示以 0 为极限的实数全体, 并在 $C_0$ 中赋以范数&lt;br>
-&lt;/p>
-$$ 
-\Vert x \Vert = \max_{n \ge 1} |\xi_n| \quad (\forall x = (\xi_1, \xi_2, \cdots, \xi_n) \in C_0). 
-$$&lt;p>&lt;br>
-又设&lt;br>
-&lt;/p>
-$$ 
-M \triangleq \left\lbrace x = \lbrace \xi_n \rbrace_{n=1}^{\infty} \in C_0 \ \middle|\ \sum_{n=1}^{\infty} \frac{\xi_n}{2^n} = 0 \right\rbrace . 
-$$&lt;ul>
-&lt;li>(1) 求证: $M$ 是 $C_0$ 的闭线性子空间.&lt;/li>
-&lt;li>(2) 设 $x_0 = (2, 0, \cdots, 0, \cdots)$, 求证:&lt;br>
-$ 
-\inf_{z \in M} \Vert x_0 - z \Vert = 1, 
-$&lt;br>
-但 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;/li>
-&lt;/ul>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>(1) 取映射 $f: C_0 \to \mathbb{R}, f(x) = \sum\limits_{n=1}^\infty \frac{\xi_n}{2^n}$&lt;br>
-线性性: 考虑 $\alpha x &amp;#43; \beta y$: $f(\alpha x &amp;#43; \beta y) = \sum\limits_{n=1}^\infty \frac{\alpha \xi_n &amp;#43; \beta \eta_n}{2^n} = \alpha f(x) &amp;#43; \beta f(y) = 0$.&lt;br>
-于是 $\alpha x &amp;#43; \beta y \in M$.&lt;br>
-闭性: 由于 $|f(x)| \leqslant \sum\limits_{n=1}^\infty \frac{|\xi_n|}{2^n} \leqslant \Vert x \Vert \sum\limits_{n=1}^\infty \frac{1}{2^n} = \Vert x \Vert$.&lt;br>
-所以 $f$ 是连续映射, 又 $\lbrace 0 \rbrace$ 是 $\mathbb{R}$ 中的闭集, 所以 $M = f^{-1}(\lbrace 0 \rbrace)$ 是闭集.&lt;br>
-故 $M$ 是 $C_0$ 的闭线性子空间.&lt;br>
-(2) 考虑第一项有 $\Vert x_0 - z \Vert \geqslant \max \lbrace |2 - \xi_1|, |\xi| \rbrace \geqslant 1$. 所以 $\inf\limits_{z \in M} \Vert x_0 - z \Vert = 1$.&lt;br>
-考虑数列 $x^N = (1 - \frac{1}{2^{N-1}}, \underbrace{-1, \ldots, -1}_{N\ \text{个}}, 0, \ldots, 0, \ldots) \in M$, 有 $\Vert x_0 - x^N \Vert = 1 &amp;#43; \frac{1}{2^{N-1}}$, 所以下确界取到 1. $\inf\limits_{z \in M} \Vert x_0 - z \Vert = 1$.&lt;br>
-下证 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;br>
-考虑反证法, 假设存在序列 $y = (\xi_1, \xi_2, \ldots, \xi_k, \ldots) \in M$, 使得 $\Vert x_0 - y \Vert = 1$, 则有 &lt;/p>
-$$\begin{cases} 
-|\xi_k| \leqslant 1, &amp;amp; k \geqslant 2, \\\\ 
-2 - \xi_1 \leqslant 1. &amp;amp; 
-\end{cases}$$&lt;p>&lt;br>
-所以有 &lt;/p>
-$$\left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| \leqslant \sum\limits_{k=2}^\infty \frac{|\xi_k|}{2^k} \overset{\text{由极限为 0 不可能一直是 1}}{&amp;lt;} \sum\limits_{k=2}^\infty \frac{1}{2^k} = \frac{1}{2}.$$&lt;p>&lt;br>
-&lt;/p>
-$$\Rightarrow \left| \frac{\xi_1}{2} \right| = \left| \sum\limits_{k=2}^\infty \frac{\xi_k}{2^k} \right| &amp;lt; \frac{1}{2} \Rightarrow |\xi_1| &amp;lt; 1.$$&lt;p> 这与 $|2 - \xi_1| \leqslant 1$ 矛盾.&lt;br>
-所以有 $\forall y \in M$ 有 $\Vert x_0 - y \Vert &amp;gt; 1$.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;div class="details admonition info open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>注&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>本题提供一个例子说明: 对于无穷维闭线性子空间来说, 给定其外一点 $x_0$, 未必能在其上找到一点 $y$ 适合&lt;br>
-&lt;/p>
-$$ 
-\Vert x_0 - y \Vert = \inf_{z \in M} \Vert x_0 - z \Vert. 
-$$&lt;p>&lt;br>
-换句话说, 给定 $x_0 \notin M$, 未必能在 $M$ 上找到最佳逼近元.&lt;/p>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;h2 class="heading-element" id="1417">&lt;span>1.4.17&lt;/span>
- &lt;a href="#1417" class="heading-mark">
- &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
- &lt;/a>
-&lt;/h2>&lt;p>设有商空间 $\mathscr{X} / \mathscr{X}_0$.&lt;/p>
-&lt;ul>
-&lt;li>(1) 设 $[x] \in \mathscr{X} / \mathscr{X}_0$, 求证: 对 $\forall x \in [x]$, 有&lt;br>
-$ 
-\inf_{z \in \mathscr{X}_0} \Vert x - z \Vert = \Vert [x] \Vert_0. 
-$&lt;/li>
-&lt;li>(2) 定义映射 $\varphi : \mathscr{X} \to \mathscr{X} / \mathscr{X}_0$ 为&lt;br>
-$ 
-\varphi(x) = [x] \triangleq x &amp;#43; \mathscr{X}_0 \quad (\forall x \in \mathscr{X}), 
-$&lt;br>
-求证: $\varphi$ 是连续线性映射.&lt;/li>
-&lt;li>(3) $\forall [x] \in \mathscr{X} / \mathscr{X}_0$, 求证: $\exists x \in \mathscr{X}$, 使得&lt;br>
-$ 
-\varphi(x) = [x], \quad \text{且} \quad \Vert x \Vert \le 2 \Vert [x] \Vert_0. 
-$&lt;/li>
-&lt;li>(4) 设 $\mathscr{X} = C[0,1]$, $\mathscr{X}_0 = \lbrace f \in \mathscr{X} \mid f(0) = 0 \rbrace$, 求证:&lt;br>
-$ 
-\mathscr{X} / \mathscr{X}_0 \cong \mathbb{K}, 
-$&lt;br>
-其中记号 “$\cong$” 表示等距同构.&lt;/li>
-&lt;/ul>
-&lt;div class="details admonition note">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;ul>
-&lt;li>(1) $\Vert [x] \Vert = \inf\limits_{y \in [x]} \Vert y \Vert = \inf\limits_{y \in \mathscr X_0} \Vert x &amp;#43; y \Vert = \inf\limits_{z \in \mathscr X_0} \Vert x - z \Vert$.&lt;/li>
-&lt;li>(2) 根据商空间运算定义, 线性性显然. $\Vert \varphi(x) \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x - z \Vert \leqslant \Vert x - 0 \Vert = \Vert x \Vert$ 所以 $\varphi(x)$ 连续.&lt;/li>
-&lt;li>(3) 取代表元 $x&amp;#39;$, 根据 $\Vert [x] \Vert_0 = \inf\limits_{z \in \mathscr X_0} \Vert x&amp;#39; - z \Vert$ 所以对任意 $\varepsilon &amp;gt; 0$, 存在 $z \in \mathscr X_0$ 使得 $\Vert x&amp;#39; - z \Vert &amp;lt; \Vert [x] \Vert_0 &amp;#43; \varepsilon$, 现取 $\varepsilon = \Vert [x] \Vert_0$, 则 $x&amp;#39; &amp;#43; z_0$ 满足 $\varphi(x&amp;#39;) = [x],\ \Vert x \Vert \leqslant 2 \Vert [x] \Vert_0$.&lt;/li>
-&lt;li>(4) 取 $T: \mathscr X / \mathscr X_0 \to \mathbb K, T([f]) = f(0)$. 首先先探究等价类的性质, 若 $f - g \in \mathscr X_0$, 那么有 $f(0) = g(0)$, 所以我们不妨设等价类为 $[f_x]$ 表示所有 $f(0) = x$ 的函数.&lt;br>
-先证 $T$ 是线性映射, 即 $T(\alpha [f_x] &amp;#43; \beta [f_y]) = T([f_{\alpha x} &amp;#43; f_{\beta y}]) = \alpha x &amp;#43; \beta y = \alpha T([f_x]) &amp;#43; \beta T([f_y])$. 这一步用到了 $\mathbb{K}$ 的线性性.&lt;br>
-再证 $T$ 保范数, 即要证 $\Vert T([f_x]) \Vert = \Vert x \Vert$.&lt;br>
-根据定义取 $[f_x]$ 的代表元为 $f,\ f(0) = x$, 有 $\Vert T([f_x]) \Vert = \inf\limits_{g \in \mathscr X_0} \Vert f - g \Vert = \inf\limits_{g \in \mathscr X_0} \max\limits_{t \in [0,1]} |f(t) - g(t)|$&lt;br>
-一方面, $\inf\limits_{g \in \mathscr X_0} \max\limits_{t \in [0,1]} |f(t) - g(t)| \geqslant \inf\limits_{g \in \mathscr X_0} |f(0) - g(0)| = |x|$&lt;br>
-另一方面, 取 $g&amp;#39; = f - x \in \mathscr X_0$, 从而 $\inf\limits_{g \in \mathscr X_0} \Vert f - g \Vert \leqslant \Vert f - g&amp;#39; \Vert \overset{\text{恒为 x 的常函数}}{=} \Vert x \Vert,$ 所以有 $\Vert T([f_x]) \Vert = \Vert x \Vert$.&lt;/li>
-&lt;/ul>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-&lt;div class="details admonition info open">
- &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>注&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
- &lt;div class="details-content">
- &lt;div class="admonition-content">注意区分上述过程中的范数具体含义.&lt;/div>
  &lt;/div>
 &lt;/div></description></item></channel></rss>
