@@ -981,6 +981,21 @@ $$
 &lt;p>由 $X$ 是 Banach 空间, $N(T)$ 是 $X$ 的闭子空间, 则 $X/N(T)$ 也是 Banach 空间.&lt;/p>
 &lt;p>考虑商空间上的映射 $\widetilde{T}:X/N(T)\to Y$, $\widetilde{T}([x])=T(x&amp;#43;z)=Tx, z\in N(T)$.&lt;/p>
 &lt;p>而此时我们有 $d(x,N(T))=\inf\limits_{z\in N(T)}\Vert z-x \Vert=\Vert [x] \Vert$. $R(T)=R(\widetilde{T})$.&lt;/p>
+&lt;p>现在只要证 $\widetilde{T}$ 是闭算子就可以由上一问结果得到.&lt;/p>
+&lt;p>即要证 &lt;/p>
+$$\begin{cases}
+ [x_n]\to [x]\\\\
+ \widetilde{T}[x_n]\to y
+ \end{cases}\Rightarrow \begin{cases}
+ y=\widetilde{T}[x]\\\\
+ x\in D(\widetilde{T})
+ \end{cases}$$&lt;p>记 $x$ 为 $[x]$ 的一个代表元.&lt;/p>
+&lt;p>由 $[x_n]\to [x]$ 即 $\norm{[x_n]-[x]}\to 0$.&lt;/p>
+&lt;p>由 $\norm{[x_n-x]}$ 存在 $y\in[x_n-x]$ 满足 $\norm{y}\leqslant2\norm{[x_n-x]}$. 故取 $x_n&amp;#39;=y&amp;#43;x$ 即有 $\norm{x_n&amp;#39;-x}\leqslant2\norm{[x_n-x]}\to 0$&lt;/p>
+&lt;p>从而 $x_n&amp;#39;\to x$.&lt;/p>
+&lt;p>另一方面, $\widetilde{T}[x]=Tx\to y$. 故由 $T$ 是闭算子, 知 $Tx=y$ 且 $x\in D(T)$.&lt;/p>
+&lt;p>所以 $\widetilde{T}[x]=Tx=y$ 且 $[x]\in D(\widetilde(T))$.&lt;/p>
+&lt;p>综上 $\widetilde{T}$ 也是闭算子.&lt;/p>
 &lt;p>那么根据 (2) 的结论可以得到 $R(\widetilde{T})$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得 $\Vert [x] \Vert\leqslant\alpha\Vert \widetilde{T}[x] \Vert\quad \forall [x]\in D(\widetilde{T})$.&lt;/p>
 &lt;p>又 $\forall x\in D(T)$ 有 $d(x,N(T))=\Vert [x] \Vert, Tx=\widetilde{T}[x]$. 所以
 &lt;/p>
