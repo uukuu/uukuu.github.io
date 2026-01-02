@@ -133,19 +133,14 @@ $$X_s=\{\boldsymbol{x}=(x_1,x_2,\cdots,x_n,\cdots)|\sum\limits_{n=1}^\infty n^s|
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;ol>
-&lt;li>一方面, $|(Th,h)|\leqslant\Vert T \Vert \Vert h \Vert ^2$ 故 $\sup\limits_{\Vert h \Vert =1}|(Th,h)|\leqslant \Vert T \Vert $.&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code>另一方面, $\Vert T \Vert =\sup\limits_{\Vert x \Vert =1}\Vert Tx \Vert =\sup\limits_{\Vert x \Vert }\sup\limits_{\Vert f \Vert =1}|f(Tx)|=\sup\limits_{\Vert x \Vert =1}\sup\limits_{\Vert y \Vert =1}|(Tx,y)|$ 前一个等号利用 Hahn-Banach 定理, 后一个等号利用 Riesz 表示定理.
-
-而利用自伴算子 $(Tx,y)=(x,Ty)$ 可得 $(Tx,y)=\frac14((T(x+y),x+y)-(T(x-y),x-y))$
-
-从而 $(Tx,y)\leqslant\frac 14 \sup\limits_{\Vert h \Vert =1}|(Th,h)|(\Vert x+y \Vert +\Vert x-y \Vert )\leqslant\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.
-
-所以 $\Vert T \Vert \leqslant\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.
-
-综上 $\Vert T \Vert =\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.
-&lt;/code>&lt;/pre>
-&lt;ol start="2">
+&lt;li>
+&lt;p>一方面, $|(Th,h)|\leqslant\Vert T \Vert \Vert h \Vert ^2$ 故 $\sup\limits_{\Vert h \Vert =1}|(Th,h)|\leqslant \Vert T \Vert $.&lt;/p>
+&lt;p>另一方面, $\Vert T \Vert =\sup\limits_{\Vert x \Vert =1}\Vert Tx \Vert =\sup\limits_{\Vert x \Vert }\sup\limits_{\Vert f \Vert =1}|f(Tx)|=\sup\limits_{\Vert x \Vert =1}\sup\limits_{\Vert y \Vert =1}|(Tx,y)|$ 前一个等号利用 Hahn-Banach 定理, 后一个等号利用 Riesz 表示定理.&lt;/p>
+&lt;p>而利用自伴算子 $(Tx,y)=(x,Ty)$ 可得 $(Tx,y)=\frac14((T(x&amp;#43;y),x&amp;#43;y)-(T(x-y),x-y))$&lt;/p>
+&lt;p>从而 $(Tx,y)\leqslant\frac 14 \sup\limits_{\Vert h \Vert =1}|(Th,h)|(\Vert x&amp;#43;y \Vert &amp;#43;\Vert x-y \Vert )\leqslant\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.&lt;/p>
+&lt;p>所以 $\Vert T \Vert \leqslant\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.&lt;/p>
+&lt;p>综上 $\Vert T \Vert =\sup\limits_{\Vert h \Vert =1}|(Th,h)|$.&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>首先当 $A$ 自伴时, 其谱点均是实数.&lt;/p>
 &lt;p>设 $\lambda&amp;gt;M(A)$, $T_\lambda=\lambda I-A$. 共轭双线性型 $a(x,y)=(T_\lambda x,y)$.&lt;/p>
