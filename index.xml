@@ -891,10 +891,10 @@ $$\begin{aligned}
  &lt;a href="#4-20-%e5%88%86" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
-&lt;/h2>&lt;p>设 $0&amp;lt;\alpha\leqslant 1$. 令 $C^{0,\alpha}[0,1]:=\lbrace f\in C[0,1]:|f|*\alpha&amp;lt;\infty \rbrace$ 并定义
+&lt;/h2>&lt;p>设 $0&amp;lt;\alpha\leqslant 1$. 令 $C^{0,\alpha}[0,1]:=\lbrace f\in C[0,1]:|f|_\alpha&amp;lt;\infty \rbrace$ 并定义
 &lt;/p>
 $$
-\Vert f \Vert *{0,\alpha}=\max\limits*{x\in[0,1]}|f(x)|&amp;#43;|f|*\alpha,\quad |f|*\alpha=\sup\limits*{x,y\in[0,1],x\neq y}\frac{|f(x)-f(y)|}{|x-y|^\alpha}.
+\Vert f \Vert_{0,\alpha}=\max\limits_{x\in[0,1]}|f(x)|&amp;#43;|f|_\alpha,\quad |f|_\alpha=\sup\limits_{x,y\in[0,1],x\neq y}\frac{|f(x)-f(y)|}{|x-y|^\alpha}.
 $$&lt;p>(1) (10 分) 证明: $\Vert f \Vert _{0,\alpha}$ 是 $C^{0,\alpha}[0,1]$ 上的范数且 $(C^{0,\alpha}[0,1],\Vert \cdot \Vert _{0,\alpha})$ 完备.&lt;/p>
 &lt;p>(2) (10 分) 证明 $C^{0,\alpha}[0,1]$ 中的有界集是 $C[0,1]$ 中的列紧集.
 &lt;div class="details admonition note">
@@ -961,18 +961,12 @@ $$&lt;p>那么对任意的 $x\in X$, 有 $f(x-f(x)x_n)=f(x)-f(x)f(x_n)=0$ 即 $x
 &lt;li>
 &lt;p>先证 $N(T)$ 是 $X$ 的闭线性子空间.&lt;/p>
 &lt;p>线性性: 由 $T$ 是线性算子显然得到.&lt;/p>
-&lt;p>闭性: 对任意收敛点列 $\lbrace x_n \rbrace\subset N(T)$, 设 $x_n\to x$. 那么 $(x_n,Tx_n)=(x_n,0)\to (x,0)$. 由 $T$ 是闭算子知 $x\in D(T), Tx=0$ 从而 $x\in N(T)$. 即 $N(T)$ 是闭的.&lt;/p>
+&lt;p>闭性: 对任意收敛点列 $\lbrace x_n \rbrace \subset N(T)$, 设 $x_n\to x$. 那么 $(x_n,Tx_n)=(x_n,0)\to (x,0)$. 由 $T$ 是闭算子知 $x\in D(T), Tx=0$ 从而 $x\in N(T)$. 即 $N(T)$ 是闭的.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>再证当 $N(T)=\lbrace 0 \rbrace$ 时, $R(T)$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得
-&lt;/p>
-$$
- \Vert x \Vert\leqslant \alpha\Vert Tx \Vert\quad(\forall x\in D(T))
- $$&lt;p>$\Rightarrow$: 由 $T$ 是单射的闭算子, 所以存在 $T^{-1}:R(T)\to X$ 且也是闭算子. 那么由 $R(T)$ 是闭的, 根据闭图像定理知 $T^{-1}$ 有界, 从而存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert\leqslant \alpha\Vert y \Vert\quad \forall y\in R(T)$. 即
-&lt;/p>
-$$
- \Vert x \Vert\leqslant\alpha\Vert Tx \Vert,\forall x\in D(T).
- $$&lt;p>$\Leftarrow$: 由 $T$ 是单射, 任取收敛列 $y_n=Tx_n\in R(T)$ 且 $y_n\to y$. 由条件存在 $\alpha&amp;gt;0$ 满足 $\Vert x_n-x_m \Vert\leqslant\alpha\Vert T(x_n-x_m) \Vert=\alpha\Vert y_n-y_m \Vert$. 所以 $\lbrace x_n \rbrace$ 在 $X$ 中是 Cauchy 列, 又 $X$ 完备, 从而 $x_n\to x\in X$.&lt;/p>
+&lt;p>再证当 $N(T)=\lbrace 0 \rbrace $ 时, $R(T)$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得 &lt;/p>
+$$\Vert x \Vert \leqslant \alpha\Vert Tx \Vert \quad(\forall x\in D(T))$$&lt;p>$\Rightarrow$: 由 $T$ 是单射的闭算子, 所以存在 $T^{-1}:R(T)\to X$ 且也是闭算子. 那么由 $R(T)$ 是闭的且 $Y$ 是 Banach 空间, 则有 $R(T)$ 是 Banach 空间, 故根据闭图像定理知 $T^{-1}$ 有界, 从而存在 $\alpha$ 满足 $\Vert T^{-1}y \Vert \leqslant \alpha\Vert y \Vert \quad \forall y\in R(T)$. 即 &lt;/p>
+$$\Vert x \Vert \leqslant\alpha\Vert Tx \Vert ,\forall x\in D(T).$$&lt;p>$\Leftarrow$: 由 $T$ 是单射, 任取收敛列 $y_n=Tx_n\in R(T)$ 且 $y_n\to y$. 由条件存在 $\alpha&amp;gt;0$ 满足 $\Vert x_n-x_m \Vert \leqslant\alpha\Vert T(x_n-x_m) \Vert =\alpha\Vert y_n-y_m \Vert $. 所以 $\lbrace x_n \rbrace $ 在 $X$ 中是 Cauchy 列, 又 $X$ 完备, 从而 $x_n\to x\in X$.&lt;/p>
 &lt;p>那么根据 $T$ 是闭算子 $x_n\to x, Tx_n\to y$ 从而 $x\in D(T), y=Tx\in R(T)$.&lt;/p>
 &lt;p>综上 $R(T)$ 是闭的.&lt;/p>
 &lt;/li>
@@ -980,7 +974,7 @@ $$
 &lt;p>最后证原命题.&lt;/p>
 &lt;p>由 $X$ 是 Banach 空间, $N(T)$ 是 $X$ 的闭子空间, 则 $X/N(T)$ 也是 Banach 空间.&lt;/p>
 &lt;p>考虑商空间上的映射 $\widetilde{T}:X/N(T)\to Y$, $\widetilde{T}([x])=T(x&amp;#43;z)=Tx, z\in N(T)$.&lt;/p>
-&lt;p>而此时我们有 $d(x,N(T))=\inf\limits_{z\in N(T)}\Vert z-x \Vert=\Vert [x] \Vert$. $R(T)=R(\widetilde{T})$.&lt;/p>
+&lt;p>而此时我们有 $d(x,N(T))=\inf\limits_{z\in N(T)}\Vert z-x \Vert =\Vert [x] \Vert $. $R(T)=R(\widetilde{T})$.&lt;/p>
 &lt;p>现在只要证 $\widetilde{T}$ 是闭算子就可以由上一问结果得到.&lt;/p>
 &lt;p>即要证 &lt;/p>
 $$\begin{cases}
@@ -990,18 +984,15 @@ $$\begin{cases}
  y=\widetilde{T}[x]\\\\
  x\in D(\widetilde{T})
  \end{cases}$$&lt;p>记 $x$ 为 $[x]$ 的一个代表元.&lt;/p>
-&lt;p>由 $[x_n]\to [x]$ 即 $\Vert[x_n]-[x]\Vert\to 0$.&lt;/p>
-&lt;p>由 $\Vert [x_n-x]\Vert$ 存在 $y\in[x_n-x]$ 满足 $\Vert y\Vert\leqslant2\Vert [x_n-x]\Vert$. 故取 $x_n&amp;#39;=y&amp;#43;x$ 即有 $\Vert x_n&amp;#39;-x\Vert\leqslant2\Vert [x_n-x]\Vert\to 0$&lt;/p>
+&lt;p>由 $[x_n]\to [x]$ 即 $\Vert [x_n]-[x] \Vert \to 0$.&lt;/p>
+&lt;p>由 $\Vert [x_n-x] \Vert $ 存在 $y\in[x_n-x]$ 满足 $\Vert y \Vert \leqslant2\Vert [x_n-x] \Vert $. 故取 $x_n&amp;#39;=y&amp;#43;x$ 即有 $\Vert x_n&amp;#39;-x \Vert \leqslant2\Vert [x_n-x] \Vert \to 0$&lt;/p>
 &lt;p>从而 $x_n&amp;#39;\to x$.&lt;/p>
 &lt;p>另一方面, $\widetilde{T}[x]=Tx\to y$. 故由 $T$ 是闭算子, 知 $Tx=y$ 且 $x\in D(T)$.&lt;/p>
 &lt;p>所以 $\widetilde{T}[x]=Tx=y$ 且 $[x]\in D(\widetilde(T))$.&lt;/p>
 &lt;p>综上 $\widetilde{T}$ 也是闭算子.&lt;/p>
-&lt;p>那么根据 (2) 的结论可以得到 $R(\widetilde{T})$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得 $\Vert [x] \Vert\leqslant\alpha\Vert \widetilde{T}[x] \Vert\quad \forall [x]\in D(\widetilde{T})$.&lt;/p>
-&lt;p>又 $\forall x\in D(T)$ 有 $d(x,N(T))=\Vert [x] \Vert, Tx=\widetilde{T}[x]$. 所以
-&lt;/p>
-$$
- \Vert [x] \Vert\leqslant\alpha\Vert \widetilde{T}[x] \Vert\quad \forall [x]\in D(\widetilde{T})\Leftrightarrow d(x,N(T))\leqslant\alpha\Vert Tx \Vert\quad (\forall x\in D(T)).
- $$&lt;/li>
+&lt;p>那么根据 (2) 的结论可以得到 $R(\widetilde{T})$ 在 $Y$ 中闭的充要条件是 $\exists \alpha&amp;gt;0$, 使得 $\Vert [x] \Vert \leqslant\alpha\Vert \widetilde{T}[x] \Vert \quad \forall [x]\in D(\widetilde{T})$.&lt;/p>
+&lt;p>又 $\forall x\in D(T)$ 有 $d(x,N(T))=\Vert [x] \Vert , Tx=\widetilde{T}[x]$. 所以 &lt;/p>
+$$\Vert [x] \Vert \leqslant\alpha\Vert \widetilde{T}[x] \Vert \quad \forall [x]\in D(\widetilde{T})\Leftrightarrow d(x,N(T))\leqslant\alpha\Vert Tx \Vert \quad (\forall x\in D(T)).$$&lt;/li>
 &lt;/ol>
 &lt;p>证毕.&lt;/p>
 &lt;/div>
