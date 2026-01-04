@@ -883,9 +883,10 @@ $$0=\sum\limits_{k=1}^n c_k\varphi_k(x)=\sum\limits_{k=1}^nc_kg_k([x])\quad\fora
  &lt;/a>
 &lt;/h2>&lt;p>设 $\mathscr X,\mathscr Y$ 是两个 Banach 空间, $T\in\mathscr L(\mathscr X,\mathscr Y)$ 是满射.
 定义
-[
+&lt;/p>
+$$
 \widetilde T:\mathscr X/N(T)\to \mathscr Y,\qquad \widetilde T([x])=Tx,
-]
+$$&lt;p>
 其中 $[x]=x&amp;#43;N(T)$ 为陪集. 证明：$\widetilde T$ 是线性同胚映射.&lt;/p>
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
@@ -908,9 +909,10 @@ $$0=\sum\limits_{k=1}^n c_k\varphi_k(x)=\sum\limits_{k=1}^nc_kg_k([x])\quad\fora
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>设 $\mathscr X$ 是 Banach 空间, $M,N_1,N_2$ 都是 $\mathscr X$ 的闭线性子空间. 若
-[
-\mathscr X=M\oplus N_1=;M\oplus N_2,
-]
+&lt;/p>
+$$
+\mathscr X=M\oplus N_1=\;M\oplus N_2,
+$$&lt;p>
 证明：$N_1$ 和 $N_2$ 同胚.
 （提示：只要证明 $N_1,N_2$ 都与 $\mathscr X/M$ 同胚. ）&lt;/p>
 &lt;div class="details admonition note">
@@ -986,10 +988,10 @@ $$0=\sum\limits_{k=1}^n c_k\varphi_k(x)=\sum\limits_{k=1}^nc_kg_k([x])\quad\fora
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
 &lt;/h2>&lt;p>在 $C[0,1]$ 中, 考虑映射
-[
-T:x(t)\mapsto \int_0^t x(s),ds,\qquad x\in C[0,1].
-]&lt;/p>
-&lt;ol>
+&lt;/p>
+$$
+T:x(t)\mapsto \int_0^t x(s)\,ds,\qquad x\in C[0,1].
+$$&lt;ol>
 &lt;li>证明: $T$ 是紧算子;&lt;/li>
 &lt;li>求 $\sigma(T)$ 及 $T$ 的一个非平凡的闭不变子空间.&lt;/li>
 &lt;/ol>
