@@ -37,11 +37,34 @@ $$\Vert Ax \Vert =\lim\limits_{n\to\infty}\Vert A_nx \Vert =\varliminf\limits_{n
 &lt;div class="details admonition note">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true">&lt;/i>答案&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
- &lt;div class="admonition-content">&lt;p>任取 $X$ 中的有界集 $X_0$, 则 $AX_0$ 是 $Y$ 中的有界集.&lt;/p>
-&lt;p>由 $R(A)\subset R(K)$, 必定存在 $X$ 中的有界集 $X_1$ 满足 $KX_1\supset AX_0$.&lt;/p>
-&lt;p>否则就存在 $x_0\in X_0$ 但不存在 $x_1\in X$, 使得 $Ax_0=Kx_1$ 与 $R(A)\subset R(K)$ 矛盾.&lt;/p>
-&lt;p>从而 $KX_1$ 是列紧集, 而 $AX_0$ 作为 $KX_1$ 的子集也是列紧集.&lt;/p>
-&lt;p>从而 $A$ 是紧算子.&lt;/p>
+ &lt;div class="admonition-content">&lt;p>设 $N=\ker K$，令商映射 $q:X\to X/N$。定义
+&lt;/p>
+$$
+\widetilde K: X/N \to Y,\qquad \widetilde K(qx)=Kx.
+$$&lt;p>
+则 $\widetilde K$ 良定义、连续、紧且单射，并且 $R(\widetilde K)=R(K)$。&lt;/p>
+&lt;p>由 $R(A)\subset R(K)=R(\widetilde K)$，对每个 $x\in X$，存在唯一的 $u\in X/N$ 使得
+&lt;/p>
+$$
+\widetilde K u = Ax
+$$&lt;p>
+于是可定义线性算子
+&lt;/p>
+$$
+B:X\to X/N,\qquad Bx = \widetilde K^{-1}(Ax).
+$$&lt;p>
+下面证 $B$ 有界：取 $x_n\to x$ 且 $Bx_n\to u$。则
+&lt;/p>
+$$
+Ax_n=\widetilde K(Bx_n)\to \widetilde K(u),
+$$&lt;p>
+另一方面 $Ax_n\to Ax$，故 $Ax=\widetilde K(u)$。由定义 $Bx$ 是满足 $\widetilde K(Bx)=Ax$ 的唯一元素，所以 $u=Bx$。因此 $B$ 图像闭，$X, X/N$ 都是 Banach 空间，&lt;strong>闭图定理&lt;/strong>推出 $B$ 有界。&lt;/p>
+&lt;p>最后
+&lt;/p>
+$$
+A = \widetilde K\circ B.
+$$&lt;p>
+由于 $\widetilde K$ 紧、$B$ 有界，故 $A$ 为紧算子。&lt;/p>
 &lt;/div>
  &lt;/div>
 &lt;/div>
